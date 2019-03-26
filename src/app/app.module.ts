@@ -2,6 +2,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
+import { SceneModule } from './scene/scene.module';
+import { MenuModule } from './menu/menu.module';
+
+
 import { AppComponent } from './app.component';
 
 @NgModule({
@@ -10,7 +14,9 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SceneModule,
+    MenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]
