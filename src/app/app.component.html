@@ -1,10 +1,16 @@
 <div id="container" class="container mt-1" style="height: 98%;">
   <div class="row h-100">
-    <div class="col-xl-8 col-lg-6">
-      <gc-scene></gc-scene>
+    <div class="col-xl-8 col-lg-6 col-sm-12">
+      <div id="main">
+        <span class="d-sm-none d-block" (click)="openNav()">open</span>
+        <gc-scene></gc-scene>
+      </div>
     </div>
-    <div class="col-xl-4 col-lg-6">
+    <div class="col-xl-4 col-lg-6 col-sm-12">
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn d-sm-none d-block" (click)="closeNav()">&times;</a>
         <gc-sidebar></gc-sidebar>
+      </div>
     </div>
   </div>
 </div>
