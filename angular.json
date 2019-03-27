@@ -34,10 +34,7 @@
             "scripts": [
               "./node_modules/jquery/dist/jquery.js",
               "./node_modules/bootstrap/dist/js/bootstrap.min.js",
-              "./src/assets/gc-script.js",
-              "./node_modules/three/build/three.js",
-              "./node_modules/three/examples/js/controls/OrbitControls.js",
-              "./node_modules/three/examples/js/loaders/OBJLoader.js"
+              "./src/assets/gc-script.js"
             ]
           },
           "configurations": {

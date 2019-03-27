@@ -1,7 +1,5 @@
-import './js/three';
-import './js/OBJLoader';
-import { Injectable, ElementRef, ViewChild, HostListener } from '@angular/core';
-import { SceneComponent } from '../scene/scene.component';
+import * as THREE from 'three-full';
+import { Injectable, HostListener } from '@angular/core';
 
 @Injectable({
   providedIn: 'root'
@@ -12,17 +10,16 @@ export class ThreeService {
   private renderer: THREE.WebGLRenderer;
   private camera: THREE.PerspectiveCamera;
   private scene: THREE.Scene;
-  private light: THREE.AmbientLight;
   private lighting: boolean;
   private ambient;
 
-  public fieldOfView: number = 20;
-  public nearClippingPane: number = 1;
-  public farClippingPane: number = 2000;
+  public fieldOfView = 20;
+  public nearClippingPane = 1;
+  public farClippingPane = 2000;
 
-  //public controls: THREE.OrbitControls;
+  public controls: THREE.OrbitControls;
 
-  constructor(){
+  constructor() {
     this.render = this.render.bind(this);
     this.onModelLoadingCompleted = this.onModelLoadingCompleted.bind(this);
   }
@@ -34,7 +31,7 @@ export class ThreeService {
     // create the scene
     this.scene = new THREE.Scene();
 
-    var loader = new THREE.OBJLoader();
+    const loader = new THREE.OBJLoader();
     loader.load('assets/model/test.obj', this.onModelLoadingCompleted);
 
     this.createLight();
@@ -45,10 +42,10 @@ export class ThreeService {
 
   private onModelLoadingCompleted(object) {
 
-    var loader = new THREE.TextureLoader();
-    var material = new THREE.MeshBasicMaterial();
+    const loader = new THREE.TextureLoader();
+    const material = new THREE.MeshBasicMaterial();
 
-    //material.specular = 1;
+    // material.specular = 1;
     material.map = loader.load('assets/texture/texture.jpg');
 
     /*object.traverse( function ( child ) {
@@ -61,19 +58,19 @@ export class ThreeService {
 
     this.scene.add(object);
 
-    var geometry = new THREE.CylinderBufferGeometry(.345, .235, .885, 21, 22, true, 0, 2*3.1415926535898);
-    //var texture = THREE.TextureLoader('/assets/textures/large.jpg');
+    const geometry = new THREE.CylinderBufferGeometry(.345, .235, .885, 21, 22, true, 0, 2 * 3.1415926535898);
+    // var texture = THREE.TextureLoader('/assets/textures/large.jpg');
 
-    //var material.transparent = true;
-    var cylinder = new THREE.Mesh( geometry, material );
+    // var material.transparent = true;
+    const cylinder = new THREE.Mesh( geometry, material );
     this.scene.add( cylinder );
 
     this.render();
     console.log('Texture load complete.');
   }
 
-  private createCamera(){
-    let aspectRatio = this.getAspectRatio();
+  private createCamera() {
+    const aspectRatio = this.getAspectRatio();
     this.camera = new THREE.PerspectiveCamera(
       this.fieldOfView,
       aspectRatio,
@@ -87,27 +84,27 @@ export class ThreeService {
     this.camera.position.z = 4.2;
   }
 
-  private createLight(){
+  private createLight() {
     this.lighting = true;
     this.ambient = new THREE.AmbientLight(0xffffff, 1);
     this.scene.add(this.ambient);
     this.ambient.intensity = 0.5;
 
-    var keyLight = new THREE.DirectionalLight(new THREE.Color(0xf3f3f3), 0.4);
+    const keyLight = new THREE.DirectionalLight(new THREE.Color(0xf3f3f3), 0.4);
     keyLight.position.set(0, 100, 0);
     this.scene.add(keyLight);
 
-    var fillLight = new THREE.DirectionalLight(new THREE.Color(0xffffff), 0.2);
+    const fillLight = new THREE.DirectionalLight(new THREE.Color(0xffffff), 0.2);
     fillLight.position.set(100, 0, 100);
     this.scene.add(fillLight);
 
-    var backLight = new THREE.DirectionalLight(0xffffff, 0.5);
+    const backLight = new THREE.DirectionalLight(0xffffff, 0.5);
     backLight.position.set(-100, 0, -100).normalize();
     this.scene.add(backLight);
   }
 
   private getAspectRatio(): number {
-    let height = this.canvas.clientHeight;
+    const height = this.canvas.clientHeight;
     if (height === 0) {
       return 0;
     }
@@ -143,22 +140,22 @@ export class ThreeService {
   /* EVENTS */
 
   public onMouseDown(event: MouseEvent) {
-    console.log("onMouseDown");
+    console.log('onMouseDown');
     event.preventDefault();
 
     // Example of mesh selection/pick:
-    var raycaster = new THREE.Raycaster();
-    var mouse = new THREE.Vector2();
+    const raycaster = new THREE.Raycaster();
+    const mouse = new THREE.Vector2();
     mouse.x = (event.clientX / this.renderer.domElement.clientWidth) * 2 - 1;
     mouse.y = - (event.clientY / this.renderer.domElement.clientHeight) * 2 + 1;
     raycaster.setFromCamera(mouse, this.camera);
 
-    var obj: THREE.Object3D[] = [];
+    const obj: THREE.Object3D[] = [];
     this.findAllObjects(obj, this.scene);
-    var intersects = raycaster.intersectObjects(obj);
-    console.log("Scene has " + obj.length + " objects");
-    console.log("Camera position " + this.camera.position.x + ", " + this.camera.position.y + ", " + this.camera.position.z);
-    console.log(intersects.length + " intersected objects found")
+    const intersects = raycaster.intersectObjects(obj);
+    console.log('Scene has ' + obj.length + ' objects');
+    console.log('Camera position ' + this.camera.position.x + ', ' + this.camera.position.y + ', ' + this.camera.position.z);
+    console.log(intersects.length + ' intersected objects found');
     intersects.forEach((i) => {
       console.log(i.object); // do what you want to do with object
     });
@@ -176,15 +173,15 @@ export class ThreeService {
   }
 
   public onMouseUp(event: MouseEvent) {
-    console.log("onMouseUp");
+    console.log('onMouseUp');
   }
 
 
   @HostListener('window:resize', ['$event'])
   public onResize(event: Event) {
-    this.canvas.style.width = "100%";
-    this.canvas.style.height = "100%";
-    console.log("onResize: " + this.canvas.clientWidth + ", " + this.canvas.clientHeight);
+    this.canvas.style.width = '100%';
+    this.canvas.style.height = '100%';
+    console.log('onResize: ' + this.canvas.clientWidth + ', ' + this.canvas.clientHeight);
 
     this.camera.aspect = this.getAspectRatio();
     this.camera.updateProjectionMatrix();
@@ -194,7 +191,7 @@ export class ThreeService {
 
   @HostListener('document:keypress', ['$event'])
   public onKeyPress(event: KeyboardEvent) {
-    console.log("onKeyPress: " + event.key);
+    console.log('onKeyPress: ' + event.key);
   }
 
 }
