@@ -1,0 +1,88 @@
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% E I N L E I T U N G
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+\chapter{Einleitung}
+\label{cha:introduction}
+%
+%
+Mit dem folgenden Kapitel soll eine Einführung in das Thema gegeben werden. Es wird darauf eingegangen, warum dieses Thema relevant ist. Außerdem wir das Problem beschrieben, sowie das Ziel festgelegt. Am Ende des Kapitels wird auf den Aufbau der Arbeit eingegangen.
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Motivation
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+\section{Motivation}
+\label{sec:motivation}
+%
+Der Kunde \textit{Gizeh\footnote{\textbf{Gizeh Verpackungen} ist eine international tätige deutsche Unternehmensgruppe die Kunststoffverpackungen entwirft, fertigt und dekoriert. Das Unternehmen, dessen Stammsitz sich im nordrhein-westfälischen Bergneustadt befindet, beschäftigt gegenwärtig insgesamt etwa 750 Mitarbeiter und erwirtschaftete 2017 einen Umsatz von etwa 120 Millionen Euro.}} bedruckt individuelle Mehrwegbecher. Große Druckportale, wie \textit{Fyleralarm\footnote{Die \textbf{flyeralarm GmbH} ist eine Online-Druckerei mit Sitz in Würzburg. Das Unternehmen ist auf die Herstellung und den Vertrieb von Drucksachen spezialisiert. Das Druckereiunternehmen gehört zu 100 Prozent dem Gründer Thorsten Fischer und ist in 15 europäischen Ländern präsent.}}, senden ihre Aufträge an \textit{Gizeh}. Dieser produziert dann die Becher, sowie den späteren Druck. Ein webbasierter Konfigurator könnte der Firma ermöglichen zukünftig Direktbestellungen aufzunehmen. Damit hätte der Kunde eine einfache Möglichkeit sein Design in einer 3D Ansicht zu sehen und ganz einfach zu konfigurieren. So hat man bevor der Becher bestellt wird schon einmal gesehen, wie es aussehen wird. \\
+Schon in anderen Branchen, wie zum Beispiel auf dem Automarkt, wird dieses Prinzip der 3D Konfiguratoren angewandt. 
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Problemstellung
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+\section{Problemstellung}
+\label{sec:problemstellung}
+%
+Wenn man einen Mehrwegbecher beispielsweise über \textit{Flyeralarm} bedrucken lassen will, sollte ein fertiges Design vorliegen. Dabei gibt es keine speziellen Vorgaben bzgl. der kubischen Form. Man kann lediglich ein Design im \texttt{PDF}-Format hochladen. Nebenbei wird man darauf hingewiesen, das aufgrund der kubischen Form das Design gestaucht wird. Somit werden beispielsweise Kreise eventuell nicht ganz rund dargestellt. \\ 
+%
+Dem Kunden wäre es somit ein Vorteil, eine Vorschau des bedruckten Bechers anschauen zu können. Die Lösung könnte ein 3D Konfigurator für Mehrwegbecher sein. Es gibt schon einige 3D Konfiguratoren. Allerdings besteht bei diesem die Frage: Wie kann der designte Becher optimal dargestellt werden? Und wie kann eine eventuell notwendige Anpassung des Designs erfolgen? Gerade wenn man den Aspekt der Responsivität hinzunimmt findet man keine bestehende Lösung, die zufriedenstellend wäre. Dieser Aspekt wird in Grundlagen Kapitel 2 unter dem Punkt \ref{sec:responsive} \textit{Responsive Webdesign} genauer erläutert.
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%  Zielsetzung
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+\section{Zielsetzung}
+\label{sec:zielsetzung}
+%
+Im Rahmen der Arbeit wird ein 3D Konfigurator für Mehrwegbecher entwickelt. Dazu wird das Framework \textit{Angular} und \textit{WebGL} verwendet\footnote{Es wird später noch genauer auf die Umsetzung eingegangen. Im Grundlagenkapitel werden die einzelnen Technologien genauer beleuchtet}. Er soll die Funktionalität haben, ein Design in einer 3D Vorschau auf einen Becher zu rendern. Eine optionale Funktion wäre das Anpassen des Designs durch zuschneiden oder transformieren. Dabei soll der Konfigurator auch auf mobilen Geräten verwendbar sein. Es ist wichtig das die Anwendung schnell und einfach zu bedienen ist.
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%  Vorgehen bei der Umsetzung
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%
+\section{Vorgehen bei der Umsetzung}
+\label{sec:vorgehen}
+%
+\paragraph{Entwicklungsumgebung}Wie schon erwähnt wird \textit{Angular} verwendet. Das Framework eignet sich besonders gut, da hiermit die Anwendung gut testbar und wartbar umsetzbar ist. Bei der Entwicklung werden die Stärken und Schwächen des Frameworks aufgezeigt. Es wird versucht eine möglichst performante Anwendung zu programmieren. Als Editor wird \textit{PhpStorm\footnote{https://www.jetbrains.com/phpstorm}} verwendet. Er bietet eine gute Implementierung von Angular Projekten und hat weitere nützliche Funktionen, die das Entwickeln vereinfachen.
+%
+\paragraph{Design}Da der Konfigurator später in eine bestehende Webseite eingebaut werden soll\footnote{Dies ist nicht Bestandteil der Arbeit. Zuerst muss Kunde dem Projekt noch zustimmen. Anschließend müssen noch eventuelle Änderungen vorgenommen werden.}, wird sich das Design am Stil der Webseite orientieren. Genauere Vorgaben dazu gibt es nicht. Deshalb wird eine Aufgabe sein ein innovatives Design zu finden. Es soll den Ansprüchen der \textit{Usability} gerecht werden.
+%
+\paragraph{3D Szene}
+Nahezu jeder Browser unterstützt WebGL. Die \textit{three.js} Library bietet dem Entwickler eine Abstraktionsschicht über \textit{WebGL}, um benötigte 3D Szenen bauen zu können. Mithilfe dieser JavaScript Library wird der Becher mit dem hochgeladenen Design gerendert. Auf dieses Thema wird in Punkt \ref{sec:javascriptbibliotheken} \textit{JavaScript Bibliotheken} noch einmal Bezug genommen.
+%
+\paragraph{Testumgebung}
+Am Ende der Entwicklung wird die entwickelte Applikation mit der Testumgebung von Angular untersucht und anschließend ein Fazit daraus gezogen. Das Framework liefert von Haus aus eine gute Möglichkeit um Unit-Tests sowie End-to-End-Tests durchzuführen.
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%  Aufbau der Arbeit
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+\section{Aufbau der Arbeit}
+\label{sec:aufbau}
+%
+In dem Kapitel \textit{2 Stand der Technik} wird zunächst auf vorhandene Lösungen bzw. Lösungsansätze eingegangen. Es soll deutlich werden, warum diese nicht ausreichend sind. Außerdem werden Beispiele aus anderen Branchen angeführt, die eine gute 3D Konfiguration für andere Produkte ermöglichen. Kapitel \textit{3 Grundlagen} erklärt grob die verwendeten Technologien. Durch Beispiele wird gezeigt, warum diese sinnvoll zur Umsetzung eines 3D Konfigurators sind. \\
+%
+In Kapitel \textit{4 Methodik} beschreibt die Entwicklung des Projektes. Nachdem das Problem noch einmal genauer analysiert wird, soll anschließend das Konzept erläutert werden. Dann wird die Programmierung des Konfigurators gezeigt und wie es zur Endlösung kam. \\
+Zuguterletzt beschäftigen sich die Kapitel \textit{6 Ergebnisse} und \textit{7 Zusammenfassung} mit den Ergebnissen. Zunächst werden einige Unit-Tests und End-to-End Tests durchgeführt. Danach wird das Ergebnis der Tests erläutert. Infolgedessen wird schließlich dann ein Fazit gefasst.
+%
