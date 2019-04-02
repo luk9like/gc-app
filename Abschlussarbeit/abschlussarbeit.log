@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6980) (preloaded format=pdflatex 2019.3.13)  29 MAR 2019 09:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6980) (preloaded format=pdflatex 2019.3.13)  1 APR 2019 17:58
 entering extended mode
 **./abschlussarbeit.tex
 (abschlussarbeit.tex
@@ -903,7 +903,7 @@ Overfull \hbox (5.05853pt too wide) in paragraph at lines 11--21
  Technologieanalayse im Kontext
  []
 
-<technik/images/flyeralarm.png, id=276, 1509.64pt x 970.62625pt>
+<technik/images/flyeralarm.png, id=280, 1509.64pt x 970.62625pt>
 File: technik/images/flyeralarm.png Graphic file (type png)
 <use technik/images/flyeralarm.png>
 Package pdftex.def Info: technik/images/flyeralarm.png  used on input line 31.
@@ -915,7 +915,7 @@ Gr[]unden und aufgrund der konischen Form der Becher
  []
 
 [5 <./technik/images/flyeralarm.png>]
-<technik/images/spread-shirt.png, id=284, 1753.55125pt x 1033.8625pt>
+<technik/images/spread-shirt.png, id=288, 1753.55125pt x 1033.8625pt>
 File: technik/images/spread-shirt.png Graphic file (type png)
 <use technik/images/spread-shirt.png>
 Package pdftex.def Info: technik/images/spread-shirt.png  used on input line 45
@@ -928,7 +928,7 @@ arbeitern ein attraktives Arbeitsumfeld
  []
 
 [6 <./technik/images/spread-shirt.png>]
-<technik/images/becher-bedrucken.png, id=293, 1545.775pt x 959.585pt>
+<technik/images/becher-bedrucken.png, id=297, 1545.775pt x 959.585pt>
 File: technik/images/becher-bedrucken.png Graphic file (type png)
 <use technik/images/becher-bedrucken.png>
 Package pdftex.def Info: technik/images/becher-bedrucken.png  used on input lin
@@ -939,7 +939,7 @@ e 60.
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 73.
 
-<technik/images/audi.png, id=294, 505.89pt x 798.985pt>
+<technik/images/audi.png, id=298, 505.89pt x 798.985pt>
 File: technik/images/audi.png Graphic file (type png)
 <use technik/images/audi.png>
 Package pdftex.def Info: technik/images/audi.png  used on input line 75.
@@ -956,157 +956,155 @@ Underfull \hbox (badness 10000) in paragraph at lines 81--84
  []
 
 
-Overfull \hbox (13.57535pt too wide) in paragraph at lines 84--86
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 86.
+
+<technik/images/siemens.png, id=305, 1003.75pt x 627.34375pt>
+File: technik/images/siemens.png Graphic file (type png)
+<use technik/images/siemens.png>
+Package pdftex.def Info: technik/images/siemens.png  used on input line 88.
+(pdftex.def)             Requested size: 369.88582pt x 231.18501pt.
+
+Overfull \hbox (13.57535pt too wide) in paragraph at lines 84--93
 \OT1/cmss/m/n/10.95 Systemschaltschr[]anke am 3D-Modell zu konfigurieren. Dabei
  w[]ahlt der Nutzer die verschiedenen
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 84--86
-
+Overfull \hbox (9.10403pt too wide) in paragraph at lines 93--95
+\OT1/cmss/m/n/10.95 Beleuchtung. Dabei ist es m[]oglich, das Produkt nach belie
+ben anzupassen und zu konfigurieren.
  []
 
 
-Overfull \hbox (13.57535pt too wide) in paragraph at lines 86--88
-\OT1/cmss/m/n/10.95 Systemschaltschr[]anke am 3D-Modell zu konfigurieren. Dabei
- w[]ahlt der Nutzer die verschiedenen
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 86--88
+Underfull \hbox (badness 10000) in paragraph at lines 93--95
 
  []
 
 [8 <./technik/images/audi.png>]
-Overfull \hbox (4.69359pt too wide) in paragraph at lines 91--93
+Overfull \hbox (4.69359pt too wide) in paragraph at lines 98--100
 \OT1/cmss/m/n/10.95 Frameworks entwickelt bzw. weiterentwickelt wurden. Die Anz
 ahl der Angebote an JavaScript-
  []
 
 
-Underfull \hbox (badness 6220) in paragraph at lines 96--96
+Underfull \hbox (badness 6220) in paragraph at lines 103--103
 [][] [][][]\OT1/cmss/m/n/9 Eine von Microsoft entwickelte Programmiersprache. T
 ypeScript ist eine kompilierte und
  []
 
-<technik/images/google-trends.png, id=311, 1448.41125pt x 759.83875pt>
+<technik/images/google-trends.png, id=316, 1448.41125pt x 759.83875pt>
 File: technik/images/google-trends.png Graphic file (type png)
 <use technik/images/google-trends.png>
 Package pdftex.def Info: technik/images/google-trends.png  used on input line 1
-00.
+07.
 (pdftex.def)             Requested size: 369.88582pt x 194.04037pt.
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <9> not available
-(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 105.
+(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 112.
 
 
 
-Overfull \hbox (12.55623pt too wide) in paragraph at lines 96--107
+Overfull \hbox (12.55623pt too wide) in paragraph at lines 103--114
 \OT1/cmss/m/n/10.95 wurde von Google entwickelt und ist ein Open-Source-Framewo
 rk. Es unterst[]utzt den Entwickler
  []
 
 
-Overfull \hbox (4.69353pt too wide) in paragraph at lines 96--107
+Overfull \hbox (4.69353pt too wide) in paragraph at lines 103--114
 \OT1/cmss/m/n/10.95 Wartbarkeit des Codes sinnvoll wird. Ein Merkmal von Angula
 r ist, das es viele unterschiedliche
  []
 
 
-Overfull \hbox (5.46931pt too wide) in paragraph at lines 96--107
-\OT1/cmss/m/n/10.95 Kommunikation mit dem Backend. Ein anderes Modul ist f[]ur 
-die Bindung der Daten zust[]andig.
+Overfull \hbox (7.00533pt too wide) in paragraph at lines 103--114
+\OT1/cmss/m/n/10.95 wichtiges Modul ist das Routing-Modul. Im Grunde genommen s
+ind Routings Grundbestandteil
  []
 
 
-Overfull \hbox (12.31297pt too wide) in paragraph at lines 96--107
-\OT1/cmss/m/n/10.95 festlegen welcher Teil der Anwendung nun angezeigt werden s
-oll. Auerdem baut das Framework
+Overfull \hbox (6.53374pt too wide) in paragraph at lines 103--114
+\OT1/cmss/m/n/10.95 f[]ur \OT1/cmss/m/sl/10.95 Single Page Anwendungen\OT1/cmss
+/m/n/10.95 . Mittels Routings kann ich festlegen welcher Teil der Anwendung
  []
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Underfull \vbox (badness 5711) has occurred while \output is active []
 
-
-Overfull \hbox (4.19176pt too wide) in paragraph at lines 112--115
+ [9 <./technik/images/siemens.png (PNG copy)>]
+Overfull \hbox (4.19176pt too wide) in paragraph at lines 119--122
 []\OT1/cmss/bx/n/10.95 React[] \OT1/cmss/m/n/10.95 ist das meistgesuchte JavaSc
 ript Framework 2018 [[]]. Es wurde 2013 von Facebook
  []
 
-[9]
-Overfull \hbox (4.30733pt too wide) in paragraph at lines 118--128
+[10 <./technik/images/google-trends.png>]
+Overfull \hbox (4.30733pt too wide) in paragraph at lines 125--135
 []\OT1/cmss/bx/n/10.95 Vue.js[] \OT1/cmss/m/n/10.95 ist ein weiteres Frontend-F
 ramework zur Entwicklung von \OT1/cmss/m/sl/10.95 Single Page Anwendungen\OT1/c
 mss/m/n/10.95 .
  []
 
 
-Overfull \hbox (23.17163pt too wide) in paragraph at lines 118--128
+Overfull \hbox (23.17163pt too wide) in paragraph at lines 125--135
 \OT1/cmss/m/n/10.95 Obwohl es kleiner ist, bringt es trotzdem alle wichtigen Fu
 nktionen wie Suchmaschinenoptimierung
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 118--128
+Underfull \hbox (badness 10000) in paragraph at lines 125--135
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 131--132
-
- []
-
-[10 <./technik/images/google-trends.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 133--134
+Underfull \hbox (badness 10000) in paragraph at lines 138--139
 
  []
 
 
-Overfull \hbox (3.85582pt too wide) in paragraph at lines 135--139
+Underfull \hbox (badness 10000) in paragraph at lines 140--141
+
+ []
+
+
+Overfull \hbox (3.85582pt too wide) in paragraph at lines 142--146
 \OT1/cmss/m/n/10.95 Players haben die Entwickler sogar eine z-Achse eingef[]uhr
 t. Sie erm[]oglicht eine 3D Darstellung
  []
 
 
-Overfull \hbox (16.98201pt too wide) in paragraph at lines 135--139
+Overfull \hbox (16.98201pt too wide) in paragraph at lines 142--146
 \OT1/cmss/m/n/10.95 von 3D-Inhalten wesentlich schneller abschneidet und h[]ohe
 re Frameraten f[]ur die 3D-Animationen
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 140--142
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 147--149
 
  []
 
 
-Overfull \hbox (14.21277pt too wide) in paragraph at lines 146--147
+Overfull \hbox (14.21277pt too wide) in paragraph at lines 153--154
 \OT1/cmss/m/n/10.95 erstellt und rendert eine Szene mit den 3D Objekten. Im Fol
 genden werden die zwei bekanntesten
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [11]
-Overfull \hbox (79.59978pt too wide) in paragraph at lines 150--160
+Overfull \hbox (79.59978pt too wide) in paragraph at lines 157--167
 \OT1/cmss/m/n/10.95 Repository auf GitHub gehostet[][][][][]. Three.js hat eine
  verst[]andliche Struktur und groe Anpassungsm[]oglichkeiten.
  []
 
-<technik/images/3d-framework.png, id=353, 693.792pt x 369.17924pt>
+<technik/images/3d-framework.png, id=357, 693.792pt x 369.17924pt>
 File: technik/images/3d-framework.png Graphic file (type png)
 <use technik/images/3d-framework.png>
-Package pdftex.def Info: technik/images/3d-framework.png  used on input line 16
-7.
+Package pdftex.def Info: technik/images/3d-framework.png  used on input line 17
+4.
 (pdftex.def)             Requested size: 369.88582pt x 196.82451pt.
 )
-Overfull \hbox (56.78215pt too wide) in paragraph at lines 163--207
+Overfull \hbox (56.78215pt too wide) in paragraph at lines 170--207
 \OT1/cmss/m/n/10.95 Sounds spielen und verwalten, Gameplay erstellen und vieles
  mehr. Babylons.js ist ein benutzerfreundliches
  []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
 
 [12] [13 <./technik/images/3d-framework.png>]
 \openout2 = `grundlagen/grundlagen.aux'.
@@ -1117,196 +1115,233 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 ]
-Overfull \hbox (22.01591pt too wide) in paragraph at lines 25--26
-\OT1/cmss/m/n/10.95 werden. Das kann bei komplexen Anwendungen und hohen Besuch
-erzahlen der Seite beispielsweise
+Overfull \hbox (16.07652pt too wide) in paragraph at lines 23--25
+\OT1/cmss/m/n/10.95 viel clientseitig umzusetzten.[]\OT1/cmss/m/sl/10.95 Dies s
+teigert die Benutzerfreundlichkeit und schafft die M[]oglichkeit
+ []
+
+
+Overfull \hbox (15.23308pt too wide) in paragraph at lines 23--25
+\OT1/cmss/m/sl/10.95 und mobilen Plattformen.\ \OT1/cmss/m/n/10.95 [[]]. Im Fol
+genden wird nun kurz etwas genauer darauf eingegangen
+ []
+
+
+Overfull \hbox (9.11655pt too wide) in paragraph at lines 27--29
+[]\OT1/cmss/bx/n/10.95 Klassische Webanwendungen[] \OT1/cmss/m/n/10.95 Bevor ma
+n sich damit befasst was Single Page Anwendungen
+ []
+
+
+Overfull \hbox (1.69746pt too wide) in paragraph at lines 27--29
+\OT1/cmss/m/n/10.95 Dokumentes und kann es dann anzeigen. Bei diesem Vorgang li
+egt die komplette Verarbeitung
  []
 
 [15]
-Overfull \hbox (6.91405pt too wide) in paragraph at lines 43--45
+Overfull \hbox (7.04538pt too wide) in paragraph at lines 31--44
+[]\OT1/cmss/bx/n/10.95 Dezentralisierung der Webanwendung[] \OT1/cmss/m/n/10.95
+ Im Grunde arbeiten SPA's nach folgendem Prinzip:
+ []
+
+
+Overfull \hbox (7.38559pt too wide) in paragraph at lines 31--44
+\OT1/cmss/m/n/10.95 Webanwendungen nun die Anfrage. Anschlieend wird im Webbro
+wser eine Benutzeroberfl[]ache
+ []
+
+
+Overfull \hbox (18.83739pt too wide) in paragraph at lines 31--44
+\OT1/cmss/m/n/10.95 einem Seitenwechsel oder anderen Interaktionen des Benutzer
+s wird eine neue Benutzeroberfl[]ache
+ []
+
+
+Overfull \hbox (11.21803pt too wide) in paragraph at lines 31--44
+\OT1/cmss/m/n/10.95 Die Grundlage einer solchen Anwendung ist das Routing. Abh[
+]angig vom Pfad werden bestimmte
+ []
+
+
+Overfull \hbox (6.91405pt too wide) in paragraph at lines 49--51
 \OT1/cmss/m/n/10.95 Angular ist ein Framework, das auf Komponenten setzt. Das P
 rinzip der komponentenbasierten
  []
 
 
-Overfull \hbox (34.7454pt too wide) in paragraph at lines 43--45
+Overfull \hbox (34.7454pt too wide) in paragraph at lines 49--51
 \OT1/cmss/m/n/10.95 Entwicklung kommt nicht nur bei Angular vor, sondern auch b
 ei vielen anderen Programmiersprachen
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 43--45
+Underfull \hbox (badness 10000) in paragraph at lines 49--51
 
  []
 
 
-Overfull \hbox (5.24109pt too wide) in paragraph at lines 46--47
+Overfull \hbox (5.24109pt too wide) in paragraph at lines 52--53
 \OT1/cmss/m/sl/10.95 Aufgabe erf[]ullen. Eine Komponente beschreibt somit immer
  einen kleinen Teil der Anwendung,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 46--47
+Underfull \hbox (badness 10000) in paragraph at lines 52--53
 
  []
 
-
-Overfull \hbox (11.65901pt too wide) in paragraph at lines 49--52
+[16]
+Overfull \hbox (11.65901pt too wide) in paragraph at lines 55--58
 \OT1/cmss/m/n/10.95 dass die Style-Definitionen nur innerhalb der Komponente ge
 lten. Globale Styles der Anwendung
  []
 
 
-Overfull \hbox (4.32785pt too wide) in paragraph at lines 49--52
+Overfull \hbox (4.32785pt too wide) in paragraph at lines 55--58
 \OT1/cmss/m/n/10.95 Der Startpunkt der Anwendung ist die \OT1/cmtt/m/n/10.95 in
 dex.html\OT1/cmss/m/n/10.95 . Sie definiert die Applikationskomponente,
  []
 
 
-Overfull \hbox (17.30138pt too wide) in paragraph at lines 49--52
+Overfull \hbox (17.30138pt too wide) in paragraph at lines 55--58
 \OT1/cmss/m/n/10.95 Komponenten verschachtelt werden k[]onnen. Dies ist das Gru
 ndprinzip der komponentenbasierten
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 54--55
+Underfull \hbox (badness 10000) in paragraph at lines 60--61
 
  []
 
-[16]
-Overfull \hbox (25.51823pt too wide) in paragraph at lines 56--57
+
+Overfull \hbox (25.51823pt too wide) in paragraph at lines 62--63
 [][]\OT1/cmss/m/sl/10.95 Angular-Module helfen beim Gliedern einer Webanwendung
  in verschiednene Funktionsbl[]ocke.
  []
 
 
-Overfull \hbox (15.73502pt too wide) in paragraph at lines 56--57
+Overfull \hbox (15.73502pt too wide) in paragraph at lines 62--63
 \OT1/cmss/m/sl/10.95 und erlauben nur den Zugriff auf exportierte Konstrukte. A
 ngular-Module kapseln Komponenten,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 56--57
+Underfull \hbox (badness 10000) in paragraph at lines 62--63
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 58--59
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 61--63
-
- []
-
-
-Overfull \hbox (20.99123pt too wide) in paragraph at lines 65--70
+<grundlagen/images/module.png, id=405, 1156.32pt x 867.24pt>
+File: grundlagen/images/module.png Graphic file (type png)
+<use grundlagen/images/module.png>
+Package pdftex.def Info: grundlagen/images/module.png  used on input line 68.
+(pdftex.def)             Requested size: 398.33858pt x 298.7482pt.
+[17] [18 <./grundlagen/images/module.png>]
+Overfull \hbox (20.99123pt too wide) in paragraph at lines 76--81
 []\OT1/cmss/bx/n/10.95 Hauseigene Module[] \OT1/cmss/m/n/10.95 Angular hat auch
  ein paar hauseigene Module, die je nach Anwendungsfall
  []
 
 
-Overfull \hbox (15.53418pt too wide) in paragraph at lines 65--70
+Overfull \hbox (15.53418pt too wide) in paragraph at lines 76--81
 \OT1/cmss/m/n/10.95 formatieren kann. Auch sprachabh[]angige Funktionalit[]aten
  sind in den \OT1/cmss/m/sl/10.95 CommonModule \OT1/cmss/m/n/10.95 enhalten. 
  []
 
-[17]
-Underfull \hbox (badness 1033) in paragraph at lines 73--73
+
+Underfull \hbox (badness 1033) in paragraph at lines 84--84
 [][] [][][]\OT1/cmss/m/n/9 Auf die weiteren Bestandteile von Angular wird hier 
 nicht im Details eingegangen. Genauere
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmtt on input line 77.
+LaTeX Font Info:    Try loading font information for OMS+cmtt on input line 88.
 
-LaTeX Font Info:    No file OMScmtt.fd. on input line 77.
+LaTeX Font Info:    No file OMScmtt.fd. on input line 88.
 
 LaTeX Font Warning: Font shape `OMS/cmtt/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbraceleft' on input line 77.
+(Font)              for symbol `textbraceleft' on input line 88.
 
 
-Overfull \hbox (4.64679pt too wide) in paragraph at lines 77--79
+Overfull \hbox (4.64679pt too wide) in paragraph at lines 88--90
 \OT1/cmss/m/n/10.95 als \OT1/cmtt/m/n/10.95 <h1> \OMS/cmtt/m/n/10.95 ff\OT1/cmt
 t/m/n/10.95 title\OMS/cmtt/m/n/10.95 gg \OT1/cmtt/m/n/10.95 </h1> \OT1/cmss/m/n
 /10.95 aus. Nat[]urlich geht das ganze noch deutlich komplexer. Dadurch
  []
 
 
-Overfull \hbox (4.131pt too wide) in paragraph at lines 81--84
+Overfull \hbox (4.131pt too wide) in paragraph at lines 92--95
 \OT1/cmss/m/n/10.95 Komponenten. Unter der Haube sieht man sogar, dass die vone
 inander erben. Im Wesentlichen
  []
 
-
-Overfull \hbox (24.16032pt too wide) in paragraph at lines 86--89
+[19]
+Overfull \hbox (24.16032pt too wide) in paragraph at lines 97--100
 \OT1/cmss/m/n/10.95 Die Pipe manipuliert die Ausgabe und sorgt daf[]ur, dass be
 ispielsweise der Name in Grobuchstaben
  []
 
 
-Overfull \hbox (23.08974pt too wide) in paragraph at lines 91--94
+Overfull \hbox (23.08974pt too wide) in paragraph at lines 102--105
 []\OT1/cmss/bx/n/10.95 Services[] \OT1/cmss/m/n/10.95 Der Begriff Services in d
 er Entwicklung ist so breit gef[]achert. Jede Programmiersprache
  []
 
-[18] [19]
-Underfull \hbox (badness 10000) in paragraph at lines 110--119
+[20]
+Underfull \hbox (badness 10000) in paragraph at lines 121--130
 
  []
 
 
-LaTeX Warning: Citation `webalive' on page 20 undefined on input line 122.
+LaTeX Warning: Citation `webalive' on page 21 undefined on input line 133.
 
 
-LaTeX Warning: Citation `searchenginewatch' on page 20 undefined on input line 
-123.
+LaTeX Warning: Citation `searchenginewatch' on page 21 undefined on input line 
+134.
 
 
-LaTeX Warning: Citation `responsive' on page 20 undefined on input line 124.
+LaTeX Warning: Citation `responsive' on page 21 undefined on input line 135.
 
-
-Overfull \hbox (14.43002pt too wide) in paragraph at lines 136--149
+[21]
+Overfull \hbox (14.43002pt too wide) in paragraph at lines 147--160
 \OT1/cmss/m/n/10.95 einem bestimmten Nutzungskontext zu erreichen Anmerkung 1 z
 um Begriff : Die []spezifizierten\
  []
 
 
-Overfull \hbox (6.03194pt too wide) in paragraph at lines 136--149
+Overfull \hbox (6.03194pt too wide) in paragraph at lines 147--160
 \OT1/cmss/m/n/10.95 verwendet, um auf Designwissen, Kompetenzen, Aktivit[]aten 
 und Designattribute zu verweisen,
  []
 
 
-Overfull \hbox (2.73169pt too wide) in paragraph at lines 136--149
+Overfull \hbox (2.73169pt too wide) in paragraph at lines 147--160
 \OT1/cmss/m/n/10.95 Usability Engineering, Usability-Methode, Usability-Bewertu
 ng Usability-Heuristik. [QUELLE:
  []
 
 )
-Overfull \hbox (34.34982pt too wide) in paragraph at lines 152--210
+Overfull \hbox (34.34982pt too wide) in paragraph at lines 163--210
 \OT1/cmss/m/n/10.95 verschiedener Gesch[]aftskomponenten darstellen. Diese Gesc
 h[]aftskomponenten werden verschiedenen
  []
 
 
-Overfull \hbox (37.63477pt too wide) in paragraph at lines 152--210
+Overfull \hbox (37.63477pt too wide) in paragraph at lines 163--210
 \OT1/cmss/m/n/10.95 darstellen. Diese Objekte werden Leistungstests mit verschi
 edenen Parametern und Belastungsniveaus
  []
 
-[20] [21]
+[22]
 \openout2 = `anhang/anhang.aux'.
 
- (anhang/anhang.tex [22
-
-
-
-])
+ (anhang/anhang.tex)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [23]
+ [23
+
+
+
+]
 [24]
 \openout2 = `glossar/glossar.aux'.
 
@@ -1409,10 +1444,10 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 247.
  ) 
 Here is how much of TeX's memory you used:
- 10090 strings out of 494865
- 146246 string characters out of 3178377
- 291804 words of memory out of 3000000
- 13392 multiletter control sequences out of 15000+200000
+ 10106 strings out of 494865
+ 146594 string characters out of 3178377
+ 291937 words of memory out of 3000000
+ 13403 multiletter control sequences out of 15000+200000
  20871 words of font info for 83 fonts, out of 3000000 for 9000
  0 hyphenation exceptions out of 8191
  32i,12n,31p,1497b,446s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1426,9 +1461,9 @@ uke/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmssi12.pfb></home/lu
 ke/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmssi9.pfb></home/luke
 /.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></home/luke/.
 miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on abschlussarbeit.pdf (40 pages, 1817459 bytes).
+Output written on abschlussarbeit.pdf (40 pages, 2192765 bytes).
 PDF statistics:
- 552 PDF objects out of 1000 (max. 8388607)
- 130 named destinations out of 1000 (max. 500000)
- 308 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 561 PDF objects out of 1000 (max. 8388607)
+ 132 named destinations out of 1000 (max. 500000)
+ 318 words of extra memory for PDF output out of 10000 (max. 10000000)
 
