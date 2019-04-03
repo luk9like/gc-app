@@ -2,4 +2,42 @@
 body{
   height: 100vh;
   padding: 0;
+  overflow: hidden;
+}
+
+.panel-borderline {
+  border-top: 1px solid darkred;
+  padding-top: 1.8rem;
+}
+
+.main-nav > .nav-item:first-child .nav-link, nav-tabs > .nav-item:last-child .nav-link, .nav-title {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  display: block;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: .75rem 20px;
+  text-decoration: none;
+  overflow: hidden;
+  color: #333;
+  border-radius: 0;
+
+  &.active {
+    background-color: #f2f2f2;
+    &:after {
+      display: none;
+    }
+  }
+  &:after {
+    display: none;
+  }
+}
+
+.nav-tabs{
+  background-color: #dedede!important;
+
+  .nav-item{
+    margin: 0;
+  }
 }

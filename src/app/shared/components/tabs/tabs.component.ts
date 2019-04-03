@@ -6,7 +6,7 @@ import { TabComponent } from './tab.component';
   template: `
     <ul class="nav nav-tabs nav-fill">
       <li class="nav-item" *ngFor="let tab of tabs" (click)="selectTab(tab)">
-        <a [class.active]="tab.active" class="nav-link" href="#"><span class="mr-3 mdi mdi-gauge"></span>{{tab.title}}</a>
+        <a [class.active]="tab.active" class="nav-link nav-title" href="#"><span class="mr-3 mdi mdi-gauge"></span>{{tab.title}}</a>
       </li>
     </ul>
     <ng-content></ng-content>
