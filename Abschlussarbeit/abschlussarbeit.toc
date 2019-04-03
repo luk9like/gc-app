@@ -20,9 +20,9 @@
 \contentsline {section}{\numberline {2.2}3D Online Konfiguratoren}{7}{section.2.2}% 
 \contentsline {paragraph}{Audi 3D Konfigurator}{8}{section*.13}% 
 \contentsline {paragraph}{Siemens 3D Konfigurator}{8}{section*.14}% 
-\contentsline {paragraph}{Trilux Limba 3D Konfigurator}{9}{section*.16}% 
+\contentsline {paragraph}{Trilux Limba 3D Konfigurator}{8}{section*.16}% 
 \contentsline {section}{\numberline {2.3}Webframeworks}{9}{section.2.3}% 
-\contentsline {paragraph}{Angular}{10}{section*.17}% 
+\contentsline {paragraph}{Angular}{9}{section*.17}% 
 \contentsline {paragraph}{React}{10}{section*.19}% 
 \contentsline {paragraph}{Vue.js}{11}{section*.20}% 
 \contentsline {section}{\numberline {2.4}Flash und WebGL}{11}{section.2.4}% 
@@ -73,9 +73,12 @@
 \contentsline {paragraph}{Responsive Webdesign}{28}{section*.50}% 
 \contentsline {paragraph}{Benutzerfreundlichkeit}{28}{section*.51}% 
 \contentsline {paragraph}{Leistungsstark}{29}{section*.52}% 
-\contentsline {section}{\numberline {4.3}Konzept}{29}{section.4.3}% 
-\contentsline {section}{\numberline {4.4}Umsetzung \& Imlementierung}{29}{section.4.4}% 
-\contentsline {paragraph}{3D Zylinder f\IeC {\"u}r Design rendering}{29}{section*.53}% 
-\contentsline {appendix}{\chapternumberline {A}Lorem Ipsum}{31}{appendix.A}% 
-\contentsline {chapter}{Glossar}{33}{appendix*.54}% 
-\contentsline {chapter}{Literaturverzeichnis}{35}{appendix*.55}% 
+\contentsline {section}{\numberline {4.3}Konzeption}{29}{section.4.3}% 
+\contentsline {chapter}{\chapternumberline {5}Umsetzung \& Imlementierung}{31}{chapter.5}% 
+\contentsline {section}{\numberline {5.1}Design Rendering}{31}{section.5.1}% 
+\contentsline {paragraph}{3D Zylinder f\IeC {\"u}r Design rendering}{31}{section*.53}% 
+\contentsline {chapter}{\chapternumberline {6}Testphase \& Ergebnisse}{33}{chapter.6}% 
+\contentsline {chapter}{\chapternumberline {7}Zusammenfassung}{35}{chapter.7}% 
+\contentsline {appendix}{\chapternumberline {A}Lorem Ipsum}{37}{appendix.A}% 
+\contentsline {chapter}{Glossar}{39}{appendix*.54}% 
+\contentsline {chapter}{Literaturverzeichnis}{41}{appendix*.55}% 
