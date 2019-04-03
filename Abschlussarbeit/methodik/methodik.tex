@@ -1,16 +1,13 @@
 %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-%  M E T H O D I K
+%  A N F O R D E R U N G E N   &   K O N Z E P T Z I O N
 %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Methodik}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Anforderungen und Konzeption}
 \label{cha:methodik}
 %
-%
-%
-%
-%
+Unter funktionalen Anforderungen versteht man konkrekte Funktionalitäten, welche die Anwendung leisten soll. Die Anwendung lässt sich in mehrere Module aufteilen, die dem User zu Verfügung stehen. Im Folgenden werden die funktionalen Anforderungen erläutert.
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -18,16 +15,103 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-\section{Problemanalyse}
+\section{Funktionale Anforderungen}
 \label{sec:problemanalyse}
 %
-\paragraph{Angular Konfigurator}
-Es gibt nicht viele Vorgaben für den Konfigurator. Zunächst ist wichtig, das die 3D Darstellung des Bechers umgesetzt wird. Dabei sollte das Design, welches der User hochladen kann, realistisch dargestellt wird. Dabei spielt die Usability eine wichtige Rolle. Zunächst muss also ein grobes Design erstellt werden. Dabei geht es vor allem um die Menüführung. Anschließend folgt die technische Umsetzung. Diese wird in Kapitel \ref{sec:umsetzung} genauer erläutert. Bei der Darstellung des Designs auf dem Becher muss zunächst eine Lösung gefunden werden, wie eine Druckvorlage (rechteckig) auf der Fläche des Bechers (kubisch) richtig und realistisch dargestellt werden kann.\\
-Usability, 3D Darstellung(kubisches Problem, Bechergrößen, Technologie konflikt (Three/Angular)), Performance, Responsive, Design-Vorgabe, Menüführung,
-\paragraph{3D Darstellung}
-Auch was die 3D-Darstellung angeht, sind nicht viele Vorgaben gegeben, was einen weiten Spielraum lässt. Zunächst muss der Becher in die Szene geladen werden können. Anschließend besteht die Herausforderung darin, ein vom Benutzer hochgeladenes Design realistisch auf den Becher zu projizieren. Dabei muss die kubische Form des Bechers und die Upload-Vorgaben der Druckerei berücksichtigt werden. Der Upload-Vorgang muss einfach und verständlich sein, damit der Benutzer weiß wie er sein Design richtig auf den Becher bekommt. Dabei dürfen die Ladezeiten nicht zu lange sein. Die Anwendung muss möglichst performant laufen, unabhängig von der Plattform.
+Unter funktionalen Anforderungen versteht man konkrekte Funktionalitäten, welche die Anwendung leisten soll. Die Anwendung lässt sich in mehrere Module aufteilen, die dem User zu Verfügung stehen. In diesem Kaptitel werden sowohl die funktionalen also auch die nicht funktionalen Anforderungen beschrieben. Es handelt sich zwar um ein echtes Projekt, wobei es sich vorerst um eine prototypische Entwicklung handelt. Als Anforderung vom Hersteller gilt nur, dass der Konfigurator einen Bestellvorgang für den Kunden und das Unternehmen vereinfacht. Dabei soll durch innovative Gestaltung und Programmierung des Konfigurators eine performante Lösung entwickelt werden. Das Ergebnis sollte zum bisherigen Webauftritt des Unternehmens passen. Nun wollen wir uns die Anforderungen im Details anschauen. Anschließend wird das Konzept des Webanwendung vorgestellt.
 
-Der Konfigurator soll auch auf mobilen voll funktionsfähig sein. Eine Aufgabe wird es sein eine mobile 3D Ansicht zu implementieren. Dabei sollen die Anforderungen der Usability beachtet werden.
+\renewcommand{\arraystretch}{1.8}
+\begin{table}[h]
+	\begin{tabular}{|r|c|p{8.5cm}|}
+		\hline
+		\textbf{Nr.} & \textbf{Bezeichnung} & \textbf{Beschreibung} \\
+		\hline
+		1 & Auswahl des Bechers & Der Benutzer kann zwischen verschiedenen Bechergrößen wählen. \\
+		\hline
+		2 & Interaktionen & Der Benutzer kann beispielsweise den Becher transformieren oder an den Becher heranzoomen. \\
+		\hline
+		3 & Upload des Designs & Der Benutzer kann nach sein Design entsprechende der Druckvorgaben hochlade.n \\
+		\hline
+		4 & Zusatzoptionen & Der Benutzer kann bestimmte Zusatzoptionen auswählen. \\
+		\hline
+		5 & Übersicht anzeigen & Der Benutzer kann sich eine Übersicht seiner Konfiguration ansehen. \\
+		\hline
+		6 & Konfiguration speichern & Der Benutzer kann seinen konfigurierten Becher speichern. \\
+		\hline
+	\end{tabular}
+\caption{Tabellenüberschrift}
+\end{table}
+%
+\paragraph{3D Vorschau des Bechers}
+Zunächst ist wichtig, das die 3D Darstellung des Bechers umgesetzt wird. Dabei spielt das Design, welches der User hochladen wird, erst einmal keine Rolle. Schon beim Start wird Standardmäßig des 3D-Modell eines Bechers angezeigt. Von den Mehrwegbechern sind vier verschiedene Größen vorhanden. Dem Benutzer soll es möglich sein über das Konfigurationsmenü eine beliebige Größe auszuwählen. Ohne lange Wartezeiten muss sich das 3D-Modell des Bechers dementsprechend aktualisieren.\\
+Falls der User schon ein Design hochgeladen hat und die Größe nun ändern möchte, wird das Design gelöscht und muss erneut hochgeladen werden. Grund dafür sind die unterschiedlichen Designvorgaben für jede Größe. Man soll vor dem Löschvorgang allerdings einen Warnhinweis bekommen, um ungewolltes Löschen zu vermeiden.
+%
+\paragraph{Interaktionen}
+Da es sich um eine 3D Ansicht handelt, sollte man auch interagieren können. Der Becher kann von Benutzer 360 Grad auf der X-Achse und auf der Y-Achse 180 Grad gedreht werden. Auch eine Zoom-Funktion soll implementiert werden. Damit kann der User näher an den Becher heranzoomen. Es sollte jedoch ein maximaler Zoom eingestellt werden, damit die Ansicht realistisch bleibt. Außerdem soll zur einfachereren Bedienung ein Button erstellt werden, der den Becher wieder in seine Ursprungsposition bringt. Diese Interaktionen sollten sowohl mit der Maus als auch mit Touch-Eingabe funktionieren.
+%
+\paragraph{Upload des Designs}
+Normalerweise kann ein Kunde einen Mehrwegbecher über Flyeralarm\footnote{https://www.flyeralarm.com/de/} drucken lassen. Dabei muss man sich an die Design-Vorgaben halten, die im Datenblatt\footnote{siehe Anhang} definiert sind. Diese unterscheiden sich je nach Größe des Bechers, da es sich ja um ein vollflächigen Druck handelt. Um den Benutzer Arbeit zu ersparen, sollte er das Design genau nach den Vorgaben der Druckerei hochladen. Beim Upload wird die Datei auf das korrekte Seitenverhältnis geprüft. Ohne lange Wartezeit wird nun das Design auf den Becher gerendert und der Kunde kann sich das Ergebnis anschauen. Es sollte auch möglich sein das Design mit einem anderen zu ersetzten. Wie schon erwähnt wird das Design bei ändern der Bechergröße entfernt. Als Dateiformat sind ausschließlich \texttt{png}-Dateien zulässig, weil damit Transarenzen dargestellt werden können.
+%
+\paragraph{Zusatzoptionen wählen}
+Hierbei handelt es sich um optionale Zusatzfunktionen die nicht unbedingt im Rahmen des Bachlorprojektes umgesetzt werden. Eine Zusatzoption wäre das ein und ausblenden des Eichstrichs, der bei den Mehrwegbechern mit aufgedruckt wird. Eine weitere Zusatzangabe des Users wäre eine Eingabe der Stückzahl, die bestellt werden soll. Das wäre sinnvoll wenn der Konfigurator in Zukunft in den Bestellvorgang eingabaut werden soll. Andernfalls hätte der Kunde zumindest die Möglichkeit eine Preisvorschau in der Übersicht zu sehen.
+%
+\paragraph{Übersicht anzeigen}
+Wie gerade erwähnt soll es eine Übersicht geben. In Form einer Tabelle soll dem Kunden nun noch einmal seine Auswahl zusammengefasst werden. Er kann dort die ausgewählte Bechergröße, das hochgeladene Design (den Dateinamen), eventuell die Stückzahl, Preisvorschau und so weiter, sehen. Optional kann eine Druck-Funktion implementiert werden, die es dem Benutzer ermöglicht die Übersicht inkulsive einer Abbildung des Bechers mit dem Design zu drucken bzw. in einer \texttt{pdf}-Datei zu speichern.
+%
+\paragraph{Konfiguration speichern}
+Hierbei handelt es sich wieder um eine optionale Funktion, die wahrscheinlich nicht mehr im Rahmen der Bachlorarbeit umgesetzt werden kann. Wenn ein Benutzer einen Becher konfiguriert hat, ist es durchaus denkbar das er zu späteren Zeiten nocheinmal darauf zurückgreifen möchte. Oder er möchte verschiedene Versionen eines Bechers vergleichen. Deshalb wäre es sinnvoll eine Speicher-Funktion zu implementieren, die einfach und schnell den konfigurierten Becher wiederherstellen kann.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Problemanalyse
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+\section{Nicht Funktionale Anforderungen}
+\label{sec:problemanalyse}
+%
+Mit nicht funktionalen Anforderungen sind Funktionalitäten gemeint, welche die Anwendung \textbf{im Hintergrund} leisten soll. Diese sollen die Usablitiy und performance des Konfigurators verbessern und dem Benutzer somit ein innovatives Erlebnis bieten. In der Tabelle sehen sie eine Übersicht der nicht funktionalen Anforderungen.
+
+\renewcommand{\arraystretch}{1.8}
+\begin{table}
+	\begin{tabular}{|r|c|p{8.5cm}|}
+		\hline
+		\textbf{Nr.} & \textbf{Bezeichnung} & \textbf{Beschreibung} \\
+		\hline
+		1 & Uploadfilter & Der Benutzer kann zwischen verschiedenen Bechergrößen wählen. \\
+		\hline
+		2 & Bedienungshilfen & Der Benutzer kann beispielsweise den Becher transformieren oder an den Becher heranzoomen. \\
+		\hline
+		3 & Realistische Design-Darstellung & Der Benutzer kann nach sein Design entsprechende der Druckvorgaben hochlade.n \\
+		\hline
+		4 & Responsive Webdesign & Der Benutzer kann bestimmte Zusatzoptionen auswählen. \\
+		\hline
+		5 & Benutzerfreundlich & Der Benutzer kann sich eine Übersicht seiner Konfiguration ansehen. \\
+		\hline
+		6 & Leistungstark & Der Benutzer kann seinen konfigurierten Becher speichern. \\
+		\hline
+	\end{tabular}
+	\caption{Tabellenüberschrift}
+\end{table}
+%
+\paragraph{Uploadfilter}
+Das Design sollte realistisch gerendert werden. Dazu muss das Design wie in den Druckvorgaben hochgeladen werden. Sonst könnte es zu verzehrt aus sehen oder einfach unscharf. Nach dem Upload bekommt der User eine Rückmeldung, ob die Auflösung des Bildes in Ordnung ist. Falls nicht wird das Bild nicht gespeichert bzw. auf den Becher gerendert und der Benutzer soll das Design in der richtigen Auflösung hochladen. Ein ähnliches Vorgehen wird auch bei der Druckerei Fyleralarm bei einem Upload angewendet. Jedoch wird bei dem Konfigurator nur das Seitenverhältnis bzw. die Auflösung geprüft, nicht der Farbmodus oder andere Vorgaben zum Drucken.
+%
+\paragraph{Bedienungshilfen}
+Ähnlich wie beim Upload des Designs soll der Kunde immer wieder Hinweise bekommen was zu tun ist. Beispielweise wie er den Becher drehen kann oder wo er die Größe des Bechers auswählen kann oder wo er die Übersicht seiner Auswahl sehen kann.
+%
+\paragraph{Realistisches Design-Rendering}
+kubisches Problem
+Auch was die 3D-Darstellung angeht, sind nicht viele Vorgaben gegeben, was einen weiten Spielraum lässt. Zunächst muss der Becher in die Szene geladen werden können. Anschließend besteht die Herausforderung darin, ein vom Benutzer hochgeladenes Design realistisch auf den Becher zu projizieren. Dabei muss die kubische Form des Bechers und die Upload-Vorgaben der Druckerei berücksichtigt werden. Der Upload-Vorgang muss einfach und verständlich sein, damit der Benutzer weiß wie er sein Design richtig auf den Becher bekommt. Dabei dürfen die Ladezeiten nicht zu lange sein. Die Anwendung muss möglichst performant laufen, unabhängig von der Plattform.
+%
+\paragraph{Responsive Webdesign}
+Es ist wichtig das der Konfigurator auf verschiedenen Displaygrößen verwendet werden kann. Bei mobilen Geräten wird es schwierig die 3D Ansicht und das gesamte Menu zusammen anzuzeigen. Damit die Inhalte groß genug und gut lesbar sein, wird das Menu auf mobilen Gräten also \textit{Off-Canvas-Menu} implementiert. Somit wird zum einen der Becher schön groß dargestellt und zum anderen werden Menu-Items groß und gut lesbar sein. Der Benutzer eines Smartphones sollte nach Möglichkeit den gleichen Funktionsumfang genießen wie ein Benutzer auf Desktop Geräten. Dabei sollte möglichst innovativ gestalet werden.
+%
+\paragraph{Benutzerfreundlichkeit}
+Die Webanwendung soll benutzerfreundlich sein. Dazu tragen die schon erwähnten Bedienungshilfen bei. Wichtig ist, das der Benutzer immer weiß was der nächste Schritt ist. Um dies zu erreichen ist eine einfache und übersichtliche Gestaltung ist nötig. Sie sollte auf das wesentliche beschränkt sein und nicht überladen wirken.
+%
+\paragraph{Leistungsstark}
+Wie die Studie im Kapitel Performance gezeigt hat, mögen Benutzer keine langen Wartezeiten. Bei dem 3D-Konfigurator soll das Laden der 3D Modelle nicht länger als 2ms dauern. Das rendern des Designs auf den Becher ebenfalls nicht länger als 2ms. Die Länge des Uploads vom Design hängt von der Internetverbindung ab, sollte allerdings auch schnell abgeschlossen sein. Das Transfomieren des Models in der 3D szene sollte flüssig funktionieren und keine Verzögerungen enthalten. Alles in allem sollte die gesamte Anwendung performant laufen und im Bezug auf die Leistung an eine Desktopanwendung erinnern. Besonders interessant wird dieser Aspket auf mobilen Geräten, denn auch dort sollte die Anwendung möglichst stabil laufen.
 %
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -36,7 +120,7 @@ Der Konfigurator soll auch auf mobilen voll funktionsfähig sein. Eine Aufgabe w
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-\section{Konzept}
+\section{Konzeption}
 \label{sec:konzept}
 %
 Bevor es an die Programmierung geht, sollte man sich im klaren sein, wie die Anwendung im Groben aufgebaut sein wird. Nachdem alle Funktionen und Vorgaben bekannt sind, kann man ein sogenanntes UML (Unified Modeling Language) entwerfen. Hierbei handelt es sich um eine einfache Modellierungssprache. Hierbei werden benötigte Klassen, Komponenten und Module definiert. Das hilft beim Programmieren den Überblick zu behalten. Im Folgenden  ist das UML für den Konfigurator zu sehen.
