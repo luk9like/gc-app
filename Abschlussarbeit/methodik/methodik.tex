@@ -1,0 +1,63 @@
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%  M E T H O D I K
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Methodik}
+\label{cha:methodik}
+%
+%
+%
+%
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Problemanalyse
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+\section{Problemanalyse}
+\label{sec:problemanalyse}
+%
+\paragraph{Angular Konfigurator}
+Es gibt nicht viele Vorgaben für den Konfigurator. Zunächst ist wichtig, das die 3D Darstellung des Bechers umgesetzt wird. Dabei sollte das Design, welches der User hochladen kann, realistisch dargestellt wird. Dabei spielt die Usability eine wichtige Rolle. Zunächst muss also ein grobes Design erstellt werden. Dabei geht es vor allem um die Menüführung. Anschließend folgt die technische Umsetzung. Diese wird in Kapitel \ref{sec:umsetzung} genauer erläutert. Bei der Darstellung des Designs auf dem Becher muss zunächst eine Lösung gefunden werden, wie eine Druckvorlage (rechteckig) auf der Fläche des Bechers (kubisch) richtig und realistisch dargestellt werden kann.\\
+Usability, 3D Darstellung(kubisches Problem, Bechergrößen, Technologie konflikt (Three/Angular)), Performance, Responsive, Design-Vorgabe, Menüführung,
+\paragraph{3D Darstellung}
+Auch was die 3D-Darstellung angeht, sind nicht viele Vorgaben gegeben, was einen weiten Spielraum lässt. Zunächst muss der Becher in die Szene geladen werden können. Anschließend besteht die Herausforderung darin, ein vom Benutzer hochgeladenes Design realistisch auf den Becher zu projizieren. Dabei muss die kubische Form des Bechers und die Upload-Vorgaben der Druckerei berücksichtigt werden. Der Upload-Vorgang muss einfach und verständlich sein, damit der Benutzer weiß wie er sein Design richtig auf den Becher bekommt. Dabei dürfen die Ladezeiten nicht zu lange sein. Die Anwendung muss möglichst performant laufen, unabhängig von der Plattform.
+
+Der Konfigurator soll auch auf mobilen voll funktionsfähig sein. Eine Aufgabe wird es sein eine mobile 3D Ansicht zu implementieren. Dabei sollen die Anforderungen der Usability beachtet werden.
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Konzept
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+\section{Konzept}
+\label{sec:konzept}
+%
+Bevor es an die Programmierung geht, sollte man sich im klaren sein, wie die Anwendung im Groben aufgebaut sein wird. Nachdem alle Funktionen und Vorgaben bekannt sind, kann man ein sogenanntes UML (Unified Modeling Language) entwerfen. Hierbei handelt es sich um eine einfache Modellierungssprache. Hierbei werden benötigte Klassen, Komponenten und Module definiert. Das hilft beim Programmieren den Überblick zu behalten. Im Folgenden  ist das UML für den Konfigurator zu sehen.
+• Konzept (UML und weitere Diagramme)
+• Mokups der Einzelnen Screens
+• Responsive Layout Ideen \\
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Umsetzung & Implementierung
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+\section{Umsetzung \& Imlementierung}
+\label{sec:umsetzung}
+%
+Diese Vorlage verwendet die \textit{memoir}-LaTeX-Klasse von Peter Wilson und erzeugt somit ein Buchdokument, das auch zweiseitig gedruckt werden sollte, da zwischen den Kapiteln Leerseiten erzeugt werden. Einstiegspunkt für die Bachelorarbeit ist die Datei \texttt{abschlussarbeit.tex}. Tragen Sie zunächst den Titel der Arbeit und alle Namen ein. Bei hochschulinternen Bachlorarbeiten fallen die Eintragungen \textit{durchgeführt am} und \textit{Betreuer in der Firma} natürlich weg. 
+\paragraph{3D Zylinder für Design rendering}
+%https://threejs.org/docs/#api/en/geometries/CylinderBufferGeometry\\
+%https://threejs.org/docs/#api/en/core/BufferGeometry\\
+%https://codepen.io/JasonStoltz/pen/NaBOGm (transparente Designs) \\
+%https://www.flyeralarm.com/sheets/de/becher_kstoff_200ml.pdf\\
+%https://stackoverflow.com/questions/55283187/threejs-texture-fit-uv-map\\

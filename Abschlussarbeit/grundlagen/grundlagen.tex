@@ -69,6 +69,7 @@ Angular bietet also die Möglichkeit modular zu arbeiten. Die einzelnen Elemente
 	\caption[Audi Konfigurator]{\textit{Fallbeispiel mit zwei Angular Modulen mit Komponenten}}
 	\label{fig:ngModule}
 \end{figure} 
+
 %
 Das hier beschriebene Beispiel ist in Abbildung \ref{fig:ngModule} zu sehen. Angenommen wir haben ein \textit{Modul A}. In diesem Modul sind nun \textit{Komponente 1} und \textit{Komponente 2} deklariert. Das heißt, es ist möglich in \textit{Komponente 1} die \textit{Kompontente 2} zu verwenden und umgekehrt, weil beide in dem \textit{Modul A} registriert sind. Jetzt haben wir ein weiteres \textit{Modul B}. In diesem ist die \textit{Komponente 3} registriert. Nun wäre es sehr praktisch, wenn \textit{Komponente 3} ebenfalls \textit{Komponente 1} aus dem anderen Modul verwenden könnte. Wie schon erwähnt darf ein Baustein in Angular nur in einem Modul registriert bzw. inititalisiert werden. Deshalb muss das \textit{Modul A} in \textit{Modul B} importiert werden, damit auch dort die \textit{Komponente 1} verwendet werden kann. Zusätzlich muss in \textit{Modul A} die \textit{Komponente 1} exportiert werden. Dadurch wird sie erst von außen frei zugänglich und somit in Bausteinen anderer Module nutzbar.
 %
@@ -85,25 +86,25 @@ Module und Komponenten in Angular haben wir nun schon etwas ausführlicher betra
 %
 \paragraph{Bindungen}
 %
-\textit{\glqq Bindungen sind im Wesentlichen die Brücke zwischen der Darstellungsschicht und der Logikschicht\grqq } \cite{unlu_angular_2018}. Man kann beispielsweise Variablen oder Eigenschaften aus der TypeScript-Klasse in der Vorlage binden. Beispiel: Ich gebe die Variable \texttt{title} in der Vorlage als\texttt{ <h1> \{\{title\}\} </h1>} aus. Natürlich geht das ganze noch deutlich komplexer. Dadurch wird die Komponente mit ihrem Content dynamisch.
+\textit{\glqq Bindungen sind im Wesentlichen die Brücke zwischen der Darstellungsschicht und der Logikschicht\grqq } \cite{unlu_angular_2018}. Man kann beispielsweise Variablen oder Eigenschaften aus TypeScript-Klassen in  Vorlagen binden. Angenommen in der TypeScript-Klasse einer Komponente ist die Variable \texttt{title} deklariert. Um \texttt{title} nun in der Vorlage zu binden, schreibt man Folgendes: \texttt{ <h1> \{\{title\}\} </h1>}. Natürlich geht das ganze noch deutlich komplexer. Dadurch wird die Komponente mit ihrem Content dynamisch.
 %
 \paragraph{Direktiven}
 %
-Direktiven spielen innerhalb der Angular-Welt eine ähnlich wichtige Rolle wie Komponenten. Unter der Haube sieht man sogar, dass die voneinander erben. Im Wesentlichen ist es so, dass Direktiven in Vorlagen genutzt werden können. Und wie nutze ich sie? Indem ich Direktiven als Attribute auszeichne. Das heißt, Direktiven sind oft Attribute, die in ein HTML-Element hinzugefügt werden oder auch beispielsweise dadurch deklariert, dass an ein bestimmtes HTML-Element ein bestimmtes Attribut angehängt sein muss. Attribut-Direktiven machen eigentlich nichts anderes als eine Anpassung des Aussehens beziehungsweise eine Anpassung des Verhaltens eines Elements, das heißt, es manipuliert ein vorhandenes Element im Wesentlichen.\\
-Analog dazu kann ich eine strukturelle Direktive in Form von ngFor benutzen. ngFor ist eine strukturelle Direktive, die etwas wahnsinnig Cleveres macht. Sie benutzt nämlich das Element, auf das sie angewendet wurde, als Vorlage, iteriert durch eine Liste, zum Beispiel eine unordered List, und packt diese Vorlage so oft in den DOM hinein, wie es Elemente in der Liste gibt.
+Direktiven sind ein wichtiger Bestandteil von Angular. Direktiven werden in Vorlagen genutzt, indem ich sie als Attribute auszeichne. Das heißt, Direktiven sind oft Attribute, die in ein HTML-Element hinzugefügt werden oder auch beispielsweise dadurch deklariert, dass an ein bestimmtes HTML-Element ein bestimmtes Attribut angehängt sein muss. Attribut-Direktiven machen eigentlich nichts anderes als eine Anpassung des Aussehens beziehungsweise eine Anpassung des Verhaltens eines Elements, das heißt, es manipuliert ein vorhandenes Element im Wesentlichen.\\
+Analog dazu kann man auch strukturelle Direktiven benutzen. Das gibt es zum Beispiel \texttt{ngFor}, diese ist sehr praktisch bei der Entwicklung einer Angular-Anwendung. Sie benutzt nämlich das Element, auf das sie angewendet wurde, als Vorlage, iteriert durch eine Liste, zum Beispiel ein \texttt{<ul>}-Element, und packt diese Vorlage so oft in den DOM hinein, wie es Elemente in der Liste gibt.
 %
 \paragraph{Pipes}
 %
 Angular bietet uns die Möglichkeit zur Nutzung von Pipes. Sie dienen dazu, eine Ausgabe zu manipulieren. Überwiegend werden Pipes in Vorlagen genutzt.\\
-Die Pipe manipuliert die Ausgabe und sorgt dafür, dass beispielsweise der Name in Großbuchstaben dargestellt wird. Analog lassen sich auch Pipes in Kette schalten. Das heißt, wenn ich eine Ausgabe habe, kann ich die wiederum in andere Pipes reinpacken.
+Die Pipe manipuliert die Ausgabe und sorgt dafür, dass beispielsweise der Name in Großbuchstaben (uppercase) dargestellt wird. Analog lassen sich auch Pipes in Kette schalten. Das heißt, wenn man eine Ausgabe hat, kann man diese wiederum in andere Pipes hineinpacken.
 %
 \paragraph{Services}
 %
-Der Begriff Services in der Entwicklung ist so breit gefächert. Jede Programmiersprache versteht unter Services in gewissen Maßen was anderes. In der Angular-Welt sind Services Logiken, die allerdings View-unabhängig sind. Eine Komponente besteht aus Logik- und Darstellungsschicht, und in der Logikschicht habe ich ganz explizit die Logik, die nur für diese eine Komponente da ist.\\
-Ein Service selber hat auch Logiken, die aber nicht allein für eine Komponente darstellen, sondern halt auch im Kontext in anderen Szenarien genutzt werden können. Super einfaches Beispiel dafür: Client-Server-Kommunikation. Wir können also einen Service erstellen, der das gesamte Handling des Logins steuert. Dieser Service verarbeitet dann via Passwort und Username die Client-Server-Kommunikation für das Login und empfängt vom Server dann das User-Objekt. Das kann aber an der anderen Stelle sein, dass ich zum Beispiel die Authentifizierung überprüfen möchte oder einfach nur das Geburtsjahr eines Users brauche, dann würde ich den gleichen Service in der anderen Komponente wieder nutzen und könnte dann entsprechend entweder auf die Eigenschaften des Services zurückgreifen, die es zuvor schon geholt hat, beziehungsweise auf Eigenschaftswerte, die es zuvor schon geholt hat, oder kann neue Requests triggern, Logger beispielsweise.
+Der Begriff Services in der Entwicklung ist breit gefächert. Jede Programmiersprache versteht unter Services in gewissen Maßen etwas anderes. In der Angular-Welt sind Services Logiken, die nicht abhängig von der View sind. Eine Komponente besteht aus Logik- und Darstellungsschicht. In der Logikschicht ist ganz explizit eine Logik vorhanden, die nur für diese eine Komponente da ist.\\
+Ein Service selber hat auch Logiken, die aber nicht allein für eine Komponente gelten, sondern auch im Kontext in anderen Bausteine genutzt werden können. Ein einfaches Beispiel dafür: Client-Server-Kommunikation. Es ist möglich einen Service zu erstellen, der das gesamte Handling des Logins steuert. Dieser Service verarbeitet dann via Passwort und Username die Client-Server-Kommunikation für das Login und empfängt vom Server dann das User-Objekt. An der anderer Stelle kann es sein, dass ich zum Beispiel die Authentifizierung überprüfen möchte oder einfach nur den Namen des Users brauche. In diesem Fall würde man den gleichen Service in der anderen Komponente wieder nutzen und könnte dann entsprechend auf die Eigenschaften des Services zurückgreifen, die es zuvor schon geholt hat.
 %
 \subsection{Angular CLI}
-Angular CLI ist ein mächtiges Tool. Es wird über die Command Line gesteuert. Sie kann beispielsweise verwendet werden, um ein neues Projekt anzulegen. Die CLI legt dann im Hintergrund die benötigte Projektstruktur mit allen benötigten Dateien in dem gewünschten Verzeichnis ab. Anschließend ist die Anwendung sogar schon lauffähig. Man kann sie ganz bequem über die CLI starten indem man den Developing Server verwendet. Mit Webpack wird das ganze Projekt gebündelt. Eine sehr große Hilfe können die Code Generatoren sein. Sie erzeugen uns automatisch Komponenten, Module oder Services. Dabei werden automatisch alle \texttt{@import-}Anweisungen vorgenommen. Wie das ganze konkret aussieht schauen wir uns bei der Umsetzung des Konfigurator noch einmal an. Angular bietet eine sehr gut verwendbare Testumgebung. Mit verschiedenen Modulen kann die Anwendung bis ins kleinste Detail getestet werden. Ganze User-Interaktionen können simuliert werden, auch auf verschiedenen Geräte-Klassifikationen. Wenn man die Anwendung veröffentlichen will, bietet das Framework über seine CLI eine build Funktion. Diese ermöglicht eine einfache und kompakte Lösung.
+Die Angular CLI ist ein mächtiges Tool. Wie der Name schon sagt wird es über die Command Line gesteuert. Sie kann beispielsweise verwendet werden, um ein neues Angular-Projekt anzulegen. Die CLI legt dann im Hintergrund die benötigte Projektstruktur mit allen benötigten Dateien in dem gewünschten Verzeichnis ab. Anschließend ist die Anwendung sogar schon lauffähig. Man kann sie ganz bequem über die CLI starten, dabei wird standardmäßig der Developing-Server verwendet. Mit Webpack wird das ganze Projekt gebündelt. Eine sehr große Hilfe können die Code Generatoren sein. Sie erzeugen automatisch Komponenten, Module oder Services. Dabei werden automatisch alle \texttt{@import-}Anweisungen, Exports und so weiter vorgenommen. Wie das ganze konkret aussieht schauen wir uns bei der Umsetzung des Konfigurators noch einmal an. Angular bietet eine sehr gut verwendbare Testumgebung. Mit verschiedenen Modulen kann die Anwendung bis ins kleinste Detail getestet werden. Ganze User-Interaktionen können simuliert werden, auch auf verschiedenen Geräte-Klassifikationen. Wenn man die Anwendung veröffentlichen will, bietet das Framework über seine CLI eine build Funktion. Diese ermöglicht eine einfache und kompakte Lösung. Alles in allem ist Angular CLI ein sehr komfortables Tool, was einem das Erstellen einer Angular-Anwendung leichter macht.
 %
 \subsection{Versionen}
 Das Framework Angular setzt auf das System der semantischen Versionierung (\textit{SEMVER}). Die erste Version des Frameworks war \textit{AngularJS}. Schon die erste Version hatte das Ziel, ein strukturiertes und übersichtliches Framework zu sein. Mit der \textit{Version 2} wechselte die Programmiersprache von JavaScript zu TypeScript, welches von Microsoft entwickelt wurde. Das Framework wurde mit der Version 2 also komplett neu entwickelt. Es setzt aber großteils auf das alte Konzept von \textit{AngularJS}. Da das Router-Modul schon die Version 3 hatte, wurde die nächste Version von Angular komplett auf \textit{Version 4} angehoben, damit nun wieder alle Module auf der selben Version sind \cite{bohm_robin_angular_2017}. Mittlerweile ist die aktuelle Version des Framework \textit{Angular 7\footnote{Stand März 2019}}. Die aktuelle Version bringt ein paar Bugfixes mit sich sowie mehr Flexibilität. So können beispielsweise über die \textit{Angular CLI} ganz bequem alle Pakete automatisch aktualisiert werden. Anschließend sollte das Projekt mit der neuen Angular Version lauffähig sein (siehe \cite{steyer_ruhe_2018}).
@@ -118,7 +119,46 @@ Das Framework Angular setzt auf das System der semantischen Versionierung (\text
 \section{Three.js}
 \label{sec:three.js}
 %
-\textit{Die Entwicklung verbesserter 3D-Grafiken in webbasierten Anwendungen hat in letzter Zeit einen Schritt vorwärts getan, als Programmierer WebGL in die Mozilla Firefox Nightly-Builds und in WebKit integriert haben, das in Google Chrome und dem Safari-Browser von Apple verwendet wird. WebGL ist eine der am meisten entwickelten Bibliotheken, die von HTML5 unterstützt werden. }\cite{bahor_html5/webgl_2013}.\\
+Schon 2010 begann Ricardo Cabello Miguel die 3D-Bibliothek Three.js zu entwickeln. Mittlerweile ist er unter dem Namen Mr.doob bekannt. Als dann WebGL veröffentlicht wurde, portierte er \textit{Three.js}, um es mit der neuen Technologie zu verwenden. Mr.doob bezeichnete es als \glqq einfach zu implementieren\grqq. Er hatte damals bereits zwei andere Renderer damit gebaut. Seit dieser Zeit hat Three.js an Leistung und Raffinesse zugenommen. Nun ist es zur beliebtesten Wahl für die Erstellung von 3D-Anwendungen mit WebGL geworden. \\
+Three.js abstrahiert den Kontext von WebGL und stellt die 3D-Szene als Meshes, Materials und Lightings dar \footnote{Das sind typische Bestandteile einer 3D-Szene die Grafik Programmierer kennen}. Aber Three.js ist mehr als nur eine Abstraktionsschicht für WebGL. Die Three.js-API wurde einfach konzipiert, sodass ein schneller Einstieg möglich ist. Funktionen können ziemlich einfach hinzugefügt und Three.js angepasst werden. Vordefinierte Objekte und Beispiele ermöglichen die Entwicklung von Modellierungsanwendungen bis hin zu Spielen. Auch Animationen sind einfach zu implementieren sowie Interaktionen in der Szene. Neben den Grundfunktionen der Bibliothek gibt es zahlreiche Beispiele und Extras, welche in eigene Projekte eingebunden werden können. Außerdem wurde Three.js so umgesetzt, dass eine hohe Leistung ohne Beeinträchtigung der Usability gewährleistet ist. Zudem gibt es umfangreiche Fehlerprüfungen, Ausnahmen und Konsolenwarnungen, um den Entwickler zu unterstützen.
+%
+\subsection{Die Szene}
+\label{subsec:scene}
+%
+Die 3D-Bibliothek ist objektorientiert. Das heißt, Programmierer arbeiten mit JavaScript-Objekten, anstatt nur JavaScript-Funktionsaufrufe durchzuführen. Folgendes einfaches Beispiel, zeigt wie eine Szene in Three.js erstellt werden kann. \\
+
+\texttt{var scene = new THREE.Scene();} 
+\\
+
+Über verschiedene Funktionen können dann die weiteren Bestandteile einer Szene hinzugefügt werden und anschließend mit dem Renderer gerendert werden. Da Angular auf TypeScript basiert, muss man bei der Implementierung einer Szene in Angular ein paar Dinge beachten. Diese werden in Kapitel 4 genauer erläutert. In diesem Teil werden zunächst die wesentlichen Bestandteile der Three.js Szene vorgestellt. Differenzierte Erklärungen zu Three.js sind in der offiziellen Dokumentation zu finden \footnote{http://threejs.org/docs}.
+%
+\paragraph{Kamera}
+Es gibt verschiedene Kameratypen. Normalerweise wird immer die \textit{PerspectiveCamera} verwendet. Deshalb wird in dieser Arbeit nicht weiter auf die anderen Typen eingegangen. Die Kamera wird auch als Objekt in der Szene angelegt. Dabei müssen verschiedene Eigenschaften wie Seitenverhältnis und Position der Kamera angegeben werden.
+%
+\paragraph{Renderer}
+Damit eine Szene gerendert werden kann, wird der Renderer benötigt. Hierbei handelt es sich schlichtweg um einen WebGL-Renderer. Der wird dann in ein \texttt{<canvas>}-Element eingefügt um die Szene darin darzustellen.
+%
+\paragraph{Lighting}
+Damit Objekte der Szene sichtbar werden, muss ein \textit{light} oder sogar mehrere hinzugefügt werden. Sonst ist die Szene einfach nur schwarz. Three.js hat verschiedene Belichtungstypen wie beispielsweise \textit{AmbientLight} oder \textit{PointLight}.
+%
+\paragraph{Geometry}
+Three.js verfügt über leistungsstarke, benutzerfreundliche Objekte für die 3D-Mathematik, z. B. Matrizen, Projektionen und Vektoren. Man kann auch verschiedene Geometrien erzeugen wie zum Beispiel Würfel, Zylinder oder Kugeln. Im nächsten Kapitel werden wir uns noch anschauen wie man einen Zylinder erstellen kann.
+%
+\paragraph{Materials}
+Materials in Three.js definieren das Aussehen von Objekten. Auch hier gibt es wieder verschiedene Materials, je nach Anwendungsfall\footnote{Aus der 3D-Modellierung sind hier Begriffe wie Lambert oder Phong bekannt. Darauf bauen auch die verschiedenen Materials in der Bibliothek aus.}. Dabei hat man unzählige Möglichkeiten das Aussehen umzusetzten. Man kann auch Texturen auf das Objekt \glqq mappen \grqq. Auch ein aus der 3D-Modellierung bekanntes \textit{UV-Mapping} ist möglich.
+%
+\paragraph{Mesh}
+Ein Mesh fast ein oder mehrere Objekte und Materials und so weiter zusammen. Am Ende wird das Mesh zur Szene hinzugefügt.
+%
+\subsection{Modelle}
+\label{subsec:objekte}
+%
+Mit Three.js lassen sich ebenfalls Modelle aus 3D Programmen wie Maya oder Cinema4D darstellen. Dazu werden Loader, also Werkzeuge mit denen man Modelle laden kann, verwendet. Sie sind nicht Teil vom Kern des Framework. Sie können nach Bedarf in die Anwendung mit eingebunden werden. Teilweise sind die Loader noch nicht ganz ausgereift oder es gibt manchmal Importierungsprobleme. Einige bekannte Loader sind: \textit{ColladaLoader}\footnote{http://www.khronos.org/collada/}, \textit{OBJLoader}\footnote{http://www.martinreddy.net/gfx/3d/OBJ.spec} und \textit{JSONLoader}.
+%
+\subsection{Events}
+\label{subsec:events}
+%
+Three.js liefert einige Funktionen, die bestimmte Events regeln bzw. festlegen, was zu tun ist, wenn bestimmt Aktionen erfolgen. Zum Beispiel hat das \texttt{<canvas>}-Element eine feste Größe. Wenn das Fenster des Browsers sich verändert, sollte das Element sich jedoch anpassen. Das ist ganz einfach mit einem \textit{EventListner} und der Funktion \texttt{resize} umsetzbar.
 %
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -132,7 +172,11 @@ Das Framework Angular setzt auf das System der semantischen Versionierung (\text
 %
 Der erste Eindruck ist wichtig. Ein Besucher benötigt nur 50 Millisekunden, um sich eine Meinung über eine Website zu bilden. Wenn also die Gestaltung der Webseite keinen guten ersten Eindruck hinterlässt, werden viele potenzielle Kunden einfach gehen\cite{webalive}. Laut einer Umfrage von \textit{clutch.co} sollen in 2019 nahezu alle Webseiten kleinerer Unternehmen mobil freundlich sein. Es ist offensichtlich, dass immer mehr mobile Geräte verwendet werden. Deshalb liegt es auch auf der Hand Webseiten für diese Geräteklasse anzupassen.
 Laut einer Studie bevorzugen etwa 3/4 der Benutzer mobil freundliche Webseiten und würden sie auch wieder besuchen \cite{searchenginewatch}.\\
-In seinem Artikel Responsive Web Design definiert Ethan Marcotte den Begriff mit 3 Säulen:\textit{ Flexible Layout-Grids, Flexible Bilder und Media Queries}. Er betont aber auch, dass es ein anderes Denken erfordert. \textit{Es ist ein mechanisches Konzept, das aus einer Person entsteht und auf endlichen, spezifischen Elementen basiert. Es gibt also keine klare Definition von Responsive Webdesign.} Oder anders gesagt: \textit{Ich kann Ihnen sagen, wie man Responsive Web Design macht. Wie wir die Dinge „reaktionsfähig“ machen, liegt an uns. Wir alle} \cite{responsive}.
+In seinem Artikel Responsive Web Design definiert Ethan Marcotte den Begriff mit 3 Säulen:
+\textit{\glqq Fluid grids, flexible images, and media queries\grqq } \cite{marcotte_responsive_2010}.
+Er betont aber auch, dass es ein anderes Denken erfordert. \textit{\glqq It’s a mechanical concept, the brainchild of a single person, based on finite, specific elements.\grqq} \cite{gardner_what_2014} Es gibt also keine klare Definition von Responsive Webdesign. Oder anders gesagt:
+ \textit{\glqq I can tell you how to do Responsive Web Design. How we make things “responsive” is up to us. All of us.\grqq} \cite{gardner_what_2014}. \\
+Auch wenn es keine klare Definition von \textit{responsive Webdesign} gibt, so ist klar was damit gemeint ist. Webseiten und Webanwendungen sind responsive, wenn sie für alle Geräteklassen angepasst und optimiert sind. Wie man das genau gestaltet, liegt bei jedem selbst.
 %
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -144,11 +188,18 @@ In seinem Artikel Responsive Web Design definiert Ethan Marcotte den Begriff mit
 \section{Usability}
 \label{sec:usability}
 %
-Usability ist ein umfassenderes Konzept, als allgemein unter „Benutzerfreundlichkeit“ oder „Benutzerfreundlichkeit“ verstanden wird. \\
-Umfang, in dem ein System, ein Produkt oder eine Dienstleistung von bestimmten Benutzern verwendet werden kann, um bestimmte Ziele mit Effizienz, Effizienz und Zufriedenheit in einem bestimmten Nutzungskontext zu erreichen
-Anmerkung 1 zum Begriff : Die „spezifizierten“ Benutzer, Ziele und Nutzungskontexte beziehen sich auf die bestimmte Kombination von Benutzern, Ziele und Nutzungskontext, für die die Verwendbarkeit in Betracht gezogen wird.
-Anmerkung 2 zum Begriff : Das Wort „Usability“ wird auch als Qualifikationsmerkmal verwendet, um auf Designwissen, Kompetenzen, Aktivitäten und Designattribute zu verweisen, die zur Usability beitragen, wie beispielsweise Usability-Kenntnisse, Usability Professional, Usability Engineering, Usability-Methode, Usability-Bewertung Usability-Heuristik.
-[QUELLE: ISO 9241-210: 2010, 2.13, geändert - Anmerkungen 1 und 2 wurden hinzugefügt.]
+Die ISO-Norm 9241 beschreibt eine allgemein gültige Definition von Usability:\\
+
+\textit{\glqq Usability bezeichnet das Außmaß, in dem ein Produkt durch bestimmte Benutzer in einem Nutzungskontext genutzt werden kann, um bestimte Ziele effektiv, effizient und mit Zufriedenheit zu erreichen.\grqq} \cite{din-en-iso-9241-210_ergonomie_2010}\\
+
+Hinter dem englische Begriff \textit{Usability} verbirgt sich also ein umfassenderes Konzept, das allgemein unter \textit{Benutzerfreundlichkeit} verstanden wird. Es beschreibt den Umfang, in dem ein System, ein Produkt oder eine Dienstleistung von bestimmten Benutzern verwendet werden kann, um bestimmte Ziele mit Effizienz und Zufriedenheit in einem bestimmten Nutzungskontext zu erreichen. Jedoch dreht sich nicht alles nur um das Produkt. \textit{\glqq Im Mittelpunkt steht aber immer der User mit seinen Wünschen und Bedürfnissen.\grqq} \cite{von_gizycki_usability_2002}\\
+
+\textit{\glqq Software-Anwendungen oder Produkte weisen eine hohe Usability auf, wenn sie von den vorgesehenen Benutzern einfach erlernt und effizient verwendet werden können und diese damit ihre beabsichtigten Ziele und Aufgaben zufriedenstellend ausführen können. Dazu gehören nicht nur ein stimmiges User Interface, sondern auch die passenden Funktionen, um zum Ziel zu gelangen\grqq} \cite{richter_usability_2016}\\
+
+\paragraph{User Centered Design (UCD)}
+\textit{\glqq Hinter diesem Begriff verbirgt sich eine Vielzahl von Gestaltungsprozessen, die den späteren Benutzer ins Zentrum der Entwicklung stellen. Mit der Betonung des Designs wird zum Ausdruck gebracht, dass sowohl Interaktions- als auch Gestaltungsaspekte, also etwa die Gestaltung der Dialogabläufe, die Gestaltung der Form physischer Produkte und Bedienelemente, aber auch das grafische Design, wichtige Bestandteile für eine optimale Benutzung darstellen und von Beginn weg berücksichtigt werden müssen..\grqq} \cite{richter_usability_2016}\\
+
+Wir fassen also zusammen, das \textit{Usability} sich immer um den Benutzer dreht und für ihn einfach und effiziente Bedienung erfordert. Dabei muss die \textit{Benutzerfreundlichkeit} aber immer im Kontext seiner Verwendung beurteilt werden.
 %
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

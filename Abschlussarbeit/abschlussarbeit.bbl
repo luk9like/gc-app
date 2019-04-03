@@ -19,6 +19,13 @@
 \newblock
   \url{http://old.cescg.org/CESCG-2013/papers/Bahor-HTML5WebGL_vs_Flash_in_3D_Visualisation.pdf}
 
+\bibitem[DEI]{din-en-iso-9241-210_ergonomie_2010}
+\textsc{{DIN}-{EN}-{ISO}-9241-210}:
+\newblock \emph{Ergonomie der Mensch-System-Interaktion - Teil 210: Prozess zur
+  Gestaltung gebrauchstauglicher interaktiver Systeme}.
+\newblock
+  \url{https://www.din.de/de/mitwirken/normenausschuesse/naerg/wdc-beuth:din21:135399380}
+
 \bibitem[Dev]{deveria_alexis_can_2013}
 \textsc{Deveria}, Alexis:
 \newblock \emph{Can I use... Support tables for {HTML}5, {CSS}3, etc}.
@@ -35,10 +42,31 @@
 \newblock
   \url{https://www.flyeralarm.com/de/shop/configurator/index/id/6899/mehrwegbecher.html}
 
+\bibitem[Gar]{gardner_what_2014}
+\textsc{Gardner}, Lyza~D.:
+\newblock \emph{What We Mean When We Say “responsive”}.
+\newblock
+  \url{http://alistapart.com/column/what-we-mean-when-we-say-responsive}
+
+\bibitem[Giz]{von_gizycki_usability_2002}
+\textsc{Gizycki}, Vittoria von:
+\newblock Usability — nutzerfreundliches Web-Design.
+\newblock \url{http://dx.doi.org/10.1007/978-3-642-56377-5_1}.
+\newblock {In: }\textsc{Beier}, Markus (Hrsg.) ; \textsc{Gizycki}, Vittoria von
+  (Hrsg.): \emph{Usability: Nutzerfreundliches Web-Design}.
+\newblock Springer Berlin Heidelberg (X.media.press). --
+\newblock DOI 10.1007/978--3--642--56377--5_1. --
+\newblock ISBN 978--3--642--56377--5, 1--17
+
 \bibitem[Kö]{kogel_paul_react_2015}
 \textsc{Kögel}, Paul:
 \newblock \emph{React Einsteiger Tutorial - {ReactJS}.{DE}}.
 \newblock \url{https://reactjs.de/artikel/react-tutorial-deutsch/}
+
+\bibitem[Mar]{marcotte_responsive_2010}
+\textsc{Marcotte}, Ethan:
+\newblock \emph{Responsive Web Design}.
+\newblock \url{http://alistapart.com/article/responsive-web-design}
 
 \bibitem[MM]{moreau-mathis_babylon.js_2016}
 \textsc{Moreau-Mathis}, Julien:
@@ -61,6 +89,16 @@
 \newblock John Wiley \& Sons. --
 \newblock ISBN 978--3--527--81311--7. --
 \newblock Google-Books-{ID}: {AUiHDwAAQBAJ}
+
+\bibitem[RF]{richter_usability_2016}
+\textsc{Richter}, Michael ; \textsc{Flückiger}, Markus~D.:
+\newblock Usability und {UX}.
+\newblock \url{http://dx.doi.org/10.1007/978-3-662-49828-6_2}.
+\newblock {In: }\textsc{Richter}, Michael (Hrsg.) ; \textsc{Flückiger},
+  Markus~D. (Hrsg.): \emph{Usability und {UX} kompakt: Produkte für Menschen}.
+\newblock Springer Berlin Heidelberg ({IT} kompakt). --
+\newblock DOI 10.1007/978--3--662--49828--6_2. --
+\newblock ISBN 978--3--662--49828--6, 7--19
 
 \bibitem[spr]{spreadshirt_tassen_nodate}
 \textsc{spreadshirt}:
