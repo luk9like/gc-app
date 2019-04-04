@@ -44,9 +44,10 @@ export class ThreeService {
 
     const loader = new THREE.TextureLoader();
     const material = new THREE.MeshBasicMaterial();
+    const texture = 'assets/texture/large.jpg';
 
     // material.specular = 1;
-    material.map = loader.load('assets/texture/texture.jpg');
+    material.map = loader.load(texture);
 
     /*object.traverse( function ( child ) {
       if ( child instanceof THREE.Mesh ) {
@@ -63,7 +64,9 @@ export class ThreeService {
 
     // var material.transparent = true;
     const cylinder = new THREE.Mesh( geometry, material );
-    this.scene.add( cylinder );
+    if (material.map) {
+      this.scene.add( cylinder );
+    }
 
     this.render();
     console.log('Texture load complete.');

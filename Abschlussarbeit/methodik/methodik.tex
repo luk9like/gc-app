@@ -39,7 +39,7 @@ Unter funktionalen Anforderungen versteht man konkrekte Funktionalitäten, welch
 		6 & Konfiguration speichern & Der Benutzer kann seinen konfigurierten Becher speichern. \\
 		\hline
 	\end{tabular}
-\caption{Tabellenüberschrift}
+\caption{Übersicht der funktionalen Anforderungen}
 \end{table}
 %
 \paragraph{3D Vorschau des Bechers}
@@ -91,7 +91,7 @@ Mit nicht funktionalen Anforderungen sind Funktionalitäten gemeint, welche die 
 		6 & Leistungstark & Der Benutzer kann seinen konfigurierten Becher speichern. \\
 		\hline
 	\end{tabular}
-	\caption{Tabellenüberschrift}
+	\caption{Übersicht der funktionalen Anforderungen}
 \end{table}
 %
 \paragraph{Uploadfilter}
@@ -110,7 +110,7 @@ Es ist wichtig das der Konfigurator auf verschiedenen Displaygrößen verwendet 
 \paragraph{Benutzerfreundlichkeit}
 Die Webanwendung soll benutzerfreundlich sein. Dazu tragen die schon erwähnten Bedienungshilfen bei. Wichtig ist, das der Benutzer immer weiß was der nächste Schritt ist. Um dies zu erreichen ist eine einfache und übersichtliche Gestaltung ist nötig. Sie sollte auf das wesentliche beschränkt sein und nicht überladen wirken.
 %
-\paragraph{Leistungsstark}
+\paragraph{Performant}
 Wie die Studie im Kapitel Performance gezeigt hat, mögen Benutzer keine langen Wartezeiten. Bei dem 3D-Konfigurator soll das Laden der 3D Modelle nicht länger als 2ms dauern. Das rendern des Designs auf den Becher ebenfalls nicht länger als 2ms. Die Länge des Uploads vom Design hängt von der Internetverbindung ab, sollte allerdings auch schnell abgeschlossen sein. Das Transfomieren des Models in der 3D szene sollte flüssig funktionieren und keine Verzögerungen enthalten. Alles in allem sollte die gesamte Anwendung performant laufen und im Bezug auf die Leistung an eine Desktopanwendung erinnern. Besonders interessant wird dieser Aspket auf mobilen Geräten, denn auch dort sollte die Anwendung möglichst stabil laufen.
 %
 %
@@ -123,7 +123,29 @@ Wie die Studie im Kapitel Performance gezeigt hat, mögen Benutzer keine langen 
 \section{Konzeption}
 \label{sec:konzept}
 %
-Bevor es an die Programmierung geht, sollte man sich im klaren sein, wie die Anwendung im Groben aufgebaut sein wird. Nachdem alle Funktionen und Vorgaben bekannt sind, kann man ein sogenanntes UML (Unified Modeling Language) entwerfen. Hierbei handelt es sich um eine einfache Modellierungssprache. Hierbei werden benötigte Klassen, Komponenten und Module definiert. Das hilft beim Programmieren den Überblick zu behalten. Im Folgenden  ist das UML für den Konfigurator zu sehen.
+Bevor es an die Umsetzung und Implementierung geht, beschäftigt sich diese Kapitel damit, \textbf{wie} der Konfigurator umgesetzt wird. Zunächst wird der technische Aufbau der Anwendung mit Diagrammen erklärt. Anschließend wird auch der grobe Aufbau der Benutzeroberfläche beschrieben.
+
+
+ Nachdem alle Funktionen und Vorgaben bekannt sind, kann man ein sogenanntes UML (Unified Modeling Language) entwerfen. Hierbei handelt es sich um eine einfache Modellierungssprache. Hierbei werden benötigte Klassen, Komponenten und Module definiert. Das hilft beim Programmieren den Überblick zu behalten. Im Folgenden  ist das UML für den Konfigurator zu sehen.
+\begin{figure}[h]
+	\centering
+	{\epsfig{file = methodik/images/komponentnendiagramm.png, width=11.0cm}}
+	\caption[Komponentendiagramm]{\textit{Komponentendiagramm der Angular-Anwendung}}
+	\label{fig:ngKomponent}
+\end{figure} 
+Beschäftigen wir uns nun mit der grafischen Benutzeroberfläche (UI). Am Anfang war ein 3-Schritte-Konfigurator geplant. Der Benutzer sollte also in drei Schritten seinen Becher konfigurieren. Da der Konfigurator nur wenige Einstellmöglichkeiten hat, ist es am benutzerfreundlichsten alles auf einer Seite zu konfigurieren. Somit ist die Webanwendung sehr einfach gehalten und so aufgebaut, dass eine mobile Anpassung leicht umzusetzen ist. Wie in der Abbildung zu sehen ist auf der linken Seite die 3D Szene mit WebGL aufgebaut. Hier kann der User seinen Becher betrachten oder ihn auch transformieren. Auf der rechten Seite befindet sich die Sidebar. Darin ist die komplette Menüführung mit den Konfigurationseinstellungen vorhanden, sowie die Übersicht aller gewählten Einstellungen. Das Menü ist hierarchisch aufgebaut, sodass der Benutzer erst die Größe des Bechers auswählt. Anschließend kann er sein Design hochladen und danach noch optionale Einstellungen wählen. Innerhalb der Sidebar befindet sich auch die Übersicht in Form einer Tabelle. Bei Tablets befindet sich die Sidebar unterhalb der 3D Ansicht. Auf Smartphones ist die Sidebar als Off-Canvas-Menu gelöst. Somit ist das Menü dann vollflächig (siehe Abbildung).
+\begin{figure}[h]
+	\centering
+	{\epsfig{file = methodik/images/mockup.png, width=11.0cm}}
+	\caption[Mockup]{\textit{Mockup der Angular-Anwendung}}
+	\label{fig:mockup}
+\end{figure}
+
+
+Der Schwerpunkt des Bachlorprojektes liegt bei der Entwicklung mit Angular und mit WebGL. Deshalb soll nicht viel Zeit für das Styling verwendet werden. Trotzdem soll es ein gutes und innovatives Design geben. Als Grundlage werden die Styles der Unternehmenswebseite sowie Bootstrap verwendet. Somit sind grundlegende Styles wie Schrift und Farben schon festgelegt und müssen nicht mehr betrachtet werden.
+
+
+
 • Konzept (UML und weitere Diagramme)
 • Mokups der Einzelnen Screens
 • Responsive Layout Ideen \\

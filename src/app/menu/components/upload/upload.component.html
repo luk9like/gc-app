@@ -1,3 +1,6 @@
-<p>
-  upload works!
-</p>
+<span style="color:red;" *ngIf="message">{{message}}</span>
+<label for="imageInput" class="custom-file-upload bg-primary">
+  <input id="imageInput" type="file" accept='image/png' (change)="preview();">
+  Design hochladen
+</label>
+<img [src]="imgURL" height="200" *ngIf="imgURL">
