@@ -123,16 +123,25 @@ Wie die Studie im Kapitel Performance gezeigt hat, mögen Benutzer keine langen 
 \section{Konzeption}
 \label{sec:konzept}
 %
-Bevor es an die Umsetzung und Implementierung geht, beschäftigt sich diese Kapitel damit, \textbf{wie} der Konfigurator umgesetzt wird. Zunächst wird der technische Aufbau der Anwendung mit Diagrammen erklärt. Anschließend wird auch der grobe Aufbau der Benutzeroberfläche beschrieben.
-
-
- Nachdem alle Funktionen und Vorgaben bekannt sind, kann man ein sogenanntes UML (Unified Modeling Language) entwerfen. Hierbei handelt es sich um eine einfache Modellierungssprache. Hierbei werden benötigte Klassen, Komponenten und Module definiert. Das hilft beim Programmieren den Überblick zu behalten. Im Folgenden  ist das UML für den Konfigurator zu sehen.
+Bevor es an die Umsetzung und Implementierung geht, beschäftigt sich dieses Kapitel damit, \textbf{wie} der Konfigurator umgesetzt wird. Um den technischen Aufbau zu verstehen, wird ein Flussdiagramm sowie ein Komponentendiagramm verwendet und im Laufe diesen Kapitels erläutert. Anschließend wird auch der grobe Aufbau der Benutzeroberfläche beschrieben.
+\begin{figure}[h]
+	\centering
+	{\epsfig{file = methodik/images/flowchart.png, width=9.0cm}}
+	\caption[Komponentendiagramm]{\textit{Flussdiagramm der Angular-Anwendung}}
+	\label{fig:flowchart}
+\end{figure}
+ Nachdem alle Funktionen und Vorgaben bekannt sind, sollte man sich über den technischen Ablauf Gedanken manchen. Das Flussdiagramm\footnote{engl. Flowchart sollte hier als Fussnote kurz erkärt werden damit jeder weiß, was genau damit gemeint ist.} in Abbildung \ref{fig:flowchart} zeigt, was während dem Konfigurieren des Bechers geschieht.\\
+ Der Konfigurator für Mehrwegbecher beeinhaltet vier verschiedene Größen von Bechern. Als erstes soll der Benutzer eine Bechergröße auswählen. Standardmäßig ist der Becher mit 0,2 Liter als 3D-Model geladen. Falls der Benutzer eine andere Größe wählt, aktualisiert sich das 3D-Model dementsprechend. Anschließend kann der Upload des Becher-Designs erfolgen. Hierbei muss sich der Benutzer an die Druckvorgaben halten. Wenn das Design beispielsweise in einem falsches Dateiformat ist oder eine falsche Auflösung hat, kann das Design nicht hochgeladen werden. Falls alles richtig ist, wird das Design direkt auf den Becher gerendert. Die Wahl der Größe und die hochgeladene Datei werden in dem DataService gespeichert. Am Ende der Konfiguration kann sich der User in der Übersicht alles noch einmal ansehen und bei Bedarf ausdrucken. Dabei werden die Daten aus dem DataService verwendet.  
+ 
+ Jetzt, wo das Flussdiagramm den Ablauf einer Konfiguration beschrieben hat, sollte man sich den Komponenten der Anwendung widmen. Das Komponentendiagramm (siehe Abbildung \ref{fig:ngKomponent}) zeigt die Hauptkomponenten, welche später auch als Angular-Bausteine angelegt werden. Natürlich gibt es noch weitere Kindskomponenten, die in den Hauptkomponenten verwendet werden. Darauf gehen wir aber erst in der Implementierung ein.
 \begin{figure}[h]
 	\centering
 	{\epsfig{file = methodik/images/komponentnendiagramm.png, width=11.0cm}}
 	\caption[Komponentendiagramm]{\textit{Komponentendiagramm der Angular-Anwendung}}
 	\label{fig:ngKomponent}
 \end{figure} 
+Wie wir wissen ist die AppComponent unsere Basis-Komponente, von der alles startet. Nun hat unser Konfigurator eine SidebarComponent, welche das Knofigurationsmenü sowie die Übersicht der Konfigurationen Beeinhaltet. Das Herzstück unserer Angular-Anwendung ist die SceneComponent. Sie zeigt uns den Becher in 3D mit dem hochgeladenen Design. Um eine 3D Szene aufzubauen wird der SceneService verwendet, welcher die 3D Bibliothek Three.js nutzt. Wie schon in dem Flussdiagramm erwähnt befinden sich alle Konfigurations-Daten in dem DataService, welcher global für alle Komponenten bzw. Module zugänglich ist. Damit sollte der technische Aufbau der Anwendung klar sein.
+
 Beschäftigen wir uns nun mit der grafischen Benutzeroberfläche (UI). Am Anfang war ein 3-Schritte-Konfigurator geplant. Der Benutzer sollte also in drei Schritten seinen Becher konfigurieren. Da der Konfigurator nur wenige Einstellmöglichkeiten hat, ist es am benutzerfreundlichsten alles auf einer Seite zu konfigurieren. Somit ist die Webanwendung sehr einfach gehalten und so aufgebaut, dass eine mobile Anpassung leicht umzusetzen ist. Wie in der Abbildung zu sehen ist auf der linken Seite die 3D Szene mit WebGL aufgebaut. Hier kann der User seinen Becher betrachten oder ihn auch transformieren. Auf der rechten Seite befindet sich die Sidebar. Darin ist die komplette Menüführung mit den Konfigurationseinstellungen vorhanden, sowie die Übersicht aller gewählten Einstellungen. Das Menü ist hierarchisch aufgebaut, sodass der Benutzer erst die Größe des Bechers auswählt. Anschließend kann er sein Design hochladen und danach noch optionale Einstellungen wählen. Innerhalb der Sidebar befindet sich auch die Übersicht in Form einer Tabelle. Bei Tablets befindet sich die Sidebar unterhalb der 3D Ansicht. Auf Smartphones ist die Sidebar als Off-Canvas-Menu gelöst. Somit ist das Menü dann vollflächig (siehe Abbildung).
 \begin{figure}[h]
 	\centering
@@ -141,8 +150,7 @@ Beschäftigen wir uns nun mit der grafischen Benutzeroberfläche (UI). Am Anfang
 	\label{fig:mockup}
 \end{figure}
 
-
-Der Schwerpunkt des Bachlorprojektes liegt bei der Entwicklung mit Angular und mit WebGL. Deshalb soll nicht viel Zeit für das Styling verwendet werden. Trotzdem soll es ein gutes und innovatives Design geben. Als Grundlage werden die Styles der Unternehmenswebseite sowie Bootstrap verwendet. Somit sind grundlegende Styles wie Schrift und Farben schon festgelegt und müssen nicht mehr betrachtet werden.
+\paragraph{Styles}Der Schwerpunkt des Bachlorprojektes liegt bei der Entwicklung mit Angular und mit WebGL. Deshalb soll nicht viel Zeit für das Styling verwendet werden. Trotzdem soll es ein gutes und innovatives Design geben. Als Grundlage werden die Styles der Unternehmenswebseite sowie Bootstrap verwendet. Somit sind grundlegende Styles wie Schrift und Farben schon festgelegt und müssen nicht mehr betrachtet werden.
 
 
 

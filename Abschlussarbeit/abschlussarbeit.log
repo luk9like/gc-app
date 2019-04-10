@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.3.13)  4 APR 2019 17:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6980) (preloaded format=pdflatex 2019.3.13)  10 APR 2019 22:11
 entering extended mode
 **./abschlussarbeit.tex
 (abschlussarbeit.tex
 LaTeX2e <2018-12-01>
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/memoir\memoir.cls"
+(/home/luke/.miktex/texmfs/install/tex/latex/memoir/memoir.cls
 Document Class: memoir 2018/12/12 v3.7h configurable book, report, article docu
 ment class
 \onelineskip=\skip41
@@ -11,21 +11,17 @@ ment class
 \xlvchars=\skip43
 \@memcnta=\count80
 \c@@memmarkcntra=\count81
-
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\ifpdf.s
-ty"
+(/home/luke/.miktex/texmfs/install/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
 )
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/ifetex\ifetex.sty"
+(/home/luke/.miktex/texmfs/install/tex/latex/ifetex/ifetex.sty
 Package: ifetex 2018/03/31 v1.2a ifetex
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/plain/ifetex\ifetex.tex"
-))
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/generic/ifxetex\ifxetex.
-sty"
+
+(/home/luke/.miktex/texmfs/install/tex/plain/ifetex/ifetex.tex))
+(/home/luke/.miktex/texmfs/install/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\ifluate
-x.sty"
+(/home/luke/.miktex/texmfs/install/tex/generic/oberdiek/ifluatex.sty
 Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )
@@ -34,7 +30,7 @@ Package ifluatex Info: LuaTeX not detected.
 \trimtop=\skip46
 \trimedge=\skip47
 
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/memoir\mem11.clo"
+(/home/luke/.miktex/texmfs/install/tex/latex/memoir/mem11.clo
 File: mem11.clo 2008/01/30 v0.3 memoir class 11pt size option
 )
 \binding=\skip48
@@ -124,7 +120,8 @@ File: mem11.clo 2008/01/30 v0.3 memoir class 11pt size option
 \beforePoemTitleskip=\skip108
 \midPoemTitleskip=\skip109
 \afterPoemTitleskip=\skip110
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\array.sty"
+
+(/home/luke/.miktex/texmfs/install/tex/latex/tools/array.sty
 Package: array 2018/12/30 v2.4k Tabular extension package (FMi)
 \col@sep=\dimen107
 \ar@mcellbox=\box27
@@ -134,15 +131,13 @@ Package: array 2018/12/30 v2.4k Tabular extension package (FMi)
 \backup@length=\skip112
 \ar@cellbox=\box28
 )
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\dcolumn.sty"
+(/home/luke/.miktex/texmfs/install/tex/latex/tools/dcolumn.sty
 Package: dcolumn 2014/10/28 v1.06 decimal alignment package (DPC)
 )
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\delarray.sty
-"
+(/home/luke/.miktex/texmfs/install/tex/latex/tools/delarray.sty
 Package: delarray 2014/10/28 v1.01 array delimiter package (DPC)
 )
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\tabularx.sty
-"
+(/home/luke/.miktex/texmfs/install/tex/latex/tools/tabularx.sty
 Package: tabularx 2016/02/03 v2.11b `tabularx' package (DPC)
 \TX@col@width=\dimen109
 \TX@old@table=\dimen110
@@ -365,194 +360,262 @@ Sidefoothsep and sidefootwidth: 7pt and 101pt
 Sidefootvsep and sidefootheight: 13.6pt and 594.32022pt
 ******************************************************
 
-
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graphicx.
-sty"
-Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
-
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\keyval.st
-y"
+(/home/luke/.miktex/texmfs/install/tex/latex/listings/listings.sty
+(/home/luke/.miktex/texmfs/install/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks22
 )
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graphics.
-sty"
+\lst@mode=\count138
+\lst@gtempboxa=\box32
+\lst@token=\toks23
+\lst@length=\count139
+\lst@currlwidth=\dimen147
+\lst@column=\count140
+\lst@pos=\count141
+\lst@lostspace=\dimen148
+\lst@width=\dimen149
+\lst@newlines=\count142
+\lst@lineno=\count143
+\lst@maxwidth=\dimen150
+
+(/home/luke/.miktex/texmfs/install/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2019/02/27 1.8b (Carsten Heinz)
+\c@lstnumber=\count144
+\lst@skipnumbers=\count145
+\lst@framebox=\box33
+)
+(/home/luke/.miktex/texmfs/install/tex/latex/listings/listings.cfg
+File: listings.cfg 2019/02/27 1.8b listings configuration
+))
+Package: listings 2019/02/27 1.8b (Carsten Heinz)
+
+(/home/luke/.miktex/texmfs/install/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2019/02/27 1.8b listings language file
+)
+(/home/luke/.miktex/texmfs/install/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2019/02/27 1.8b (Carsten Heinz)
+)
+(/home/luke/.miktex/texmfs/install/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/home/luke/.miktex/texmfs/install/tex/latex/graphics/graphics.sty
 Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\trig.sty"
+(/home/luke/.miktex/texmfs/install/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-cfg\graph
-ics.cfg"
+(/home/luke/.miktex/texmfs/install/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 99.
 
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-def\pdfte
-x.def"
+(/home/luke/.miktex/texmfs/install/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen147
-\Gin@req@width=\dimen148
+\Gin@req@height=\dimen151
+\Gin@req@width=\dimen152
 )
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\latexsym.sty"
+(/home/luke/.miktex/texmfs/install/tex/latex/base/latexsym.sty
 Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
 \symlasy=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
 (Font)                  U/lasy/m/n --> U/lasy/b/n on input line 52.
 )
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\epsfig.st
-y"
+(/home/luke/.miktex/texmfs/install/tex/latex/graphics/epsfig.sty
 Package: epsfig 2017/06/25 v1.7b (e)psfig emulation (SPQR)
-\epsfxsize=\dimen149
-\epsfysize=\dimen150
+\epsfxsize=\dimen153
+\epsfysize=\dimen154
 )
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\rotating.
-sty"
+(/home/luke/.miktex/texmfs/install/tex/latex/graphics/rotating.sty
 Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
 
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ifthen.sty"
+(/home/luke/.miktex/texmfs/install/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-\c@r@tfl@t=\count138
+\c@r@tfl@t=\count146
 \rotFPtop=\skip185
 \rotFPbot=\skip186
-\rot@float@box=\box32
-\rot@mess@toks=\toks23
+\rot@float@box=\box34
+\rot@mess@toks=\toks24
 )
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/doublestroke\dsfon
-t.sty"
+(/home/luke/.miktex/texmfs/install/tex/latex/subfigure/subfigure.sty
+Package: subfigure 2002/07/30 v2.1.4 subfigure package
+\subfigtopskip=\skip187
+\subfigcapskip=\skip188
+\subfigcaptopadj=\dimen155
+\subfigbottomskip=\skip189
+\subfigcapmargin=\dimen156
+\subfiglabelskip=\skip190
+\c@subfigure=\count147
+
+
+! LaTeX Error: Command \c@lofdepth already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.99 \newcounter{lofdepth}
+                          
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+\c@subtable=\count148
+
+! LaTeX Error: Command \c@lotdepth already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.112 \newcounter{lotdepth}
+                           
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+(/home/luke/.miktex/texmfs/install/tex/latex/subfigure/subfigure.cfg)
+\subfig@top=\skip191
+\subfig@bottom=\skip192
+)
+(/home/luke/.miktex/texmfs/install/tex/latex/doublestroke/dsfont.sty
 Package: dsfont 1995/08/01 v0.1 Double stroke roman fonts
 )
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/generic/german\german.st
-y" v2.5e 1998-07-08
+(/home/luke/.miktex/texmfs/install/tex/generic/german/german.sty
+v2.5e 1998-07-08
 Package: german 1998/07/08 v2.5e Support for writing german texts (br)
-\grmnU@D=\dimen151
-german -- \language number for Austrian undefined, default 24 used.
+\grmnU@D=\dimen157
+german -- \language number for USenglish undefined, default 255 used.
+german -- \language number for UKenglish undefined, default 255 used.
+
+german -- \language number for German undefined, default 255 used,
+german -- Please read "gerdoc.tex" how to install hyphenation patterns.
+german -- \language number for Austrian undefined, default 255 used.
+german -- \language number for French undefined, default 255 used.
 )
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\inputenc.sty"
+(/home/luke/.miktex/texmfs/install/tex/latex/base/inputenc.sty
 Package: inputenc 2018/08/11 v1.3c Input encoding file
-\inpenc@prehook=\toks24
-\inpenc@posthook=\toks25
+\inpenc@prehook=\toks25
+\inpenc@posthook=\toks26
 )
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/colortbl\colortbl.
-sty"
+(/home/luke/.miktex/texmfs/install/tex/latex/colortbl/colortbl.sty
 Package: colortbl 2018/12/12 v1.0d Color table columns (DPC)
 
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\color.sty
-"
+(/home/luke/.miktex/texmfs/install/tex/latex/graphics/color.sty
 Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
 
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-cfg\color
-.cfg"
+(/home/luke/.miktex/texmfs/install/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 147.
 )
-\everycr=\toks26
-\minrowclearance=\skip187
+\everycr=\toks27
+\minrowclearance=\skip193
 )
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/algorithms\algorit
-hm.sty"
+(/home/luke/.miktex/texmfs/install/tex/latex/algorithms/algorithm.sty
 Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
 nment
 
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/float\float.sty"
+(/home/luke/.miktex/texmfs/install/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count139
-\float@exts=\toks27
-\float@box=\box33
-\@float@everytoks=\toks28
-\@floatcapt=\box34
+\c@float@type=\count149
+\float@exts=\toks28
+\float@box=\box35
+\@float@everytoks=\toks29
+\@floatcapt=\box36
 )
-\@float@every@algorithm=\toks29
-\c@algorithm=\count140
+\@float@every@algorithm=\toks30
+\c@algorithm=\count150
 )
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/algorithms\algorit
-hmic.sty"
+(/home/luke/.miktex/texmfs/install/tex/latex/algorithms/algorithmic.sty
 Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
-\c@ALC@unique=\count141
-\c@ALC@line=\count142
-\c@ALC@rem=\count143
-\c@ALC@depth=\count144
-\ALC@tlm=\skip188
-\algorithmicindent=\skip189
+\c@ALC@unique=\count151
+\c@ALC@line=\count152
+\c@ALC@rem=\count153
+\c@ALC@depth=\count154
+\ALC@tlm=\skip194
+\algorithmicindent=\skip256
 )
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/layouts\layouts.st
-y"
+(/home/luke/.miktex/texmfs/install/tex/latex/layouts/layouts.sty
 Package: layouts 2009/09/02 v2.6d graphical depiction of document elements
-\l@ylen=\skip190
-\layoutsbox=\box35
-\l@youtunitlength=\skip191
-\l@youtlinethick=\skip192
-\l@youtlinethickii=\skip193
-\l@ysetupparskip=\skip194
-\l@ysetupbaselineskip=\skip256
-\l@yonem=\skip257
-\l@yonex=\skip258
-\l@ylmarg=\skip259
-\l@yrmarg=\skip260
-\l@yitmindent=\skip261
-\l@ylblwidth=\skip262
-\l@ylblsep=\skip263
-\l@ylparindent=\skip264
-\l@ytsep=\skip265
-\l@ypskip=\skip266
-\l@yptsep=\skip267
-\l@ypsep=\skip268
-\l@yitmsep=\skip269
-\l@ytok=\toks30
-\l@youtpw=\count145
-\l@youtph=\count146
-\l@youthpi=\count147
-\l@youthpii=\count148
-\l@youthpiii=\count149
-\l@youthpiv=\count150
-\l@youthpv=\count151
-\l@youthpvi=\count152
-\l@youthpvii=\count153
-\l@youtparskip=\count154
-\l@youtvpi=\count155
-\l@youtvpii=\count156
-\l@youtvpiii=\count157
-\l@youtvpiv=\count158
-\l@youtvpv=\count159
-\l@youtvpvi=\count160
-\l@youtvpvii=\count161
-\l@youthdo=\count162
-\l@youthdi=\count163
-\l@youthdii=\count164
-\l@youthdiii=\count165
-\l@youthdiv=\count166
-\l@youthdv=\count167
-\l@youthdvi=\count168
-\l@youthdvii=\count169
-\l@youtvdo=\count170
-\l@youtvdi=\count171
-\l@youtvdii=\count172
-\l@youtvdiii=\count173
-\l@youtvdiv=\count174
-\l@youtvdv=\count175
-\l@youtvdvi=\count176
-\l@youtvdvii=\count177
-\l@youtvdviii=\count178
-\l@youtxci=\count179
-\l@youtxcii=\count180
-\l@youtxciii=\count181
-\l@youtxciv=\count182
-\l@youtxcv=\count183
-\l@youtxcvi=\count184
-\l@youtyci=\count185
-\l@youtycii=\count186
-\l@youtyciii=\count187
-\l@youtyciv=\count188
-\l@youtycv=\count189
-\l@youtycvi=\count190
-\l@youtycvii=\count191
-\l@youtycviii=\count192
-\l@youtxco=\count193
-\l@youtyco=\count194
-\l@ytempdima=\skip270
+\l@ylen=\skip257
+\layoutsbox=\box37
+\l@youtunitlength=\skip258
+\l@youtlinethick=\skip259
+\l@youtlinethickii=\skip260
+\l@ysetupparskip=\skip261
+\l@ysetupbaselineskip=\skip262
+\l@yonem=\skip263
+\l@yonex=\skip264
+\l@ylmarg=\skip265
+\l@yrmarg=\skip266
+\l@yitmindent=\skip267
+\l@ylblwidth=\skip268
+\l@ylblsep=\skip269
+\l@ylparindent=\skip270
+\l@ytsep=\skip271
+\l@ypskip=\skip272
+\l@yptsep=\skip273
+\l@ypsep=\skip274
+\l@yitmsep=\skip275
+\l@ytok=\toks31
+\l@youtpw=\count155
+\l@youtph=\count156
+\l@youthpi=\count157
+\l@youthpii=\count158
+\l@youthpiii=\count159
+\l@youthpiv=\count160
+\l@youthpv=\count161
+\l@youthpvi=\count162
+\l@youthpvii=\count163
+\l@youtparskip=\count164
+\l@youtvpi=\count165
+\l@youtvpii=\count166
+\l@youtvpiii=\count167
+\l@youtvpiv=\count168
+\l@youtvpv=\count169
+\l@youtvpvi=\count170
+\l@youtvpvii=\count171
+\l@youthdo=\count172
+\l@youthdi=\count173
+\l@youthdii=\count174
+\l@youthdiii=\count175
+\l@youthdiv=\count176
+\l@youthdv=\count177
+\l@youthdvi=\count178
+\l@youthdvii=\count179
+\l@youtvdo=\count180
+\l@youtvdi=\count181
+\l@youtvdii=\count182
+\l@youtvdiii=\count183
+\l@youtvdiv=\count184
+\l@youtvdv=\count185
+\l@youtvdvi=\count186
+\l@youtvdvii=\count187
+\l@youtvdviii=\count188
+\l@youtxci=\count189
+\l@youtxcii=\count190
+\l@youtxciii=\count191
+\l@youtxciv=\count192
+\l@youtxcv=\count193
+\l@youtxcvi=\count194
+\l@youtyci=\count266
+\l@youtycii=\count267
+\l@youtyciii=\count268
+\l@youtyciv=\count269
+\l@youtycv=\count270
+\l@youtycvi=\count271
+\l@youtycvii=\count272
+\l@youtycviii=\count273
+\l@youtxco=\count274
+\l@youtyco=\count275
+\l@ytempdima=\skip276
 )
 \abschlussarbeit@idxfile=\write4
 \openout4 = `abschlussarbeit.idx'.
@@ -566,39 +629,35 @@ To prepare we will now reset all captioning macros and configurations to kernel
  the caption package interfaces in order to
  configure your captions.
 
-
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/caption\caption.st
-y"
+(/home/luke/.miktex/texmfs/install/tex/latex/caption/caption.sty
 Package: caption 2018/10/06 v3.3-154 Customizing captions (AR)
 
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/caption\caption3.s
-ty"
+(/home/luke/.miktex/texmfs/install/tex/latex/caption/caption3.sty
 Package: caption3 2018/09/12 v1.8c caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 64.
-\captionmargin=\dimen152
-\captionmargin@=\dimen153
-\captionwidth=\dimen154
-\caption@tempdima=\dimen155
-\caption@indent=\dimen156
-\caption@parindent=\dimen157
-\caption@hangindent=\dimen158
+\captionmargin=\dimen158
+\captionmargin@=\dimen159
+\captionwidth=\dimen160
+\caption@tempdima=\dimen161
+\caption@indent=\dimen162
+\caption@parindent=\dimen163
+\caption@hangindent=\dimen164
 )
-\c@caption@flags=\count266
-\c@ContinuedFloat=\count267
+\c@caption@flags=\count276
+\c@ContinuedFloat=\count277
 Package caption Info: float package is loaded.
+Package caption Info: listings package is loaded.
 Package caption Info: rotating package is loaded.
+Package caption Info: subfigure package is loaded.
 )
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\hyperref.
-sty"
+(/home/luke/.miktex/texmfs/install/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2018/11/30 v6.88e Hypertext links for LaTeX
 
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\hobsub-
-hyperref.sty"
+(/home/luke/.miktex/texmfs/install/tex/generic/oberdiek/hobsub-hyperref.sty
 Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
 
 
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\hobsub-
-generic.sty"
+(/home/luke/.miktex/texmfs/install/tex/generic/oberdiek/hobsub-generic.sty
 Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
 Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
@@ -633,28 +692,24 @@ Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
 Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
 Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
 )
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\auxhook.s
-ty"
+(/home/luke/.miktex/texmfs/install/tex/latex/oberdiek/auxhook.sty
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 )
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\kvoptions
-.sty"
+(/home/luke/.miktex/texmfs/install/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
-\@linkdim=\dimen159
-\Hy@linkcounter=\count268
-\Hy@pagecounter=\count269
+\@linkdim=\dimen165
+\Hy@linkcounter=\count278
+\Hy@pagecounter=\count279
 
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\pd1enc.de
-f"
+(/home/luke/.miktex/texmfs/install/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2018/11/30 v6.88e Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count270
+\Hy@SavedSpaceFactor=\count280
 
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/00miktex\hyperref.
-cfg"
+(/home/luke/.miktex/texmfs/install/tex/latex/00miktex/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
 Package hyperref Info: Hyper figures OFF on input line 4519.
@@ -664,16 +719,17 @@ Package hyperref Info: Plain pages OFF on input line 4534.
 Package hyperref Info: Backreferencing OFF on input line 4539.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4772.
-\c@Hy@tempcnt=\count271
- ("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/url\url.sty"
+\c@Hy@tempcnt=\count281
+
+(/home/luke/.miktex/texmfs/install/tex/latex/url/url.sty
 \Urlmuskip=\muskip10
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5125.
-\XeTeXLinkMargin=\dimen160
-\Fld@menulength=\count272
-\Field@Width=\dimen161
-\Fld@charsize=\dimen162
+\XeTeXLinkMargin=\dimen166
+\Fld@menulength=\count282
+\Field@Width=\dimen167
+\Fld@charsize=\dimen168
 Package hyperref Info: Hyper figures OFF on input line 6380.
 Package hyperref Info: Link nesting OFF on input line 6385.
 Package hyperref Info: Hyper index ON on input line 6388.
@@ -683,60 +739,54 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6405.
 Package hyperref Info: PDF/A mode OFF on input line 6410.
 LaTeX Info: Redefining \ref on input line 6450.
 LaTeX Info: Redefining \pageref on input line 6454.
-\Hy@abspage=\count273
-\c@Item=\count274
-\c@Hfootnote=\count275
+\Hy@abspage=\count283
+\c@Item=\count284
+\c@Hfootnote=\count285
 )
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/memoir\memhfixc.st
-y"
+(/home/luke/.miktex/texmfs/install/tex/latex/memoir/memhfixc.sty
 Package: memhfixc 2013/05/30 v1.17 nameref/hyperref package fixes for memoir cl
 ass
-\c@memhycontfloat=\count276
-\c@Hpagenote=\count277
+\c@memhycontfloat=\count286
+\c@Hpagenote=\count287
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\hpdftex.d
-ef"
+(/home/luke/.miktex/texmfs/install/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2018/11/30 v6.88e Hyperref driver for pdfTeX
-\Fld@listcount=\count278
-\c@bookmark@seq@number=\count279
+\Fld@listcount=\count288
+\c@bookmark@seq@number=\count289
 
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\rerunfile
-check.sty"
+(/home/luke/.miktex/texmfs/install/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
-\Hy@SectionHShift=\skip271
+\Hy@SectionHShift=\skip277
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 96.
+Package hyperref Info: Option `colorlinks' set `true' on input line 114.
 
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/multibib\multibib.
-sty"
+(/home/luke/.miktex/texmfs/install/tex/latex/multibib/multibib.sty
 Package: multibib 2008/12/10 v1.4 Multiple bibliographies for one document.
-\mb@biblabelwidth=\count280
+\mb@biblabelwidth=\count290
 )
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/units\nicefrac.sty
-"
+(/home/luke/.miktex/texmfs/install/tex/latex/units/nicefrac.sty
 Package: nicefrac 1998/08/04 v0.9b Nice fractions
-\L@UnitsRaiseDisplaystyle=\skip272
-\L@UnitsRaiseTextstyle=\skip273
-\L@UnitsRaiseScriptstyle=\skip274
+\L@UnitsRaiseDisplaystyle=\skip278
+\L@UnitsRaiseTextstyle=\skip279
+\L@UnitsRaiseScriptstyle=\skip280
 )
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\amssymb.s
-ty"
+(/home/luke/.miktex/texmfs/install/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\amsfonts.
-sty"
+(/home/luke/.miktex/texmfs/install/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
-\@emptytoks=\toks31
+\@emptytoks=\toks32
 \symAMSa=\mathgroup5
 \symAMSb=\mathgroup6
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)) (abschlussarbeit.aux (acknow/acknow.aux) (erklaerung/erklaerung.aux)
+))
+(abschlussarbeit.aux (acknow/acknow.aux) (erklaerung/erklaerung.aux)
 (intro/intro.aux) (technik/technik.aux) (grundlagen/grundlagen.aux)
 (methodik/methodik.aux
 
@@ -764,46 +814,46 @@ LaTeX Warning: Label `sec:umsetzung' multiply defined.
 
 LaTeX Warning: Label `sec:umsetzung' multiply defined.
 
+
+LaTeX Warning: Label `sec:umsetzung' multiply defined.
+
 ) (testphase/testphase.aux) (fazit/fazit.aux) (anhang/anhang.aux)
 (glossar/glossar.aux))
 \openout1 = `abschlussarbeit.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 148.
-LaTeX Font Info:    ... okay on input line 148.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 148.
-LaTeX Font Info:    ... okay on input line 148.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 148.
-LaTeX Font Info:    ... okay on input line 148.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 148.
-LaTeX Font Info:    ... okay on input line 148.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 148.
-LaTeX Font Info:    ... okay on input line 148.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 148.
-LaTeX Font Info:    ... okay on input line 148.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 148.
-LaTeX Font Info:    ... okay on input line 148.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 166.
+LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 166.
+LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 166.
+LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 166.
+LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 166.
+LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 166.
+LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 166.
+LaTeX Font Info:    ... okay on input line 166.
+\c@lstlisting=\count291
 
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/context/base/mkii\supp-p
-df.mkii"
+(/home/luke/.miktex/texmfs/install/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count281
-\scratchdimen=\dimen163
-\scratchbox=\box36
-\nofMPsegments=\count282
-\nofMParguments=\count283
-\everyMPshowfont=\toks32
-\MPscratchCnt=\count284
-\MPscratchDim=\dimen164
-\MPnumerator=\count285
-\makeMPintoPDFobject=\count286
-\everyMPtoPDFconversion=\toks33
-)
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\epstopdf-
-base.sty"
+\scratchcounter=\count292
+\scratchdimen=\dimen169
+\scratchbox=\box38
+\nofMPsegments=\count293
+\nofMParguments=\count294
+\everyMPshowfont=\toks33
+\MPscratchCnt=\count295
+\MPscratchDim=\dimen170
+\MPnumerator=\count296
+\makeMPintoPDFobject=\count297
+\everyMPtoPDFconversion=\toks34
+) (/home/luke/.miktex/texmfs/install/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\grfext.st
-y"
+(/home/luke/.miktex/texmfs/install/tex/latex/oberdiek/grfext.sty
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 )
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -814,79 +864,76 @@ G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
 
-Package layouts Warning: Layout scale set to 0.5 on input line 148.
+Package layouts Warning: Layout scale set to 0.5 on input line 166.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\AtBeginShipoutBox=\box37
-Package hyperref Info: Link coloring ON on input line 148.
-
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\nameref.s
-ty"
+\AtBeginShipoutBox=\box39
+Package hyperref Info: Link coloring ON on input line 166.
+(/home/luke/.miktex/texmfs/install/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\gettitl
-estring.sty"
+(/home/luke/.miktex/texmfs/install/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count287
+\c@section@level=\count298
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 148.
-LaTeX Info: Redefining \ref on input line 148.
-LaTeX Info: Redefining \pageref on input line 148.
-LaTeX Info: Redefining \nameref on input line 148.
+LaTeX Info: Redefining \nameref on input line 166.
+LaTeX Info: Redefining \ref on input line 166.
+LaTeX Info: Redefining \pageref on input line 166.
+LaTeX Info: Redefining \nameref on input line 166.
 (abschlussarbeit.out) (abschlussarbeit.out)
 \@outlinefile=\write5
 \openout5 = `abschlussarbeit.out'.
 
-<thm.png, id=219, 493.845pt x 60.225pt>
+<thm.png, id=223, 493.845pt x 60.225pt>
 File: thm.png Graphic file (type png)
 <use thm.png>
-Package pdftex.def Info: thm.png  used on input line 156.
+Package pdftex.def Info: thm.png  used on input line 174.
 (pdftex.def)             Requested size: 455.24408pt x 55.51701pt.
 
-Overfull \hbox (39.24408pt too wide) in paragraph at lines 156--156
+Overfull \hbox (39.24408pt too wide) in paragraph at lines 174--174
  [] 
  []
 
-LaTeX Font Info:    Try loading font information for U+lasy on input line 156.
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ulasy.fd"
+LaTeX Font Info:    Try loading font information for U+lasy on input line 174.
+(/home/luke/.miktex/texmfs/install/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 156.
+LaTeX Font Info:    Try loading font information for U+msa on input line 174.
 
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
+(/home/luke/.miktex/texmfs/install/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 156.
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
+LaTeX Font Info:    Try loading font information for U+msb on input line 174.
+
+(/home/luke/.miktex/texmfs/install/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 
-{C:/Users/lukas/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./thm.png>]
- [2
+{/home/luke/.miktex/texmfs/data/pdftex/config/pdftex.map} <./thm.png>] [2
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.183 	\cleardoublepage
+l.201 	\cleardoublepage
                         [1]pdfTeX warning (ext4): destination with the same ide
 ntifier (name{page.ii}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.183 	\cleardoublepage
+l.201 	\cleardoublepage
                         [2
 
 ]
 \openout2 = `acknow/acknow.aux'.
 
  (acknow/acknow.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 2--187
+Underfull \hbox (badness 10000) in paragraph at lines 2--205
 
  []
 
@@ -894,7 +941,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.187 	\include{acknow/acknow}
+l.205 	\include{acknow/acknow}
                                [1
 
 
@@ -911,7 +958,7 @@ l.1 \chapter
 
 
 ])
-Underfull \hbox (badness 10000) in paragraph at lines 5--190
+Underfull \hbox (badness 10000) in paragraph at lines 5--208
 
  []
 
@@ -921,9 +968,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--190
 ] (abschlussarbeit.toc [5])
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/sc' in size <10.95> not available
-(Font)              Font shape `OT1/cmr/m/sc' tried instead on input line 197.
+(Font)              Font shape `OT1/cmr/m/sc' tried instead on input line 215.
 
-[6] (abschlussarbeit.lof) [7
+[6] (abschlussarbeit.lof
+
+LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <10.95> not available
+(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 20.
+
+) [7
 
 ] [8
 
@@ -931,14 +983,47 @@ LaTeX Font Warning: Font shape `OT1/cmss/m/sc' in size <10.95> not available
 \openout2 = `intro/intro.aux'.
 
  (intro/intro.tex
+Underfull \hbox (badness 10000) in paragraph at lines 24--24
+[][] [][][]\OT1/cmss/bx/n/9 Gizeh Verpackungen \OT1/cmss/m/n/9 ist eine interna
+tional t[]atige deutsche Unternehmensgruppe die
+ []
 
-LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <10.95> not available
-(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 24.
+
+Overfull \hbox (6.05745pt too wide) in paragraph at lines 24--34
+\OT1/cmss/m/n/10.95 Der Kunde \OT1/cmss/m/sl/10.95 Gizeh[][][][][] \OT1/cmss/m/
+n/10.95 bedruckt individuelle Mehrwegbecher. Groe Druckportale, wie \OT1/cmss/
+m/sl/10.95 Fyleralarm[][][][][]\OT1/cmss/m/n/10.95 ,
+ []
 
 [1
 
 
-] [2]) [3]
+]
+Overfull \hbox (32.44289pt too wide) in paragraph at lines 72--81
+[]\OT1/cmss/bx/n/10.95 Testumgebung[] \OT1/cmss/m/n/10.95 Am Ende der Entwicklu
+ng wird die entwickelte Applikation mit der Testumgebung
+ []
+
+)
+Overfull \hbox (18.73122pt too wide) in paragraph at lines 84--224
+\OT1/cmss/m/n/10.95 In dem Kapitel \OT1/cmss/m/sl/10.95 2 Stand der Technik \OT
+1/cmss/m/n/10.95 wird zun[]achst auf vorhandene L[]osungen bzw. L[]osungsans[]a
+tze
+ []
+
+
+Overfull \hbox (5.02711pt too wide) in paragraph at lines 84--224
+\OT1/cmss/m/n/10.95 Beispiele aus anderen Branchen angef[]uhrt, die eine gute 3
+D Konfiguration f[]ur andere Produkte
+ []
+
+
+Overfull \hbox (5.67912pt too wide) in paragraph at lines 84--224
+\OT1/cmss/m/n/10.95 erm[]oglichen. Kapitel \OT1/cmss/m/sl/10.95 3 Grundlagen \O
+T1/cmss/m/n/10.95 erkl[]art grob die verwendeten Technologien. Durch Beispiele
+ []
+
+[2] [3]
 \openout2 = `technik/technik.aux'.
 
  (technik/technik.tex [4
@@ -946,70 +1031,165 @@ LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <10.95> not available
 
 
 ]
-<technik/images/flyeralarm.png, id=384, 1509.64pt x 970.62625pt>
+Overfull \hbox (6.1993pt too wide) in paragraph at lines 11--21
+\OT1/cmss/m/n/10.95 Es wird zun[]achst auf vergleichbare Projekte und anschlie
+end auf die in der Arbeit verwendeten
+ []
+
+
+Overfull \hbox (5.05853pt too wide) in paragraph at lines 11--21
+\OT1/cmss/m/n/10.95 Technologien eingegangen. Dabei wird analysiert, warum eine
+ Technologieanalayse im Kontext
+ []
+
+<technik/images/flyeralarm.png, id=395, 1509.64pt x 970.62625pt>
 File: technik/images/flyeralarm.png Graphic file (type png)
 <use technik/images/flyeralarm.png>
 Package pdftex.def Info: technik/images/flyeralarm.png  used on input line 31.
 (pdftex.def)             Requested size: 312.9803pt x 201.23087pt.
- [5 <./technik/images/flyeralarm.png>]
-<technik/images/spread-shirt.png, id=392, 1753.55125pt x 1033.8625pt>
+
+Overfull \hbox (1.91783pt too wide) in paragraph at lines 27--38
+\OT1/cmss/m/n/10.95 Webseite:[]\OT1/cmss/m/sl/10.95 Aus produktionstechnischen 
+Gr[]unden und aufgrund der konischen Form der Becher
+ []
+
+[5 <./technik/images/flyeralarm.png>]
+<technik/images/spread-shirt.png, id=403, 1753.55125pt x 1033.8625pt>
 File: technik/images/spread-shirt.png Graphic file (type png)
 <use technik/images/spread-shirt.png>
 Package pdftex.def Info: technik/images/spread-shirt.png  used on input line 45
 .
 (pdftex.def)             Requested size: 312.9803pt x 184.52545pt.
-<technik/images/becher-bedrucken.png, id=394, 1545.775pt x 959.585pt>
+
+Overfull \hbox (17.92487pt too wide) in paragraph at lines 41--53
+\OT1/cmss/m/sl/10.95 als internationaler Arbeitgeber ernst nimmt und seinen Mit
+arbeitern ein attraktives Arbeitsumfeld
+ []
+
+[6 <./technik/images/spread-shirt.png>]
+<technik/images/becher-bedrucken.png, id=412, 1545.775pt x 959.585pt>
 File: technik/images/becher-bedrucken.png Graphic file (type png)
 <use technik/images/becher-bedrucken.png>
 Package pdftex.def Info: technik/images/becher-bedrucken.png  used on input lin
 e 60.
 (pdftex.def)             Requested size: 312.9803pt x 194.28561pt.
 
-[6 <./technik/images/spread-shirt.png>]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 73.
 
-<technik/images/audi.png, id=402, 505.89pt x 798.985pt>
+<technik/images/audi.png, id=413, 505.89pt x 798.985pt>
 File: technik/images/audi.png Graphic file (type png)
 <use technik/images/audi.png>
 Package pdftex.def Info: technik/images/audi.png  used on input line 75.
 (pdftex.def)             Requested size: 170.71652pt x 269.62752pt.
 
+Overfull \hbox (18.79166pt too wide) in paragraph at lines 70--81
+\OT1/cmss/m/n/10.95 umgesetzt. Wenn man eventuell die passenden Felgen sucht, b
+ekommt man da einen []ubersichtlich
+ []
+
+[7 <./technik/images/becher-bedrucken.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 81--84
 
  []
 
-[7 <./technik/images/becher-bedrucken.png>]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 86.
 
-<technik/images/siemens.png, id=409, 1003.75pt x 627.34375pt>
+<technik/images/siemens.png, id=420, 1003.75pt x 627.34375pt>
 File: technik/images/siemens.png Graphic file (type png)
 <use technik/images/siemens.png>
 Package pdftex.def Info: technik/images/siemens.png  used on input line 88.
 (pdftex.def)             Requested size: 369.88582pt x 231.18501pt.
+
+Overfull \hbox (13.57535pt too wide) in paragraph at lines 84--93
+\OT1/cmss/m/n/10.95 Systemschaltschr[]anke am 3D-Modell zu konfigurieren. Dabei
+ w[]ahlt der Nutzer die verschiedenen
+ []
+
+
+Overfull \hbox (9.10403pt too wide) in paragraph at lines 93--95
+\OT1/cmss/m/n/10.95 Beleuchtung. Dabei ist es m[]oglich, das Produkt nach belie
+ben anzupassen und zu konfigurieren.
+ []
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 93--95
 
  []
 
 [8 <./technik/images/audi.png>]
-<technik/images/google-trends.png, id=421, 1448.41125pt x 759.83875pt>
+Overfull \hbox (4.69359pt too wide) in paragraph at lines 98--100
+\OT1/cmss/m/n/10.95 Frameworks entwickelt bzw. weiterentwickelt wurden. Die Anz
+ahl der Angebote an JavaScript-
+ []
+
+
+Underfull \hbox (badness 6220) in paragraph at lines 103--103
+[][] [][][]\OT1/cmss/m/n/9 Eine von Microsoft entwickelte Programmiersprache. T
+ypeScript ist eine kompilierte und
+ []
+
+<technik/images/google-trends.png, id=431, 1448.41125pt x 759.83875pt>
 File: technik/images/google-trends.png Graphic file (type png)
 <use technik/images/google-trends.png>
 Package pdftex.def Info: technik/images/google-trends.png  used on input line 1
 07.
 (pdftex.def)             Requested size: 369.88582pt x 194.04037pt.
 
-
 LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <9> not available
 (Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 112.
 
 
-[9 <./technik/images/siemens.png (PNG copy)>] [10 <./technik/images/google-tren
-ds.png>]
+
+Overfull \hbox (12.55623pt too wide) in paragraph at lines 103--114
+\OT1/cmss/m/n/10.95 wurde von Google entwickelt und ist ein Open-Source-Framewo
+rk. Es unterst[]utzt den Entwickler
+ []
+
+
+Overfull \hbox (4.69353pt too wide) in paragraph at lines 103--114
+\OT1/cmss/m/n/10.95 Wartbarkeit des Codes sinnvoll wird. Ein Merkmal von Angula
+r ist, das es viele unterschiedliche
+ []
+
+
+Overfull \hbox (7.00533pt too wide) in paragraph at lines 103--114
+\OT1/cmss/m/n/10.95 wichtiges Modul ist das Routing-Modul. Im Grunde genommen s
+ind Routings Grundbestandteil
+ []
+
+
+Overfull \hbox (6.53374pt too wide) in paragraph at lines 103--114
+\OT1/cmss/m/n/10.95 f[]ur \OT1/cmss/m/sl/10.95 Single Page Anwendungen\OT1/cmss
+/m/n/10.95 . Mittels Routings kann ich festlegen welcher Teil der Anwendung
+ []
+
+
+Underfull \vbox (badness 7981) has occurred while \output is active []
+
+ [9 <./technik/images/siemens.png (PNG copy)>]
+Overfull \hbox (4.19176pt too wide) in paragraph at lines 119--122
+[]\OT1/cmss/bx/n/10.95 React[] \OT1/cmss/m/n/10.95 ist das meistgesuchte JavaSc
+ript Framework 2018 [[]]. Es wurde 2013 von Facebook
+ []
+
+[10 <./technik/images/google-trends.png>]
+Overfull \hbox (4.30733pt too wide) in paragraph at lines 125--135
+[]\OT1/cmss/bx/n/10.95 Vue.js[] \OT1/cmss/m/n/10.95 ist ein weiteres Frontend-F
+ramework zur Entwicklung von \OT1/cmss/m/sl/10.95 Single Page Anwendungen\OT1/c
+mss/m/n/10.95 .
+ []
+
+
+Overfull \hbox (23.17163pt too wide) in paragraph at lines 125--135
+\OT1/cmss/m/n/10.95 Obwohl es kleiner ist, bringt es trotzdem alle wichtigen Fu
+nktionen wie Suchmaschinenoptimierung
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 125--135
 
  []
@@ -1024,18 +1204,48 @@ Underfull \hbox (badness 10000) in paragraph at lines 140--141
 
  []
 
+
+Overfull \hbox (3.85582pt too wide) in paragraph at lines 142--146
+\OT1/cmss/m/n/10.95 Players haben die Entwickler sogar eine z-Achse eingef[]uhr
+t. Sie erm[]oglicht eine 3D Darstellung
+ []
+
+
+Overfull \hbox (16.98201pt too wide) in paragraph at lines 142--146
+\OT1/cmss/m/n/10.95 von 3D-Inhalten wesentlich schneller abschneidet und h[]ohe
+re Frameraten f[]ur die 3D-Animationen
+ []
+
 [11]
 Underfull \hbox (badness 10000) in paragraph at lines 147--149
 
  []
 
-<technik/images/3d-framework.png, id=461, 693.792pt x 369.17924pt>
+
+Overfull \hbox (14.21277pt too wide) in paragraph at lines 153--154
+\OT1/cmss/m/n/10.95 erstellt und rendert eine Szene mit den 3D Objekten. Im Fol
+genden werden die zwei bekanntesten
+ []
+
+
+Overfull \hbox (79.59978pt too wide) in paragraph at lines 157--167
+\OT1/cmss/m/n/10.95 Repository auf GitHub gehostet[][][][][]. Three.js hat eine
+ verst[]andliche Struktur und groe Anpassungsm[]oglichkeiten.
+ []
+
+<technik/images/3d-framework.png, id=472, 693.792pt x 369.17924pt>
 File: technik/images/3d-framework.png Graphic file (type png)
 <use technik/images/3d-framework.png>
 Package pdftex.def Info: technik/images/3d-framework.png  used on input line 17
 4.
 (pdftex.def)             Requested size: 369.88582pt x 196.82451pt.
-) [12] [13 <./technik/images/3d-framework.png>]
+)
+Overfull \hbox (56.78215pt too wide) in paragraph at lines 170--227
+\OT1/cmss/m/n/10.95 Sounds spielen und verwalten, Gameplay erstellen und vieles
+ mehr. Babylons.js ist ein benutzerfreundliches
+ []
+
+[12] [13 <./technik/images/3d-framework.png>]
 \openout2 = `grundlagen/grundlagen.aux'.
 
  (grundlagen/grundlagen.tex
@@ -1043,14 +1253,98 @@ Package pdftex.def Info: technik/images/3d-framework.png  used on input line 17
 
 
 
-] [15]
+]
+Overfull \hbox (16.07652pt too wide) in paragraph at lines 23--25
+\OT1/cmss/m/n/10.95 viel clientseitig umzusetzten.[]\OT1/cmss/m/sl/10.95 Dies s
+teigert die Benutzerfreundlichkeit und schafft die M[]oglichkeit
+ []
+
+
+Overfull \hbox (15.23308pt too wide) in paragraph at lines 23--25
+\OT1/cmss/m/sl/10.95 und mobilen Plattformen.\ \OT1/cmss/m/n/10.95 [[]]. Im Fol
+genden wird nun kurz etwas genauer darauf eingegangen
+ []
+
+
+Overfull \hbox (9.11655pt too wide) in paragraph at lines 27--29
+[]\OT1/cmss/bx/n/10.95 Klassische Webanwendungen[] \OT1/cmss/m/n/10.95 Bevor ma
+n sich damit befasst was Single Page Anwendungen
+ []
+
+
+Overfull \hbox (1.69746pt too wide) in paragraph at lines 27--29
+\OT1/cmss/m/n/10.95 Dokumentes und kann es dann anzeigen. Bei diesem Vorgang li
+egt die komplette Verarbeitung
+ []
+
+[15]
+Overfull \hbox (7.04538pt too wide) in paragraph at lines 31--44
+[]\OT1/cmss/bx/n/10.95 Dezentralisierung der Webanwendung[] \OT1/cmss/m/n/10.95
+ Im Grunde arbeiten SPA's nach folgendem Prinzip:
+ []
+
+
+Overfull \hbox (7.38559pt too wide) in paragraph at lines 31--44
+\OT1/cmss/m/n/10.95 Webanwendungen nun die Anfrage. Anschlieend wird im Webbro
+wser eine Benutzeroberfl[]ache
+ []
+
+
+Overfull \hbox (18.83739pt too wide) in paragraph at lines 31--44
+\OT1/cmss/m/n/10.95 einem Seitenwechsel oder anderen Interaktionen des Benutzer
+s wird eine neue Benutzeroberfl[]ache
+ []
+
+
+Overfull \hbox (11.21803pt too wide) in paragraph at lines 31--44
+\OT1/cmss/m/n/10.95 Die Grundlage einer solchen Anwendung ist das Routing. Abh[
+]angig vom Pfad werden bestimmte
+ []
+
+
+Overfull \hbox (6.91405pt too wide) in paragraph at lines 49--51
+\OT1/cmss/m/n/10.95 Angular ist ein Framework, das auf Komponenten setzt. Das P
+rinzip der komponentenbasierten
+ []
+
+
+Overfull \hbox (34.7454pt too wide) in paragraph at lines 49--51
+\OT1/cmss/m/n/10.95 Entwicklung kommt nicht nur bei Angular vor, sondern auch b
+ei vielen anderen Programmiersprachen
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 49--51
 
  []
 
-[16]
+
+Overfull \hbox (5.24109pt too wide) in paragraph at lines 52--53
+\OT1/cmss/m/sl/10.95 Aufgabe erf[]ullen. Eine Komponente beschreibt somit immer
+ einen kleinen Teil der Anwendung,
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 52--53
 
+ []
+
+[16]
+Overfull \hbox (11.65901pt too wide) in paragraph at lines 55--58
+\OT1/cmss/m/n/10.95 dass die Style-Definitionen nur innerhalb der Komponente ge
+lten. Globale Styles der Anwendung
+ []
+
+
+Overfull \hbox (4.32785pt too wide) in paragraph at lines 55--58
+\OT1/cmss/m/n/10.95 Der Startpunkt der Anwendung ist die \OT1/cmtt/m/n/10.95 in
+dex.html\OT1/cmss/m/n/10.95 . Sie definiert die Applikationskomponente,
+ []
+
+
+Overfull \hbox (17.30138pt too wide) in paragraph at lines 55--58
+\OT1/cmss/m/n/10.95 Komponenten verschachtelt werden k[]onnen. Dies ist das Gru
+ndprinzip der komponentenbasierten
  []
 
 
@@ -1059,36 +1353,152 @@ Underfull \hbox (badness 10000) in paragraph at lines 60--61
  []
 
 
+Overfull \hbox (25.51823pt too wide) in paragraph at lines 62--63
+[][]\OT1/cmss/m/sl/10.95 Angular-Module helfen beim Gliedern einer Webanwendung
+ in verschiednene Funktionsbl[]ocke.
+ []
+
+
+Overfull \hbox (15.73502pt too wide) in paragraph at lines 62--63
+\OT1/cmss/m/sl/10.95 und erlauben nur den Zugriff auf exportierte Konstrukte. A
+ngular-Module kapseln Komponenten,
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 62--63
 
  []
 
-<grundlagen/images/module.png, id=509, 1164.35pt x 628.3475pt>
+<grundlagen/images/module.png, id=520, 1164.35pt x 628.3475pt>
 File: grundlagen/images/module.png Graphic file (type png)
 <use grundlagen/images/module.png>
 Package pdftex.def Info: grundlagen/images/module.png  used on input line 68.
 (pdftex.def)             Requested size: 398.33858pt x 214.95844pt.
 [17]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Overfull \hbox (20.99123pt too wide) in paragraph at lines 77--82
+[]\OT1/cmss/bx/n/10.95 Hauseigene Module[] \OT1/cmss/m/n/10.95 Angular hat auch
+ ein paar hauseigene Module, die je nach Anwendungsfall
+ []
 
- [18 <./grundlagen/images/module.png>]
+
+Overfull \hbox (15.53418pt too wide) in paragraph at lines 77--82
+\OT1/cmss/m/n/10.95 formatieren kann. Auch sprachabh[]angige Funktionalit[]aten
+ sind in den \OT1/cmss/m/sl/10.95 CommonModule \OT1/cmss/m/n/10.95 enhalten. 
+ []
+
+[18 <./grundlagen/images/module.png>]
+Underfull \hbox (badness 1033) in paragraph at lines 85--85
+[][] [][][]\OT1/cmss/m/n/9 Auf die weiteren Bestandteile von Angular wird hier 
+nicht im Details eingegangen. Genauere
+ []
+
 LaTeX Font Info:    Try loading font information for OMS+cmtt on input line 89.
 
 LaTeX Font Info:    No file OMScmtt.fd. on input line 89.
-
 
 LaTeX Font Warning: Font shape `OMS/cmtt/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
 (Font)              for symbol `textbraceleft' on input line 89.
 
-[19] [20]
+
+Overfull \hbox (21.08818pt too wide) in paragraph at lines 89--91
+\OT1/cmss/m/n/10.95 TypeScript-Klassen in Vorlagen binden. Angenommen in der Ty
+peScript-Klasse einer Komponente
+ []
+
+
+Overfull \hbox (0.80014pt too wide) in paragraph at lines 93--96
+\OT1/cmss/m/n/10.95 muss. Attribut-Direktiven machen eigentlich nichts anderes 
+als eine Anpassung des Aussehens
+ []
+
+
+Overfull \hbox (24.16032pt too wide) in paragraph at lines 98--101
+\OT1/cmss/m/n/10.95 Die Pipe manipuliert die Ausgabe und sorgt daf[]ur, dass be
+ispielsweise der Name in Grobuchstaben
+ []
+
+[19]
+Overfull \hbox (10.9839pt too wide) in paragraph at lines 103--106
+[]\OT1/cmss/bx/n/10.95 Services[] \OT1/cmss/m/n/10.95 Der Begriff Services in d
+er Entwicklung ist breit gef[]achert. Jede Programmiersprache
+ []
+
+
+Overfull \hbox (7.9622pt too wide) in paragraph at lines 107--109
+\OT1/cmss/m/n/10.95 anzulegen. Die CLI legt dann im Hintergrund die ben[]otigte
+ Projektstruktur mit allen ben[]otigten
+ []
+
+
+Overfull \hbox (27.9016pt too wide) in paragraph at lines 107--109
+\OT1/cmss/m/n/10.95 Ganze User-Interaktionen k[]onnen simuliert werden, auch au
+f verschiedenen Ger[]ate-Klassifikationen.
+ []
+
+[20]
+Overfull \hbox (19.5673pt too wide) in paragraph at lines 122--125
+\OT1/cmss/m/n/10.95 Schon 2010 begann Ricardo Cabello Miguel die 3D-Bibliothek 
+Three.js zu entwickeln. Mittlerweile
+ []
+
+
+Overfull \hbox (1.48462pt too wide) in paragraph at lines 122--125
+\OT1/cmss/m/n/10.95 und Beispiele erm[]oglichen die Entwicklung von Modellierun
+gsanwendungen bis hin zu Spielen.
+ []
+
+
+Overfull \hbox (12.22177pt too wide) in paragraph at lines 128--129
+\OT1/cmss/m/n/10.95 Objekten, anstatt nur JavaScript-Funktionsaufrufe durchzuf[
+]uhren. Folgendes einfaches Beispiel,
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 128--129
 
  []
 
-[21]
+
 Underfull \hbox (badness 10000) in paragraph at lines 130--132
 
+ []
+
+
+Overfull \hbox (17.8763pt too wide) in paragraph at lines 133--135
+[][]\OT1/cmss/m/n/10.95 Uber verschiedene Funktionen k[]onnen dann die weiteren
+ Bestandteile einer Szene hinzugef[]ugt
+ []
+
+[21]
+Overfull \hbox (15.79587pt too wide) in paragraph at lines 136--138
+[]\OT1/cmss/bx/n/10.95 Kamera[] \OT1/cmss/m/n/10.95 Es gibt verschiedene Kamera
+typen. Normalerweise wird immer die \OT1/cmss/m/sl/10.95 PerspectiveCamera
+ []
+
+
+Overfull \hbox (2.21468pt too wide) in paragraph at lines 136--138
+\OT1/cmss/m/n/10.95 Kamera wird auch als Objekt in der Szene angelegt. Dabei m[
+]ussen verschiedene Eigenschaften
+ []
+
+
+Overfull \hbox (14.75145pt too wide) in paragraph at lines 148--150
+\OT1/cmss/m/n/10.95 wieder verschiedene Materials, je nach Anwendungsfall[][][]
+[][]. Dabei hat man unz[]ahlige M[]oglichkeiten
+ []
+
+
+Overfull \hbox (11.26367pt too wide) in paragraph at lines 156--158
+\OT1/cmss/m/n/10.95 darstellen. Dazu werden Loader, also Werkzeuge mit denen ma
+n Modelle laden kann, verwendet.
+ []
+
+
+Overfull \hbox (15.69856pt too wide) in paragraph at lines 156--158
+\OT1/cmss/m/n/10.95 manchmal Importierungsprobleme. Einige bekannte Loader sind
+: \OT1/cmss/m/sl/10.95 ColladaLoader[][][][][]\OT1/cmss/m/n/10.95 , \OT1/cmss/m
+/sl/10.95 OBJLoader[][][][][]
  []
 
 [22]
@@ -1109,7 +1519,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 193--194
 
  []
 
-[23]
+
 Underfull \hbox (badness 10000) in paragraph at lines 195--196
 
  []
@@ -1119,29 +1529,99 @@ Underfull \hbox (badness 10000) in paragraph at lines 197--198
 
  []
 
+[23]
+Overfull \hbox (11.65901pt too wide) in paragraph at lines 200--201
+\OT1/cmss/m/sl/10.95 physischer Produkte und Bedienelemente, aber auch das graf
+ische Design, wichtige Bestandteile
+ []
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 200--201
 
  []
 
-) [24] [25]
+)
+Overfull \hbox (34.34982pt too wide) in paragraph at lines 214--230
+\OT1/cmss/m/n/10.95 verschiedener Gesch[]aftskomponenten darstellen. Diese Gesc
+h[]aftskomponenten werden verschiedenen
+ []
+
+
+Overfull \hbox (37.63477pt too wide) in paragraph at lines 214--230
+\OT1/cmss/m/n/10.95 darstellen. Diese Objekte werden Leistungstests mit verschi
+edenen Parametern und Belastungsniveaus
+ []
+
+[24]
 \openout2 = `methodik/methodik.aux'.
 
- (methodik/methodik.tex [26
+ (methodik/methodik.tex
+Underfull \hbox (badness 10000) in paragraph at lines 29--30
+[]|\OT1/cmss/m/n/10.95 Der Benutzer kann zwischen verschiedenen
+ []
 
 
+Underfull \hbox (badness 6047) in paragraph at lines 31--32
+[]|\OT1/cmss/m/n/10.95 Der Benutzer kann beispielsweise den Becher
+ []
 
-]
+
 Underfull \hbox (badness 7362) in paragraph at lines 35--36
-[]|\OT1/cmss/m/n/10.95 Der Be-nut-zer kann be-stimm-te Zu-sat-z-op-tio-nen
+[]|\OT1/cmss/m/n/10.95 Der Benutzer kann bestimmte Zusatzoptionen
+ []
+
+
+Underfull \hbox (badness 3646) in paragraph at lines 37--38
+[]|\OT1/cmss/m/n/10.95 Der Benutzer kann sich eine []Ubersicht seiner
+ []
+
+
+Underfull \hbox (badness 1571) in paragraph at lines 39--40
+[]|\OT1/cmss/m/n/10.95 Der Benutzer kann seinen konfigurierten Becher
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[27] [28]
+[25
+
+
+
+]
+Overfull \hbox (4.65033pt too wide) in paragraph at lines 53--55
+[]\OT1/cmss/bx/n/10.95 Upload des Designs[] \OT1/cmss/m/n/10.95 Normalerweise k
+ann ein Kunde einen Mehrwegbecher []uber Flyeralarm[][][][][]
+ []
+
+[26]
+Overfull \hbox (1.98648pt too wide) in paragraph at lines 59--61
+\OT1/cmss/m/n/10.95 implementiert werden, die es dem Benutzer erm[]oglicht die 
+[]Ubersicht inkulsive einer Abbildung
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 81--82
+[]|\OT1/cmss/m/n/10.95 Der Benutzer kann zwischen verschiedenen
+ []
+
+
+Underfull \hbox (badness 6047) in paragraph at lines 83--84
+[]|\OT1/cmss/m/n/10.95 Der Benutzer kann beispielsweise den Becher
+ []
+
+
 Underfull \hbox (badness 7362) in paragraph at lines 87--88
-[]|\OT1/cmss/m/n/10.95 Der Be-nut-zer kann be-stimm-te Zu-sat-z-op-tio-nen
+[]|\OT1/cmss/m/n/10.95 Der Benutzer kann bestimmte Zusatzoptionen
+ []
+
+
+Underfull \hbox (badness 3646) in paragraph at lines 89--90
+[]|\OT1/cmss/m/n/10.95 Der Benutzer kann sich eine []Ubersicht seiner
+ []
+
+
+Underfull \hbox (badness 1571) in paragraph at lines 91--92
+[]|\OT1/cmss/m/n/10.95 Der Benutzer kann seinen konfigurierten Becher
  []
 
 
@@ -1149,53 +1629,108 @@ Overfull \hbox (22.02591pt too wide) in paragraph at lines 77--94
 [][] 
  []
 
-[29] [30]
-<methodik/images/komponentnendiagramm.png, id=636, 511.76193pt x 423.68288pt>
+
+Overfull \hbox (0.12236pt too wide) in paragraph at lines 104--107
+[]\OT1/cmss/bx/n/10.95 Realistisches Design-Rendering[] \OT1/cmss/m/n/10.95 kub
+isches Problem Auch was die 3D-Darstellung angeht,
+ []
+
+[27]
+Overfull \hbox (8.05191pt too wide) in paragraph at lines 108--110
+[]\OT1/cmss/bx/n/10.95 Responsive Webdesign[] \OT1/cmss/m/n/10.95 Es ist wichti
+g das der Konfigurator auf verschiedenen Displaygr[]oen
+ []
+
+[28]
+<methodik/images/flowchart.png, id=639, 550.6974pt x 611.6451pt>
+File: methodik/images/flowchart.png Graphic file (type png)
+<use methodik/images/flowchart.png>
+Package pdftex.def Info: methodik/images/flowchart.png  used on input line 129.
+
+(pdftex.def)             Requested size: 256.0748pt x 284.41202pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [29 <./methodik/images/flowchart.png>]
+<methodik/images/komponentnendiagramm.png, id=649, 511.76193pt x 423.68288pt>
 File: methodik/images/komponentnendiagramm.png Graphic file (type png)
 <use methodik/images/komponentnendiagramm.png>
 Package pdftex.def Info: methodik/images/komponentnendiagramm.png  used on inpu
-t line 132.
+t line 139.
 (pdftex.def)             Requested size: 312.9803pt x 259.11852pt.
-<methodik/images/mockup.png, id=637, 640.19176pt x 400.49625pt>
+
+Overfull \hbox (24.19072pt too wide) in paragraph at lines 136--144
+\OT1/cmss/m/n/10.95 angelegt werden. Nat[]urlich gibt es noch weitere Kindskomp
+onenten, die in den Hauptkomponenten
+ []
+
+
+Overfull \hbox (41.23935pt too wide) in paragraph at lines 136--144
+\OT1/cmss/m/n/10.95 der Konfigurationen Beeinhaltet. Das Herzst[]uck unserer An
+gular-Anwendung ist die SceneComponent.
+ []
+
+
+Overfull \hbox (1.16289pt too wide) in paragraph at lines 136--144
+\OT1/cmss/m/n/10.95 Sie zeigt uns den Becher in 3D mit dem hochgeladenen Design
+. Um eine 3D Szene aufzubauen
+ []
+
+[30 <./methodik/images/komponentnendiagramm.png>]
+<methodik/images/mockup.png, id=656, 640.19176pt x 400.49625pt>
 File: methodik/images/mockup.png Graphic file (type png)
 <use methodik/images/mockup.png>
-Package pdftex.def Info: methodik/images/mockup.png  used on input line 139.
+Package pdftex.def Info: methodik/images/mockup.png  used on input line 148.
 (pdftex.def)             Requested size: 312.9803pt x 195.79265pt.
- [31 <./methodik/images/komponentnendiagramm.png>]
-LaTeX Font Info:    Try loading font information for OMS+cmss on input line 149
-.
-LaTeX Font Info:    No file OMScmss.fd. on input line 149.
 
+Overfull \hbox (53.25386pt too wide) in paragraph at lines 145--152
+\OT1/cmss/m/n/10.95 konfigurieren. Da der Konfigurator nur wenige Einstellm[]og
+lichkeiten hat, ist es am benutzerfreundlichsten
+ []
+
+
+Overfull \hbox (28.19046pt too wide) in paragraph at lines 153--154
+\OT1/cmss/m/n/10.95 ein gutes und innovatives Design geben. Als Grundlage werde
+n die Styles der Unternehmenswebseite
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+cmss on input line 157
+.
+LaTeX Font Info:    No file OMScmss.fd. on input line 157.
 
 LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbullet' on input line 149.
+(Font)              for symbol `textbullet' on input line 157.
 
 )
-Underfull \hbox (badness 10000) in paragraph at lines 149--215
+Underfull \hbox (badness 10000) in paragraph at lines 157--233
 
  []
 
-[32 <./methodik/images/mockup.png>]
+[31 <./methodik/images/mockup.png>] [32]
 \openout2 = `umsetzung/umsetzung.aux'.
 
  (umsetzung/umsetzung.tex
-Overfull \hbox (21.46695pt too wide) in paragraph at lines 14--16
-\OT1/cmss/m/n/10.95 sei-ten er-zeugt wer-den. Ein-stiegs-punkt f[]ur die Ba-che
--lor-ar-beit ist die Da-tei \OT1/cmtt/m/n/10.95 abschlussarbeit.tex\OT1/cmss/m/
-n/10.95 .
+Overfull \hbox (6.48804pt too wide) in paragraph at lines 14--15
+\OT1/cmss/m/n/10.95 Dieses Kapitel befasst sich mit den verwendeten Technologie
+n, die eine produktive Entwicklung
  []
 
 
-Overfull \hbox (21.46695pt too wide) in paragraph at lines 19--20
-\OT1/cmss/m/n/10.95 sei-ten er-zeugt wer-den. Ein-stiegs-punkt f[]ur die Ba-che
--lor-ar-beit ist die Da-tei \OT1/cmtt/m/n/10.95 abschlussarbeit.tex\OT1/cmss/m/
-n/10.95 .
+Underfull \hbox (badness 10000) in paragraph at lines 14--15
+
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 25--27
+Overfull \hbox (10.66953pt too wide) in paragraph at lines 16--17
+\OT1/cmss/m/n/10.95 WebGL zum Einsatz bringt. Angular Anwendungen werden grunds
+[]atzlich mit \OT1/cmss/m/sl/10.95 Node.js \OT1/cmss/m/n/10.95 installiert.
+ []
 
+
+Overfull \hbox (3.62906pt too wide) in paragraph at lines 16--17
+\OT1/cmss/m/n/10.95 Dadurch ist es uns sp[]ater m[]oglich verschiedene npm-Modu
+le wie Three.js oder auch Bootstrap
  []
 
 [33
@@ -1203,101 +1738,281 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--27
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 28--29
+<umsetzung/images/module.png, id=675, 780.516pt x 250.7769pt>
+File: umsetzung/images/module.png Graphic file (type png)
+<use umsetzung/images/module.png>
+Package pdftex.def Info: umsetzung/images/module.png  used on input line 30.
+(pdftex.def)             Requested size: 369.88582pt x 118.84474pt.
 
+Overfull \hbox (29.77228pt too wide) in paragraph at lines 40--42
+\OT1/cmss/m/n/10.95 einer []Ubersicht in tabellarischer Form. Die hauseigenen M
+odule von Angular wie das \OT1/cmss/m/sl/10.95 BrowserModule
+ []
+
+[34 <./umsetzung/images/module.png>]
+<umsetzung/images/auswahlcli.png, id=686, 351.3125pt x 301.125pt>
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.50 ...xtwidth]{umsetzung/images/auswahlcli.png}}
+                                                  
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.50 ...xtwidth]{umsetzung/images/auswahlcli.png}}
+                                                  
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.50 ...xtwidth]{umsetzung/images/auswahlcli.png}}
+                                                  
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.50 ...xtwidth]{umsetzung/images/auswahlcli.png}}
+                                                  
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+File: umsetzung/images/auswahlcli.png Graphic file (type png)
+<use umsetzung/images/auswahlcli.png>
+Package pdftex.def Info: umsetzung/images/auswahlcli.png  used on input line 50
+.
+(pdftex.def)             Requested size: 142.26378pt x 121.94116pt.
+<umsetzung/images/optionscli.png, id=687, 608.2725pt x 357.335pt>
+! Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.51 ...xtwidth]{umsetzung/images/optionscli.png}}
+                                                  \\
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.51 ...xtwidth]{umsetzung/images/optionscli.png}}
+                                                  \\
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.51 ...xtwidth]{umsetzung/images/optionscli.png}}
+                                                  \\
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.51 ...xtwidth]{umsetzung/images/optionscli.png}}
+                                                  \\
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+File: umsetzung/images/optionscli.png Graphic file (type png)
+<use umsetzung/images/optionscli.png>
+Package pdftex.def Info: umsetzung/images/optionscli.png  used on input line 51
+.
+(pdftex.def)             Requested size: 199.16928pt x 116.99944pt.
+<umsetzung/images/generatedfiles.png, id=688, 273.02pt x 134.5025pt>
+! Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.52 ...dth]{umsetzung/images/generatedfiles.png}}
+                                                  
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.52 ...dth]{umsetzung/images/generatedfiles.png}}
+                                                  
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.52 ...dth]{umsetzung/images/generatedfiles.png}}
+                                                  
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.52 ...dth]{umsetzung/images/generatedfiles.png}}
+                                                  
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+File: umsetzung/images/generatedfiles.png Graphic file (type png)
+<use umsetzung/images/generatedfiles.png>
+Package pdftex.def Info: umsetzung/images/generatedfiles.png  used on input lin
+e 52.
+(pdftex.def)             Requested size: 142.26378pt x 70.08534pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (7.62355pt too wide) in paragraph at lines 65--68
+[]\OT1/cmss/bx/n/10.95 Kindskomponente[] \OT1/cmss/m/n/10.95 Genauso \OT1/cmss/
+m/sl/10.95 SceneComponent \OT1/cmss/m/n/10.95 wurde auch die \OT1/cmss/m/sl/10.
+95 SidebarComponent \OT1/cmss/m/n/10.95 angelegt.
+ []
+
+[35] [36 <./umsetzung/images/auswahlcli.png> <./umsetzung/images/optionscli.png
+> <./umsetzung/images/generatedfiles.png>]
+Overfull \hbox (2.66786pt too wide) in paragraph at lines 85--88
+[]\OT1/cmss/m/n/10.95 Zus[]atzlch hat die SidebarComponent auch noch eigene nic
+ht geteilte Kindskompontenten.
  []
 
 
-Overfull \hbox (40.87282pt too wide) in paragraph at lines 32--33
-\OT1/cmss/m/n/10.95 Leer-sei-ten er-zeugt wer-den. Ein-stiegs-punkt f[]ur die B
-a-che-lor-ar-beit ist die Da-tei \OT1/cmtt/m/n/10.95 abschlussarbeit.tex\OT1/cm
-ss/m/n/10.95 .
+Overfull \hbox (40.87282pt too wide) in paragraph at lines 91--92
+\OT1/cmss/m/n/10.95 Leerseiten erzeugt werden. Einstiegspunkt f[]ur die Bachelo
+rarbeit ist die Datei \OT1/cmtt/m/n/10.95 abschlussarbeit.tex\OT1/cmss/m/n/10.9
+5 .
  []
 
 
-Overfull \hbox (21.46695pt too wide) in paragraph at lines 37--38
-\OT1/cmss/m/n/10.95 sei-ten er-zeugt wer-den. Ein-stiegs-punkt f[]ur die Ba-che
--lor-ar-beit ist die Da-tei \OT1/cmtt/m/n/10.95 abschlussarbeit.tex\OT1/cmss/m/
-n/10.95 .
+Overfull \hbox (29.89381pt too wide) in paragraph at lines 91--92
+\OT1/cmss/m/n/10.95 Tragen Sie zun[]achst den Titel der Arbeit und alle Namen e
+in. Bei hochschulinternen Bachlorarbeiten
  []
 
 
-Overfull \hbox (21.46695pt too wide) in paragraph at lines 42--43
-\OT1/cmss/m/n/10.95 sei-ten er-zeugt wer-den. Ein-stiegs-punkt f[]ur die Ba-che
--lor-ar-beit ist die Da-tei \OT1/cmtt/m/n/10.95 abschlussarbeit.tex\OT1/cmss/m/
-n/10.95 .
+Overfull \hbox (40.87282pt too wide) in paragraph at lines 96--97
+\OT1/cmss/m/n/10.95 Leerseiten erzeugt werden. Einstiegspunkt f[]ur die Bachelo
+rarbeit ist die Datei \OT1/cmtt/m/n/10.95 abschlussarbeit.tex\OT1/cmss/m/n/10.9
+5 .
  []
 
 
-Overfull \hbox (21.46695pt too wide) in paragraph at lines 53--54
-\OT1/cmss/m/n/10.95 sei-ten er-zeugt wer-den. Ein-stiegs-punkt f[]ur die Ba-che
--lor-ar-beit ist die Da-tei \OT1/cmtt/m/n/10.95 abschlussarbeit.tex\OT1/cmss/m/
-n/10.95 .
+Overfull \hbox (29.89381pt too wide) in paragraph at lines 96--97
+\OT1/cmss/m/n/10.95 Tragen Sie zun[]achst den Titel der Arbeit und alle Namen e
+in. Bei hochschulinternen Bachlorarbeiten
  []
 
-[34]
-Overfull \hbox (21.46695pt too wide) in paragraph at lines 58--59
-\OT1/cmss/m/n/10.95 sei-ten er-zeugt wer-den. Ein-stiegs-punkt f[]ur die Ba-che
--lor-ar-beit ist die Da-tei \OT1/cmtt/m/n/10.95 abschlussarbeit.tex\OT1/cmss/m/
-n/10.95 .
+
+Overfull \hbox (40.87282pt too wide) in paragraph at lines 107--110
+\OT1/cmss/m/n/10.95 Leerseiten erzeugt werden. Einstiegspunkt f[]ur die Bachelo
+rarbeit ist die Datei \OT1/cmtt/m/n/10.95 abschlussarbeit.tex\OT1/cmss/m/n/10.9
+5 .
  []
 
-)
-Overfull \hbox (21.46695pt too wide) in paragraph at lines 63--218
-\OT1/cmss/m/n/10.95 sei-ten er-zeugt wer-den. Ein-stiegs-punkt f[]ur die Ba-che
--lor-ar-beit ist die Da-tei \OT1/cmtt/m/n/10.95 abschlussarbeit.tex\OT1/cmss/m/
-n/10.95 .
+
+Overfull \hbox (29.89381pt too wide) in paragraph at lines 107--110
+\OT1/cmss/m/n/10.95 Tragen Sie zun[]achst den Titel der Arbeit und alle Namen e
+in. Bei hochschulinternen Bachlorarbeiten
  []
 
-[35]
+[37])
+Overfull \hbox (40.87282pt too wide) in paragraph at lines 119--236
+\OT1/cmss/m/n/10.95 Leerseiten erzeugt werden. Einstiegspunkt f[]ur die Bachelo
+rarbeit ist die Datei \OT1/cmtt/m/n/10.95 abschlussarbeit.tex\OT1/cmss/m/n/10.9
+5 .
+ []
+
+
+Overfull \hbox (29.89381pt too wide) in paragraph at lines 119--236
+\OT1/cmss/m/n/10.95 Tragen Sie zun[]achst den Titel der Arbeit und alle Namen e
+in. Bei hochschulinternen Bachlorarbeiten
+ []
+
+[38]
 \openout2 = `testphase/testphase.aux'.
 
- (testphase/testphase.tex [36
+ (testphase/testphase.tex) [39
 
 
 
-]) [37]
+]
 \openout2 = `fazit/fazit.aux'.
 
- (fazit/fazit.tex [38
+ (fazit/fazit.tex [40
 
 
 
-]) [39]
+]) [41]
 \openout2 = `anhang/anhang.aux'.
 
 
-(anhang/anhang.tex [40
+(anhang/anhang.tex [42
 
 
 
 ])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [41]
-[42]
+ [43]
+[44]
 \openout2 = `glossar/glossar.aux'.
 
  (glossar/glossar.tex)
-Overfull \hbox (34.79132pt too wide) in paragraph at lines 11--239
+Overfull \hbox (34.79132pt too wide) in paragraph at lines 11--257
 [] 
  []
 
-[43
+[45
 
 
 
 
 
-] (abschlussarbeit.bbl [44
+] (abschlussarbeit.bbl [46
 
 
 ]
 bibitemlist
 
 Underfull \hbox (badness 10000) in paragraph at lines 17--21
-[]\OT1/cmr/m/sc/10.95 Bahor\OT1/cmss/m/n/10.95 , Se-nad:  HTML5/WebGL vs Flash 
-in 3D Vi-sua-li-sa-ti-on.
+[]\OT1/cmr/m/sc/10.95 Bahor\OT1/cmss/m/n/10.95 , Senad:  HTML5/WebGL vs Flash i
+n 3D Visualisation.
  []
 
 
@@ -1307,27 +2022,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 17--21
  []
 
 
-Underfull \hbox (badness 5022) in paragraph at lines 23--28
-[]\OT1/cmr/m/sc/10.95 DIN-EN-ISO-9241-210\OT1/cmss/m/n/10.95 :  \OT1/cmss/m/sl/
-10.95 Er-go-no-mie der Mensch-System-Interaktion -
- []
-
-
-Underfull \hbox (badness 7397) in paragraph at lines 23--28
-\OT1/cmss/m/sl/10.95 Teil 210: Pro-zess zur Ge-stal-tung ge-brauch-staug-li-che
-r in-ter-ak-ti-ver Sy-
- []
-
-
-Underfull \hbox (badness 1215) in paragraph at lines 23--28
-\OT1/cmss/m/sl/10.95 ste-me\OT1/cmss/m/n/10.95 .  [][]$\OT1/cmtt/m/n/10.95 http
-s : / / www . din . de / de / mitwirken / normenausschuesse / naerg /
+Underfull \hbox (badness 10000) in paragraph at lines 23--28
+\OT1/cmtt/m/n/10.95 / / www . din . de / de / mitwirken / normenausschuesse / n
+aerg / wdc-[]beuth :
  []
 
 
 Underfull \hbox (badness 1946) in paragraph at lines 40--44
 []\OT1/cmr/m/sc/10.95 Flyeralarm\OT1/cmss/m/n/10.95 :  \OT1/cmss/m/sl/10.95 Meh
-r-weg-be-cher g[]unstig und schnell bei FLYER-ALARM\OT1/cmss/m/n/10.95 .
+rwegbecher g[]unstig und schnell bei FLYERALARM\OT1/cmss/m/n/10.95 .
  []
 
 
@@ -1374,7 +2077,7 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-[45]
+[47]
 ! Missing $ inserted.
 <inserted text> 
                 $
@@ -1419,19 +2122,19 @@ LaTeX Font Warning: Font shape `OMS/cmss/m/it' undefined
 (Font)              for symbol `textbar' on input line 106.
 
 
-Underfull \hbox (badness 2809) in paragraph at lines 110--115
+Underfull \hbox (badness 10000) in paragraph at lines 110--115
 []\OT1/cmr/m/sc/10.95 Stackoverflow\OT1/cmss/m/n/10.95 :  \OT1/cmss/m/sl/10.95 
-Die Stack Over-flow Ent-wick-le-rum-fra-ge 2018 \OMS/cmss/m/it/10.95 j \OT1/cms
-s/m/sl/10.95 Stack Over-
+Die Stack Overflow Entwicklerumfrage 2018 \OMS/cmss/m/it/10.95 j \OT1/cmss/m/sl
+/10.95 Stack
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 110--115
-\OT1/cmss/m/sl/10.95 flow\OT1/cmss/m/n/10.95 .  [][]$\OT1/cmtt/m/n/10.95 https 
-: / / www . stackoverflowbusiness . com / de / talent / ressourcen /
+\OT1/cmss/m/sl/10.95 Overflow\OT1/cmss/m/n/10.95 .  [][]$\OT1/cmtt/m/n/10.95 ht
+tps : / / www . stackoverflowbusiness . com / de / talent / ressourcen /
  []
 
-) [46]
+) [48]
 No file abschlussarbeit.ind.
 \tf@toc=\write6
 \openout6 = `abschlussarbeit.toc'.
@@ -1439,16 +2142,16 @@ No file abschlussarbeit.ind.
 \tf@lof=\write7
 \openout7 = `abschlussarbeit.lof'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 261.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 261.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 279.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 279.
 (abschlussarbeit.aux (acknow/acknow.aux) (erklaerung/erklaerung.aux)
 (intro/intro.aux) (technik/technik.aux) (grundlagen/grundlagen.aux)
 (methodik/methodik.aux) (umsetzung/umsetzung.aux) (testphase/testphase.aux)
 (fazit/fazit.aux) (anhang/anhang.aux) (glossar/glossar.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 261.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 261.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 279.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 279.
 Package rerunfilecheck Info: File `abschlussarbeit.out' has not changed.
-(rerunfilecheck)             Checksum: CBC442054F542CD7ED427600FA4FC150;3451.
+(rerunfilecheck)             Checksum: C58BB8937832B6F83A01945A077AA6A0;3469.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1459,35 +2162,33 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 261.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 279.
  ) 
 Here is how much of TeX's memory you used:
- 11328 strings out of 492946
- 171522 string characters out of 3126266
- 322829 words of memory out of 3000000
- 14750 multiletter control sequences out of 15000+200000
- 20871 words of font info for 83 fonts, out of 3000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 38i,12n,44p,1497b,442s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Users/lukas/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmcsc10.pfb><C:/Users/lukas/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/p
-ublic/amsfonts/cm/cmmi10.pfb><C:/Users/lukas/AppData/Local/Programs/MiKTeX 2.9/
-fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/lukas/AppData/Local/Programs
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/lukas/AppData/Loc
-al/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/luka
-s/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss8.pfb><C
-:/Users/lukas/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
-cmss9.pfb><C:/Users/lukas/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/
-amsfonts/cm/cmssbx10.pfb><C:/Users/lukas/AppData/Local/Programs/MiKTeX 2.9/font
-s/type1/public/amsfonts/cm/cmssi10.pfb><C:/Users/lukas/AppData/Local/Programs/M
-iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssi12.pfb><C:/Users/lukas/AppData/Lo
-cal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssi9.pfb><C:/Users/luk
-as/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-<C:/Users/lukas/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/c
-m/cmtt10.pfb>
-Output written on abschlussarbeit.pdf (58 pages, 2305056 bytes).
+ 13249 strings out of 494865
+ 195259 string characters out of 3178377
+ 392646 words of memory out of 3000000
+ 16370 multiletter control sequences out of 15000+200000
+ 21038 words of font info for 84 fonts, out of 3000000 for 9000
+ 0 hyphenation exceptions out of 8191
+ 38i,12n,56p,1497b,1121s stack positions out of 5000i,500n,10000p,200000b,50000s
+</home/luke/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
+></home/luke/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
+/home/luke/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></ho
+me/luke/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb></home/l
+uke/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmss10.pfb></home/luk
+e/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmss8.pfb></home/luke/.
+miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmss9.pfb></home/luke/.mik
+tex/texmfs/install/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></home/luke/.mik
+tex/texmfs/install/fonts/type1/public/amsfonts/cm/cmssi10.pfb></home/luke/.mikt
+ex/texmfs/install/fonts/type1/public/amsfonts/cm/cmssi12.pfb></home/luke/.mikte
+x/texmfs/install/fonts/type1/public/amsfonts/cm/cmssi9.pfb></home/luke/.miktex/
+texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></home/luke/.miktex/te
+xmfs/install/fonts/type1/public/amsfonts/cm/cmtt10.pfb></home/luke/.miktex/texm
+fs/install/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
+Output written on abschlussarbeit.pdf (60 pages, 2500980 bytes).
 PDF statistics:
- 829 PDF objects out of 1000 (max. 8388607)
- 207 named destinations out of 1000 (max. 500000)
- 488 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 897 PDF objects out of 1000 (max. 8388607)
+ 234 named destinations out of 1000 (max. 500000)
+ 521 words of extra memory for PDF output out of 10000 (max. 10000000)
 

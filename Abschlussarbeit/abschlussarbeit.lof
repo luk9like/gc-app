@@ -2,19 +2,25 @@
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Mehrwegbecher bestellen}}{6}{figure.caption.9}% 
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Tasse bestellen}}{7}{figure.caption.10}% 
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Becher bedrucken}}{8}{figure.caption.11}% 
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Audi Konfigurator}}{9}{figure.caption.12}% 
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Audi Konfigurator}}{10}{figure.caption.15}% 
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Audi Konfigurator}}{11}{figure.caption.18}% 
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Audi Konfigurator}}{14}{figure.caption.23}% 
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Mehrwegbecher bestellen}}{5}{figure.caption.9}% 
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Tasse bestellen}}{6}{figure.caption.10}% 
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Becher bedrucken}}{7}{figure.caption.11}% 
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Audi Konfigurator}}{8}{figure.caption.12}% 
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Audi Konfigurator}}{9}{figure.caption.15}% 
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Audi Konfigurator}}{10}{figure.caption.18}% 
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Audi Konfigurator}}{13}{figure.caption.23}% 
 \addvspace {10pt}
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Audi Konfigurator}}{18}{figure.caption.26}% 
 \addvspace {10pt}
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Komponentendiagramm}}{31}{figure.caption.53}% 
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Mockup}}{32}{figure.caption.54}% 
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Komponentendiagramm}}{29}{figure.caption.53}% 
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Komponentendiagramm}}{30}{figure.caption.54}% 
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Mockup}}{31}{figure.caption.55}% 
 \addvspace {10pt}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Komponentendiagramm}}{34}{figure.caption.59}% 
+\contentsline {figure}{\numberline {5.2}{\ignorespaces \textit {Erstellung einer Angular-Komponente mit PhpStorm}\relax }}{36}{figure.caption.60}% 
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Auswahl generierbarer Angular-Bausteine}}}{36}{figure.caption.60}% 
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Gernerieren einer Komponente mit Parametern}}}{36}{figure.caption.60}% 
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Generierte Dateien durch die CLI}}}{36}{figure.caption.60}% 
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}

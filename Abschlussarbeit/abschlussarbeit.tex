@@ -65,11 +65,29 @@
 \checkandfixthelayout
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\usepackage{listings}
+
+\lstdefinestyle{customjs}{
+	belowcaptionskip=1\baselineskip,
+	breaklines=true,
+	frame=L,
+	xleftmargin=\parindent,
+	language=C,
+	showstringspaces=false,
+	basicstyle=\footnotesize\ttfamily,
+	keywordstyle=\bfseries\color{green!40!black},
+	commentstyle=\itshape\color{purple!40!black},
+	identifierstyle=\color{blue},
+	stringstyle=\color{orange},
+}
+
+\lstset{escapechar=@, style=customjs}
 
 \usepackage{graphicx}
 \usepackage{latexsym}
 \usepackage{epsfig}
 \usepackage[figuresright]{rotating}
+\usepackage{subfigure}
 \usepackage{dsfont}
 \usepackage{german}
 \usepackage[utf8]{inputenc}
