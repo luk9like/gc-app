@@ -1,4 +1,4 @@
-import { Component, OnChanges } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import {DataService} from '../../../shared/service/data.service';
 
 @Component({
@@ -6,11 +6,15 @@ import {DataService} from '../../../shared/service/data.service';
   templateUrl: './upload.component.html',
   styleUrls: ['./upload.component.scss']
 })
-export class UploadComponent implements OnChanges {
-  constructor(private dataServ: DataService) {}
-  ngOnChanges() {
+export class UploadComponent implements OnInit {
+  name: string;
+  constructor(public dataServ: DataService) {
+    console.log(dataServ);
+    this.name = dataServ.test;
   }
-  public imagePath;
+  ngOnInit() {
+  }
+  /*public imagePath;
   imgURL: any;
   public message: string;
 
@@ -24,7 +28,7 @@ export class UploadComponent implements OnChanges {
       return;
 
     const mimeType = files[0].type;
-    if (mimeType.match(/image\/*/) == null) {
+    if (mimeType.match(/image\/) == null) {
       this.message = 'Only images are supported.';
       return;
     }
@@ -37,4 +41,5 @@ export class UploadComponent implements OnChanges {
     }
     this.dataServ.addImage(files);
   }
+  */
 }

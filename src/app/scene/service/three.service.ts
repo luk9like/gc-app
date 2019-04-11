@@ -1,5 +1,6 @@
 import * as THREE from 'three-full';
 import { Injectable, HostListener } from '@angular/core';
+import {DataService} from '../../shared/service/data.service';
 
 @Injectable({
   providedIn: 'root'
@@ -19,7 +20,9 @@ export class ThreeService {
 
   public controls: THREE.OrbitControls;
 
-  constructor() {
+  public prevModel: String = '';
+
+  constructor(public dataServ: DataService) {
     this.render = this.render.bind(this);
     this.onModelLoadingCompleted = this.onModelLoadingCompleted.bind(this);
   }
@@ -47,7 +50,7 @@ export class ThreeService {
     const texture = 'assets/texture/large.jpg';
 
     // material.specular = 1;
-    material.map = loader.load(texture);
+    //material.map = loader.load(texture);
 
     /*object.traverse( function ( child ) {
       if ( child instanceof THREE.Mesh ) {
@@ -58,6 +61,7 @@ export class ThreeService {
     object.position.y = -.445;
 
     this.scene.add(object);
+    this.prevModel = object;
 
     const geometry = new THREE.CylinderBufferGeometry(.345, .235, .885, 21, 22, true, 0, 2 * 3.1415926535898);
     // var texture = THREE.TextureLoader('/assets/textures/large.jpg');
@@ -138,6 +142,24 @@ export class ThreeService {
   this.controls.rotateSpeed = 1.0;
   this.controls.zoomSpeed = 1.2;
   this.controls.addEventListener('change', this.render);
+}
+
+  public reloadModel(model) {
+  this.dataServ.model = model;
+
+  //check if uploaded
+  if ( this.dataServ.selectedImage !== '') {
+    console.log('Texture deleted..' + this.scene.getObjectByName(this.prevModel.name));
+  }
+  var selectedObject = this.scene.getObjectByName(this.prevModel.name);
+  this.scene.remove(selectedObject);
+  var loader = new THREE.OBJLoader();
+  var file = 'assets/model/test.obj';
+  console.log('Neues 3D Model:' + file);
+  loader.load(file, function ( group ) {
+    this.prevModel = group;
+    this.scene.add( group );
+  } );
 }
 
   /* EVENTS */

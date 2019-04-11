@@ -5,13 +5,13 @@
         <li class="nav-item">
           <a class="nav-link collapsed" data-toggle="collapse" href="#collapseSize" aria-expanded="true" aria-controls="collapseSize"><span class="mr-5 mdi mdi-cup"></span>Größe</a>
           <div class="collapse show" id="collapseSize" data-parent="#accordion">
-            Auswahl der Größe
+            <gc-size></gc-size>
           </div>
         </li>
         <li class="nav-item">
           <a class="nav-link collapsed" data-toggle="collapse" href="#collapseOptions" aria-expanded="false" aria-controls="collapseOptions"><span class="mr-5 mdi mdi-cup"></span>Optionen</a>
           <div class="collapse" id="collapseOptions" data-parent="#accordion">
-            Konfigurator Ioptions
+            <gc-upload></gc-upload>
           </div>
         </li>
         <li class="nav-item">
@@ -26,44 +26,7 @@
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <div id="table-1" class="teaser-tile p-3">
-              <table class="table table-secondary table-hover table-sm">
-                <thead>
-                <tr>
-                  <th scope="col"></th>
-                  <th scope="col">Option</th>
-                  <th scope="col">Auswahl</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                  <th scope="row">1</th>
-                  <td>Größe</td>
-                  <td> 0,5 Liter </td>
-                </tr>
-                <tr>
-                  <th scope="row">2</th>
-                  <td>Anzahl</td>
-                  <td>500 Stück</td>
-                </tr>
-                <tr>
-                  <th scope="row">3</th>
-                  <td>Design</td>
-                  <td>mein-design.jpg</td>
-                </tr>
-                <tr>
-                  <th scope="row">4</th>
-                  <td>Eichstrich</td>
-                  <td>Ja</td>
-                </tr>
-                <tr>
-                  <th scope="row">5</th>
-                  <td>Preis</td>
-                  <td>9999€</td>
-                </tr>
-                </tbody>
-              </table>
-            </div>
+            <gc-overview></gc-overview>
           </div>
         </div>
       </div>

@@ -28,7 +28,7 @@ Im folgenden Kapitel wird betrachtet aus welchen Module die Angular Anwendung au
 \begin{figure}[h]
 	\centering
 	{\epsfig{file = umsetzung/images/module.png, width=13.0cm}}
-	\caption[Komponentendiagramm]{\textit{Module der Angular-Anwendung}}
+	\caption[Übersicht der Module]{\textit{Module der Angular-Anwendung}}
 	\label{fig:module}
 \end{figure}
 Die einzelnen Bausteine der Angular-Anwendung werden im Rahmen dieses Bachlorprojektes immer über die Angular CLI generiert, da das am einfachsten funktioniert und zeitsparend ist. Ein Modul kann mit folgendem Command Line Befehl generiert werden:
@@ -48,8 +48,7 @@ Die \textit{SceneComponent} ist dafür da die komplette 3D-Szene zu erzeugen und
 \begin{figure}[h]
 	\centering
 	\subfigure[Auswahl generierbarer Angular-Bausteine]{\includegraphics[width=5cm\textwidth]{umsetzung/images/auswahlcli.png}}
-	\subfigure[Gernerieren einer Komponente mit Parametern]{\includegraphics[width=7cm\textwidth]{umsetzung/images/optionscli.png}}\\
-	\subfigure[Generierte Dateien durch die CLI]{\includegraphics[width=5cm\textwidth]{umsetzung/images/generatedfiles.png}}
+	\subfigure[Gernerieren einer Komponente mit Parametern]{\includegraphics[width=7cm\textwidth]{umsetzung/images/optionscli.png}}\\	\subfigure[Generierte Dateien durch die CLI]{\includegraphics[width=5cm\textwidth]{umsetzung/images/generatedfiles.png}}
 	\caption{\textit{Erstellung einer Angular-Komponente mit PhpStorm}}
 	\label{fig:phpstorm}
 \end{figure}
@@ -62,58 +61,120 @@ ng g c scene/scene -m=scene
 %
 Sobald die Komponente angelegt ist, hat sich eigentliche keine Funktionalität. Das wird erst später mit der Logik und den Services implementiert. Für den Anfang reicht es, hier schonmal das \texttt{canvas}-Element anzulegen und ein paar Styles in der \texttt{scss}-Datei der Komponente anzulegen. Wer sich mit \texttt{scss} bzw. \texttt{sass} auskennt, kann hier die Schreibweise nutzen. Man kann aber auch normales \texttt{css} schreiben. Damit ist die \textit{SceneComponent} im Grunde schon fertig.
 \paragraph{Kindskomponente}
-Genauso \textit{SceneComponent} wurde auch die \textit{SidebarComponent} angelegt. Sie stellt die komplette Sidebar im rechten Bereich dar, also das Konfigurationsmenü und die Übersicht. Diese Komponente hat noch ein paar Kindskomponenten. Die Sidebar ist mit der Bootstrap-Komponente \textit{Tabs}\footnote{https://getbootstrap.com/docs/4.0/components/navs/\#tabs} umgesetzt. Wir haben also im Menu zwei Tabs, Konfigurator und Übersicht. Diese Tabs sind als eigene Komponente in \textit{SharedModule} implementiert und können in unserer SidebarCompontent also KindsKomponente verwendet werden. Die Umsetzung der Tab-Komponente wird nun genauer beleuchtet.\\
-Die Tabs von Bootstrap sind als \texttt{<ul>}-Element implementiert. Die einzelnen Tabs sind also die \texttt{<li>}-Elemente und werden in der unordered-List gebündelt. Am Ende entsteht folgendes Template für die Tabs-Komponente:
+Genauso wie die \textit{SceneComponent} wurde auch die \textit{SidebarComponent} angelegt. Sie stellt die komplette Sidebar im rechten Bereich dar, also das Konfigurationsmenü und die Übersicht. Diese Komponente ist etwas komplexer und hat noch ein paar Kindskomponenten. Die Sidebar ist mit der Bootstrap-Komponente \textit{Tabs}\footnote{https://getbootstrap.com/docs/4.0/components/navs/\#tabs} umgesetzt. Wir haben also im Menu zwei Tabs, Konfigurator und Übersicht. Diese Tabs sind als eigene Komponente in \textit{SharedModule} implementiert und können in unserer SidebarCompontent also Kindskomponente verwendet werden. Es ist sozusagen ein eigener Typ für \textit{Tabs} definiert. Die Umsetzung der Tab-Komponente wird nun genauer beleuchtet.\\
+
+Die Tabs von Bootstrap sind in einem \texttt{<ul>}-Element implementiert, welcher sozusagen den Container darstellt. Die einzelnen Tabs sind dann \texttt{<li>}-Elemente und werden durch die Liste gebündelt. Am Ende entsteht folgendes Template für die Tabs-Komponente:
 %
 \begin{lstlisting}
 <ul class="nav nav-tabs nav-fill">
 	<li class="nav-item" *ngFor="let tab of tabs" (click)="selectTab(tab)">
-		<a [class.active]="tab.active" class="nav-link nav-title" href="#"><span class="mr-3 mdi mdi-gauge"></span>{{tab.title}}</a>
+		<a [class.active]="tab.active" class="nav-link nav-title" href="#">{{tab.title}}</a>
 	</li>
 </ul>
 <ng-content></ng-content>
 \end{lstlisting}
 %
-Die ul-Liste ist eigentlich identisch zur normalen Syntax. Dieser stellt den Container für die einzelnen Tabs da. Um das ganze dynamisch umzusetzten sollte die Komponente eine beliebige Anzahl an Tabs haben können. Deshalb sind die li-Tags hier mit einer Direktive von Angular verkünpft: mit ngFor werden in einer Schleife alle Tab-Title erstellt. Bei onclick soll bekanntlich der Tab als aktiv makiert werden und dessen Content angezeigt werden. Das regelt die SelectTab() Methode. Sie sagt der Kompoenente welchen inhalt sie nun anzeigen soll.
-- Tabs als ul liste li einzelner Tab
-- einzelner Tab extra klasse (Template zeigen)
-- Einzelne Tab Variable für Titel und Activ-Status
--TabsComponent nutzt Tab und bekommt von ihr die inputs
+Die \texttt{<ul>}-Liste hat ein paar vordefinierte Bootstrap-Klassen, auf die hier nicht weiter eingegangen wird. Sobald ein Tab aktiv ist, soll der dazugehörige Inhalt angezeigt werden. Wie im Quellcode zu sehen gibt es nur ein \texttt{<li>}-Tag, was nicht heißt, das es nur einen Tab gibt. Die Komponente sollte eine beliebige Anzahl an Tabs haben können. Das ist in diesem Fall dynamisch realisiert. Mit der Direktive \texttt{*ngFor} wird geprüft, wie viele Tabs im Template erstellt wurden und gibt diese dann mithilfe der for-Schleife aus. Damit wird allerdings noch nicht der Inhalt des aktiven Tab angezeigt. Dazu wird noch die \texttt{selectTab()}-Funktion benötigt. Bei \texttt{onClick} wird diese ausgeführt und teilt der Komponente mit, welcher Tab aktiv ist. Anschließend wird der Content durch \texttt{<ng-content>} ausgegeben. Um nun die Tabs als Komponente zu verwenden brauchen wird noch ein Tab-Komponente. Die Tabs-Komponente definiert, wie die Navigation insgesamt aufgebaut ist und die Tab-Komponente beschreibt, wie die einzelnen Tabs aufgebaut sind. Im Grunde werden hier nur die Inhalte des Tabs in einem div ausgegben. Wie oben im Quellcode zu sehen greifen wir auf die Variable \texttt{tab.active} und \texttt{tab.title} zu. Diese sind in Tab definiert. In unserer Sidebar würde die Tabs folgendermaßen verwendet:
+%
+\begin{lstlisting}
+<gc-tabs>
+	<gc-tab [tabTitle]="'Konfigurator'">
+		Content 1
+	</gc-tab>
+	<gc-tab [tabTitle]="'Overview'">
+		Content 2
+	</gc-tab>
+</gc-tabs>
+\end{lstlisting}
+%
+Es könnten nun noch beliebig viele \texttt{<gc-tab>}-Elemente hinzugefügt werden und sie würden auch als Tab angezeigt werden. Nun ist bei jedem Tab ein \textit{title} angegben, der als Titel im Tab angezeigt werden soll. Dieser lässt sich in der Tab-Klasse über \texttt{@input} in der Variable \texttt{title} speichern und kann so an der richtigen Stelle ausgegben werden. Damit ist Tabs-Komponente funktionsfähig. Die Tabs werden dargestellt und bei onClick wird der entsprechende Tab-Inhalt angezeigt. In Abbildung \ref{fig:sidebar} ist das Endergebnis zu sehen.\\
+\begin{figure}[h]
+	\centering
+	{\epsfig{file = methodik/images/sidebar.png, width=8.0cm}}
+	\caption[Sidebar des Konfigurators]{\textit{Sidebar der Angular-Anwendung}}
+	\label{fig:sidebar}
+\end{figure}
 
 
-
-Zusätzlch hat die SidebarComponent auch noch eigene nicht geteilte Kindskompontenten. Das Konfigurationsmenü besteht aus Größe, Design-Upload und Optionen. Diese drei sind ebenfalls als Menü umgesetzt. Es handelt sich hier wieder um eine Bootstrap Komponente, das Accordeon. Die einzelnen Punkte sind hier auch wieder eigenständige Komponenten die als KindsKomponenten in sidebarComponent verwendet werden.
-Diese Vorlage verwendet die \textit{memoir}-LaTeX-Klasse von Peter Wilson und erzeugt somit ein Buchdokument, das auch zweiseitig gedruckt werden sollte, da zwischen den Kapiteln Leerseiten erzeugt werden. Einstiegspunkt für die Bachelorarbeit ist die Datei \texttt{abschlussarbeit.tex}. Tragen Sie zunächst den Titel der Arbeit und alle Namen ein. Bei hochschulinternen Bachlorarbeiten fallen die Eintragungen \textit{durchgeführt am} und \textit{Betreuer in der Firma} natürlich weg.
+Zusätzlch hat die SidebarComponent auch noch eigene nicht geteilte Kindskompontenten. Das Konfigurationsmenü besteht aus Größe, Design-Upload und Optionen. Diese drei sind ebenfalls als Menü umgesetzt. Es handelt sich hier wieder um eine Bootstrap Komponente, das Accordion, welches ein aufklappbares Menü ist (\textit{Collapse})\footnote{https://getbootstrap.com/docs/4.0/components/collapse}. Die einzelnen Punkte sind hier auch wieder eigenständige Komponenten die als Kindskomponenten in der \textit{SidebarComponent} verwendet werden. Allerdings sind diese Komponenten weniger komplex. Hier sind alle Menüpunkte unterschiedlich aufgebaut, weshalb es 3 verschiedene Komponenten gibt. Das Accordion wird wie in der Dokumentation von Bootstrap verwendet. Wie das ganze am Ende aussieht kann man auch in Abbildung \ref{fig:sidebar} sehen. Die Komponenten \texttt{<gc-size>}, \texttt{<gc-upload>}, und \texttt{<gc-options>} sind dann sozusagen der Content. Die \textit{SizeComponent} und \textit{OptionsComponent} sind einfache \texttt{html}-Snippets. Die \textit{UploadComponent} ist wegen dem Upload-Vorgang des Designs etwas komplexer und wird später noch genauer beschrieben.
 %
 \section{3D Szene mit Model}
 \label{sec:umsetzung}
 %
-Diese Vorlage verwendet die \textit{memoir}-LaTeX-Klasse von Peter Wilson und erzeugt somit ein Buchdokument, das auch zweiseitig gedruckt werden sollte, da zwischen den Kapiteln Leerseiten erzeugt werden. Einstiegspunkt für die Bachelorarbeit ist die Datei \texttt{abschlussarbeit.tex}. Tragen Sie zunächst den Titel der Arbeit und alle Namen ein. Bei hochschulinternen Bachlorarbeiten fallen die Eintragungen \textit{durchgeführt am} und \textit{Betreuer in der Firma} natürlich weg.
-\paragraph{3D-Szenen-Service}
+\paragraph{Szene erstellen}Die \textit{SceneComponent} wurde schon angelegt. Nun muss noch die Funktionalität programmiert werden. In unserem Template ist alles was wir brauchen ein \texttt{<canvas>}-Element, \textbf{(ElementRef als Service erwähnen) }in dem dann später die ganze 3D Szene dargestellt wird. Zum Erstellen der 3D Szene und dem Laden der 3D-Models wird ein Service verwendet. Dieser Angular Baustein kann auch über die CLI angelegt werden. Der Service hat nun eine \texttt{createScene()} Funktion, die eine Scene mit Belichtung und Kamera erzeugt. Ihr wird als Parameter das \texttt{<canvas>}-Element übergeben. Für den Konfigurator wurden verschiedene Belichtungen verwendet, die ein optimales Licht erzeugen. Dabei handelt es sich um ein \textit{AmbientLight}, \textit{KeyLight}, \textit{FillLight} und \textit{BackLight}. Die Kamera hat verschiedene Werte zugewiesen bekommen, damit sie in der richtigen Perspektive den Becher später darstellt.
+%
+\paragraph{Model laden} Nun fehlt es noch an Leben in der Szene. Als 3D Model werden testweise Becher verwendet, die in etwa den späteren Mehrwegbechern entsprechen. Die 3D Models sind einfach \texttt{.obj}-Dateien, die aus 3D Programmen exportiert werden können. Mithilfe des \textit{OBJ-Loaders} kann man nun die Datei in die Szene laden. Jedoch stößt man da schnell auf das Problem, das die Loader nicht standardmäßig implementiert sind. Abhilfe schafft hier das \textit{npm}-Module \textit{full-three}\footnote{https://www.npmjs.com/package/three-full}. Es beeinhaltet die komplette Three.js Bibliothek mit allen Beispielen und Loadern. Nachdem also die Szene mit Kamera und Belichtung steht, wird die \texttt{.obj}-Datei geladen.
+%
+\begin{lstlisting}
+const loader = new THREE.OBJLoader();
+loader.load('assets/model/test.obj', this.onModelLoadingCompleted);
+\end{lstlisting}
+%
+In der Funktion \texttt{onModelLoadingCompleted} wird dann der Renderer ausgeführt, die das Model zur Szene hinzufügt und anschließend alles rendert. Jetzt ist die 3D Ansicht schon mal mit Leben gefüllt, der nackte Becher angezeigt wird (siehe Abbildung \ref{fig:3dmodel}).
+\begin{figure}[h]
+	\centering
+	{\epsfig{file = methodik/images/sidebar.png, width=8.0cm}}
+	\caption[Komponentendiagramm]{\textit{Sidebar der Angular-Anwendung}}
+	\label{fig:3dmodel}
+\end{figure}
+\paragraph{Auswahl der Größe}
+Unter dem Menüpunkt \textit{\glqq Größe\grqq} soll der Benutzer eine der vier Größen wählen. Zunächst werden in der \texttt{<gc-size>}-Komponente die verschiedenen Auswahlmöglichkeiten dargestellt. Mit einer \texttt{onClick}-Funktion wird im DataService gespeichert, welche Bechergröße der Benutzer ausgewählt hat. Anschließend wird das 3D Model ersetzt und die Szene wird neu gerendert. Standardmäßig ist von Beginn an der 0,2 Liter Becher gewählt und ist von Angfang an sichtbar. Wie genau der DataService funktioniert und wie das 3D-Model ersetzt wird, schauen wir uns später an. Für den Anfang wird der Konfigurator erstmal eine feste Größe haben.
+\paragraph{Controlling}
+Der Becher soll in 3D angezeigt werden und soll rotiert werden können. In Three.js wird dafür \textit{OrbitControl} verwendet. Diese Klasse liefert verschiedene Werte mit, die verschiedene Einstellungen ermöglichen. Beispielsweise kann man die Rotationsgeschwindigkeit einstellen. Wenn man den Becher im Extremwinkel betrachtet oder zu weit hineinzoomt, kann der Becher bzw. dessen Texture unscharf aussehen oder nicht realistisch dargestellt sein. Deshalb wird über die Controls auch ein maximaler Zoom und ein maximaler Betrachtungswinkel festgesetzt.
+\paragraph{Responsive} Die Ansicht sollte auf allen Displaygrößen darstellbar sein. Dafür sorgt der \texttt{@HostListener}. Dieser macht nichts anderes als die Fenstergröße zu überprüfen und das \texttt{<canvas>}-Element anschließend an den Container anzupassen. Falls sich die Fenstergröße ändert, wird der Szene über die Funktion \texttt{getAspectRatio()} die aktuelle Größe übermittelt. Dann wird die Szene aktualisiert und neu gerendert. Damit ist verhindert, das zum Beispiel auf kleineren Geräten der Becher abgeschnitten dargestellt wird oder ähnliches.
+%
 \section{Design Rendering}
 \label{sec:umsetzung}
 %
-Diese Vorlage verwendet die \textit{memoir}-LaTeX-Klasse von Peter Wilson und erzeugt somit ein Buchdokument, das auch zweiseitig gedruckt werden sollte, da zwischen den Kapiteln Leerseiten erzeugt werden. Einstiegspunkt für die Bachelorarbeit ist die Datei \texttt{abschlussarbeit.tex}. Tragen Sie zunächst den Titel der Arbeit und alle Namen ein. Bei hochschulinternen Bachlorarbeiten fallen die Eintragungen \textit{durchgeführt am} und \textit{Betreuer in der Firma} natürlich weg. 
-\paragraph{3D Zylinder für Design rendering}
-%https://threejs.org/docs/#api/en/geometries/CylinderBufferGeometry\\
-%https://threejs.org/docs/#api/en/core/BufferGeometry\\
-%https://codepen.io/JasonStoltz/pen/NaBOGm (transparente Designs) \\
-%https://www.flyeralarm.com/sheets/de/becher_kstoff_200ml.pdf\\
-%https://stackoverflow.com/questions/55283187/threejs-texture-fit-uv-map\\
-
-\section{Mobile Sidebar}
+Jetzt geht es um das Hauptproblem der Arbeit: Auf dem Becher muss das Design des Kunden gerendert werden. Zunächst wird zum Testen ein Design erstellt, so wie es der Kunde hochladen würde. Nach verschiedenen Test, das Design direkt auf den Becher als Textur zu rendern wurde eine besser Lösung gefunden. 
+\paragraph{3D Zylinder}
+Die Bibliothek Three.js kann Geometrien erzeugen. Das heißt, man muss kein 3D Model aus einer Datei laden, sondern kann im Code eine geometrische Form erzeugen. Genau das wird für das Design des Bechers genutzt. Der Becher hat die Form eines Zylinders. Innerhalb der \texttt{onModelLoadingCompleted}-Funktion wird nun eine \textit{CylinderBufferGeometry}\footnote{https://threejs.org/docs/\#api/en/geometries/CylinderBufferGeometry} erstellt. Im Grunde umhüllt das Design den Becher wie ein Aufkleber.
+%
+\begin{lstlisting}
+const geometry = new THREE.CylinderBufferGeometry(<radiusOben>, <radiusUnten, <height>, <radialSegmente>, <heightSegmente>, <offenesEnde>, <lenght>);
+\end{lstlisting}
+%
+Durch die Parameter ist es möglich, den Cylinder genau an die Maße des Bechers anzupassen. Er liegt ganz eng auf dem Becher. Mit dem Parameter \texttt{<offenesEnde>} wird festgelegt, das der Cylinder hohl ist und \texttt{<lenght>} stellt sicher, das der Zylinder 360 Grad im den Becher dargestellt wird.\footnote{Um das zu erreichen setzt man einfach den Wert auf \textit{2*Pi }}\\
+Jetzt kann das Design des Kunden das Texture auf den Zylinder gepackt werden. Das praktische ist, das sich das Design an die Maße des Zylinders anpasst. Wenn das Design in der richtigen Auflösung hochgeladen wurde, sieht es somit realistisch aus. Aufgrund der kubischen Form des Zylinders wird das Design minimal gestaucht, genau wie beim Druck.
+\begin{figure}[h]
+	\centering
+	{\epsfig{file = umsetzung/images/bechermitdesign.png, width=11.0cm}}
+	\caption[Konfigurator mit designtem Becher]{\textit{Darstellung des Designs auf dem Becher mit Zylinder-Geometrie}}
+	\label{fig:bechermitdesign}
+\end{figure}
+Mit einer Funktion im ThreeService wird geprüft welche Bechergröße geladen ist. Dementsprechend passt sich dann der Zylinder an das Model an und umfasst so wieder die komplette Oberfläche des Bechers. Da der Upload des Designs noch bis hierhin noch nicht implementiert ist, wird mit einem statischen Design gearbeitet. In Kapitel 5.9 wird sich diese Arbeit mit dem Upload-Vorgang beschäftigen. Solange allerdings kein Design als Texture für den Zylinder gewählt wurde, wird der Zylinder noch nicht in der Scene angezeigt. Die 3D Darstellung des Bechers mit Design funktioniert aber grundsätzlich schon, wie man in Abbildung \ref{fig:bechermitdesign} sehen kann.
+%
+\section{Mobile Umsetzung}
 \label{sec:umsetzung}
 %
-Das Off-Canvas Menu ist vom Design nicht anders als die Desktop Variante. Es wird lediglich verschoben. Es handelt sich dabei um eine JavaScript Funktion, die einfach das Menü aus dem sichtbaren Bereich verschiebt und sie erst dann sichtbar werden lässt, wenn der  Hamburger-Menu-Button gedrückt wird. Über Css werden die SceneComponent sowie die SidebarComponent noch als vollflächig dargestellt und schon ist das Mobile Menü fertig.
-Diese Vorlage verwendet die \textit{memoir}-LaTeX-Klasse von Peter Wilson und erzeugt somit ein Buchdokument, das auch zweiseitig gedruckt werden sollte, da zwischen den Kapiteln Leerseiten erzeugt werden. Einstiegspunkt für die Bachelorarbeit ist die Datei \texttt{abschlussarbeit.tex}. Tragen Sie zunächst den Titel der Arbeit und alle Namen ein. Bei hochschulinternen Bachlorarbeiten fallen die Eintragungen \textit{durchgeführt am} und \textit{Betreuer in der Firma} natürlich weg.
+Auf Tablets (in der Portraitansicht) ist es praktisch das Menü unterhalb der 3D Ansicht darzustellen. Das lässt sich ganz einfach mit den Column-Klassen von Bootstrap realisieren. Interessanter wird die Darstellung auf Smartphones.\\
+Das Off-Canvas Menu ist vom Design nicht anders als die Desktop-Variante. Es wird lediglich verschoben. Das bedeutet, wenn ein Benutzer auf dem Smartphone den Konfigurator öffnet, sieht er zunächst nur den 3D Becher. Er kann dann das Off-Canvas-Menu über ein Hamburger-Menu-Button öffnen. Das ganze ist mit einer JavaScript Funktion realisiert, die einfach das Menü aus dem sichtbaren Bereich verschiebt und sie erst dann sichtbar werden lässt, wenn der Hamburger-Menu-Button gedrückt wird. Über \texttt{css} werden die SceneComponent sowie die SidebarComponent noch so angepasst, dass sie immer 100\% des Displays einnehmen. Außerdem werden die Schriftgrößen etwas größer gemacht.
+Der Hamburger-Button ist ausschließlich auf Smartphones sichtbar. Wenn dieser geklickt wird, greift die Funktion \texttt{showsidebar()} bzw. \texttt{hideSidebar()}.
+%
+\begin{lstlisting}
+document.getElementById("mySidenav").style.width = 100%;
+\end{lstlisting}
+%
+Soll die Sidbar angezeigt werden, wird die Höhe auf \texttt{100\%} gesetzt. Soll sich geschlossen werden, wird die Breite auf \texttt{0} gesetzt. Damit ist eine sehr simple Lösung einer mobilen Sidebar implementiert.
+
+Die 3D Szene ist, wie schon zuvor erwähnt, auch responsive. Die OrbitControls von Three.js liefern auch eine Kompatiblität für Touch-Eingaben mit. So kann auf mobilen Geräten der Becher via Touch rotiert werden.
 %
 \section{Daten-Service}
 \label{sec:umsetzung}
 %
-Der DataService hat eine Aufgabe: Alle Daten des konfigurierten Bechers zu speichern und sie bei Anfrage einer Komponente wieder zurückzugeben. Dabei ist es wichtig das der Service nur einmal gestartet wird und die Daten global speichert. Hierbei handelt es sich also um ein Singelton.
-Diese Vorlage verwendet die \textit{memoir}-LaTeX-Klasse von Peter Wilson und erzeugt somit ein Buchdokument, das auch zweiseitig gedruckt werden sollte, da zwischen den Kapiteln Leerseiten erzeugt werden. Einstiegspunkt für die Bachelorarbeit ist die Datei \texttt{abschlussarbeit.tex}. Tragen Sie zunächst den Titel der Arbeit und alle Namen ein. Bei hochschulinternen Bachlorarbeiten fallen die Eintragungen \textit{durchgeführt am} und \textit{Betreuer in der Firma} natürlich weg.
+Der DataService hat eine Aufgabe: Alle Daten des konfigurierten Bechers zu speichern und sie bei Anfrage einer Komponente wieder zurückzugeben. Dabei ist es wichtig das der Service nur einmal gestartet wird und die Daten global speichert. Hierbei handelt es sich also um ein Singelton. In Angular einen Service zu implementieren, ist recht unkompliziert. Analog zum \textit{SceneService} wird dieser auch über Angular CLI anzulegen. Anders als der \textit{SceneService}, welcher ausschließlich von der \textit{SceneComponent} verwendet wird, soll dieser global zugänglich sein. Dabei speichert er folgende Daten:
+\begin{description}
+	\item[selectedImage] Speichert die \texttt{png}-Datei, welche der User hochgelden hat
+	\item[count] Speichert die Anzahl der Becher, die der Benutzer später drucken lassen möchte 
+	\item[size] Speichert die vom Benutzer gewählte Bechergröße
+	\item[stroke] Speichert, ob der Eichstrich mitgedruckt werden soll (Optionale Auswahl)
+	\item[price] Zeigt den aktuellen Staffelpreis abhängig der gewählten Anzahl.
+	\item[model] Speichert den Pfad zur \texttt{.obj}-Datei, welche gerendert werden soll
+\end{description}
+%
+Die Eigenschaften \textit{selectedImage}, \textit{count}, \textit{size}, \textit{stroke} und \textit{price} werden in der Tabelle \textit{OverviewComponent} als Bindung angezeigt. Somit ist immer die aktuelle Auswahl des Benutzers in der Tabelle. Auch der \textit{SceneService} nutzt den \textit{DataService}. Zunächst bekommt der \textit{SceneService}, wie schon erwähnt, die Information, welche Größe gewählt wurde. Je nach dem welchen Wert \textit{size} dann hat, ändert sich das 3D-Model.
 %
 \section{Upload-Vorgang}
 \label{sec:umsetzung}
 %
-Diese Vorlage verwendet die \textit{memoir}-LaTeX-Klasse von Peter Wilson und erzeugt somit ein Buchdokument, das auch zweiseitig gedruckt werden sollte, da zwischen den Kapiteln Leerseiten erzeugt werden. Einstiegspunkt für die Bachelorarbeit ist die Datei \texttt{abschlussarbeit.tex}. Tragen Sie zunächst den Titel der Arbeit und alle Namen ein. Bei hochschulinternen Bachlorarbeiten fallen die Eintragungen \textit{durchgeführt am} und \textit{Betreuer in der Firma} natürlich weg.
+Damit ist die Realisierung abgeschlossen. Die Funktionen wurden weitesgehend alle implementiert und müssen jetzt noch geprüft werden.

@@ -20,9 +20,9 @@
 \contentsline {section}{\numberline {2.2}3D Online Konfiguratoren}{7}{section.2.2}% 
 \contentsline {paragraph}{Audi 3D Konfigurator}{8}{section*.13}% 
 \contentsline {paragraph}{Siemens 3D Konfigurator}{8}{section*.14}% 
-\contentsline {paragraph}{Trilux Limba 3D Konfigurator}{9}{section*.16}% 
+\contentsline {paragraph}{Trilux Limba 3D Konfigurator}{8}{section*.16}% 
 \contentsline {section}{\numberline {2.3}Webframeworks}{9}{section.2.3}% 
-\contentsline {paragraph}{Angular}{10}{section*.17}% 
+\contentsline {paragraph}{Angular}{9}{section*.17}% 
 \contentsline {paragraph}{React}{10}{section*.19}% 
 \contentsline {paragraph}{Vue.js}{11}{section*.20}% 
 \contentsline {section}{\numberline {2.4}Flash und WebGL}{11}{section.2.4}% 
@@ -36,14 +36,14 @@
 \contentsline {section}{\numberline {3.2}Framework Angular}{16}{section.3.2}% 
 \contentsline {subsection}{\numberline {3.2.1}Komponentenbasierte Programmierung}{16}{subsection.3.2.1}% 
 \contentsline {subsection}{\numberline {3.2.2}Modulare Umsetzung}{17}{subsection.3.2.2}% 
-\contentsline {paragraph}{Hauseigene Module}{18}{section*.27}% 
+\contentsline {paragraph}{Hauseigene Module}{19}{section*.27}% 
 \contentsline {subsection}{\numberline {3.2.3}Grundfunktionen des Frameworks}{19}{subsection.3.2.3}% 
 \contentsline {paragraph}{Bindungen}{19}{section*.28}% 
 \contentsline {paragraph}{Direktiven}{19}{section*.29}% 
 \contentsline {paragraph}{Pipes}{20}{section*.30}% 
 \contentsline {paragraph}{Services}{20}{section*.31}% 
 \contentsline {subsection}{\numberline {3.2.4}Angular CLI}{20}{subsection.3.2.4}% 
-\contentsline {subsection}{\numberline {3.2.5}Versionen}{20}{subsection.3.2.5}% 
+\contentsline {subsection}{\numberline {3.2.5}Versionen}{21}{subsection.3.2.5}% 
 \contentsline {section}{\numberline {3.3}Three.js}{21}{section.3.3}% 
 \contentsline {subsection}{\numberline {3.3.1}Die Szene}{21}{subsection.3.3.1}% 
 \contentsline {paragraph}{Kamera}{22}{section*.32}% 
@@ -52,48 +52,52 @@
 \contentsline {paragraph}{Geometry}{22}{section*.35}% 
 \contentsline {paragraph}{Materials}{22}{section*.36}% 
 \contentsline {paragraph}{Mesh}{22}{section*.37}% 
-\contentsline {subsection}{\numberline {3.3.2}Modelle}{22}{subsection.3.3.2}% 
+\contentsline {subsection}{\numberline {3.3.2}Modelle}{23}{subsection.3.3.2}% 
 \contentsline {subsection}{\numberline {3.3.3}Events}{23}{subsection.3.3.3}% 
 \contentsline {section}{\numberline {3.4}Responsive Webdesign}{23}{section.3.4}% 
 \contentsline {section}{\numberline {3.5}Usability}{23}{section.3.5}% 
 \contentsline {paragraph}{User Centered Design (UCD)}{24}{section*.38}% 
 \contentsline {section}{\numberline {3.6}Performance}{24}{section.3.6}% 
-\contentsline {chapter}{\chapternumberline {4}Anforderungen und Konzeption}{25}{chapter.4}% 
-\contentsline {section}{\numberline {4.1}Funktionale Anforderungen}{25}{section.4.1}% 
-\contentsline {paragraph}{3D Vorschau des Bechers}{25}{section*.40}% 
-\contentsline {paragraph}{Interaktionen}{25}{section*.41}% 
-\contentsline {paragraph}{Upload des Designs}{26}{section*.42}% 
-\contentsline {paragraph}{Zusatzoptionen w\IeC {\"a}hlen}{26}{section*.43}% 
-\contentsline {paragraph}{\IeC {\"U}bersicht anzeigen}{27}{section*.44}% 
-\contentsline {paragraph}{Konfiguration speichern}{27}{section*.45}% 
-\contentsline {section}{\numberline {4.2}Nicht Funktionale Anforderungen}{27}{section.4.2}% 
-\contentsline {paragraph}{Uploadfilter}{27}{section*.47}% 
-\contentsline {paragraph}{Bedienungshilfen}{27}{section*.48}% 
-\contentsline {paragraph}{Realistisches Design-Rendering}{27}{section*.49}% 
-\contentsline {paragraph}{Responsive Webdesign}{28}{section*.50}% 
-\contentsline {paragraph}{Benutzerfreundlichkeit}{28}{section*.51}% 
-\contentsline {paragraph}{Performant}{29}{section*.52}% 
-\contentsline {section}{\numberline {4.3}Konzeption}{29}{section.4.3}% 
-\contentsline {paragraph}{Styles}{31}{section*.56}% 
-\contentsline {chapter}{\chapternumberline {5}Umsetzung \& Imlementierung}{33}{chapter.5}% 
-\contentsline {section}{\numberline {5.1}Entwicklungsumgebung}{33}{section.5.1}% 
-\contentsline {paragraph}{Technologien und Bibloetheken}{33}{section*.57}% 
-\contentsline {paragraph}{Entwicklungswerkzeuge}{33}{section*.58}% 
-\contentsline {section}{\numberline {5.2}Anlegen des Angular-Projekts}{34}{section.5.2}% 
-\contentsline {section}{\numberline {5.3}Module des Konfigurators}{34}{section.5.3}% 
-\contentsline {section}{\numberline {5.4}Komponenten des Konfigurators}{35}{section.5.4}% 
-\contentsline {paragraph}{Kindskomponente}{36}{section*.61}% 
-\contentsline {section}{\numberline {5.5}3D Szene mit Model}{37}{section.5.5}% 
-\contentsline {paragraph}{3D-Szenen-Service}{37}{section*.62}% 
-\contentsline {section}{\numberline {5.6}Design Rendering}{37}{section.5.6}% 
-\contentsline {paragraph}{3D Zylinder f\IeC {\"u}r Design rendering}{37}{section*.63}% 
-\contentsline {section}{\numberline {5.7}Mobile Sidebar}{37}{section.5.7}% 
-\contentsline {section}{\numberline {5.8}Daten-Service}{38}{section.5.8}% 
-\contentsline {section}{\numberline {5.9}Upload-Vorgang}{38}{section.5.9}% 
-\contentsline {chapter}{\chapternumberline {6}Testphase \& Ergebnisse}{39}{chapter.6}% 
-\contentsline {section}{\numberline {6.1}Testumgebung}{39}{section.6.1}% 
-\contentsline {section}{\numberline {6.2}Ergebnisse}{39}{section.6.2}% 
-\contentsline {chapter}{\chapternumberline {7}Zusammenfassung}{41}{chapter.7}% 
-\contentsline {appendix}{\chapternumberline {A}Lorem Ipsum}{43}{appendix.A}% 
-\contentsline {chapter}{Glossar}{45}{appendix*.64}% 
-\contentsline {chapter}{Literaturverzeichnis}{47}{appendix*.65}% 
+\contentsline {chapter}{\chapternumberline {4}Anforderungen und Konzeption}{27}{chapter.4}% 
+\contentsline {section}{\numberline {4.1}Funktionale Anforderungen}{27}{section.4.1}% 
+\contentsline {paragraph}{3D Vorschau des Bechers}{27}{section*.40}% 
+\contentsline {paragraph}{Interaktionen}{27}{section*.41}% 
+\contentsline {paragraph}{Upload des Designs}{28}{section*.42}% 
+\contentsline {paragraph}{Zusatzoptionen w\IeC {\"a}hlen}{28}{section*.43}% 
+\contentsline {paragraph}{\IeC {\"U}bersicht anzeigen}{29}{section*.44}% 
+\contentsline {paragraph}{Konfiguration speichern}{29}{section*.45}% 
+\contentsline {section}{\numberline {4.2}Nicht Funktionale Anforderungen}{29}{section.4.2}% 
+\contentsline {paragraph}{Uploadfilter}{29}{section*.47}% 
+\contentsline {paragraph}{Bedienungshilfen}{29}{section*.48}% 
+\contentsline {paragraph}{Realistisches Design-Rendering}{29}{section*.49}% 
+\contentsline {paragraph}{Responsive Webdesign}{30}{section*.50}% 
+\contentsline {paragraph}{Benutzerfreundlichkeit}{30}{section*.51}% 
+\contentsline {paragraph}{Performant}{31}{section*.52}% 
+\contentsline {section}{\numberline {4.3}Konzeption}{31}{section.4.3}% 
+\contentsline {paragraph}{Styles}{33}{section*.56}% 
+\contentsline {chapter}{\chapternumberline {5}Umsetzung \& Imlementierung}{35}{chapter.5}% 
+\contentsline {section}{\numberline {5.1}Entwicklungsumgebung}{35}{section.5.1}% 
+\contentsline {paragraph}{Technologien und Bibloetheken}{35}{section*.57}% 
+\contentsline {paragraph}{Entwicklungswerkzeuge}{35}{section*.58}% 
+\contentsline {section}{\numberline {5.2}Anlegen des Angular-Projekts}{36}{section.5.2}% 
+\contentsline {section}{\numberline {5.3}Module des Konfigurators}{36}{section.5.3}% 
+\contentsline {section}{\numberline {5.4}Komponenten des Konfigurators}{37}{section.5.4}% 
+\contentsline {paragraph}{Kindskomponente}{38}{section*.61}% 
+\contentsline {section}{\numberline {5.5}3D Szene mit Model}{40}{section.5.5}% 
+\contentsline {paragraph}{Szene erstellen}{40}{section*.63}% 
+\contentsline {paragraph}{Model laden}{40}{section*.64}% 
+\contentsline {paragraph}{Auswahl der Gr\IeC {\"o}\IeC {\ss }e}{41}{section*.66}% 
+\contentsline {paragraph}{Controlling}{42}{section*.67}% 
+\contentsline {paragraph}{Responsive}{42}{section*.68}% 
+\contentsline {section}{\numberline {5.6}Design Rendering}{42}{section.5.6}% 
+\contentsline {paragraph}{3D Zylinder}{42}{section*.69}% 
+\contentsline {section}{\numberline {5.7}Mobile Umsetzung}{43}{section.5.7}% 
+\contentsline {section}{\numberline {5.8}Daten-Service}{44}{section.5.8}% 
+\contentsline {section}{\numberline {5.9}Upload-Vorgang}{44}{section.5.9}% 
+\contentsline {chapter}{\chapternumberline {6}Testphase \& Ergebnisse}{45}{chapter.6}% 
+\contentsline {section}{\numberline {6.1}Testumgebung}{45}{section.6.1}% 
+\contentsline {section}{\numberline {6.2}Ergebnisse}{45}{section.6.2}% 
+\contentsline {chapter}{\chapternumberline {7}Zusammenfassung}{47}{chapter.7}% 
+\contentsline {appendix}{\chapternumberline {A}Lorem Ipsum}{49}{appendix.A}% 
+\contentsline {chapter}{Glossar}{51}{appendix*.71}% 
+\contentsline {chapter}{Literaturverzeichnis}{53}{appendix*.72}% 
