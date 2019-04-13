@@ -50,7 +50,7 @@ export class ThreeService {
     const texture = 'assets/texture/large.jpg';
 
     // material.specular = 1;
-    //material.map = loader.load(texture);
+    material.map = loader.load(texture);
 
     /*object.traverse( function ( child ) {
       if ( child instanceof THREE.Mesh ) {
@@ -59,6 +59,7 @@ export class ThreeService {
     } );*/
 
     object.position.y = -.445;
+    object.name = 'currentModel';
 
     this.scene.add(object);
     this.prevModel = object;
@@ -145,21 +146,25 @@ export class ThreeService {
 }
 
   public reloadModel(model) {
-  this.dataServ.model = model;
+    this.dataServ.model = model;
 
-  //check if uploaded
-  if ( this.dataServ.selectedImage !== '') {
-    console.log('Texture deleted..' + this.scene.getObjectByName(this.prevModel.name));
-  }
-  var selectedObject = this.scene.getObjectByName(this.prevModel.name);
-  this.scene.remove(selectedObject);
-  var loader = new THREE.OBJLoader();
-  var file = 'assets/model/test.obj';
-  console.log('Neues 3D Model:' + file);
-  loader.load(file, function ( group ) {
-    this.prevModel = group;
-    this.scene.add( group );
-  } );
+    // check if uploaded
+    if ( this.dataServ.selectedImage !== ''){
+      console.log('Texture deleted: ' + this.scene.getObjectByName('currentModel'));
+    }
+
+    const prevModel1 = this.scene.getObjectByName('180ml_ColdCup_Circle.003_CUSTOM');
+    const prevModel2 = this.scene.getObjectByName('180ml_ColdCup_Circle.003_paper');
+    const selectedObject = this.scene.getObjectByName('currentModel');
+
+    this.scene.remove(prevModel1, prevModel2, selectedObject);
+
+    this.controls.update();
+    this.render();
+
+    const loader = new THREE.OBJLoader();
+    const file = 'assets/model/' + model + '.obj';
+    loader.load(file, this.onModelLoadingCompleted);
 }
 
   /* EVENTS */
