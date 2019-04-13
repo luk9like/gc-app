@@ -22,6 +22,20 @@ export class ThreeService {
 
   public prevModel: String = '';
 
+  public radiusTop = {'small': .345, 'medium': .39, 'normal': .44, 'large': .435};
+  public radiusBottom = {'small': .235, 'medium': .285, 'normal': .31, 'large': .3};
+  public cylinderHeight = {'small': .885, 'medium': .885, 'normal': 1.05, 'large': 1.33};
+  public radialSegments = 21;
+  public heightSegments = 22;
+  public thetaLength: Number = 2 * 3.1415926535898;
+
+  public cylinder: number[][] = [
+      [.345, .235, .885, 21, 22],
+      [.345, .235, .885, 21, 22]
+  ];
+
+
+
   constructor(public dataServ: DataService) {
     this.render = this.render.bind(this);
     this.onModelLoadingCompleted = this.onModelLoadingCompleted.bind(this);
@@ -35,7 +49,7 @@ export class ThreeService {
     this.scene = new THREE.Scene();
 
     const loader = new THREE.OBJLoader();
-    loader.load('assets/model/test.obj', this.onModelLoadingCompleted);
+    loader.load('assets/model/' + this.dataServ.model + '.obj', this.onModelLoadingCompleted);
 
     this.createLight();
     this.createCamera();
@@ -47,7 +61,7 @@ export class ThreeService {
 
     const loader = new THREE.TextureLoader();
     const material = new THREE.MeshBasicMaterial();
-    const texture = 'assets/texture/large.jpg';
+    const texture = 'assets/texture/texture.jpg';
 
     // material.specular = 1;
     material.map = loader.load(texture);
@@ -64,12 +78,24 @@ export class ThreeService {
     this.scene.add(object);
     this.prevModel = object;
 
-    const geometry = new THREE.CylinderBufferGeometry(.345, .235, .885, 21, 22, true, 0, 2 * 3.1415926535898);
+    var cupSize = '' + this.dataServ.model;
+    const geometry = new THREE.CylinderBufferGeometry(
+        this.radiusTop[cupSize],
+        this.radiusBottom[cupSize],
+        this.cylinderHeight[cupSize],
+        this.radialSegments,
+        this.heightSegments,
+        true,
+        0,
+        this.thetaLength);
+
     // var texture = THREE.TextureLoader('/assets/textures/large.jpg');
 
     // var material.transparent = true;
     const cylinder = new THREE.Mesh( geometry, material );
     if (material.map) {
+      if ( this.dataServ.model === 'normal' ) {cylinder.position.y = .09; }
+      if ( this.dataServ.model === 'large' ) {cylinder.position.y = .22; }
       this.scene.add( cylinder );
     }
 
@@ -147,6 +173,24 @@ export class ThreeService {
 
   public reloadModel(model) {
     this.dataServ.model = model;
+    switch(model) {
+      case 'medium': {
+        this.dataServ.size = 0.2;
+        break;
+      }
+      case 'normal': {
+        this.dataServ.size = 0.3;
+        break;
+      }
+      case 'large': {
+        this.dataServ.size = 0.4;
+        break;
+      }
+      default: {
+        this.dataServ.size = .18;
+        break;
+      }
+    }
 
     // check if uploaded
     if ( this.dataServ.selectedImage !== ''){
@@ -155,9 +199,9 @@ export class ThreeService {
 
     const prevModel1 = this.scene.getObjectByName('180ml_ColdCup_Circle.003_CUSTOM');
     const prevModel2 = this.scene.getObjectByName('180ml_ColdCup_Circle.003_paper');
-    const selectedObject = this.scene.getObjectByName('currentModel');
+    const currentModel = this.scene.getObjectByName('currentModel');
 
-    this.scene.remove(prevModel1, prevModel2, selectedObject);
+    this.scene.remove(prevModel1, prevModel2, currentModel);
 
     this.controls.update();
     this.render();

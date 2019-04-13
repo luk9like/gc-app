@@ -5227,7 +5227,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
 
       var elementTemplates = {
           span: document.createElement('span'),
-          subtext: document.createElement('small'),
+          subtext: document.createElement('medium.obj'),
           a: document.createElement('a'),
           li: document.createElement('li'),
           whitespace: document.createTextNode("\u00A0")
@@ -9592,7 +9592,7 @@ function Sizzle( selector, context, results, seed ) {
 			// Take advantage of querySelectorAll
 			if ( support.qsa &&
 				!compilerCache[ selector + " " ] &&
-				(!rbuggyQSA || !rbuggyQSA.test( selector )) ) {
+				(!rbuggyQSA || !rbuggyQSA.small( selector )) ) {
 
 				if ( nodeType !== 1 ) {
 					newContext = context;
@@ -10285,8 +10285,8 @@ Sizzle.matchesSelector = function( elem, expr ) {
 
 	if ( support.matchesSelector && documentIsHTML &&
 		!compilerCache[ expr + " " ] &&
-		( !rbuggyMatches || !rbuggyMatches.test( expr ) ) &&
-		( !rbuggyQSA     || !rbuggyQSA.test( expr ) ) ) {
+		( !rbuggyMatches || !rbuggyMatches.small( expr ) ) &&
+		( !rbuggyQSA     || !rbuggyQSA.small( expr ) ) ) {
 
 		try {
 			var ret = matches.call( elem, expr );
@@ -10479,7 +10479,7 @@ Expr = Sizzle.selectors = {
 			var excess,
 				unquoted = !match[6] && match[2];
 
-			if ( matchExpr["CHILD"].test( match[0] ) ) {
+			if ( matchExpr["CHILD"].small( match[0] ) ) {
 				return null;
 			}
 
@@ -11443,7 +11443,7 @@ select = Sizzle.select = function( selector, context, results, seed ) {
 		}
 
 		// Fetch a seed set for right-to-left matching
-		i = matchExpr["needsContext"].test( selector ) ? 0 : tokens.length;
+		i = matchExpr["needsContext"].small( selector ) ? 0 : tokens.length;
 		while ( i-- ) {
 			token = tokens[i];
 
@@ -17391,7 +17391,7 @@ function ajaxHandleResponses( s, jqXHR, responses ) {
 	// Check if we're dealing with a known content-type
 	if ( ct ) {
 		for ( type in contents ) {
-			if ( contents[ type ] && contents[ type ].test( ct ) ) {
+			if ( contents[ type ] && contents[ type ].small( ct ) ) {
 				dataTypes.unshift( type );
 				break;
 			}

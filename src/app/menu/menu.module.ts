@@ -5,12 +5,16 @@ import { SizeComponent } from './components/size/size.component';
 import { UploadComponent } from './components/upload/upload.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { SharedModule } from '../shared/shared.module';
+import { FileComponent } from './file/file.component';
+import {FileDropDirective, FileSelectDirective} from 'ng2-file-upload';
+import {RouterModule} from '@angular/router';
 
 @NgModule({
-  declarations: [OverviewComponent, SizeComponent, UploadComponent, SidebarComponent],
+  declarations: [OverviewComponent, SizeComponent, UploadComponent, SidebarComponent, FileComponent, FileSelectDirective, FileDropDirective],
   imports: [
     CommonModule,
-    SharedModule
+    SharedModule,
+    RouterModule
   ],
   exports: [SidebarComponent]
 })

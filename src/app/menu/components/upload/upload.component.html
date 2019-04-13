@@ -1,7 +1,5 @@
-<span style="color:red;" *ngIf="message">{{message}}</span>
-<label for="imageInput" class="custom-file-upload bg-primary">
-  <input id="imageInput" type="file" accept='image/png' (change)="preview();">
-  Design hochladen
-</label>
-<img [src]="imgURL" height="200" *ngIf="imgURL">
-<p>{{dataServ.size}}</p>
+<p>
+Bitte wählen Sie ihr Design aus. Achten Sie auch auf Die Druckvorgaben.
+  Zugelassen sind nur .png Dateien.
+</p>
+<a class="btn btn-primary" routerLink="/upload">Design auswählen</a>

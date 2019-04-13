@@ -7,10 +7,10 @@ export class DataService {
 
   selectedImage: any;
   count: number = 100;
-  size: String = '0.2';
+  size: Number = 0.2;
   stroke: boolean = false;
   price: number = 99.99;
-  model: String;
+  model: String = 'small';
 
   test = "Lukas";
   startTime = Date.now();

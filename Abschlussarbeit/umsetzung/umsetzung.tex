@@ -118,7 +118,20 @@ In der Funktion \texttt{onModelLoadingCompleted} wird dann der Renderer ausgefü
 	\label{fig:3dmodel}
 \end{figure}
 \paragraph{Auswahl der Größe}
-Unter dem Menüpunkt \textit{\glqq Größe\grqq} soll der Benutzer eine der vier Größen wählen. Zunächst werden in der \texttt{<gc-size>}-Komponente die verschiedenen Auswahlmöglichkeiten dargestellt. Mit einer \texttt{onClick}-Funktion wird im DataService gespeichert, welche Bechergröße der Benutzer ausgewählt hat. Anschließend wird das 3D Model ersetzt und die Szene wird neu gerendert. Standardmäßig ist von Beginn an der 0,2 Liter Becher gewählt und ist von Angfang an sichtbar. Wie genau der DataService funktioniert und wie das 3D-Model ersetzt wird, schauen wir uns später an. Für den Anfang wird der Konfigurator erstmal eine feste Größe haben.
+Unter dem Menüpunkt \textit{\glqq Größe\grqq} soll der Benutzer eine der vier Größen wählen. Standardmäßig ist von Beginn an der 0,2 Liter Becher gewählt und ist von Angfang an sichtbar. Wie genau der DataService funktioniert, wird später noch einmal genauer beleuchtet. Zunächst werden in der \texttt{<gc-size>}-Komponente die verschiedenen Auswahlmöglichkeiten dargestellt. Mit der \texttt{onClick}-Funktion \texttt{reloadModel()} wird dem \textit{SceneService} mitgeteilt, das der Benutzer eine Bechergröße gewählt hat. 
+%
+\begin{lstlisting}
+this.scene.remove(currentModel);
+
+const loader = new THREE.OBJLoader();
+const file = 'assets/model/' + model + '.obj';
+loader.load(file, this.onModelLoadingCompleted);
+
+this.controls.update();
+this.render();
+\end{lstlisting}
+%
+In der Funktion wird als erstes das aktuelle Model entfernt. Danach wird geprüft, welche Größe der User ausgewählt hat und dementsprechend wird das neue Model geladen. Anschließend muss die Szene neu gerendert werden. 
 \paragraph{Controlling}
 Der Becher soll in 3D angezeigt werden und soll rotiert werden können. In Three.js wird dafür \textit{OrbitControl} verwendet. Diese Klasse liefert verschiedene Werte mit, die verschiedene Einstellungen ermöglichen. Beispielsweise kann man die Rotationsgeschwindigkeit einstellen. Wenn man den Becher im Extremwinkel betrachtet oder zu weit hineinzoomt, kann der Becher bzw. dessen Texture unscharf aussehen oder nicht realistisch dargestellt sein. Deshalb wird über die Controls auch ein maximaler Zoom und ein maximaler Betrachtungswinkel festgesetzt.
 \paragraph{Responsive} Die Ansicht sollte auf allen Displaygrößen darstellbar sein. Dafür sorgt der \texttt{@HostListener}. Dieser macht nichts anderes als die Fenstergröße zu überprüfen und das \texttt{<canvas>}-Element anschließend an den Container anzupassen. Falls sich die Fenstergröße ändert, wird der Szene über die Funktion \texttt{getAspectRatio()} die aktuelle Größe übermittelt. Dann wird die Szene aktualisiert und neu gerendert. Damit ist verhindert, das zum Beispiel auf kleineren Geräten der Becher abgeschnitten dargestellt wird oder ähnliches.
@@ -134,15 +147,15 @@ Die Bibliothek Three.js kann Geometrien erzeugen. Das heißt, man muss kein 3D M
 const geometry = new THREE.CylinderBufferGeometry(<radiusOben>, <radiusUnten, <height>, <radialSegmente>, <heightSegmente>, <offenesEnde>, <lenght>);
 \end{lstlisting}
 %
-Durch die Parameter ist es möglich, den Cylinder genau an die Maße des Bechers anzupassen. Er liegt ganz eng auf dem Becher. Mit dem Parameter \texttt{<offenesEnde>} wird festgelegt, das der Cylinder hohl ist und \texttt{<lenght>} stellt sicher, das der Zylinder 360 Grad im den Becher dargestellt wird.\footnote{Um das zu erreichen setzt man einfach den Wert auf \textit{2*Pi }}\\
-Jetzt kann das Design des Kunden das Texture auf den Zylinder gepackt werden. Das praktische ist, das sich das Design an die Maße des Zylinders anpasst. Wenn das Design in der richtigen Auflösung hochgeladen wurde, sieht es somit realistisch aus. Aufgrund der kubischen Form des Zylinders wird das Design minimal gestaucht, genau wie beim Druck.
+Durch die Parameter ist es möglich, den Zylinder genau an die Maße des Bechers anzupassen. Er liegt ganz eng auf dem Becher, eben wie ein Aufkleber. Mit dem Parameter \texttt{<offenesEnde>} wird festgelegt, das der Cylinder hohl ist und \texttt{<lenght>} stellt sicher, das der Zylinder 360 Grad im den Becher dargestellt wird.\footnote{Um das zu erreichen setzt man einfach den Wert auf \textit{2*Pi }}. Die anderen Parameter beschreiben den Radius und die Höhe des Zylinders. Im \textit{ThreeService} sind die Parameter der \textit{CylinderBufferGeometry} in Variablen für jeden der vier Becher definiert. Bevor die Geometrie erstellt wird, muss nur das aktuelle Model geprüft werden .Dann müssen die passenden Zylinder-Parameter für die aktuelle Bechergröße geladen werden. Somit umhüllt der Zylinder immer den ganzen Becher, egal welche Bechergröße gewählt ist.\\
+Jetzt kann das Design des Kunden als Texture auf den Zylinder gepackt werden. Das praktische ist, das sich das Design an die Maße des Zylinders anpasst. Wenn das Design in der richtigen Auflösung hochgeladen wurde, sieht es somit realistisch aus\footnote{Im Upload-Vorgang wird der Benutzer bei falscher Auflösung des Designs darauf hingewiesen (siehe Kapitel 5.9).}. Aufgrund der kubischen Form des Zylinders wird das Design minimal gestaucht, genau wie beim Druck.
 \begin{figure}[h]
 	\centering
 	{\epsfig{file = umsetzung/images/bechermitdesign.png, width=11.0cm}}
 	\caption[Konfigurator mit designtem Becher]{\textit{Darstellung des Designs auf dem Becher mit Zylinder-Geometrie}}
 	\label{fig:bechermitdesign}
 \end{figure}
-Mit einer Funktion im ThreeService wird geprüft welche Bechergröße geladen ist. Dementsprechend passt sich dann der Zylinder an das Model an und umfasst so wieder die komplette Oberfläche des Bechers. Da der Upload des Designs noch bis hierhin noch nicht implementiert ist, wird mit einem statischen Design gearbeitet. In Kapitel 5.9 wird sich diese Arbeit mit dem Upload-Vorgang beschäftigen. Solange allerdings kein Design als Texture für den Zylinder gewählt wurde, wird der Zylinder noch nicht in der Scene angezeigt. Die 3D Darstellung des Bechers mit Design funktioniert aber grundsätzlich schon, wie man in Abbildung \ref{fig:bechermitdesign} sehen kann.
+Da der Upload des Designs noch bis hierhin noch nicht implementiert ist, wird mit einem statischen Design gearbeitet. In Kapitel 5.9 wird sich diese Arbeit mit dem Upload-Vorgang beschäftigen. Solange allerdings kein Design als Texture hochgeladen wurde, wird der erstellte Zylinder in der Scene ausgeblendet. Es würde keinen Sinn machen einen blanken Zylinder um den Becher anzuzeigen. Die 3D Darstellung des Bechers mit Design funktioniert aber grundsätzlich schon, wie man in Abbildung \ref{fig:bechermitdesign} sehen kann.
 %
 \section{Mobile Umsetzung}
 \label{sec:umsetzung}
@@ -172,9 +185,14 @@ Der DataService hat eine Aufgabe: Alle Daten des konfigurierten Bechers zu speic
 	\item[model] Speichert den Pfad zur \texttt{.obj}-Datei, welche gerendert werden soll
 \end{description}
 %
-Die Eigenschaften \textit{selectedImage}, \textit{count}, \textit{size}, \textit{stroke} und \textit{price} werden in der Tabelle \textit{OverviewComponent} als Bindung angezeigt. Somit ist immer die aktuelle Auswahl des Benutzers in der Tabelle. Auch der \textit{SceneService} nutzt den \textit{DataService}. Zunächst bekommt der \textit{SceneService}, wie schon erwähnt, die Information, welche Größe gewählt wurde. Je nach dem welchen Wert \textit{size} dann hat, ändert sich das 3D-Model.
+Die Eigenschaften \textit{selectedImage}, \textit{count}, \textit{size}, \textit{stroke} und \textit{price} werden in der Tabelle \textit{OverviewComponent} als Bindung angezeigt. Somit ist immer die aktuelle Auswahl des Benutzers in der Tabelle. Auch der \textit{SceneService} nutzt den \textit{DataService}. Zunächst bekommt der \textit{SceneService}, wie schon erwähnt, die Information, welche Größe gewählt wurde. Je nach dem welchen Wert \textit{size} dann hat, ändert sich das 3D-Model. Ähnlich verhält es sich mit dem Design, was als Textur auf dem Becher angezeigt werden soll. Im nächsten Abschnitt wird genauer beschrieben, wie ein Design hochgeladen werden kann, und welche Rolle der \textit{DataService} dort spielt.
 %
 \section{Upload-Vorgang}
 \label{sec:umsetzung}
 %
+Angenommen ein Benutzer hat sich für eine Größe entschieden und möchte nun sein Design hochladen. Wie in Abbildung zu sehen, kann in der Sidebar über einen Button die \textit{UploadComponent} geöffnet werden. Der User wird hier auch noch einmal darauf hingewiesen, die Druckvorgaben zu beachten.
+\paragraph{Route zum Upload}
+An dieser Stelle der Anwendung wird das \textit{Routing} verwendet. Normalerweise befinden wir uns in dem Konfigurator unter dem root-Pfad. Beim Upload ändert sich der Pfad zu \texttt{localhost/upload}. Unter dieser Route ist definiert, das die \textit{UploadComponent} angezeigt werden soll und nicht die \textit{SidebarComponent}. Hier kann der Benutzer jetzt sein Design hochladen (siehe Abbildung).
+
+
 Damit ist die Realisierung abgeschlossen. Die Funktionen wurden weitesgehend alle implementiert und müssen jetzt noch geprüft werden.

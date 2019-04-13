@@ -1,7 +1,7 @@
 <div id="container" class="container-fluid" style="height: 100%;">
   <div class="row h-100">
     <div class="col-xl-8 col-lg-6 col-sm-12">
-      <div id="main">
+      <div id="main" class="">
         <span class="d-sm-none d-block text-right" style="font-size: 3rem; position: absolute; top: 0; right: 20px;" (click)="openNav()">+</span>
         <gc-scene></gc-scene>
       </div>
@@ -9,10 +9,8 @@
     <div class="col-xl-4 col-lg-6 col-sm-12">
       <div id="mySidenav" class="sidenav h-100">
         <a href="javascript:void(0)" class="closebtn d-sm-none d-block" (click)="closeNav()">&times;</a>
-        <gc-sidebar></gc-sidebar>
+        <router-outlet></router-outlet>
       </div>
     </div>
   </div>
 </div>
-
-<router-outlet></router-outlet>

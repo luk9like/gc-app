@@ -7,6 +7,7 @@ import { MenuModule } from './menu/menu.module';
 
 
 import { AppComponent } from './app.component';
+import {RouterLink, RouterModule} from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { AppComponent } from './app.component';
     BrowserModule,
     AppRoutingModule,
     SceneModule,
-    MenuModule
+    MenuModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
