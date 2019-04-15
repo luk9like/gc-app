@@ -1,11 +1,12 @@
-import {Directive, ElementRef, EventEmitter, HostBinding, HostListener, Output} from '@angular/core';
+import {Directive, ElementRef, EventEmitter, HostBinding, HostListener, Input, Output} from '@angular/core';
 
 @Directive({
   selector: '[gcDragDrop]'
 })
 
 export class DragDropDirective {
-  @Output() private filesChangeEmiter: EventEmitter<FileList> = new EventEmitter();
+  @Output() private filesChangeEmiter: EventEmitter<File[]> = new EventEmitter();
+  @Input() private allowed_ext: Array<string> = [];
 
   @HostBinding('style.borderColor') private borderColor = '#999';
 
@@ -26,11 +27,22 @@ export class DragDropDirective {
   @HostListener('drop', ['$event']) public onDrop(evt) {
     evt.preventDefault();
     evt.stopPropagation();
+
     let files = evt.dataTransfer.files;
-    if(files.length > 0) {
-      console.log(evt);
+    let validFiles: Array<File> = [];
+
+    if ( files.length > 0 ) {
       this.borderColor = '#999';
-      this.filesChangeEmiter.emit(files);
+      for ( let file of files ) {
+        let ext = file.type;
+
+        if ( this.allowed_ext.includes(ext)) {
+          validFiles.push(file);
+          this.filesChangeEmiter.emit(validFiles);
+        } else {
+          alert('Falsches Dateiformat! Bitte wähle eine .png-Datei aus.');
+        }
+      }
     }
   }
 }

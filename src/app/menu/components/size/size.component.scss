@@ -1,0 +1,9 @@
+.size img{
+  border: 3px solid darkgrey;
+  position: relative;
+
+  &:hover, &:focus, &:active{
+    border: 3px solid darkred;
+    transition: border ease-in-out .2s;
+  }
+}

@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.3.13)  15 APR 2019 19:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6980) (preloaded format=pdflatex 2019.3.13)  15 APR 2019 19:17
 entering extended mode
 **./abschlussarbeit.tex
 (abschlussarbeit.tex
 LaTeX2e <2018-12-01>
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/memoir\memoir.cls"
+(/home/luke/.miktex/texmfs/install/tex/latex/memoir/memoir.cls
 Document Class: memoir 2018/12/12 v3.7h configurable book, report, article docu
 ment class
 \onelineskip=\skip41
@@ -11,21 +11,17 @@ ment class
 \xlvchars=\skip43
 \@memcnta=\count80
 \c@@memmarkcntra=\count81
-
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\ifpdf.s
-ty"
+(/home/luke/.miktex/texmfs/install/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
 )
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/ifetex\ifetex.sty"
+(/home/luke/.miktex/texmfs/install/tex/latex/ifetex/ifetex.sty
 Package: ifetex 2018/03/31 v1.2a ifetex
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/plain/ifetex\ifetex.tex"
-))
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/generic/ifxetex\ifxetex.
-sty"
+
+(/home/luke/.miktex/texmfs/install/tex/plain/ifetex/ifetex.tex))
+(/home/luke/.miktex/texmfs/install/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\ifluate
-x.sty"
+(/home/luke/.miktex/texmfs/install/tex/generic/oberdiek/ifluatex.sty
 Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )
@@ -34,7 +30,7 @@ Package ifluatex Info: LuaTeX not detected.
 \trimtop=\skip46
 \trimedge=\skip47
 
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/memoir\mem11.clo"
+(/home/luke/.miktex/texmfs/install/tex/latex/memoir/mem11.clo
 File: mem11.clo 2008/01/30 v0.3 memoir class 11pt size option
 )
 \binding=\skip48
@@ -124,7 +120,8 @@ File: mem11.clo 2008/01/30 v0.3 memoir class 11pt size option
 \beforePoemTitleskip=\skip108
 \midPoemTitleskip=\skip109
 \afterPoemTitleskip=\skip110
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\array.sty"
+
+(/home/luke/.miktex/texmfs/install/tex/latex/tools/array.sty
 Package: array 2018/12/30 v2.4k Tabular extension package (FMi)
 \col@sep=\dimen107
 \ar@mcellbox=\box27
@@ -134,15 +131,13 @@ Package: array 2018/12/30 v2.4k Tabular extension package (FMi)
 \backup@length=\skip112
 \ar@cellbox=\box28
 )
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\dcolumn.sty"
+(/home/luke/.miktex/texmfs/install/tex/latex/tools/dcolumn.sty
 Package: dcolumn 2014/10/28 v1.06 decimal alignment package (DPC)
 )
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\delarray.sty
-"
+(/home/luke/.miktex/texmfs/install/tex/latex/tools/delarray.sty
 Package: delarray 2014/10/28 v1.01 array delimiter package (DPC)
 )
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\tabularx.sty
-"
+(/home/luke/.miktex/texmfs/install/tex/latex/tools/tabularx.sty
 Package: tabularx 2016/02/03 v2.11b `tabularx' package (DPC)
 \TX@col@width=\dimen109
 \TX@old@table=\dimen110
@@ -365,11 +360,8 @@ Sidefoothsep and sidefootwidth: 7pt and 101pt
 Sidefootvsep and sidefootheight: 13.6pt and 594.32022pt
 ******************************************************
 
-
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\listings.
-sty"
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\keyval.st
-y"
+(/home/luke/.miktex/texmfs/install/tex/latex/listings/listings.sty
+(/home/luke/.miktex/texmfs/install/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks22
 )
@@ -386,68 +378,58 @@ Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \lst@lineno=\count143
 \lst@maxwidth=\dimen150
 
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstmisc.s
-ty"
+(/home/luke/.miktex/texmfs/install/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2019/02/27 1.8b (Carsten Heinz)
 \c@lstnumber=\count144
 \lst@skipnumbers=\count145
 \lst@framebox=\box33
 )
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\listings.
-cfg"
+(/home/luke/.miktex/texmfs/install/tex/latex/listings/listings.cfg
 File: listings.cfg 2019/02/27 1.8b listings configuration
 ))
 Package: listings 2019/02/27 1.8b (Carsten Heinz)
 
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstlang1.
-sty"
+(/home/luke/.miktex/texmfs/install/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2019/02/27 1.8b listings language file
 )
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstmisc.s
-ty"
+(/home/luke/.miktex/texmfs/install/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2019/02/27 1.8b (Carsten Heinz)
 )
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graphicx.
-sty"
+(/home/luke/.miktex/texmfs/install/tex/latex/graphics/graphicx.sty
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graphics.
-sty"
+(/home/luke/.miktex/texmfs/install/tex/latex/graphics/graphics.sty
 Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\trig.sty"
+(/home/luke/.miktex/texmfs/install/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-cfg\graph
-ics.cfg"
+(/home/luke/.miktex/texmfs/install/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 99.
 
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-def\pdfte
-x.def"
+(/home/luke/.miktex/texmfs/install/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen151
 \Gin@req@width=\dimen152
 )
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\latexsym.sty"
+(/home/luke/.miktex/texmfs/install/tex/latex/base/latexsym.sty
 Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
 \symlasy=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
 (Font)                  U/lasy/m/n --> U/lasy/b/n on input line 52.
 )
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\epsfig.st
-y"
+(/home/luke/.miktex/texmfs/install/tex/latex/graphics/epsfig.sty
 Package: epsfig 2017/06/25 v1.7b (e)psfig emulation (SPQR)
 \epsfxsize=\dimen153
 \epsfysize=\dimen154
 )
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\rotating.
-sty"
+(/home/luke/.miktex/texmfs/install/tex/latex/graphics/rotating.sty
 Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
 
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ifthen.sty"
+(/home/luke/.miktex/texmfs/install/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
 \c@r@tfl@t=\count146
@@ -456,8 +438,7 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 \rot@float@box=\box34
 \rot@mess@toks=\toks24
 )
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/subfigure\subfigur
-e.sty"
+(/home/luke/.miktex/texmfs/install/tex/latex/subfigure/subfigure.sty
 Package: subfigure 2002/07/30 v2.1.4 subfigure package
 \subfigtopskip=\skip187
 \subfigcapskip=\skip188
@@ -499,37 +480,37 @@ or  <return>  to continue without it.
 ****************************************
 * Local config file subfigure.cfg used *
 ****************************************
-
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/subfigure\subfigur
-e.cfg")
+(/home/luke/.miktex/texmfs/install/tex/latex/subfigure/subfigure.cfg)
 \subfig@top=\skip191
 \subfig@bottom=\skip192
 )
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/doublestroke\dsfon
-t.sty"
+(/home/luke/.miktex/texmfs/install/tex/latex/doublestroke/dsfont.sty
 Package: dsfont 1995/08/01 v0.1 Double stroke roman fonts
 )
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/generic/german\german.st
-y" v2.5e 1998-07-08
+(/home/luke/.miktex/texmfs/install/tex/generic/german/german.sty
+v2.5e 1998-07-08
 Package: german 1998/07/08 v2.5e Support for writing german texts (br)
 \grmnU@D=\dimen157
-german -- \language number for Austrian undefined, default 24 used.
+german -- \language number for USenglish undefined, default 255 used.
+german -- \language number for UKenglish undefined, default 255 used.
+
+german -- \language number for German undefined, default 255 used,
+german -- Please read "gerdoc.tex" how to install hyphenation patterns.
+german -- \language number for Austrian undefined, default 255 used.
+german -- \language number for French undefined, default 255 used.
 )
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\inputenc.sty"
+(/home/luke/.miktex/texmfs/install/tex/latex/base/inputenc.sty
 Package: inputenc 2018/08/11 v1.3c Input encoding file
 \inpenc@prehook=\toks25
 \inpenc@posthook=\toks26
 )
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/colortbl\colortbl.
-sty"
+(/home/luke/.miktex/texmfs/install/tex/latex/colortbl/colortbl.sty
 Package: colortbl 2018/12/12 v1.0d Color table columns (DPC)
 
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\color.sty
-"
+(/home/luke/.miktex/texmfs/install/tex/latex/graphics/color.sty
 Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
 
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-cfg\color
-.cfg"
+(/home/luke/.miktex/texmfs/install/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 147.
@@ -537,12 +518,11 @@ Package color Info: Driver file: pdftex.def on input line 147.
 \everycr=\toks27
 \minrowclearance=\skip193
 )
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/algorithms\algorit
-hm.sty"
+(/home/luke/.miktex/texmfs/install/tex/latex/algorithms/algorithm.sty
 Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
 nment
 
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/float\float.sty"
+(/home/luke/.miktex/texmfs/install/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count149
 \float@exts=\toks28
@@ -553,8 +533,7 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@every@algorithm=\toks30
 \c@algorithm=\count150
 )
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/algorithms\algorit
-hmic.sty"
+(/home/luke/.miktex/texmfs/install/tex/latex/algorithms/algorithmic.sty
 Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
 \c@ALC@unique=\count151
 \c@ALC@line=\count152
@@ -563,8 +542,7 @@ Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
 \ALC@tlm=\skip194
 \algorithmicindent=\skip256
 )
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/layouts\layouts.st
-y"
+(/home/luke/.miktex/texmfs/install/tex/latex/layouts/layouts.sty
 Package: layouts 2009/09/02 v2.6d graphical depiction of document elements
 \l@ylen=\skip257
 \layoutsbox=\box37
@@ -651,13 +629,10 @@ To prepare we will now reset all captioning macros and configurations to kernel
  the caption package interfaces in order to
  configure your captions.
 
-
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/caption\caption.st
-y"
+(/home/luke/.miktex/texmfs/install/tex/latex/caption/caption.sty
 Package: caption 2018/10/06 v3.3-154 Customizing captions (AR)
 
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/caption\caption3.s
-ty"
+(/home/luke/.miktex/texmfs/install/tex/latex/caption/caption3.sty
 Package: caption3 2018/09/12 v1.8c caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 64.
 \captionmargin=\dimen158
@@ -675,17 +650,14 @@ Package caption Info: listings package is loaded.
 Package caption Info: rotating package is loaded.
 Package caption Info: subfigure package is loaded.
 )
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\hyperref.
-sty"
+(/home/luke/.miktex/texmfs/install/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2018/11/30 v6.88e Hypertext links for LaTeX
 
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\hobsub-
-hyperref.sty"
+(/home/luke/.miktex/texmfs/install/tex/generic/oberdiek/hobsub-hyperref.sty
 Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
 
 
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\hobsub-
-generic.sty"
+(/home/luke/.miktex/texmfs/install/tex/generic/oberdiek/hobsub-generic.sty
 Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
 Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
@@ -720,28 +692,24 @@ Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
 Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
 Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
 )
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\auxhook.s
-ty"
+(/home/luke/.miktex/texmfs/install/tex/latex/oberdiek/auxhook.sty
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 )
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\kvoptions
-.sty"
+(/home/luke/.miktex/texmfs/install/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
 \@linkdim=\dimen165
 \Hy@linkcounter=\count278
 \Hy@pagecounter=\count279
 
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\pd1enc.de
-f"
+(/home/luke/.miktex/texmfs/install/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2018/11/30 v6.88e Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
 \Hy@SavedSpaceFactor=\count280
 
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/00miktex\hyperref.
-cfg"
+(/home/luke/.miktex/texmfs/install/tex/latex/00miktex/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
 Package hyperref Info: Hyper figures OFF on input line 4519.
@@ -752,7 +720,8 @@ Package hyperref Info: Backreferencing OFF on input line 4539.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4772.
 \c@Hy@tempcnt=\count281
- ("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/url\url.sty"
+
+(/home/luke/.miktex/texmfs/install/tex/latex/url/url.sty
 \Urlmuskip=\muskip10
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
@@ -774,8 +743,7 @@ LaTeX Info: Redefining \pageref on input line 6454.
 \c@Item=\count284
 \c@Hfootnote=\count285
 )
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/memoir\memhfixc.st
-y"
+(/home/luke/.miktex/texmfs/install/tex/latex/memoir/memhfixc.sty
 Package: memhfixc 2013/05/30 v1.17 nameref/hyperref package fixes for memoir cl
 ass
 \c@memhycontfloat=\count286
@@ -783,14 +751,12 @@ ass
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\hpdftex.d
-ef"
+(/home/luke/.miktex/texmfs/install/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2018/11/30 v6.88e Hyperref driver for pdfTeX
 \Fld@listcount=\count288
 \c@bookmark@seq@number=\count289
 
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\rerunfile
-check.sty"
+(/home/luke/.miktex/texmfs/install/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
@@ -799,31 +765,28 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 114.
 
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/multibib\multibib.
-sty"
+(/home/luke/.miktex/texmfs/install/tex/latex/multibib/multibib.sty
 Package: multibib 2008/12/10 v1.4 Multiple bibliographies for one document.
 \mb@biblabelwidth=\count290
 )
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/units\nicefrac.sty
-"
+(/home/luke/.miktex/texmfs/install/tex/latex/units/nicefrac.sty
 Package: nicefrac 1998/08/04 v0.9b Nice fractions
 \L@UnitsRaiseDisplaystyle=\skip278
 \L@UnitsRaiseTextstyle=\skip279
 \L@UnitsRaiseScriptstyle=\skip280
 )
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\amssymb.s
-ty"
+(/home/luke/.miktex/texmfs/install/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\amsfonts.
-sty"
+(/home/luke/.miktex/texmfs/install/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \@emptytoks=\toks32
 \symAMSa=\mathgroup5
 \symAMSb=\mathgroup6
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)) (abschlussarbeit.aux (acknow/acknow.aux) (erklaerung/erklaerung.aux)
+))
+(abschlussarbeit.aux (acknow/acknow.aux) (erklaerung/erklaerung.aux)
 (intro/intro.aux) (technik/technik.aux) (grundlagen/grundlagen.aux)
 (methodik/methodik.aux
 
@@ -877,8 +840,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 166.
 LaTeX Font Info:    ... okay on input line 166.
 \c@lstlisting=\count291
 
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/context/base/mkii\supp-p
-df.mkii"
+(/home/luke/.miktex/texmfs/install/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count292
 \scratchdimen=\dimen169
@@ -891,13 +853,10 @@ df.mkii"
 \MPnumerator=\count296
 \makeMPintoPDFobject=\count297
 \everyMPtoPDFconversion=\toks34
-)
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\epstopdf-
-base.sty"
+) (/home/luke/.miktex/texmfs/install/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\grfext.st
-y"
+(/home/luke/.miktex/texmfs/install/tex/latex/oberdiek/grfext.sty
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 )
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -915,13 +874,10 @@ Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box39
 Package hyperref Info: Link coloring ON on input line 166.
-
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\nameref.s
-ty"
+(/home/luke/.miktex/texmfs/install/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\gettitl
-estring.sty"
+(/home/luke/.miktex/texmfs/install/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count298
@@ -947,22 +903,22 @@ Overfull \hbox (39.24408pt too wide) in paragraph at lines 174--174
  []
 
 LaTeX Font Info:    Try loading font information for U+lasy on input line 174.
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ulasy.fd"
+(/home/luke/.miktex/texmfs/install/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
 LaTeX Font Info:    Try loading font information for U+msa on input line 174.
 
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
+(/home/luke/.miktex/texmfs/install/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 174.
-("C:\Users\lukas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
+
+(/home/luke/.miktex/texmfs/install/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 
-{C:/Users/lukas/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./thm.png>]
- [2
+{/home/luke/.miktex/texmfs/data/pdftex/config/pdftex.map} <./thm.png>] [2
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has
  been already used, duplicate ignored
@@ -1029,10 +985,60 @@ LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <10.95> not available
 ]
 \openout2 = `intro/intro.aux'.
 
- (intro/intro.tex [1
+ (intro/intro.tex
+Underfull \hbox (badness 10000) in paragraph at lines 24--24
+[][] [][][]\OT1/cmss/bx/n/9 Gizeh Verpackungen \OT1/cmss/m/n/9 ist eine interna
+tional t[]atige deutsche Unternehmensgruppe die
+ []
 
 
-] [2]) [3]
+Overfull \hbox (6.05745pt too wide) in paragraph at lines 24--34
+\OT1/cmss/m/n/10.95 Der Kunde \OT1/cmss/m/sl/10.95 Gizeh[][][][][] \OT1/cmss/m/
+n/10.95 bedruckt individuelle Mehrwegbecher. Groe Druckportale, wie \OT1/cmss/
+m/sl/10.95 Fyleralarm[][][][][]\OT1/cmss/m/n/10.95 ,
+ []
+
+[1
+
+
+]
+Overfull \hbox (32.44289pt too wide) in paragraph at lines 72--81
+[]\OT1/cmss/bx/n/10.95 Testumgebung[] \OT1/cmss/m/n/10.95 Am Ende der Entwicklu
+ng wird die entwickelte Applikation mit der Testumgebung
+ []
+
+)
+Overfull \hbox (18.73122pt too wide) in paragraph at lines 84--224
+\OT1/cmss/m/n/10.95 In dem Kapitel \OT1/cmss/m/sl/10.95 2 Stand der Technik \OT
+1/cmss/m/n/10.95 wird zun[]achst auf vorhandene L[]osungen bzw. L[]osungsans[]a
+tze
+ []
+
+
+Overfull \hbox (5.02711pt too wide) in paragraph at lines 84--224
+\OT1/cmss/m/n/10.95 Beispiele aus anderen Branchen angef[]uhrt, die eine gute 3
+D Konfiguration f[]ur andere Produkte
+ []
+
+
+Overfull \hbox (5.67912pt too wide) in paragraph at lines 84--224
+\OT1/cmss/m/n/10.95 erm[]oglichen. Kapitel \OT1/cmss/m/sl/10.95 3 Grundlagen \O
+T1/cmss/m/n/10.95 erkl[]art grob die verwendeten Technologien. Durch Beispiele
+ []
+
+
+Overfull \hbox (30.66951pt too wide) in paragraph at lines 84--224
+\OT1/cmss/m/n/10.95 auch einige wichtige Begriffe erl[]autert, die wichtig zur 
+Realisierung von modernen Webanwendungen
+ []
+
+
+Overfull \hbox (5.95592pt too wide) in paragraph at lines 84--224
+\OT1/cmss/m/n/10.95 Evaluation der Anwendung. Zun[]achst werden einige Unit- un
+d End-to-End-Tests durchgef[]uhrt.
+ []
+
+[2] [3]
 \openout2 = `technik/technik.aux'.
 
  (technik/technik.tex [4
@@ -1040,25 +1046,49 @@ LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <10.95> not available
 
 
 ]
+Overfull \hbox (6.1993pt too wide) in paragraph at lines 11--21
+\OT1/cmss/m/n/10.95 Es wird zun[]achst auf vergleichbare Projekte und anschlie
+end auf die in der Arbeit verwendeten
+ []
+
+
+Overfull \hbox (5.05853pt too wide) in paragraph at lines 11--21
+\OT1/cmss/m/n/10.95 Technologien eingegangen. Dabei wird analysiert, warum eine
+ Technologieanalayse im Kontext
+ []
+
 <technik/images/flyeralarm.png, id=413, 1509.64pt x 970.62625pt>
 File: technik/images/flyeralarm.png Graphic file (type png)
 <use technik/images/flyeralarm.png>
 Package pdftex.def Info: technik/images/flyeralarm.png  used on input line 31.
 (pdftex.def)             Requested size: 312.9803pt x 201.23087pt.
- [5 <./technik/images/flyeralarm.png>]
+
+Overfull \hbox (1.91783pt too wide) in paragraph at lines 27--38
+\OT1/cmss/m/n/10.95 Webseite:[]\OT1/cmss/m/sl/10.95 Aus produktionstechnischen 
+Gr[]unden und aufgrund der konischen Form der Becher
+ []
+
+[5 <./technik/images/flyeralarm.png>]
 <technik/images/spread-shirt.png, id=421, 1753.55125pt x 1033.8625pt>
 File: technik/images/spread-shirt.png Graphic file (type png)
 <use technik/images/spread-shirt.png>
 Package pdftex.def Info: technik/images/spread-shirt.png  used on input line 45
 .
 (pdftex.def)             Requested size: 312.9803pt x 184.52545pt.
-<technik/images/becher-bedrucken.png, id=423, 1545.775pt x 959.585pt>
+
+Overfull \hbox (17.92487pt too wide) in paragraph at lines 41--53
+\OT1/cmss/m/sl/10.95 als internationaler Arbeitgeber ernst nimmt und seinen Mit
+arbeitern ein attraktives Arbeitsumfeld
+ []
+
+[6 <./technik/images/spread-shirt.png>]
+<technik/images/becher-bedrucken.png, id=430, 1545.775pt x 959.585pt>
 File: technik/images/becher-bedrucken.png Graphic file (type png)
 <use technik/images/becher-bedrucken.png>
 Package pdftex.def Info: technik/images/becher-bedrucken.png  used on input lin
 e 60.
 (pdftex.def)             Requested size: 312.9803pt x 194.28561pt.
- [6 <./technik/images/spread-shirt.png>]
+
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 73.
@@ -1069,11 +1099,16 @@ File: technik/images/audi.png Graphic file (type png)
 Package pdftex.def Info: technik/images/audi.png  used on input line 75.
 (pdftex.def)             Requested size: 170.71652pt x 269.62752pt.
 
+Overfull \hbox (18.79166pt too wide) in paragraph at lines 70--81
+\OT1/cmss/m/n/10.95 umgesetzt. Wenn man eventuell die passenden Felgen sucht, b
+ekommt man da einen []ubersichtlich
+ []
+
+[7 <./technik/images/becher-bedrucken.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 81--84
 
  []
 
-[7 <./technik/images/becher-bedrucken.png>]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 86.
@@ -1084,25 +1119,92 @@ File: technik/images/siemens.png Graphic file (type png)
 Package pdftex.def Info: technik/images/siemens.png  used on input line 88.
 (pdftex.def)             Requested size: 369.88582pt x 231.18501pt.
 
+Overfull \hbox (13.57535pt too wide) in paragraph at lines 84--93
+\OT1/cmss/m/n/10.95 Systemschaltschr[]anke am 3D-Modell zu konfigurieren. Dabei
+ w[]ahlt der Nutzer die verschiedenen
+ []
+
+
+Overfull \hbox (9.10403pt too wide) in paragraph at lines 93--95
+\OT1/cmss/m/n/10.95 Beleuchtung. Dabei ist es m[]oglich, das Produkt nach belie
+ben anzupassen und zu konfigurieren.
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 93--95
 
  []
 
 [8 <./technik/images/audi.png>]
-<technik/images/google-trends.png, id=450, 1448.41125pt x 759.83875pt>
+Overfull \hbox (4.69359pt too wide) in paragraph at lines 98--100
+\OT1/cmss/m/n/10.95 Frameworks entwickelt bzw. weiterentwickelt wurden. Die Anz
+ahl der Angebote an JavaScript-
+ []
+
+
+Underfull \hbox (badness 6220) in paragraph at lines 103--103
+[][] [][][]\OT1/cmss/m/n/9 Eine von Microsoft entwickelte Programmiersprache. T
+ypeScript ist eine kompilierte und
+ []
+
+<technik/images/google-trends.png, id=449, 1448.41125pt x 759.83875pt>
 File: technik/images/google-trends.png Graphic file (type png)
 <use technik/images/google-trends.png>
 Package pdftex.def Info: technik/images/google-trends.png  used on input line 1
 07.
 (pdftex.def)             Requested size: 369.88582pt x 194.04037pt.
 
-
 LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <9> not available
 (Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 112.
 
 
-[9 <./technik/images/siemens.png (PNG copy)>] [10 <./technik/images/google-tren
-ds.png>]
+
+Overfull \hbox (12.55623pt too wide) in paragraph at lines 103--114
+\OT1/cmss/m/n/10.95 wurde von Google entwickelt und ist ein Open-Source-Framewo
+rk. Es unterst[]utzt den Entwickler
+ []
+
+
+Overfull \hbox (4.69353pt too wide) in paragraph at lines 103--114
+\OT1/cmss/m/n/10.95 Wartbarkeit des Codes sinnvoll wird. Ein Merkmal von Angula
+r ist, das es viele unterschiedliche
+ []
+
+
+Overfull \hbox (7.00533pt too wide) in paragraph at lines 103--114
+\OT1/cmss/m/n/10.95 wichtiges Modul ist das Routing-Modul. Im Grunde genommen s
+ind Routings Grundbestandteil
+ []
+
+
+Overfull \hbox (6.53374pt too wide) in paragraph at lines 103--114
+\OT1/cmss/m/n/10.95 f[]ur \OT1/cmss/m/sl/10.95 Single Page Anwendungen\OT1/cmss
+/m/n/10.95 . Mittels Routings kann ich festlegen welcher Teil der Anwendung
+ []
+
+
+Underfull \vbox (badness 7981) has occurred while \output is active []
+
+ [9 <./technik/images/siemens.png (PNG copy)>]
+Overfull \hbox (4.19176pt too wide) in paragraph at lines 119--122
+[]\OT1/cmss/bx/n/10.95 React[] \OT1/cmss/m/n/10.95 ist das meistgesuchte JavaSc
+ript Framework 2018 [[]]. Es wurde 2013 von Facebook
+ []
+
+[10 <./technik/images/google-trends.png>]
+Overfull \hbox (4.30733pt too wide) in paragraph at lines 125--135
+[]\OT1/cmss/bx/n/10.95 Vue.js[] \OT1/cmss/m/n/10.95 ist ein weiteres Frontend-F
+ramework zur Entwicklung von \OT1/cmss/m/sl/10.95 Single Page Anwendungen\OT1/c
+mss/m/n/10.95 .
+ []
+
+
+Overfull \hbox (23.17163pt too wide) in paragraph at lines 125--135
+\OT1/cmss/m/n/10.95 Obwohl es kleiner ist, bringt es trotzdem alle wichtigen Fu
+nktionen wie Suchmaschinenoptimierung
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 125--135
 
  []
@@ -1117,9 +1219,33 @@ Underfull \hbox (badness 10000) in paragraph at lines 140--141
 
  []
 
+
+Overfull \hbox (3.85582pt too wide) in paragraph at lines 142--146
+\OT1/cmss/m/n/10.95 Players haben die Entwickler sogar eine z-Achse eingef[]uhr
+t. Sie erm[]oglicht eine 3D Darstellung
+ []
+
+
+Overfull \hbox (16.98201pt too wide) in paragraph at lines 142--146
+\OT1/cmss/m/n/10.95 von 3D-Inhalten wesentlich schneller abschneidet und h[]ohe
+re Frameraten f[]ur die 3D-Animationen
+ []
+
 [11]
 Underfull \hbox (badness 10000) in paragraph at lines 147--149
 
+ []
+
+
+Overfull \hbox (14.21277pt too wide) in paragraph at lines 153--154
+\OT1/cmss/m/n/10.95 erstellt und rendert eine Szene mit den 3D Objekten. Im Fol
+genden werden die zwei bekanntesten
+ []
+
+
+Overfull \hbox (79.59978pt too wide) in paragraph at lines 157--167
+\OT1/cmss/m/n/10.95 Repository auf GitHub gehostet[][][][][]. Three.js hat eine
+ verst[]andliche Struktur und groe Anpassungsm[]oglichkeiten.
  []
 
 <technik/images/3d-framework.png, id=490, 693.792pt x 369.17924pt>
@@ -1129,31 +1255,138 @@ Package pdftex.def Info: technik/images/3d-framework.png  used on input line 17
 4.
 (pdftex.def)             Requested size: 369.88582pt x 196.82451pt.
 
+Overfull \hbox (56.78215pt too wide) in paragraph at lines 170--180
+\OT1/cmss/m/n/10.95 Sounds spielen und verwalten, Gameplay erstellen und vieles
+ mehr. Babylons.js ist ein benutzerfreundliches
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 170--180
 
  []
 
-[12]) [13 <./technik/images/3d-framework.png>]
+[12])
+Overfull \hbox (14.16719pt too wide) in paragraph at lines 182--227
+\OT1/cmss/m/n/10.95 Rolle spielen. Fakt ist aber auch, das eine optimale L[]osu
+ng f[]ur einen responsiven 3D Konfigurator
+ []
+
+[13 <./technik/images/3d-framework.png>]
 \openout2 = `grundlagen/grundlagen.aux'.
 
- (grundlagen/grundlagen.tex
-[14
+ (grundlagen/grundlagen.tex [14
 
 
 
-] [15]
+]
+Overfull \hbox (16.07652pt too wide) in paragraph at lines 23--25
+\OT1/cmss/m/n/10.95 viel clientseitig umzusetzten.[]\OT1/cmss/m/sl/10.95 Dies s
+teigert die Benutzerfreundlichkeit und schafft die M[]oglichkeit
+ []
+
+
+Overfull \hbox (15.23308pt too wide) in paragraph at lines 23--25
+\OT1/cmss/m/sl/10.95 und mobilen Plattformen.\ \OT1/cmss/m/n/10.95 [[]]. Im Fol
+genden wird nun kurz etwas genauer darauf eingegangen
+ []
+
+
+Overfull \hbox (9.11655pt too wide) in paragraph at lines 27--29
+[]\OT1/cmss/bx/n/10.95 Klassische Webanwendungen[] \OT1/cmss/m/n/10.95 Bevor ma
+n sich damit befasst was Single Page Anwendungen
+ []
+
+
+Overfull \hbox (1.69746pt too wide) in paragraph at lines 27--29
+\OT1/cmss/m/n/10.95 Dokumentes und kann es dann anzeigen. Bei diesem Vorgang li
+egt die komplette Verarbeitung
+ []
+
+[15]
+Overfull \hbox (7.04538pt too wide) in paragraph at lines 31--44
+[]\OT1/cmss/bx/n/10.95 Dezentralisierung der Webanwendung[] \OT1/cmss/m/n/10.95
+ Im Grunde arbeiten SPA's nach folgendem Prinzip:
+ []
+
+
+Overfull \hbox (7.38559pt too wide) in paragraph at lines 31--44
+\OT1/cmss/m/n/10.95 Webanwendungen nun die Anfrage. Anschlieend wird im Webbro
+wser eine Benutzeroberfl[]ache
+ []
+
+
+Overfull \hbox (18.83739pt too wide) in paragraph at lines 31--44
+\OT1/cmss/m/n/10.95 einem Seitenwechsel oder anderen Interaktionen des Benutzer
+s wird eine neue Benutzeroberfl[]ache
+ []
+
+
+Overfull \hbox (11.21803pt too wide) in paragraph at lines 31--44
+\OT1/cmss/m/n/10.95 Die Grundlage einer solchen Anwendung ist das Routing. Abh[
+]angig vom Pfad werden bestimmte
+ []
+
+
+Overfull \hbox (6.91405pt too wide) in paragraph at lines 49--51
+\OT1/cmss/m/n/10.95 Angular ist ein Framework, das auf Komponenten setzt. Das P
+rinzip der komponentenbasierten
+ []
+
+
+Overfull \hbox (34.7454pt too wide) in paragraph at lines 49--51
+\OT1/cmss/m/n/10.95 Entwicklung kommt nicht nur bei Angular vor, sondern auch b
+ei vielen anderen Programmiersprachen
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 49--51
 
  []
 
-[16]
+
+Overfull \hbox (5.24109pt too wide) in paragraph at lines 52--53
+\OT1/cmss/m/sl/10.95 Aufgabe erf[]ullen. Eine Komponente beschreibt somit immer
+ einen kleinen Teil der Anwendung,
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 52--53
 
+ []
+
+[16]
+Overfull \hbox (11.65901pt too wide) in paragraph at lines 55--58
+\OT1/cmss/m/n/10.95 dass die Style-Definitionen nur innerhalb der Komponente ge
+lten. Globale Styles der Anwendung
+ []
+
+
+Overfull \hbox (4.32785pt too wide) in paragraph at lines 55--58
+\OT1/cmss/m/n/10.95 Der Startpunkt der Anwendung ist die \OT1/cmtt/m/n/10.95 in
+dex.html\OT1/cmss/m/n/10.95 . Sie definiert die Applikationskomponente,
+ []
+
+
+Overfull \hbox (17.30138pt too wide) in paragraph at lines 55--58
+\OT1/cmss/m/n/10.95 Komponenten verschachtelt werden k[]onnen. Dies ist das Gru
+ndprinzip der komponentenbasierten
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 60--61
 
+ []
+
+
+Overfull \hbox (25.51823pt too wide) in paragraph at lines 62--63
+[][]\OT1/cmss/m/sl/10.95 Angular-Module helfen beim Gliedern einer Webanwendung
+ in verschiednene Funktionsbl[]ocke.
+ []
+
+
+Overfull \hbox (15.73502pt too wide) in paragraph at lines 62--63
+\OT1/cmss/m/sl/10.95 und erlauben nur den Zugriff auf exportierte Konstrukte. A
+ngular-Module kapseln Komponenten,
  []
 
 
@@ -1167,24 +1400,128 @@ File: grundlagen/images/module.png Graphic file (type png)
 Package pdftex.def Info: grundlagen/images/module.png  used on input line 68.
 (pdftex.def)             Requested size: 398.33858pt x 214.95844pt.
 [17]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Overfull \hbox (20.99123pt too wide) in paragraph at lines 77--82
+[]\OT1/cmss/bx/n/10.95 Hauseigene Module[] \OT1/cmss/m/n/10.95 Angular hat auch
+ ein paar hauseigene Module, die je nach Anwendungsfall
+ []
 
- [18 <./grundlagen/images/module.png>]
+
+Overfull \hbox (15.53418pt too wide) in paragraph at lines 77--82
+\OT1/cmss/m/n/10.95 formatieren kann. Auch sprachabh[]angige Funktionalit[]aten
+ sind in den \OT1/cmss/m/sl/10.95 CommonModule \OT1/cmss/m/n/10.95 enhalten. 
+ []
+
+[18 <./grundlagen/images/module.png>]
+Underfull \hbox (badness 1033) in paragraph at lines 85--85
+[][] [][][]\OT1/cmss/m/n/9 Auf die weiteren Bestandteile von Angular wird hier 
+nicht im Details eingegangen. Genauere
+ []
+
 LaTeX Font Info:    Try loading font information for OMS+cmtt on input line 89.
 
 LaTeX Font Info:    No file OMScmtt.fd. on input line 89.
-
 
 LaTeX Font Warning: Font shape `OMS/cmtt/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
 (Font)              for symbol `textbraceleft' on input line 89.
 
-[19] [20]
+
+Overfull \hbox (21.08818pt too wide) in paragraph at lines 89--91
+\OT1/cmss/m/n/10.95 TypeScript-Klassen in Vorlagen binden. Angenommen in der Ty
+peScript-Klasse einer Komponente
+ []
+
+
+Overfull \hbox (0.80014pt too wide) in paragraph at lines 93--96
+\OT1/cmss/m/n/10.95 muss. Attribut-Direktiven machen eigentlich nichts anderes 
+als eine Anpassung des Aussehens
+ []
+
+
+Overfull \hbox (24.16032pt too wide) in paragraph at lines 98--101
+\OT1/cmss/m/n/10.95 Die Pipe manipuliert die Ausgabe und sorgt daf[]ur, dass be
+ispielsweise der Name in Grobuchstaben
+ []
+
+[19]
+Overfull \hbox (10.9839pt too wide) in paragraph at lines 103--106
+[]\OT1/cmss/bx/n/10.95 Services[] \OT1/cmss/m/n/10.95 Der Begriff Services in d
+er Entwicklung ist breit gef[]achert. Jede Programmiersprache
+ []
+
+
+Overfull \hbox (7.9622pt too wide) in paragraph at lines 107--109
+\OT1/cmss/m/n/10.95 anzulegen. Die CLI legt dann im Hintergrund die ben[]otigte
+ Projektstruktur mit allen ben[]otigten
+ []
+
+
+Overfull \hbox (27.9016pt too wide) in paragraph at lines 107--109
+\OT1/cmss/m/n/10.95 Ganze User-Interaktionen k[]onnen simuliert werden, auch au
+f verschiedenen Ger[]ate-Klassifikationen.
+ []
+
+[20]
+Overfull \hbox (19.5673pt too wide) in paragraph at lines 122--125
+\OT1/cmss/m/n/10.95 Schon 2010 begann Ricardo Cabello Miguel die 3D-Bibliothek 
+Three.js zu entwickeln. Mittlerweile
+ []
+
+
+Overfull \hbox (1.48462pt too wide) in paragraph at lines 122--125
+\OT1/cmss/m/n/10.95 und Beispiele erm[]oglichen die Entwicklung von Modellierun
+gsanwendungen bis hin zu Spielen.
+ []
+
+
+Overfull \hbox (12.22177pt too wide) in paragraph at lines 128--130
+\OT1/cmss/m/n/10.95 Objekten, anstatt nur JavaScript-Funktionsaufrufe durchzuf[
+]uhren. Folgendes einfaches Beispiel,
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 128--130
 
  []
 
-[21] [22]
+
+Overfull \hbox (0.8763pt too wide) in paragraph at lines 134--136
+[]\OT1/cmss/m/n/10.95 Uber verschiedene Funktionen k[]onnen dann die weiteren B
+estandteile einer Szene hinzugef[]ugt
+ []
+
+[21]
+Overfull \hbox (15.79587pt too wide) in paragraph at lines 137--139
+[]\OT1/cmss/bx/n/10.95 Kamera[] \OT1/cmss/m/n/10.95 Es gibt verschiedene Kamera
+typen. Normalerweise wird immer die \OT1/cmss/m/sl/10.95 PerspectiveCamera
+ []
+
+
+Overfull \hbox (2.21468pt too wide) in paragraph at lines 137--139
+\OT1/cmss/m/n/10.95 Kamera wird auch als Objekt in der Szene angelegt. Dabei m[
+]ussen verschiedene Eigenschaften
+ []
+
+
+Overfull \hbox (14.75145pt too wide) in paragraph at lines 149--151
+\OT1/cmss/m/n/10.95 wieder verschiedene Materials, je nach Anwendungsfall[][][]
+[][]. Dabei hat man unz[]ahlige M[]oglichkeiten
+ []
+
+
+Overfull \hbox (11.26367pt too wide) in paragraph at lines 157--159
+\OT1/cmss/m/n/10.95 darstellen. Dazu werden Loader, also Werkzeuge mit denen ma
+n Modelle laden kann, verwendet.
+ []
+
+
+Overfull \hbox (15.69856pt too wide) in paragraph at lines 157--159
+\OT1/cmss/m/n/10.95 manchmal Importierungsprobleme. Einige bekannte Loader sind
+: \OT1/cmss/m/sl/10.95 ColladaLoader[][][][][]\OT1/cmss/m/n/10.95 , \OT1/cmss/m
+/sl/10.95 OBJLoader[][][][][]
+ []
+
+[22]
 
 LaTeX Warning: Citation `webalive' on page 23 undefined on input line 175.
 
@@ -1197,12 +1534,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 193--194
 
  []
 
-[23]
+
 Underfull \hbox (badness 10000) in paragraph at lines 195--196
 
  []
 
-
+[23]
 Underfull \hbox (badness 10000) in paragraph at lines 197--198
 
  []
@@ -1213,8 +1550,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 199--200
  []
 
 
+Overfull \hbox (11.65901pt too wide) in paragraph at lines 202--203
+\OT1/cmss/m/sl/10.95 physischer Produkte und Bedienelemente, aber auch das graf
+ische Design, wichtige Bestandteile
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 202--203
 
+ []
+
+
+Overfull \hbox (34.34982pt too wide) in paragraph at lines 216--217
+\OT1/cmss/m/n/10.95 verschiedener Gesch[]aftskomponenten darstellen. Diese Gesc
+h[]aftskomponenten werden verschiedenen
+ []
+
+
+Overfull \hbox (37.63477pt too wide) in paragraph at lines 216--217
+\OT1/cmss/m/n/10.95 darstellen. Diese Objekte werden Leistungstests mit verschi
+edenen Parametern und Belastungsniveaus
  []
 
 
@@ -1230,16 +1585,68 @@ Underfull \hbox (badness 10000) in paragraph at lines 216--217
 
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 29--30
+[]|\OT1/cmss/m/n/10.95 Der Benutzer kann zwischen verschiedenen
+ []
+
+
+Underfull \hbox (badness 6047) in paragraph at lines 31--32
+[]|\OT1/cmss/m/n/10.95 Der Benutzer kann beispielsweise den Becher
+ []
+
+
 Underfull \hbox (badness 7362) in paragraph at lines 35--36
-[]|\OT1/cmss/m/n/10.95 Der Be-nut-zer kann be-stimm-te Zu-sat-z-op-tio-nen
+[]|\OT1/cmss/m/n/10.95 Der Benutzer kann bestimmte Zusatzoptionen
+ []
+
+
+Underfull \hbox (badness 3646) in paragraph at lines 37--38
+[]|\OT1/cmss/m/n/10.95 Der Benutzer kann sich eine []Ubersicht seiner
+ []
+
+
+Underfull \hbox (badness 1571) in paragraph at lines 39--40
+[]|\OT1/cmss/m/n/10.95 Der Benutzer kann seinen konfigurierten Becher
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[27] [28]
+[27]
+Overfull \hbox (4.65033pt too wide) in paragraph at lines 53--55
+[]\OT1/cmss/bx/n/10.95 Upload des Designs[] \OT1/cmss/m/n/10.95 Normalerweise k
+ann ein Kunde einen Mehrwegbecher []uber Flyeralarm[][][][][]
+ []
+
+[28]
+Overfull \hbox (1.98648pt too wide) in paragraph at lines 59--61
+\OT1/cmss/m/n/10.95 implementiert werden, die es dem Benutzer erm[]oglicht die 
+[]Ubersicht inkulsive einer Abbildung
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 81--82
+[]|\OT1/cmss/m/n/10.95 Der Benutzer kann zwischen verschiedenen
+ []
+
+
+Underfull \hbox (badness 6047) in paragraph at lines 83--84
+[]|\OT1/cmss/m/n/10.95 Der Benutzer kann beispielsweise den Becher
+ []
+
+
 Underfull \hbox (badness 7362) in paragraph at lines 87--88
-[]|\OT1/cmss/m/n/10.95 Der Be-nut-zer kann be-stimm-te Zu-sat-z-op-tio-nen
+[]|\OT1/cmss/m/n/10.95 Der Benutzer kann bestimmte Zusatzoptionen
+ []
+
+
+Underfull \hbox (badness 3646) in paragraph at lines 89--90
+[]|\OT1/cmss/m/n/10.95 Der Benutzer kann sich eine []Ubersicht seiner
+ []
+
+
+Underfull \hbox (badness 1571) in paragraph at lines 91--92
+[]|\OT1/cmss/m/n/10.95 Der Benutzer kann seinen konfigurierten Becher
  []
 
 
@@ -1247,7 +1654,19 @@ Overfull \hbox (22.02591pt too wide) in paragraph at lines 77--94
 [][] 
  []
 
-[29] [30]
+
+Overfull \hbox (0.12236pt too wide) in paragraph at lines 104--107
+[]\OT1/cmss/bx/n/10.95 Realistisches Design-Rendering[] \OT1/cmss/m/n/10.95 kub
+isches Problem Auch was die 3D-Darstellung angeht,
+ []
+
+[29]
+Overfull \hbox (8.05191pt too wide) in paragraph at lines 108--110
+[]\OT1/cmss/bx/n/10.95 Responsive Webdesign[] \OT1/cmss/m/n/10.95 Es ist wichti
+g das der Konfigurator auf verschiedenen Displaygr[]oen
+ []
+
+[30]
 <methodik/images/flowchart.png, id=670, 550.6974pt x 611.6451pt>
 File: methodik/images/flowchart.png Graphic file (type png)
 <use methodik/images/flowchart.png>
@@ -1264,6 +1683,24 @@ File: methodik/images/komponentnendiagramm.png Graphic file (type png)
 Package pdftex.def Info: methodik/images/komponentnendiagramm.png  used on inpu
 t line 140.
 (pdftex.def)             Requested size: 369.88582pt x 306.22804pt.
+
+Overfull \hbox (24.19072pt too wide) in paragraph at lines 137--145
+\OT1/cmss/m/n/10.95 angelegt werden. Nat[]urlich gibt es noch weitere Kindskomp
+onenten, die in den Hauptkomponenten
+ []
+
+
+Overfull \hbox (41.23935pt too wide) in paragraph at lines 137--145
+\OT1/cmss/m/n/10.95 der Konfigurationen Beeinhaltet. Das Herzst[]uck unserer An
+gular-Anwendung ist die SceneComponent.
+ []
+
+
+Overfull \hbox (1.16289pt too wide) in paragraph at lines 137--145
+\OT1/cmss/m/n/10.95 Sie zeigt uns den Becher in 3D mit dem hochgeladenen Design
+. Um eine 3D Szene aufzubauen
+ []
+
 [31]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -1273,9 +1710,21 @@ File: methodik/images/mockup.png Graphic file (type png)
 <use methodik/images/mockup.png>
 Package pdftex.def Info: methodik/images/mockup.png  used on input line 150.
 (pdftex.def)             Requested size: 369.88582pt x 231.39577pt.
+
+Overfull \hbox (53.25386pt too wide) in paragraph at lines 146--154
+\OT1/cmss/m/n/10.95 konfigurieren. Da der Konfigurator nur wenige Einstellm[]og
+lichkeiten hat, ist es am benutzerfreundlichsten
+ []
+
 [32 <./methodik/images/flowchart.png>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (28.19046pt too wide) in paragraph at lines 155--156
+\OT1/cmss/m/n/10.95 ein gutes und innovatives Design geben. Als Grundlage werde
+n die Styles der Unternehmenswebseite
+ []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 155--156
@@ -1287,14 +1736,38 @@ p.png>]
 \openout2 = `umsetzung/umsetzung.aux'.
 
  (umsetzung/umsetzung.tex
+Overfull \hbox (17.31639pt too wide) in paragraph at lines 14--15
+\OT1/cmss/m/n/10.95 Dieser Abschnitt befasst sich mit den verwendeten Technolog
+ien, die eine produktive Entwicklung
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 14--15
 
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 16--16
-[][] [][][]\OT1/cmss/m/n/9 Der kom-plet-te Quell-co-de des Pro-jekts so-wie die
- Do-ku-men-ta-ti-on fin-den Sie un-ter
+[][] [][][]\OT1/cmss/m/n/9 Der komplette Quellcode des Projekts sowie die Dokum
+entation finden Sie unter
+ []
+
+
+Overfull \hbox (10.66953pt too wide) in paragraph at lines 16--17
+\OT1/cmss/m/n/10.95 WebGL zum Einsatz bringt. Angular Anwendungen werden grunds
+[]atzlich mit \OT1/cmss/m/sl/10.95 Node.js \OT1/cmss/m/n/10.95 installiert.
+ []
+
+
+Overfull \hbox (3.62906pt too wide) in paragraph at lines 16--17
+\OT1/cmss/m/n/10.95 Dadurch ist es uns sp[]ater m[]oglich verschiedene npm-Modu
+le wie Three.js oder auch Bootstrap
+ []
+
+
+Overfull \hbox (2.91412pt too wide) in paragraph at lines 16--17
+\OT1/cmss/m/n/10.95 beliebtes Tool zum entwickeln von Webseiten und Webanwendun
+gen. Auch eine Versionierung
  []
 
 [35
@@ -1307,9 +1780,19 @@ File: umsetzung/images/module.png Graphic file (type png)
 <use umsetzung/images/module.png>
 Package pdftex.def Info: umsetzung/images/module.png  used on input line 30.
 (pdftex.def)             Requested size: 369.88582pt x 118.84474pt.
- [36 <./umsetzung/images/module.png>]
-<umsetzung/images/auswahlcli.png, id=716, 351.3125pt x 301.125pt>
 
+Overfull \hbox (8.34369pt too wide) in paragraph at lines 27--36
+\OT1/cmss/m/n/10.95 Im folgenden Abschnitt wird betrachtet aus welchen Module d
+ie Angular Anwendung aufgebaut
+ []
+
+[36 <./umsetzung/images/module.png>]
+Overfull \hbox (29.77228pt too wide) in paragraph at lines 40--42
+\OT1/cmss/m/n/10.95 einer []Ubersicht in tabellarischer Form. Die hauseigenen M
+odule von Angular wie das \OT1/cmss/m/sl/10.95 BrowserModule
+ []
+
+<umsetzung/images/auswahlcli.png, id=716, 351.3125pt x 301.125pt>
 ! Missing number, treated as zero.
 <to be read again> 
                    \relax 
@@ -1457,22 +1940,81 @@ e 51.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [37]
+Overfull \hbox (21.87895pt too wide) in paragraph at lines 64--65
+\OT1/cmss/m/n/10.95 angelegt. Sie stellt die komplette Sidebar im rechten Berei
+ch dar, also das Konfigurationsmen[]u und
+ []
+
+
+Overfull \hbox (14.04674pt too wide) in paragraph at lines 64--65
+\OT1/cmss/m/n/10.95 die []Ubersicht. Diese Komponente ist etwas komplexer und h
+at noch ein paar Kindskomponenten.
+ []
+
+
+Overfull \hbox (14.60945pt too wide) in paragraph at lines 64--65
+\OT1/cmss/m/n/10.95 zwei Tabs, Konfigurator und []Ubersicht. Diese Tabs sind al
+s eigene Komponente in \OT1/cmss/m/sl/10.95 SharedModule
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 64--65
 
  []
 
 [38 <./umsetzung/images/auswahlcli.png> <./umsetzung/images/optionscli.png> <./
 umsetzung/images/generatedfiles.png>]
-<methodik/images/sidebar.png, id=742, 361.35pt x 423.984pt>
-File: methodik/images/sidebar.png Graphic file (type png)
-<use methodik/images/sidebar.png>
-Package pdftex.def Info: methodik/images/sidebar.png  used on input line 93.
-(pdftex.def)             Requested size: 227.62204pt x 267.07896pt.
+Overfull \hbox (17.04242pt too wide) in paragraph at lines 77--79
+\OT1/cmss/m/n/10.95 Die \OT1/cmtt/m/n/10.95 <ul>\OT1/cmss/m/n/10.95 -Liste hat 
+ein paar vordefinierte Bootstrap-Klassen, auf die hier nicht weiter eingegangen
+
+ []
+
+
+LaTeX Warning: File `methodik/images/sidebar.png' not found on input line 93.
+
+
+! Package pdftex.def Error: File `methodik/images/sidebar.png' not found: using
+ draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.93 ... methodik/images/sidebar.png, width=8.0cm}
+                                                  }
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[39] [40 <./methodik/images/sidebar.png>]
+
+Overfull \hbox (2.66786pt too wide) in paragraph at lines 99--101
+[]\OT1/cmss/m/n/10.95 Zus[]atzlch hat die SidebarComponent auch noch eigene nic
+ht geteilte Kindskompontenten.
+ []
+
+
+Overfull \hbox (22.0616pt too wide) in paragraph at lines 99--101
+\OT1/cmss/m/n/10.95 hier auch wieder eigenst[]andige Komponenten die als Kindsk
+omponenten in der \OT1/cmss/m/sl/10.95 SidebarComponent
+ []
+
+[39]
+Overfull \hbox (21.05222pt too wide) in paragraph at lines 104--106
+[]\OT1/cmss/bx/n/10.95 Szene erstellen[] \OT1/cmss/m/n/10.95 Die \OT1/cmss/m/sl
+/10.95 SceneComponent \OT1/cmss/m/n/10.95 wurde schon angelegt. Nun muss noch d
+ie Funktionalit[]at
+ []
+
+
+Overfull \hbox (1.13425pt too wide) in paragraph at lines 104--106
+\OT1/cmss/m/n/10.95 programmiert werden. In unserem Template ist alles was wir 
+brauchen ein \OT1/cmtt/m/n/10.95 <canvas>\OT1/cmss/m/n/10.95 -Element,
+ []
+
+[40]
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <9> not available
 (Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 111.
 
@@ -1489,6 +2031,18 @@ You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
+Overfull \hbox (5.4989pt too wide) in paragraph at lines 115--117
+\OT1/cmss/m/n/10.95 Mithilfe des \OT1/cmtt/m/n/10.95 @ViewChild\OT1/cmss/m/n/10
+.95 -Dekorators k[]onnen wir eine Referenz eines DOM-Elements erzeugen.
+ []
+
+
+Overfull \hbox (13.45749pt too wide) in paragraph at lines 115--117
+\OT1/cmss/m/n/10.95 m[]oglich der \OT1/cmss/m/sl/10.95 createScene()\OT1/cmss/m
+/n/10.95 -Funktion mitzuteilen, in welchem DOM-Element die Szene aufgebaut
+ []
+
+
 ! LaTeX Error: Undefined color `green!40!black'.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -1500,12 +2054,30 @@ l.120 const
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-File: methodik/images/sidebar.png Graphic file (type png)
-<use methodik/images/sidebar.png>
-Package pdftex.def Info: methodik/images/sidebar.png  used on input line 127.
-(pdftex.def)             Requested size: 227.62204pt x 267.07896pt.
+
+LaTeX Warning: File `methodik/images/sidebar.png' not found on input line 127.
+
+
+! Package pdftex.def Error: File `methodik/images/sidebar.png' not found: using
+ draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.127 ...methodik/images/sidebar.png, width=8.0cm}
+                                                  }
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (32.9954pt too wide) in paragraph at lines 132--134
+\OT1/cmss/m/n/10.95 mitgeteilt, das der Benutzer eine Bechergr[]oe gew[]ahlt h
+at. Dabei kommt wieder ein \OT1/cmtt/m/n/10.95 @HostListener
+ []
 
 [41]
 
@@ -1532,7 +2104,31 @@ l.138 const
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
+
+Overfull \hbox (16.1152pt too wide) in paragraph at lines 145--146
+\OT1/cmss/m/n/10.95 Gr[]oe der User ausgew[]ahlt hat und dementsprechend wird 
+das neue Model geladen. Anschlieend
+ []
+
+
+Overfull \hbox (7.65906pt too wide) in paragraph at lines 147--148
+\OT1/cmss/m/n/10.95 verschiedene Einstellungen erm[]oglichen. Beispielsweise ka
+nn man die Rotationsgeschwindigkeit
+ []
+
+
+Overfull \hbox (14.18373pt too wide) in paragraph at lines 147--148
+\OT1/cmss/m/n/10.95 Deshalb wird []uber die Controls auch ein maximaler Zoom un
+d ein maximaler Betrachtungswinkel
+ []
+
 [42]
+Overfull \hbox (0.86484pt too wide) in paragraph at lines 155--157
+\OT1/cmss/m/n/10.95 Innerhalb der \OT1/cmtt/m/n/10.95 onModelLoadingCompleted\O
+T1/cmss/m/n/10.95 -Funktion wird nun eine \OT1/cmss/m/sl/10.95 CylinderBufferGe
+ometry[][][][][]
+ []
+
 
 ! LaTeX Error: Undefined color `green!40!black'.
 
@@ -1546,23 +2142,72 @@ l.158 const
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-<umsetzung/images/bechermitdesign.PNG, id=808, 937.101pt x 486.618pt>
+<umsetzung/images/bechermitdesign.PNG, id=807, 937.101pt x 486.618pt>
 File: umsetzung/images/bechermitdesign.PNG Graphic file (type png)
 <use umsetzung/images/bechermitdesign.PNG>
 Package pdftex.def Info: umsetzung/images/bechermitdesign.PNG  used on input li
 ne 165.
 (pdftex.def)             Requested size: 312.9803pt x 162.5224pt.
-[43] [44 <./umsetzung/images/bechermitdesign.PNG>] [45]
-<umsetzung/images/uploadcomponent.png, id=833, 607.26875pt x 708.6475pt>
+
+Overfull \hbox (6.10707pt too wide) in paragraph at lines 161--171
+\OT1/cmss/m/n/10.95 Er liegt ganz eng auf dem Becher, eben wie ein Aufkleber. M
+it dem Parameter \OT1/cmtt/m/n/10.95 <offenesEnde>
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[43]
+Overfull \hbox (4.00821pt too wide) in paragraph at lines 174--178
+\OT1/cmss/m/n/10.95 sieht er zun[]achst nur den 3D Becher. Er kann dann das Off
+-Canvas-Menu []uber ein Hamburger-
+ []
+
+
+Overfull \hbox (30.51746pt too wide) in paragraph at lines 174--178
+\OT1/cmss/m/n/10.95 Auerdem werden die Schriftgr[]oen etwas gr[]oer gemacht.
+ Der Hamburger-Button ist ausschlielich
+ []
+
+[44 <./umsetzung/images/bechermitdesign.PNG>]
+Overfull \hbox (46.67772pt too wide) in paragraph at lines 202--204
+\OT1/cmss/m/n/10.95 Die Eigenschaften \OT1/cmss/m/sl/10.95 designName\OT1/cmss/
+m/n/10.95 , \OT1/cmss/m/sl/10.95 count\OT1/cmss/m/n/10.95 , \OT1/cmss/m/sl/10.9
+5 size\OT1/cmss/m/n/10.95 , \OT1/cmss/m/sl/10.95 stroke \OT1/cmss/m/n/10.95 und
+ \OT1/cmss/m/sl/10.95 price \OT1/cmss/m/n/10.95 werden in der Tabelle \OT1/cmss
+/m/sl/10.95 OverviewComponent
+ []
+
+[45]
+<umsetzung/images/uploadcomponent.png, id=831, 607.26875pt x 708.6475pt>
 File: umsetzung/images/uploadcomponent.png Graphic file (type png)
 <use umsetzung/images/uploadcomponent.png>
 Package pdftex.def Info: umsetzung/images/uploadcomponent.png  used on input li
 ne 216.
 (pdftex.def)             Requested size: 227.62204pt x 265.61241pt.
- [46 <./umsetzung/images/uploadcomponent.png>]
+
+Overfull \hbox (25.60565pt too wide) in paragraph at lines 212--223
+[]\OT1/cmss/bx/n/10.95 Route zum Upload[] \OT1/cmss/m/n/10.95 An dieser Stelle 
+der Anwendung wird das \OT1/cmss/m/sl/10.95 Routing \OT1/cmss/m/n/10.95 verwend
+et. Normalerweise
+ []
+
+
+Overfull \hbox (3.69298pt too wide) in paragraph at lines 212--223
+\OT1/cmss/m/n/10.95 Design ausw[]ahlen (siehe Abbildung). Eigentlich ist der Be
+griff []Upload \nicht ganz zutreffend,
+ []
+
+
+Overfull \hbox (9.98625pt too wide) in paragraph at lines 212--223
+\OT1/cmss/m/n/10.95 da das Design nicht wirklich auf einen Server hochgeladen w
+ird, sondern nur in dem \OT1/cmss/m/sl/10.95 DataService
+ []
+
+[46 <./umsetzung/images/uploadcomponent.png>]
 Overfull \hbox (29.39099pt too wide) in paragraph at lines 227--229
-\OT1/cmss/m/n/10.95 Die-sen sind De-ko-ra-to-ren im-ple-men-tiert, wel-che die 
-eben erw[]ahn-ten Er-eig-nis-se []uber \OT1/cmtt/m/n/10.95 @Hostlistener
+\OT1/cmss/m/n/10.95 Diesen sind Dekoratoren implementiert, welche die eben erw[
+]ahnten Ereignisse []uber \OT1/cmtt/m/n/10.95 @Hostlistener
  []
 
 
@@ -1570,11 +2215,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 239--240
 
  []
 
+
+Overfull \hbox (4.18922pt too wide) in paragraph at lines 241--243
+[]\OT1/cmss/m/n/10.95 In der \OT1/cmss/m/sl/10.95 UploadCompontent \OT1/cmss/m/
+n/10.95 und auch an anderen Stellen der Anwendung soll der Dateiname
+ []
+
+
+Overfull \hbox (11.48761pt too wide) in paragraph at lines 241--243
+\OT1/cmss/m/n/10.95 beides auszulesen und in dem \OT1/cmss/m/sl/10.95 DataServi
+ce \OT1/cmss/m/n/10.95 zu speichern. Nun muss noch die \OT1/cmtt/m/n/10.95 relo
+adTexture()\OT1/cmss/m/n/10.95 -
+ []
+
 [47]
 Overfull \hbox (5.13387pt too wide) in paragraph at lines 252--254
-[]\OT1/cmss/bx/n/10.95 reloadTexture[] \OT1/cmss/m/n/10.95 Im Grun-de ist die-s
-e Funk-ti-on na-he-zu iden-tisch zu \OT1/cmtt/m/n/10.95 reloadModel()\OT1/cmss/
-m/n/10.95 -Funktion.
+[]\OT1/cmss/bx/n/10.95 reloadTexture[] \OT1/cmss/m/n/10.95 Im Grunde ist diese 
+Funktion nahezu identisch zu \OT1/cmtt/m/n/10.95 reloadModel()\OT1/cmss/m/n/10.
+95 -Funktion.
  []
 
 
@@ -1609,7 +2267,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 260--261
 ) [48]
 \openout2 = `testphase/testphase.aux'.
 
- (testphase/testphase.tex) [49
+ (testphase/testphase.tex
+Overfull \hbox (9.71231pt too wide) in paragraph at lines 10--11
+\OT1/cmss/m/n/10.95 e2e-Test und Peformance-Tests durchgef[]uhrt. Dabei wird au
+ch auf verschiedenen Ger[]ateklassen
+ []
+
+) [49
 
 
 
@@ -1623,8 +2287,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 260--261
 ]) [51]
 \openout2 = `anhang/anhang.aux'.
 
-
-(anhang/anhang.tex [52
+ (anhang/anhang.tex [52
 
 
 
@@ -1653,8 +2316,8 @@ Overfull \hbox (34.79132pt too wide) in paragraph at lines 11--257
 bibitemlist
 
 Underfull \hbox (badness 10000) in paragraph at lines 17--21
-[]\OT1/cmr/m/sc/10.95 Bahor\OT1/cmss/m/n/10.95 , Se-nad:  HTML5/WebGL vs Flash 
-in 3D Vi-sua-li-sa-ti-on.
+[]\OT1/cmr/m/sc/10.95 Bahor\OT1/cmss/m/n/10.95 , Senad:  HTML5/WebGL vs Flash i
+n 3D Visualisation.
  []
 
 
@@ -1664,27 +2327,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 17--21
  []
 
 
-Underfull \hbox (badness 5022) in paragraph at lines 23--28
-[]\OT1/cmr/m/sc/10.95 DIN-EN-ISO-9241-210\OT1/cmss/m/n/10.95 :  \OT1/cmss/m/sl/
-10.95 Er-go-no-mie der Mensch-System-Interaktion -
- []
-
-
-Underfull \hbox (badness 7397) in paragraph at lines 23--28
-\OT1/cmss/m/sl/10.95 Teil 210: Pro-zess zur Ge-stal-tung ge-brauch-staug-li-che
-r in-ter-ak-ti-ver Sy-
- []
-
-
-Underfull \hbox (badness 1215) in paragraph at lines 23--28
-\OT1/cmss/m/sl/10.95 ste-me\OT1/cmss/m/n/10.95 .  [][]$\OT1/cmtt/m/n/10.95 http
-s : / / www . din . de / de / mitwirken / normenausschuesse / naerg /
+Underfull \hbox (badness 10000) in paragraph at lines 23--28
+\OT1/cmtt/m/n/10.95 / / www . din . de / de / mitwirken / normenausschuesse / n
+aerg / wdc-[]beuth :
  []
 
 
 Underfull \hbox (badness 1946) in paragraph at lines 40--44
 []\OT1/cmr/m/sc/10.95 Flyeralarm\OT1/cmss/m/n/10.95 :  \OT1/cmss/m/sl/10.95 Meh
-r-weg-be-cher g[]unstig und schnell bei FLYER-ALARM\OT1/cmss/m/n/10.95 .
+rwegbecher g[]unstig und schnell bei FLYERALARM\OT1/cmss/m/n/10.95 .
  []
 
 
@@ -1779,16 +2430,16 @@ LaTeX Font Warning: Font shape `OMS/cmss/m/it' undefined
 (Font)              for symbol `textbar' on input line 106.
 
 
-Underfull \hbox (badness 2809) in paragraph at lines 110--115
+Underfull \hbox (badness 10000) in paragraph at lines 110--115
 []\OT1/cmr/m/sc/10.95 Stackoverflow\OT1/cmss/m/n/10.95 :  \OT1/cmss/m/sl/10.95 
-Die Stack Over-flow Ent-wick-le-rum-fra-ge 2018 \OMS/cmss/m/it/10.95 j \OT1/cms
-s/m/sl/10.95 Stack Over-
+Die Stack Overflow Entwicklerumfrage 2018 \OMS/cmss/m/it/10.95 j \OT1/cmss/m/sl
+/10.95 Stack
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 110--115
-\OT1/cmss/m/sl/10.95 flow\OT1/cmss/m/n/10.95 .  [][]$\OT1/cmtt/m/n/10.95 https 
-: / / www . stackoverflowbusiness . com / de / talent / ressourcen /
+\OT1/cmss/m/sl/10.95 Overflow\OT1/cmss/m/n/10.95 .  [][]$\OT1/cmtt/m/n/10.95 ht
+tps : / / www . stackoverflowbusiness . com / de / talent / ressourcen /
  []
 
 ) [58]
@@ -1808,7 +2459,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 279.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 279.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 279.
 Package rerunfilecheck Info: File `abschlussarbeit.out' has not changed.
-(rerunfilecheck)             Checksum: 2F2AE5B4E031631C8FB8CBCA4304D8B7;3683.
+(rerunfilecheck)             Checksum: 3A28B11BEA03F8728D3680B0EE956FAC;3626.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1822,33 +2473,30 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 279.
  ) 
 Here is how much of TeX's memory you used:
- 13469 strings out of 492946
- 200899 string characters out of 3126266
- 413407 words of memory out of 3000000
- 16752 multiletter control sequences out of 15000+200000
+ 13468 strings out of 494865
+ 198472 string characters out of 3178377
+ 407670 words of memory out of 3000000
+ 16506 multiletter control sequences out of 15000+200000
  21038 words of font info for 84 fonts, out of 3000000 for 9000
- 1141 hyphenation exceptions out of 8191
+ 0 hyphenation exceptions out of 8191
  38i,12n,56p,1499b,1141s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Users/lukas/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmcsc10.pfb><C:/Users/lukas/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/p
-ublic/amsfonts/cm/cmmi10.pfb><C:/Users/lukas/AppData/Local/Programs/MiKTeX 2.9/
-fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/lukas/AppData/Local/Programs
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/lukas/AppData/Loc
-al/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/luka
-s/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss8.pfb><C
-:/Users/lukas/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
-cmss9.pfb><C:/Users/lukas/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/
-amsfonts/cm/cmssbx10.pfb><C:/Users/lukas/AppData/Local/Programs/MiKTeX 2.9/font
-s/type1/public/amsfonts/cm/cmssi10.pfb><C:/Users/lukas/AppData/Local/Programs/M
-iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssi12.pfb><C:/Users/lukas/AppData/Lo
-cal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssi9.pfb><C:/Users/luk
-as/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-<C:/Users/lukas/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/c
-m/cmtt10.pfb><C:/Users/lukas/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
-ic/amsfonts/cm/cmtt9.pfb>
-Output written on abschlussarbeit.pdf (70 pages, 2672482 bytes).
+</home/luke/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
+></home/luke/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
+/home/luke/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></ho
+me/luke/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb></home/l
+uke/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmss10.pfb></home/luk
+e/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmss8.pfb></home/luke/.
+miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmss9.pfb></home/luke/.mik
+tex/texmfs/install/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></home/luke/.mik
+tex/texmfs/install/fonts/type1/public/amsfonts/cm/cmssi10.pfb></home/luke/.mikt
+ex/texmfs/install/fonts/type1/public/amsfonts/cm/cmssi12.pfb></home/luke/.mikte
+x/texmfs/install/fonts/type1/public/amsfonts/cm/cmssi9.pfb></home/luke/.miktex/
+texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></home/luke/.miktex/te
+xmfs/install/fonts/type1/public/amsfonts/cm/cmtt10.pfb></home/luke/.miktex/texm
+fs/install/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
+Output written on abschlussarbeit.pdf (70 pages, 2659806 bytes).
 PDF statistics:
- 1053 PDF objects out of 1200 (max. 8388607)
+ 1052 PDF objects out of 1200 (max. 8388607)
  314 named destinations out of 1000 (max. 500000)
- 552 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 547 words of extra memory for PDF output out of 10000 (max. 10000000)
 

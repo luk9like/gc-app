@@ -12,13 +12,14 @@
             <div class="col-sm-12 col-md-6 col-lg-12">
                 <div class="dropzone well my-drop-zone mb-4"
                      gcDragDrop
+                     [allowed_ext]="['image/png']"
                      (filesChangeEmiter)="onFilesChange($event)">
 
                     <div class="text-wrapper">
                         <div class="centered">Drop your file here!</div>
                     </div>
                 </div>
-                <input id="design" type="file" (change)="onFileSelected($event)"/>
+                <input [accept]="'.png'" id="design" type="file" (change)="onFileSelected($event)"/>
             </div>
 
             <div class="col-sm-12 col-md-6 col-lg-12" style="margin-bottom: 40px">
