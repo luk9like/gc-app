@@ -98,7 +98,11 @@
 \contentsline {chapter}{\chapternumberline {6}Testphase \& Ergebnisse}{45}{chapter.6}% 
 \contentsline {section}{\numberline {6.1}Testumgebung}{45}{section.6.1}% 
 \contentsline {section}{\numberline {6.2}Ergebnisse}{45}{section.6.2}% 
+\contentsline {paragraph}{3D Darstellung}{45}{section*.72}% 
+\contentsline {paragraph}{Men\IeC {\"u}f\IeC {\"u}hrung inkl. Routing}{45}{section*.73}% 
+\contentsline {paragraph}{Upload und reload texture}{45}{section*.74}% 
+\contentsline {paragraph}{Sonstiges}{45}{section*.75}% 
 \contentsline {chapter}{\chapternumberline {7}Zusammenfassung}{47}{chapter.7}% 
 \contentsline {appendix}{\chapternumberline {A}Lorem Ipsum}{49}{appendix.A}% 
-\contentsline {chapter}{Glossar}{51}{appendix*.72}% 
-\contentsline {chapter}{Literaturverzeichnis}{53}{appendix*.73}% 
+\contentsline {chapter}{Glossar}{51}{appendix*.76}% 
+\contentsline {chapter}{Literaturverzeichnis}{53}{appendix*.77}% 

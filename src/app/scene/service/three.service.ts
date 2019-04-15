@@ -172,8 +172,13 @@ export class ThreeService {
     const prevModel1 = this.scene.getObjectByName('180ml_ColdCup_Circle.003_CUSTOM');
     const prevModel2 = this.scene.getObjectByName('180ml_ColdCup_Circle.003_paper');
     const currentModel = this.scene.getObjectByName('currentModel');
+    const currentTexture = this.scene.getObjectByName('currentTexture');
 
-    this.scene.remove(prevModel1, prevModel2, currentModel);
+    this.scene.remove(prevModel1, prevModel2, currentModel, currentTexture);
+    this.dataServ.selectedImage = undefined;
+    this.dataServ.designName = undefined;
+    this.dataServ.designSize = undefined;
+    this.dataServ.state = false;
 
     this.controls.update();
     this.render();
@@ -184,14 +189,15 @@ export class ThreeService {
 }
 
     public reloadTexture(image) {
+      const currentTexture = this.scene.getObjectByName('currentTexture');
+      this.scene.remove(currentTexture);
+
       const loader = new THREE.TextureLoader();
       const material = new THREE.MeshBasicMaterial();
-      const texture = image;
       console.log('Die hochgeladene DAtei ist: ' + image);
 
-      // material.specular = 1;
       material.map = loader.load(image);
-      var cupSize = '' + this.dataServ.model;
+      const cupSize = '' + this.dataServ.model;
 
       const geometry = new THREE.CylinderBufferGeometry(
         this.radiusTop[cupSize],
@@ -207,6 +213,7 @@ export class ThreeService {
 
       // var material.transparent = true;
       const cylinder = new THREE.Mesh( geometry, material );
+      cylinder.name = 'currentTexture';
       if (material.map) {
         if ( this.dataServ.model === 'normal' ) {cylinder.position.y = .09; }
         if ( this.dataServ.model === 'large' ) {cylinder.position.y = .22; }
@@ -215,6 +222,7 @@ export class ThreeService {
 
       this.render();
       console.log('Texture load complete.');
+      this.dataServ.state = false;
 
     }
 
