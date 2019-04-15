@@ -95,14 +95,16 @@
 \contentsline {section}{\numberline {5.8}Daten-Service}{42}{section.5.8}% 
 \contentsline {section}{\numberline {5.9}Upload-Vorgang}{43}{section.5.9}% 
 \contentsline {paragraph}{Route zum Upload}{43}{section*.71}% 
-\contentsline {chapter}{\chapternumberline {6}Testphase \& Ergebnisse}{45}{chapter.6}% 
-\contentsline {section}{\numberline {6.1}Testumgebung}{45}{section.6.1}% 
-\contentsline {section}{\numberline {6.2}Ergebnisse}{45}{section.6.2}% 
-\contentsline {paragraph}{3D Darstellung}{45}{section*.72}% 
-\contentsline {paragraph}{Men\IeC {\"u}f\IeC {\"u}hrung inkl. Routing}{45}{section*.73}% 
-\contentsline {paragraph}{Upload und reload texture}{45}{section*.74}% 
-\contentsline {paragraph}{Sonstiges}{45}{section*.75}% 
-\contentsline {chapter}{\chapternumberline {7}Zusammenfassung}{47}{chapter.7}% 
-\contentsline {appendix}{\chapternumberline {A}Lorem Ipsum}{49}{appendix.A}% 
-\contentsline {chapter}{Glossar}{51}{appendix*.76}% 
-\contentsline {chapter}{Literaturverzeichnis}{53}{appendix*.77}% 
+\contentsline {paragraph}{Drag \& Drop oder Select}{44}{section*.73}% 
+\contentsline {paragraph}{reloadTexture}{45}{section*.74}% 
+\contentsline {chapter}{\chapternumberline {6}Testphase \& Ergebnisse}{47}{chapter.6}% 
+\contentsline {section}{\numberline {6.1}Testumgebung}{47}{section.6.1}% 
+\contentsline {section}{\numberline {6.2}Ergebnisse}{47}{section.6.2}% 
+\contentsline {paragraph}{3D Darstellung}{47}{section*.75}% 
+\contentsline {paragraph}{Men\IeC {\"u}f\IeC {\"u}hrung inkl. Routing}{47}{section*.76}% 
+\contentsline {paragraph}{Upload und reload texture}{47}{section*.77}% 
+\contentsline {paragraph}{Sonstiges}{47}{section*.78}% 
+\contentsline {chapter}{\chapternumberline {7}Zusammenfassung}{49}{chapter.7}% 
+\contentsline {appendix}{\chapternumberline {A}Lorem Ipsum}{51}{appendix.A}% 
+\contentsline {chapter}{Glossar}{53}{appendix*.79}% 
+\contentsline {chapter}{Literaturverzeichnis}{55}{appendix*.80}% 

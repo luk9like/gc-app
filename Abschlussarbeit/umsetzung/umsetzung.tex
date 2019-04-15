@@ -151,7 +151,7 @@ Durch die Parameter ist es möglich, den Zylinder genau an die Maße des Bechers
 Jetzt kann das Design des Kunden als Texture auf den Zylinder gepackt werden. Das praktische ist, das sich das Design an die Maße des Zylinders anpasst. Wenn das Design in der richtigen Auflösung hochgeladen wurde, sieht es somit realistisch aus\footnote{Im Upload-Vorgang wird der Benutzer bei falscher Auflösung des Designs darauf hingewiesen (siehe Kapitel 5.9).}. Aufgrund der kubischen Form des Zylinders wird das Design minimal gestaucht, genau wie beim Druck.
 \begin{figure}[h]
 	\centering
-	{\epsfig{file = umsetzung/images/bechermitdesign.png, width=11.0cm}}
+	{\epsfig{file = umsetzung/images/bechermitdesign.PNG, width=11.0cm}}
 	\caption[Konfigurator mit designtem Becher]{\textit{Darstellung des Designs auf dem Becher mit Zylinder-Geometrie}}
 	\label{fig:bechermitdesign}
 \end{figure}
@@ -178,6 +178,9 @@ Die 3D Szene ist, wie schon zuvor erwähnt, auch responsive. Die OrbitControls v
 Der DataService hat eine Aufgabe: Alle Daten des konfigurierten Bechers zu speichern und sie bei Anfrage einer Komponente wieder zurückzugeben. Dabei ist es wichtig das der Service nur einmal gestartet wird und die Daten global speichert. Hierbei handelt es sich also um ein Singelton. In Angular einen Service zu implementieren, ist recht unkompliziert. Analog zum \textit{SceneService} wird dieser auch über Angular CLI anzulegen. Anders als der \textit{SceneService}, welcher ausschließlich von der \textit{SceneComponent} verwendet wird, soll dieser global zugänglich sein. Dabei speichert er folgende Daten:
 \begin{description}
 	\item[selectedImage] Speichert die \texttt{png}-Datei, welche der User hochgelden hat
+	\item[state] Hat den Wert \textit{true} wenn ein Bild ausgewählt wurde
+	\item[designName] Speichert den Namen der Bilddatei
+	\item[designSize] Speichert die Größe der Bilddatei
 	\item[count] Speichert die Anzahl der Becher, die der Benutzer später drucken lassen möchte 
 	\item[size] Speichert die vom Benutzer gewählte Bechergröße
 	\item[stroke] Speichert, ob der Eichstrich mitgedruckt werden soll (Optionale Auswahl)
@@ -185,14 +188,64 @@ Der DataService hat eine Aufgabe: Alle Daten des konfigurierten Bechers zu speic
 	\item[model] Speichert den Pfad zur \texttt{.obj}-Datei, welche gerendert werden soll
 \end{description}
 %
-Die Eigenschaften \textit{selectedImage}, \textit{count}, \textit{size}, \textit{stroke} und \textit{price} werden in der Tabelle \textit{OverviewComponent} als Bindung angezeigt. Somit ist immer die aktuelle Auswahl des Benutzers in der Tabelle. Auch der \textit{SceneService} nutzt den \textit{DataService}. Zunächst bekommt der \textit{SceneService}, wie schon erwähnt, die Information, welche Größe gewählt wurde. Je nach dem welchen Wert \textit{size} dann hat, ändert sich das 3D-Model. Ähnlich verhält es sich mit dem Design, was als Textur auf dem Becher angezeigt werden soll. Im nächsten Abschnitt wird genauer beschrieben, wie ein Design hochgeladen werden kann, und welche Rolle der \textit{DataService} dort spielt.
+Die Eigenschaften \textit{designName}, \textit{count}, \textit{size}, \textit{stroke} und \textit{price} werden in der Tabelle \textit{OverviewComponent} als Bindung angezeigt. Somit ist immer die aktuelle Auswahl des Benutzers in der Tabelle. \\
+Der \textit{DataService} ist somit ein Speicherort aller Informationen über den ausgewählten Becher und das verwendete Design. Es ist durchaus denkbar den Service später zu erweitern. Man könnte die Informationen auf einem Server sichern, sodass der User zu späteren Zeiten auf seine Konfiguration zurückgreifen kann. Angular bitet dafür eine einfache Realisierung über das \textit{HttpClientModule}.
+
+Auch der \textit{SceneService} nutzt den \textit{DataService}. Zunächst bekommt der \textit{SceneService}, wie schon erwähnt, die Information, welche Größe gewählt wurde. Je nach dem welchen Wert \textit{size} dann hat, ändert sich das 3D-Model. Ähnlich verhält es sich mit dem Design, was als Textur auf dem Becher angezeigt werden soll. Im nächsten Abschnitt wird genauer beschrieben, wie ein Design hochgeladen werden kann, und welche Rolle der \textit{DataService} dort spielt.
 %
 \section{Upload-Vorgang}
 \label{sec:umsetzung}
 %
-Angenommen ein Benutzer hat sich für eine Größe entschieden und möchte nun sein Design hochladen. Wie in Abbildung zu sehen, kann in der Sidebar über einen Button die \textit{UploadComponent} geöffnet werden. Der User wird hier auch noch einmal darauf hingewiesen, die Druckvorgaben zu beachten.
+Angenommen ein Benutzer hat sich für eine Größe entschieden und möchte nun sein Design auswählen. In der Sidebar kann über einen Button die \textit{UploadComponent} geöffnet werden. Der User wird hier auch noch einmal darauf hingewiesen, die Druckvorgaben zu beachten.
 \paragraph{Route zum Upload}
-An dieser Stelle der Anwendung wird das \textit{Routing} verwendet. Normalerweise befinden wir uns in dem Konfigurator unter dem root-Pfad. Beim Upload ändert sich der Pfad zu \texttt{localhost/upload}. Unter dieser Route ist definiert, das die \textit{UploadComponent} angezeigt werden soll und nicht die \textit{SidebarComponent}. Hier kann der Benutzer jetzt sein Design hochladen (siehe Abbildung).
+An dieser Stelle der Anwendung wird das \textit{Routing} verwendet. Normalerweise befinden wir uns in dem Konfigurator unter dem root-Pfad. Beim Upload ändert sich der Pfad zu \texttt{localhost/upload}. Unter dieser Route ist definiert, das die \textit{UploadComponent} angezeigt werden soll und nicht die \textit{SidebarComponent}. Hier kann der Benutzer jetzt sein Design auswählen (siehe Abbildung).
+%
+\begin{figure}[h]
+	\centering
+	{\epsfig{file = umsetzung/images/uploadcomponent.png, width=8.0cm}}
+	\caption[UploadComponent des Konfigurators]{\textit{Upload-Komponente der Angular-Anwendung zum auswählen des Designs}}
+	\label{fig:sidebar}
+\end{figure}
+%
+Eigentlich ist der Begriff \glqq Upload \grqq nicht ganz zutreffend, da das Design nicht wirklich auf einen Server hochgeladen wird, sondern nur in dem \textit{DataService} gespeichert wird. Trotzdem ist klar, was die Funktion dieser Komponente ist. Der Benutzer hat zwei Möglichkeiten sein Design auszuwählen.
+%
+\paragraph{Drag \& Drop oder Select}
+Eine bekannte Methode um Dateien hochzuladen ist die Drag \& Drop Methode. Man muss einfach die Datei in den dafür vorgesehenen Bereich ziehen und die Datei wird erkannt. Die zweite Möglichkeit ist es ganz klassisch über ein Input-Feld eine Datei aus dem Verzeichnis auszuwählen. Egal, für welche Methode der Benutzer sich entscheidet, passiert im Grunde das selbe. Ein Unterschied besteht darin, das verschiedene Eregnisse gebunden werden. Bei der klassischen Input-Feld Variante wird über das Event \textit{Change} überprüft, ob eine Datei ausgewählt wurde. Bei der Drag \& Drop Variante wird das Event \textit{drop} verwendet. Außerdem wird zusätzlich \texttt{dragover} und \texttt{dragleave} ausgeführt, wenn eine Datei in die Dropzone gezogen wird oder hinausgezogen wird. Für eine bessere Usability verändern sie die Farbe des Rahmens. Somit bekommt der User ein Feedback, wenn er seine Datei an die richtige Stelle gezogen hat.
 
+
+In der \textit{UploadComponent} sind beide Upload-Vorgänge mit der Direktiven umgesetzt. In Diesen sind Dekoratoren implementiert, welche die eben erwähnten  Ereignisse über \texttt{@Hostlistener} binden. Für den Upload-Vorgang in diesem Konfigurator wird ein benutzerdefiniertes Ereignis benötigt. Um das zu erstellen verwendet man das \texttt{EventEmiter}-Objekt.
+%
+\begin{lstlisting}
+private filesChangeEmiter: EventEmitter<File> = new EventEmitter();
+\end{lstlisting}
+%
+Zusätzlich muss der Typ der Objekte explizit festgelegt werden. In diesem Fall wird ein \texttt{File}(einfache Datei) emittiert, jedes Mal, wenn der Benutzer eine Datei ausgewählt hat. Da der User nur ein Bild hochladen darf, ist dies nicht als Array implementiert. Nun können wir den \textit{EventEmiter} in \textit{@HostListener} verwenden. Es muss aber noch das Ereignis mit der übergeordneten HTML-Komponente gebunden werden. Dazu benötigt man den \textit{@Output} Dekorator für den \textit{EventEmiter}. Auf diese Weise ist es möglich zu überprüfen, ob sich die ausgewählte Datei geändert hat.
+%
+\begin{lstlisting}
+<div gcDragDrop (filesChangeEmiter)="onFilesChange($event)">
+\end{lstlisting}
+%
+Wie man im Beispiel sieht, wird jedes Mal, wenn eine Datei in die Drop-Zone geschoben wird, die Funktion \texttt{onFilesChange(\$event)} ausgeführt. Der Parameter \texttt{\$event} ist immer ausgewählte Datei. Die Methode kann jetzt mit diesem File arbeiten.\\
+
+In der \textit{UploadCompontent} und auch an anderen Stellen der Anwendung soll der Dateiname und die Größe der Datei ausgegeben werden. Es ist nun möglich aus der übergebenen Datei beides auszulesen und in dem \textit{DataService} zu speichern. Nun muss noch die \texttt{reloadTexture()}-Funktion ausgeführt werden und die Datei übergeben werden. In Three.js werden Texturen mit dem TextureLoader geladen bzw. gemappt. Anschließend kann man sie zur Szene hinzufügen. Allerdings kann der Loader nur URLs oder Base64-Objekte entgegen nehmen. Auf den Pfad des Bildes können wir aus Sicherheitsgründen nicht zugreifen. Deshalb muss das File-Objekt in ein Base64-Objekt konvertiert werden, bevor man die Textur laden kann. Das konvertierte Objekt wird dann in \texttt{selectedImage} im \textit{DataService} gespeichert.
+%
+\begin{lstlisting}
+this.getBase64(file).then(
+	data => this.DataServ.selectedImage = data
+);
+\end{lstlisting}
+%
+Ist nun eine gültige \texttt{.png}-Datei ausgewählt worden, wird wie in Abbildung zu sehen Name und Dateigröße angezeigt. Jetzt ist auch der \textit{Design rendern}Button aktiv und das Design kann mit der \textit{reloadTexture}-Funktion gerendert werden.
+
+\paragraph{reloadTexture}
+Im Grunde ist diese Funktion nahezu identisch zu \texttt{reloadModel()}-Funktion. Ein Teil der Funktion ist schon bekannt. Wir haben schon gesehen wie diese Funktion den Zylinder für das Design um den Becher erstellt. Als Erstes löscht die Funktion eine Texture, die eventuell schon zuvor gerendert wurde. Nun bekommt die Funktion das Design des Users als Parameter übergeben und kann es als Texture gemappt werden.
+%
+\begin{lstlisting}[caption={TextureLoader Umsetzung},label=lst:texture]
+const loader = new THREE.TextureLoader();
+const material = new THREE.MeshBasicMaterial();
+material.map = loader.load(image);
+\end{lstlisting}
+%
+Um das ganze abzuschließend wird nun noch die Textur mit der Geometrie zusammengeführt und schließlich zu Szene hinzugefügt. Nachdem dann die Szene neu gerendert wurde, sollte das Design des Benutzers richtig auf dem Becher angezeigt werden.\\
 
 Damit ist die Realisierung abgeschlossen. Die Funktionen wurden weitesgehend alle implementiert und müssen jetzt noch geprüft werden.

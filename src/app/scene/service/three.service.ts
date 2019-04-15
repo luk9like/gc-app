@@ -194,7 +194,6 @@ export class ThreeService {
 
       const loader = new THREE.TextureLoader();
       const material = new THREE.MeshBasicMaterial();
-      console.log('Die hochgeladene DAtei ist: ' + image);
 
       material.map = loader.load(image);
       const cupSize = '' + this.dataServ.model;
@@ -208,8 +207,6 @@ export class ThreeService {
         true,
         0,
         this.thetaLength);
-
-      // var texture = THREE.TextureLoader('/assets/textures/large.jpg');
 
       // var material.transparent = true;
       const cylinder = new THREE.Mesh( geometry, material );

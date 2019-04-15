@@ -41,3 +41,11 @@ body{
     margin: 0;
   }
 }
+
+.mdi-backspace{
+  font-size: 1.4rem;
+
+  &:hover, &:focus{
+    color: black!important;
+  }
+}
