@@ -126,10 +126,11 @@ Three.js abstrahiert den Kontext von WebGL und stellt die 3D-Szene als Meshes, M
 \label{subsec:scene}
 %
 Die 3D-Bibliothek ist objektorientiert. Das heißt, Programmierer arbeiten mit JavaScript-Objekten, anstatt nur JavaScript-Funktionsaufrufe durchzuführen. Folgendes einfaches Beispiel, zeigt wie eine Szene in Three.js erstellt werden kann. \\
-
-\texttt{var scene = new THREE.Scene();} 
-\\
-
+%
+\begin{lstlisting}[caption={Erstellung einer Szene in Three.js},label=lst:addscene]
+var scene = new THREE.Scene();
+\end{lstlisting}
+%
 Über verschiedene Funktionen können dann die weiteren Bestandteile einer Szene hinzugefügt werden und anschließend mit dem Renderer gerendert werden. Da Angular auf TypeScript basiert, muss man bei der Implementierung einer Szene in Angular ein paar Dinge beachten. Diese werden in Kapitel 4 genauer erläutert. In diesem Teil werden zunächst die wesentlichen Bestandteile der Three.js Szene vorgestellt. Differenzierte Erklärungen zu Three.js sind in der offiziellen Dokumentation zu finden \footnote{http://threejs.org/docs}.
 %
 \paragraph{Kamera}
@@ -153,12 +154,13 @@ Ein Mesh fast ein oder mehrere Objekte und Materials und so weiter zusammen. Am 
 \subsection{Modelle}
 \label{subsec:objekte}
 %
-Mit Three.js lassen sich ebenfalls Modelle aus 3D Programmen wie Maya oder Cinema4D darstellen. Dazu werden Loader, also Werkzeuge mit denen man Modelle laden kann, verwendet. Sie sind nicht Teil vom Kern des Framework. Sie können nach Bedarf in die Anwendung mit eingebunden werden. Teilweise sind die Loader noch nicht ganz ausgereift oder es gibt manchmal Importierungsprobleme. Einige bekannte Loader sind: \textit{ColladaLoader}\footnote{http://www.khronos.org/collada/}, \textit{OBJLoader}\footnote{http://www.martinreddy.net/gfx/3d/OBJ.spec} und \textit{JSONLoader}.
+Mit Three.js lassen sich ebenfalls Modelle aus 3D Programmen wie Maya oder Cinema4D darstellen. Dazu werden Loader, also Werkzeuge mit denen man Modelle laden kann, verwendet. Sie sind nicht Teil vom Kern des Framework. Sie können nach Bedarf in die Anwendung mit eingebunden werden. Teilweise sind die Loader noch nicht ganz ausgereift oder es gibt manchmal Importierungsprobleme. Einige bekannte Loader sind: \textit{ColladaLoader}\footnote{http://www.khronos.org/collada/}, \textit{OBJLoader}\footnote{http://www.martinreddy.net/gfx/3d/OBJ.spec} und \textit{JSONLoader}. Ein noch recht neuer Loader, der immer wieder auftaucht ist der \textit{glFT-Loader}\footnote{https://github.com/KhronosGroup/glTF/tree/master/specification/2.0} der von den Machen von WebGL entwickelt wurde und laut den Entwicklern noch einfacher und performanter arbeiten soll.
 %
 \subsection{Events}
 \label{subsec:events}
 %
 Three.js liefert einige Funktionen, die bestimmte Events regeln bzw. festlegen, was zu tun ist, wenn bestimmt Aktionen erfolgen. Zum Beispiel hat das \texttt{<canvas>}-Element eine feste Größe. Wenn das Fenster des Browsers sich verändert, sollte das Element sich jedoch anpassen. Das ist ganz einfach mit einem \textit{EventListner} und der Funktion \texttt{resize} umsetzbar.
+Hierbei ergänzen sich \textit{Three.js} und \textit{Angular} sehr gut. In dem Framework wird das ganz einfach mit einem Dekorator realisiert. Mit \texttt{@HostListener} können Ereignisse in Angular gebunden werden. Sogar benutzerdefinierte Ereignisse können erstellt werden.
 %
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -199,7 +201,7 @@ Hinter dem englische Begriff \textit{Usability} verbirgt sich also ein umfassend
 \paragraph{User Centered Design (UCD)}
 \textit{\glqq Hinter diesem Begriff verbirgt sich eine Vielzahl von Gestaltungsprozessen, die den späteren Benutzer ins Zentrum der Entwicklung stellen. Mit der Betonung des Designs wird zum Ausdruck gebracht, dass sowohl Interaktions- als auch Gestaltungsaspekte, also etwa die Gestaltung der Dialogabläufe, die Gestaltung der Form physischer Produkte und Bedienelemente, aber auch das grafische Design, wichtige Bestandteile für eine optimale Benutzung darstellen und von Beginn weg berücksichtigt werden müssen..\grqq} \cite{richter_usability_2016}\\
 
-Wir fassen also zusammen, das \textit{Usability} sich immer um den Benutzer dreht und für ihn einfach und effiziente Bedienung erfordert. Dabei muss die \textit{Benutzerfreundlichkeit} aber immer im Kontext seiner Verwendung beurteilt werden.
+Wir fassen also zusammen, das \textit{Usability} sich immer um den Benutzer dreht und einfach sowie effiziente Bedienung erfordert. Dabei muss die \textit{Benutzerfreundlichkeit} aber immer im Kontext seiner Verwendung beurteilt werden.
 %
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

@@ -7,7 +7,7 @@
 \chapter{Anforderungen und Konzeption}
 \label{cha:methodik}
 %
-Unter funktionalen Anforderungen versteht man konkrekte Funktionalitäten, welche die Anwendung leisten soll. Die Anwendung lässt sich in mehrere Module aufteilen, die dem User zu Verfügung stehen. Im Folgenden werden die funktionalen Anforderungen erläutert.
+Unter funktionalen Anforderungen versteht man konkrekte Funktionalitäten, welche die Anwendung leisten soll. Die Anwendung lässt sich in mehrere Module aufteilen, die dem User zu Verfügung stehen. In diesem Kapitel werden die Anforderungen erläutert. Anschließend wird auf das Konzept der Anwendung eingegangen, damit deutlich wird, wie der technische Aufbau aussehen soll.
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -18,7 +18,7 @@ Unter funktionalen Anforderungen versteht man konkrekte Funktionalitäten, welch
 \section{Funktionale Anforderungen}
 \label{sec:problemanalyse}
 %
-Unter funktionalen Anforderungen versteht man konkrekte Funktionalitäten, welche die Anwendung leisten soll. Die Anwendung lässt sich in mehrere Module aufteilen, die dem User zu Verfügung stehen. In diesem Kaptitel werden sowohl die funktionalen also auch die nicht funktionalen Anforderungen beschrieben. Es handelt sich zwar um ein echtes Projekt, wobei es sich vorerst um eine prototypische Entwicklung handelt. Als Anforderung vom Hersteller gilt nur, dass der Konfigurator einen Bestellvorgang für den Kunden und das Unternehmen vereinfacht. Dabei soll durch innovative Gestaltung und Programmierung des Konfigurators eine performante Lösung entwickelt werden. Das Ergebnis sollte zum bisherigen Webauftritt des Unternehmens passen. Nun wollen wir uns die Anforderungen im Details anschauen. Anschließend wird das Konzept des Webanwendung vorgestellt.
+Unter funktionalen Anforderungen versteht man konkrekte Funktionalitäten, welche die Anwendung leisten soll. Die Anwendung lässt sich in mehrere Module aufteilen, die dem User zu Verfügung stehen. In diesem Kaptitel werden sowohl die funktionalen also auch die nicht funktionalen Anforderungen beschrieben. Es handelt sich zwar um ein echtes Projekt, wobei es sich vorerst um eine prototypische Entwicklung handelt. Als Anforderung vom Hersteller gilt nur, dass der Konfigurator einen Bestellvorgang für den Kunden und das Unternehmen vereinfacht. Dabei soll durch innovative Gestaltung und Programmierung des Konfigurators eine performante Lösung entwickelt werden. Das Ergebnis sollte zum bisherigen Webauftritt des Unternehmens passen. Nun wollen wir uns die Anforderungen im Details anschauen, bevor das Konzept der Webanwendung vorgestellt wird.
 
 \renewcommand{\arraystretch}{1.8}
 \begin{table}[h]
@@ -123,29 +123,31 @@ Wie die Studie im Kapitel Performance gezeigt hat, mögen Benutzer keine langen 
 \section{Konzeption}
 \label{sec:konzept}
 %
-Bevor es an die Umsetzung und Implementierung geht, beschäftigt sich dieses Kapitel damit, \textbf{wie} der Konfigurator umgesetzt wird. Um den technischen Aufbau zu verstehen, wird ein Flussdiagramm sowie ein Komponentendiagramm verwendet und im Laufe diesen Kapitels erläutert. Anschließend wird auch der grobe Aufbau der Benutzeroberfläche beschrieben.
+Bevor es an die Umsetzung und Implementierung geht, beschäftigt sich diesesr Abschnitt damit, \textbf{wie} der Konfigurator umgesetzt wird. Um den technischen Aufbau zu verstehen, wird ein Flussdiagramm sowie ein Komponentendiagramm verwendet und im Laufe diesen Abschnitts erläutert. Anschließend wird auch der grobe Aufbau der Benutzeroberfläche beschrieben.\\
 \begin{figure}[h]
 	\centering
 	{\epsfig{file = methodik/images/flowchart.png, width=9.0cm}}
 	\caption[Flussdiagramm]{\textit{Flussdiagramm der Angular-Anwendung}}
 	\label{fig:flowchart}
 \end{figure}
+\subsection{Ablauf einer Konfiguration}
  Nachdem alle Funktionen und Vorgaben bekannt sind, sollte man sich über den technischen Ablauf Gedanken manchen. Das Flussdiagramm\footnote{engl. Flowchart sollte hier als Fussnote kurz erkärt werden damit jeder weiß, was genau damit gemeint ist.} in Abbildung \ref{fig:flowchart} zeigt, was während dem Konfigurieren des Bechers geschieht.\\
  Der Konfigurator für Mehrwegbecher beeinhaltet vier verschiedene Größen von Bechern. Als erstes soll der Benutzer eine Bechergröße auswählen. Standardmäßig ist der Becher mit 0,2 Liter als 3D-Model geladen. Falls der Benutzer eine andere Größe wählt, aktualisiert sich das 3D-Model dementsprechend. Anschließend kann der Upload des Becher-Designs erfolgen. Hierbei muss sich der Benutzer an die Druckvorgaben halten. Wenn das Design beispielsweise in einem falsches Dateiformat ist oder eine falsche Auflösung hat, kann das Design nicht hochgeladen werden. Falls alles richtig ist, wird das Design direkt auf den Becher gerendert. Die Wahl der Größe und die hochgeladene Datei werden in dem DataService gespeichert. Am Ende der Konfiguration kann sich der User in der Übersicht alles noch einmal ansehen und bei Bedarf ausdrucken. Dabei werden die Daten aus dem DataService verwendet.  
  
  Jetzt, wo das Flussdiagramm den Ablauf einer Konfiguration beschrieben hat, sollte man sich den Komponenten der Anwendung widmen. Das Komponentendiagramm (siehe Abbildung \ref{fig:ngKomponent}) zeigt die Hauptkomponenten, welche später auch als Angular-Bausteine angelegt werden. Natürlich gibt es noch weitere Kindskomponenten, die in den Hauptkomponenten verwendet werden. Darauf gehen wir aber erst in der Implementierung ein.
 \begin{figure}[h]
 	\centering
-	{\epsfig{file = methodik/images/komponentnendiagramm.png, width=11.0cm}}
+	{\epsfig{file = methodik/images/komponentnendiagramm.png, width=13.0cm}}
 	\caption[Komponentendiagramm]{\textit{Komponentendiagramm der Angular-Anwendung}}
 	\label{fig:ngKomponent}
 \end{figure} 
-Wie wir wissen ist die AppComponent unsere Basis-Komponente, von der alles startet. Nun hat unser Konfigurator eine SidebarComponent, welche das Knofigurationsmenü sowie die Übersicht der Konfigurationen Beeinhaltet. Das Herzstück unserer Angular-Anwendung ist die SceneComponent. Sie zeigt uns den Becher in 3D mit dem hochgeladenen Design. Um eine 3D Szene aufzubauen wird der SceneService verwendet, welcher die 3D Bibliothek Three.js nutzt. Wie schon in dem Flussdiagramm erwähnt befinden sich alle Konfigurations-Daten in dem DataService, welcher global für alle Komponenten bzw. Module zugänglich ist. Damit sollte der technische Aufbau der Anwendung klar sein.
-
-Beschäftigen wir uns nun mit der grafischen Benutzeroberfläche (UI). Am Anfang war ein 3-Schritte-Konfigurator geplant. Der Benutzer sollte also in drei Schritten seinen Becher konfigurieren. Da der Konfigurator nur wenige Einstellmöglichkeiten hat, ist es am benutzerfreundlichsten alles auf einer Seite zu konfigurieren. Somit ist die Webanwendung sehr einfach gehalten und so aufgebaut, dass eine mobile Anpassung leicht umzusetzen ist. Wie in der Abbildung zu sehen ist auf der linken Seite die 3D Szene mit WebGL aufgebaut. Hier kann der User seinen Becher betrachten oder ihn auch transformieren. Auf der rechten Seite befindet sich die Sidebar. Darin ist die komplette Menüführung mit den Konfigurationseinstellungen vorhanden, sowie die Übersicht aller gewählten Einstellungen. Das Menü ist hierarchisch aufgebaut, sodass der Benutzer erst die Größe des Bechers auswählt. Anschließend kann er sein Design hochladen und danach noch optionale Einstellungen wählen. Innerhalb der Sidebar befindet sich auch die Übersicht in Form einer Tabelle. Bei Tablets befindet sich die Sidebar unterhalb der 3D Ansicht. Auf Smartphones ist die Sidebar als Off-Canvas-Menu gelöst. Somit ist das Menü dann vollflächig (siehe Abbildung).
+Wie wir wissen ist die AppComponent unsere Basis-Komponente, von der alles startet. Nun hat unser Konfigurator eine SidebarComponent, welche das Konfigurationsmenü sowie die Übersicht der Konfigurationen Beeinhaltet. Das Herzstück unserer Angular-Anwendung ist die SceneComponent. Sie zeigt uns den Becher in 3D mit dem hochgeladenen Design. Um eine 3D Szene aufzubauen wird der SceneService verwendet, welcher die 3D Bibliothek Three.js nutzt. Wie schon in dem Flussdiagramm erwähnt befinden sich alle Konfigurations-Daten in dem DataService, welcher global für alle Komponenten bzw. Module zugänglich ist. Damit sollte der technische Aufbau der Anwendung klar sein.
+\subsection{Benutzeroberfläche}
+Beschäftigen wir uns nun mit der grafischen Benutzeroberfläche (UI). Am Anfang war ein 3-Schritte-Konfigurator geplant. Der Benutzer sollte also in drei Schritten seinen Becher konfigurieren. Da der Konfigurator nur wenige Einstellmöglichkeiten hat, ist es am benutzerfreundlichsten alles auf einer Seite zu konfigurieren. Somit ist die Webanwendung sehr einfach gehalten und so aufgebaut, dass eine mobile Anpassung leicht umzusetzen ist. Wie in der Abbildung zu sehen ist auf der linken Seite die 3D Szene mit WebGL aufgebaut. Hier kann der User seinen Becher betrachten oder ihn auch transformieren. Auf der rechten Seite befindet sich die Sidebar. Darin ist die komplette Menüführung mit den Konfigurationseinstellungen vorhanden, sowie die Übersicht aller gewählten Einstellungen. Das Menü ist hierarchisch aufgebaut, sodass der Benutzer sich von oben nach unten arbeiten kann.Zuerst wählt er die Größe des Bechers. Anschließend kann er sein Design hochladen und danach noch optionale Einstellungen wählen. Innerhalb der Sidebar befindet sich auch die Übersicht in Form einer Tabelle. Es kann über eine Tab-Navigation immer zwischen den Einstellungen und der Übersicht gewechselt werden. Die Einstellungen sollen als Accordion umgesetzt werden. Somit ist immer nur ein Menüpunkt aufgeklappt. Das macht das ganze noch etwas übersichlicher und auch mobilfreundlicher. \\
+Bei Tablets (Portraitansicht) befindet sich die Sidebar unterhalb der 3D Ansicht. So ist genug Platz für die Sidebar und gleichzeitig wird der Becher noch groß genug dargestellt. Auf Smartphones ist die Sidebar als Off-Canvas-Menu gelöst, das heißt, sie muss über ein Hamburger-Menu-Button geöffnet werden. Somit ist das Menü dann vollflächig (siehe Abbildung). Im Grunde verändert sich das Aussehen der Sidebar aber nicht auf der mobilen Ansicht.
 \begin{figure}[h]
 	\centering
-	{\epsfig{file = methodik/images/mockup.png, width=11.0cm}}
+	{\epsfig{file = methodik/images/mockup.png, width=13.0cm}}
 	\caption[Mockup]{\textit{Mockup der Angular-Anwendung}}
 	\label{fig:mockup}
 \end{figure}

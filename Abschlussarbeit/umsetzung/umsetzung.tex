@@ -11,10 +11,10 @@ Nun kommen wir an den praktischen Teil der Arbeit. In diesem Kapitel wird zunäc
 \section{Entwicklungsumgebung}
 \label{sec:umsetzung}
 %
-Dieses Kapitel befasst sich mit den verwendeten Technologien, die eine produktive Entwicklung ermöglichen. Es wird auf alle verwendeten Technologien, Bibliotheken sowie Programme eingegangen und begründet, warum eine Verwendung sinnvoll ist.\\
+Dieser Abschnitt befasst sich mit den verwendeten Technologien, die eine produktive Entwicklung ermöglichen. Es wird auf alle verwendeten Technologien, Bibliotheken sowie Programme eingegangen und begründet, warum eine Verwendung sinnvoll ist.\\
 \paragraph{Technologien und Bibloetheken}
-Wie in den vergangenen Kapiteln schon erläutert sind die Haupttechnologien das Framework \textit{Angular} sowie die 3D Bibliothek \textit{Three.js}, welche WebGL zum Einsatz bringt. Angular Anwendungen werden grundsätzlich mit \textit{Node.js} installiert. Dadurch ist es uns später möglich verschiedene npm-Module wie Three.js oder auch Bootstrap zu installieren. Zusätzlich nutzt Angular \textit{Webpack}, um den Quellcode zu bündeln. Dabei werden die scss-Dateien in eine css-Datei komprimiert. Sass in Verbindung mit \textit{Webpack} ist nicht nur in für Angular-Projekte ein beliebtes Tool zum entwickeln von Webseiten und Webanwendungen. Auch eine Versionierung des Quellcodes kommt zum Einsatz. Mit \textit{Git} ist der Quellcode immer gesichert und man kann nach dem Testen einer bestimmten Funktion immer wieder zum letzten Push zurückkehren. Bei einem Bachlor-Projekt kann man zwar nicht den Vorteil der Teamentwicklung mit \textit{Git} nutzen, jedoch kann man damit sehrwohl seinen Quellcode versionieren und sichern, was bei einem Bachlorprojekt durchaus sinnvoll erscheint. 
-\paragraph{Entwicklungswerkzeuge} Als Text-Editor wird \textit{PhpStorm} verwendet. Dadurch ist eine flexible Programmierung an unterschiedlichen Systemen möglich, da der Editor für Windows, MacOS als auch für Linux verfügbar ist. Er bietet eine praktische Integration von Git und kann dazu noch sehr gut mit Angular-Anwendungen arbeiten. Auch Angular CLI Befehle können teilweise direkt in dem Editor ausgeführt werden und \textit{PhpStorm} verfügt über eine logische Code-Verfolständigung. Nicht zu vergessen die optimale Quellcode-Formatierung für jeden Dateityp. \textit{PhpStorm} verfügt zwar über ein integriertes Terminal, jedoch ist das meist sehr unpraktisch, da es nur unnötig Platz in der Anwendung wegnimmt. Deswegen werden Kommandozeilen einem zusätzlichen Terminal ausgeführt. Gerade am Anfang des Projekts wird die Angular CLI viel zum Einsatz kommen.
+Wie in den vergangenen Kapiteln schon erläutert sind die Haupttechnologien das Framework \textit{Angular} sowie die 3D Bibliothek \textit{Three.js}, welche WebGL zum Einsatz bringt. Angular Anwendungen werden grundsätzlich mit \textit{Node.js} installiert. Dadurch ist es uns später möglich verschiedene npm-Module wie Three.js oder auch Bootstrap zu installieren. Selbst die \textit{Angular CLI} wird damit installiert. Zusätzlich nutzt Angular \textit{Webpack}, um den Quellcode zu bündeln. Dabei werden die scss-Dateien in eine css-Datei komprimiert. Sass in Verbindung mit \textit{Webpack} ist nicht nur in für Angular-Projekte ein beliebtes Tool zum entwickeln von Webseiten und Webanwendungen. Auch eine Versionierung des Quellcodes kommt zum Einsatz. Mit \textit{Git} ist der Quellcode immer gesichert und man kann nach dem Testen einer bestimmten Funktion immer wieder zum letzten Push zurückkehren. Bei einem Bachlor-Projekt kann man zwar nicht den Vorteil der Teamentwicklung mit \textit{Git} nutzen, jedoch kann man damit sehrwohl seinen Quellcode versionieren und sichern, was bei einem Bachlorprojekt durchaus sinnvoll erscheint.\footnote{Der komplette Quellcode des Projekts sowie die Dokumentation finden Sie unter https://github.com/luk9like/gc-app} 
+\paragraph{Entwicklungswerkzeuge} Als Text-Editor wird \textit{PhpStorm} verwendet. Dadurch ist eine flexible Programmierung an unterschiedlichen Systemen möglich, da der Editor für Windows, MacOS als auch für Linux verfügbar ist. Er bietet eine praktische Integration von Git und kann dazu noch sehr gut mit Angular-Anwendungen arbeiten. Auch Angular CLI Befehle können teilweise direkt in dem Editor ausgeführt werden und \textit{PhpStorm} verfügt über eine logische Code-Verfolständigung. Nicht zu vergessen die optimale Quellcode-Formatierung für jeden Dateityp und die Kompatiblität mit \textit{TSlint}\footnote{\textbf{TSLint} ist ein erweiterbares statisches Analysewerkzeug, das TypeScript- Code auf Lesbarkeit, Wartbarkeit und Funktionsfehler überprüft . Es wird weitgehend von modernen Editoren und Build-Systemen unterstützt und kann mit Ihren eigenen Fusselregeln, Konfigurationen und Formatierungselementen angepasst werden (vergleiche \textit{https://www.npmjs.com/package/tslint}).} \textit{PhpStorm} verfügt zwar über ein integriertes Terminal, jedoch ist das meist sehr unpraktisch, da es nur unnötig Platz in der Anwendung wegnimmt. Deswegen werden Kommandozeilen einem zusätzlichen Terminal ausgeführt. Gerade am Anfang des Projekts wird die Angular CLI viel zum Einsatz kommen.
 %
 \section{Anlegen des Angular-Projekts}
 \label{sec:umsetzung}
@@ -24,7 +24,7 @@ Bevor die Angular-Anwendung nach und nach aufgebaut werden kann, muss Angular er
 \section{Module des Konfigurators}
 \label{sec:umsetzung}
 %
-Im folgenden Kapitel wird betrachtet aus welchen Module die Angular Anwendung aufgebaut ist. Anschließend werden die Module angelegt. Es geht hier nur um das Anlegen der Module, noch nicht um die Funktionalität der einzelnen Module. Die Abbildung zeigt eine Übersicht aller Module, welche in der Webanwendung implementiert sind\footnote{Hierbei ist zu beachten, dass die Abbildung auf die wesentlichen Module beschränkt ist, da es sonst zu unübersichtlich werden würde. Eine vollständige Übersicht der Module befindet sich im Anhang.}.
+Im folgenden Abschnitt wird betrachtet aus welchen Module die Angular Anwendung aufgebaut ist. Anschließend werden die Module angelegt. Es geht hier nur um das Anlegen der Module, noch nicht um die Funktionalität der einzelnen Module. Die Abbildung zeigt eine Übersicht aller Module, welche in der Webanwendung implementiert sind. Hierbei ist zu beachten, dass die Abbildung auf wesentlichen Module beschränkt ist, da es sonst zu unübersichtlich werden würde. Eine vollständige Übersicht der Module befindet sich im Anhang.
 \begin{figure}[h]
 	\centering
 	{\epsfig{file = umsetzung/images/module.png, width=13.0cm}}
@@ -33,7 +33,7 @@ Im folgenden Kapitel wird betrachtet aus welchen Module die Angular Anwendung au
 \end{figure}
 Die einzelnen Bausteine der Angular-Anwendung werden im Rahmen dieses Bachlorprojektes immer über die Angular CLI generiert, da das am einfachsten funktioniert und zeitsparend ist. Ein Modul kann mit folgendem Command Line Befehl generiert werden:
 %
-\begin{lstlisting}
+\begin{lstlisting}[caption={Erstellen eines Modules mittels Angular CLI},label=lst:genmodule]
 ng g m shared
 \end{lstlisting}
 %
@@ -55,17 +55,17 @@ Die \textit{SceneComponent} ist dafür da die komplette 3D-Szene zu erzeugen und
 %
 In PhpStorm kann man über \lstinline{File > New > Angular Schematics} innerhalb des Editors die Angular CLI verwenden. Wie im ersten Bild zu sehen, lassen sich so alle Bausteine von Angular anlegen. In diesem Fall wird eine Komponente angelegt. Nach der Auswahl wird man nun aufgefordert den Komponenten-Namen sowie optionale Parameter mit anzugeben. Das praktische ist, das PhpStorm alle verfügbaren Parameter vorschlägt und man nicht etwa in der Documentation nachschauen müsste, welchen Parameter man braucht und vermeidet Tippfehler. Nach bestätigen der Eingabe werden nun wie in Bild c) zu sehen alle erforderlichen Dateien der Komponente generiert. Zusätzlich werden im Hintergrund eventuelle Import-Anweisungen sowie Export- Anweisungen und so weiter automatisch ergänzt. In unserem Fall wurden auch die Testdatei erzeugt, welche wir uns im nächsten Kapitel genauer anschauen wollen. Die anderen drei Dateien sind wie wir wissen für Logik, Styles und Templating zuständig. Analog zu dem Erstellen der Komponente in PhpStorm funktioniert das ganze auch in einem Terminal:
 %
-\begin{lstlisting}
+\begin{lstlisting}[caption={Generieren einer Szene mit Angular CLI},label=lst:genscene]
 ng g c scene/scene -m=scene
 \end{lstlisting}
 %
-Sobald die Komponente angelegt ist, hat sich eigentliche keine Funktionalität. Das wird erst später mit der Logik und den Services implementiert. Für den Anfang reicht es, hier schonmal das \texttt{canvas}-Element anzulegen und ein paar Styles in der \texttt{scss}-Datei der Komponente anzulegen. Wer sich mit \texttt{scss} bzw. \texttt{sass} auskennt, kann hier die Schreibweise nutzen. Man kann aber auch normales \texttt{css} schreiben. Damit ist die \textit{SceneComponent} im Grunde schon fertig.
+Sobald die Komponente angelegt ist, hat sich eigentliche keine Funktionalität. Das wird erst später mit der Logik und den Services implementiert. Für den Anfang reicht es, hier schonmal das \texttt{<canvas>}-Element anzulegen und ein paar Styles in der \texttt{scss}-Datei der Komponente anzulegen. Wer sich mit \texttt{scss} bzw. \texttt{sass} auskennt, kann hier die Schreibweise nutzen. Man kann aber auch normales \texttt{css} schreiben. Damit ist die \textit{SceneComponent} im Grunde schon fertig.
 \paragraph{Kindskomponente}
 Genauso wie die \textit{SceneComponent} wurde auch die \textit{SidebarComponent} angelegt. Sie stellt die komplette Sidebar im rechten Bereich dar, also das Konfigurationsmenü und die Übersicht. Diese Komponente ist etwas komplexer und hat noch ein paar Kindskomponenten. Die Sidebar ist mit der Bootstrap-Komponente \textit{Tabs}\footnote{https://getbootstrap.com/docs/4.0/components/navs/\#tabs} umgesetzt. Wir haben also im Menu zwei Tabs, Konfigurator und Übersicht. Diese Tabs sind als eigene Komponente in \textit{SharedModule} implementiert und können in unserer SidebarCompontent also Kindskomponente verwendet werden. Es ist sozusagen ein eigener Typ für \textit{Tabs} definiert. Die Umsetzung der Tab-Komponente wird nun genauer beleuchtet.\\
 
 Die Tabs von Bootstrap sind in einem \texttt{<ul>}-Element implementiert, welcher sozusagen den Container darstellt. Die einzelnen Tabs sind dann \texttt{<li>}-Elemente und werden durch die Liste gebündelt. Am Ende entsteht folgendes Template für die Tabs-Komponente:
 %
-\begin{lstlisting}
+\begin{lstlisting}[caption={Ausschnitt der Tabs-Klasse},label=lst:tabsclass]
 <ul class="nav nav-tabs nav-fill">
 	<li class="nav-item" *ngFor="let tab of tabs" (click)="selectTab(tab)">
 		<a [class.active]="tab.active" class="nav-link nav-title" href="#">{{tab.title}}</a>
@@ -74,9 +74,9 @@ Die Tabs von Bootstrap sind in einem \texttt{<ul>}-Element implementiert, welche
 <ng-content></ng-content>
 \end{lstlisting}
 %
-Die \texttt{<ul>}-Liste hat ein paar vordefinierte Bootstrap-Klassen, auf die hier nicht weiter eingegangen wird. Sobald ein Tab aktiv ist, soll der dazugehörige Inhalt angezeigt werden. Wie im Quellcode zu sehen gibt es nur ein \texttt{<li>}-Tag, was nicht heißt, das es nur einen Tab gibt. Die Komponente sollte eine beliebige Anzahl an Tabs haben können. Das ist in diesem Fall dynamisch realisiert. Mit der Direktive \texttt{*ngFor} wird geprüft, wie viele Tabs im Template erstellt wurden und gibt diese dann mithilfe der for-Schleife aus. Damit wird allerdings noch nicht der Inhalt des aktiven Tab angezeigt. Dazu wird noch die \texttt{selectTab()}-Funktion benötigt. Bei \texttt{onClick} wird diese ausgeführt und teilt der Komponente mit, welcher Tab aktiv ist. Anschließend wird der Content durch \texttt{<ng-content>} ausgegeben. Um nun die Tabs als Komponente zu verwenden brauchen wird noch ein Tab-Komponente. Die Tabs-Komponente definiert, wie die Navigation insgesamt aufgebaut ist und die Tab-Komponente beschreibt, wie die einzelnen Tabs aufgebaut sind. Im Grunde werden hier nur die Inhalte des Tabs in einem div ausgegben. Wie oben im Quellcode zu sehen greifen wir auf die Variable \texttt{tab.active} und \texttt{tab.title} zu. Diese sind in Tab definiert. In unserer Sidebar würde die Tabs folgendermaßen verwendet:
+Die \texttt{<ul>}-Liste hat ein paar vordefinierte Bootstrap-Klassen, auf die hier nicht weiter eingegangen wird. Sobald ein Tab aktiv ist, soll der dazugehörige Inhalt angezeigt werden. Wie im Quellcode zu sehen gibt es nur ein \texttt{<li>}-Tag, was nicht heißt, das es nur einen Tab gibt. Die Komponente sollte eine beliebige Anzahl an Tabs haben können. Das ist in diesem Fall dynamisch realisiert. Mit der strukturellen Direktive \texttt{*ngFor} wird geprüft, wie viele Tabs im Template erstellt wurden und gibt diese dann mithilfe der for-Schleife aus. Damit wird allerdings noch nicht der Inhalt des aktiven Tab angezeigt. Dazu wird noch die \texttt{selectTab()}-Funktion benötigt. Bei \texttt{onClick} wird diese ausgeführt und teilt der Komponente mit, welcher Tab aktiv ist. Anschließend wird der Content durch \texttt{<ng-content>} ausgegeben. Um nun die Tabs als Komponente zu verwenden brauchen wird noch ein Tab-Komponente. Die Tabs-Komponente definiert, wie die Navigation insgesamt aufgebaut ist und die Tab-Komponente beschreibt, wie die einzelnen Tabs aufgebaut sind. Im Grunde werden hier nur die Inhalte des Tabs in einem div ausgegben. Wie oben im Quellcode zu sehen greifen wir auf die Variable \texttt{tab.active} und \texttt{tab.title} zu. Diese sind in Tab definiert. In unserer Sidebar würde die Tabs folgendermaßen verwendet:
 %
-\begin{lstlisting}
+\begin{lstlisting}[caption={Umsetzung der Tab-Navigation},label=lst:tab-navigation]
 <gc-tabs>
 	<gc-tab [tabTitle]="'Konfigurator'">
 		Content 1
@@ -101,11 +101,22 @@ Zusätzlch hat die SidebarComponent auch noch eigene nicht geteilte Kindskompont
 \section{3D Szene mit Model}
 \label{sec:umsetzung}
 %
-\paragraph{Szene erstellen}Die \textit{SceneComponent} wurde schon angelegt. Nun muss noch die Funktionalität programmiert werden. In unserem Template ist alles was wir brauchen ein \texttt{<canvas>}-Element, \textbf{(ElementRef als Service erwähnen) }in dem dann später die ganze 3D Szene dargestellt wird. Zum Erstellen der 3D Szene und dem Laden der 3D-Models wird ein Service verwendet. Dieser Angular Baustein kann auch über die CLI angelegt werden. Der Service hat nun eine \texttt{createScene()} Funktion, die eine Scene mit Belichtung und Kamera erzeugt. Ihr wird als Parameter das \texttt{<canvas>}-Element übergeben. Für den Konfigurator wurden verschiedene Belichtungen verwendet, die ein optimales Licht erzeugen. Dabei handelt es sich um ein \textit{AmbientLight}, \textit{KeyLight}, \textit{FillLight} und \textit{BackLight}. Die Kamera hat verschiedene Werte zugewiesen bekommen, damit sie in der richtigen Perspektive den Becher später darstellt.
+\paragraph{Szene erstellen}Die \textit{SceneComponent} wurde schon angelegt. Nun muss noch die Funktionalität programmiert werden. In unserem Template ist alles was wir brauchen ein \texttt{<canvas>}-Element, in dem dann später die ganze 3D Szene dargestellt wird. Das erstellte \texttt{<canvas>}-Element ist ein einfaches DOM-Element im Template der \textit{SceneComponent}. Zum Erstellen der 3D Szene und dem Laden der 3D-Models wird ein Service verwendet. Dieser Angular Baustein kann auch über die CLI angelegt werden. Der Service hat nun eine \texttt{createScene()} Funktion, die eine Scene mit Belichtung und Kamera erzeugt. Ihr wird als Parameter das \texttt{<canvas>}-Element aus der getter-Methode von \textit{SceneComponent} übergeben. 
+%
+\begin{lstlisting}[caption={Erstellung eines ElementRef für Canvas},label=lst:elementref]
+(a)ViewChild('canvas')
+private canvasRef: ElementRef;
+
+private get canvas(): HTMLCanvasElement {
+	return this.canvasRef.nativeElement;
+}
+\end{lstlisting}
+%
+Mithilfe des \texttt{@ViewChild}-Dekorators können wir eine Referenz eines DOM-Elements erzeugen. Dazu muss \texttt{ElementRef} aus dem \textit{core}-Module importiert werden.  Dadurch ist es uns nun möglich der \textit{createScene()}-Funktion mitzuteilen, in welchem DOM-Element die Szene aufgebaut werden soll. Für den Konfigurator wurden verschiedene Belichtungen verwendet, die ein optimales Licht erzeugen. Dabei handelt es sich um ein \textit{AmbientLight}, \textit{KeyLight}, \textit{FillLight} und \textit{BackLight}. Die Kamera hat verschiedene Werte zugewiesen bekommen, damit sie in der richtigen Perspektive den Becher später darstellt.
 %
 \paragraph{Model laden} Nun fehlt es noch an Leben in der Szene. Als 3D Model werden testweise Becher verwendet, die in etwa den späteren Mehrwegbechern entsprechen. Die 3D Models sind einfach \texttt{.obj}-Dateien, die aus 3D Programmen exportiert werden können. Mithilfe des \textit{OBJ-Loaders} kann man nun die Datei in die Szene laden. Jedoch stößt man da schnell auf das Problem, das die Loader nicht standardmäßig implementiert sind. Abhilfe schafft hier das \textit{npm}-Module \textit{full-three}\footnote{https://www.npmjs.com/package/three-full}. Es beeinhaltet die komplette Three.js Bibliothek mit allen Beispielen und Loadern. Nachdem also die Szene mit Kamera und Belichtung steht, wird die \texttt{.obj}-Datei geladen.
 %
-\begin{lstlisting}
+\begin{lstlisting}[caption={Laden des Models mit dem OBJLoader},label=lst:objloader]
 const loader = new THREE.OBJLoader();
 loader.load('assets/model/test.obj', this.onModelLoadingCompleted);
 \end{lstlisting}
@@ -118,9 +129,9 @@ In der Funktion \texttt{onModelLoadingCompleted} wird dann der Renderer ausgefü
 	\label{fig:3dmodel}
 \end{figure}
 \paragraph{Auswahl der Größe}
-Unter dem Menüpunkt \textit{\glqq Größe\grqq} soll der Benutzer eine der vier Größen wählen. Standardmäßig ist von Beginn an der 0,2 Liter Becher gewählt und ist von Angfang an sichtbar. Wie genau der DataService funktioniert, wird später noch einmal genauer beleuchtet. Zunächst werden in der \texttt{<gc-size>}-Komponente die verschiedenen Auswahlmöglichkeiten dargestellt. Mit der \texttt{onClick}-Funktion \texttt{reloadModel()} wird dem \textit{SceneService} mitgeteilt, das der Benutzer eine Bechergröße gewählt hat. 
+Unter dem Menüpunkt \textit{\glqq Größe\grqq} soll der Benutzer eine der vier Größen wählen. Standardmäßig ist von Beginn an der 0,2 Liter Becher gewählt und ist von Angfang an sichtbar. Wie genau der DataService funktioniert, wird später noch einmal genauer beleuchtet. Zunächst werden in der \texttt{<gc-size>}-Komponente die verschiedenen Auswahlmöglichkeiten dargestellt. Mit der Funktion \texttt{reloadModel()} wird dem \textit{SceneService} mitgeteilt, das der Benutzer eine Bechergröße gewählt hat. Dabei kommt wieder ein \texttt{@HostListener} zum Einsatz. In diesem Fall wird dieser mit dem \texttt{(click)}-Ereignis gebunden und führt dann die Funktion aus.
 %
-\begin{lstlisting}
+\begin{lstlisting}[caption={Ausschnitt der reloadModel()-Funktion},label=lst:reloadmodel]
 this.scene.remove(currentModel);
 
 const loader = new THREE.OBJLoader();
@@ -134,16 +145,16 @@ this.render();
 In der Funktion wird als erstes das aktuelle Model entfernt. Danach wird geprüft, welche Größe der User ausgewählt hat und dementsprechend wird das neue Model geladen. Anschließend muss die Szene neu gerendert werden. 
 \paragraph{Controlling}
 Der Becher soll in 3D angezeigt werden und soll rotiert werden können. In Three.js wird dafür \textit{OrbitControl} verwendet. Diese Klasse liefert verschiedene Werte mit, die verschiedene Einstellungen ermöglichen. Beispielsweise kann man die Rotationsgeschwindigkeit einstellen. Wenn man den Becher im Extremwinkel betrachtet oder zu weit hineinzoomt, kann der Becher bzw. dessen Texture unscharf aussehen oder nicht realistisch dargestellt sein. Deshalb wird über die Controls auch ein maximaler Zoom und ein maximaler Betrachtungswinkel festgesetzt.
-\paragraph{Responsive} Die Ansicht sollte auf allen Displaygrößen darstellbar sein. Dafür sorgt der \texttt{@HostListener}. Dieser macht nichts anderes als die Fenstergröße zu überprüfen und das \texttt{<canvas>}-Element anschließend an den Container anzupassen. Falls sich die Fenstergröße ändert, wird der Szene über die Funktion \texttt{getAspectRatio()} die aktuelle Größe übermittelt. Dann wird die Szene aktualisiert und neu gerendert. Damit ist verhindert, das zum Beispiel auf kleineren Geräten der Becher abgeschnitten dargestellt wird oder ähnliches.
+\paragraph{Responsive} Die Ansicht sollte auf allen Displaygrößen darstellbar sein. Dafür sorgt wieder ein \texttt{@HostListener}. Dieser macht nichts anderes als die Fenstergröße zu überprüfen und das \texttt{<canvas>}-Element anschließend an den Container anzupassen. Anders als die vorherigen \texttt{@Hostlistener} überprüft dieser das Fenster(\textit{windows}) und nicht die Komponente. Falls sich die Fenstergröße ändert, wird der Szene über die Funktion \texttt{getAspectRatio()} die aktuelle Größe übermittelt. Dann wird die Szene aktualisiert und neu gerendert. Damit ist verhindert, das zum Beispiel auf kleineren Geräten der Becher abgeschnitten dargestellt wird oder ähnliches.
 %
 \section{Design Rendering}
 \label{sec:umsetzung}
 %
-Jetzt geht es um das Hauptproblem der Arbeit: Auf dem Becher muss das Design des Kunden gerendert werden. Zunächst wird zum Testen ein Design erstellt, so wie es der Kunde hochladen würde. Nach verschiedenen Test, das Design direkt auf den Becher als Textur zu rendern wurde eine besser Lösung gefunden. 
+Jetzt geht es um das Hauptproblem der Arbeit: Auf dem Becher muss das Design des Kunden gerendert werden. Zunächst wird zum Testen ein Design erstellt, so wie es der Kunde hochladen würde. Nach verschiedenen Tests, das Design direkt auf die Außenseite des Bechers als Textur zu rendern, wurde eine besser Lösung gefunden. 
 \paragraph{3D Zylinder}
 Die Bibliothek Three.js kann Geometrien erzeugen. Das heißt, man muss kein 3D Model aus einer Datei laden, sondern kann im Code eine geometrische Form erzeugen. Genau das wird für das Design des Bechers genutzt. Der Becher hat die Form eines Zylinders. Innerhalb der \texttt{onModelLoadingCompleted}-Funktion wird nun eine \textit{CylinderBufferGeometry}\footnote{https://threejs.org/docs/\#api/en/geometries/CylinderBufferGeometry} erstellt. Im Grunde umhüllt das Design den Becher wie ein Aufkleber.
 %
-\begin{lstlisting}
+\begin{lstlisting}[caption={Erstellung der Zylinder-Geometrie mittels Three.js},label=lst:cylinderbuffergeometry]
 const geometry = new THREE.CylinderBufferGeometry(<radiusOben>, <radiusUnten, <height>, <radialSegmente>, <heightSegmente>, <offenesEnde>, <lenght>);
 \end{lstlisting}
 %
@@ -162,9 +173,9 @@ Da der Upload des Designs noch bis hierhin noch nicht implementiert ist, wird mi
 %
 Auf Tablets (in der Portraitansicht) ist es praktisch das Menü unterhalb der 3D Ansicht darzustellen. Das lässt sich ganz einfach mit den Column-Klassen von Bootstrap realisieren. Interessanter wird die Darstellung auf Smartphones.\\
 Das Off-Canvas Menu ist vom Design nicht anders als die Desktop-Variante. Es wird lediglich verschoben. Das bedeutet, wenn ein Benutzer auf dem Smartphone den Konfigurator öffnet, sieht er zunächst nur den 3D Becher. Er kann dann das Off-Canvas-Menu über ein Hamburger-Menu-Button öffnen. Das ganze ist mit einer JavaScript Funktion realisiert, die einfach das Menü aus dem sichtbaren Bereich verschiebt und sie erst dann sichtbar werden lässt, wenn der Hamburger-Menu-Button gedrückt wird. Über \texttt{css} werden die SceneComponent sowie die SidebarComponent noch so angepasst, dass sie immer 100\% des Displays einnehmen. Außerdem werden die Schriftgrößen etwas größer gemacht.
-Der Hamburger-Button ist ausschließlich auf Smartphones sichtbar. Wenn dieser geklickt wird, greift die Funktion \texttt{showsidebar()} bzw. \texttt{hideSidebar()}.
+Der Hamburger-Button ist ausschließlich auf Smartphones sichtbar. Wenn dieser geklickt wird, greift die Funktion \texttt{showSidebar()} bzw. \texttt{hideSidebar()}.
 %
-\begin{lstlisting}
+\begin{lstlisting}[caption={Ausschnitt der ShowSidebar()-Funktion},label=lst:showsidebar]
 document.getElementById("mySidenav").style.width = 100%;
 \end{lstlisting}
 %
@@ -189,7 +200,7 @@ Der DataService hat eine Aufgabe: Alle Daten des konfigurierten Bechers zu speic
 \end{description}
 %
 Die Eigenschaften \textit{designName}, \textit{count}, \textit{size}, \textit{stroke} und \textit{price} werden in der Tabelle \textit{OverviewComponent} als Bindung angezeigt. Somit ist immer die aktuelle Auswahl des Benutzers in der Tabelle. \\
-Der \textit{DataService} ist somit ein Speicherort aller Informationen über den ausgewählten Becher und das verwendete Design. Es ist durchaus denkbar den Service später zu erweitern. Man könnte die Informationen auf einem Server sichern, sodass der User zu späteren Zeiten auf seine Konfiguration zurückgreifen kann. Angular bitet dafür eine einfache Realisierung über das \textit{HttpClientModule}.
+Der \textit{DataService} ist somit ein Speicherort aller Informationen über den ausgewählten Becher und das verwendete Design. Es ist durchaus denkbar den Service später zu erweitern. Man könnte die Informationen auf einem Server sichern, sodass der User zu späteren Zeiten auf seine Konfiguration zurückgreifen kann. Angular bietet dafür eine einfache Realisierung über das \textit{HttpClientModule}.
 
 Auch der \textit{SceneService} nutzt den \textit{DataService}. Zunächst bekommt der \textit{SceneService}, wie schon erwähnt, die Information, welche Größe gewählt wurde. Je nach dem welchen Wert \textit{size} dann hat, ändert sich das 3D-Model. Ähnlich verhält es sich mit dem Design, was als Textur auf dem Becher angezeigt werden soll. Im nächsten Abschnitt wird genauer beschrieben, wie ein Design hochgeladen werden kann, und welche Rolle der \textit{DataService} dort spielt.
 %
@@ -215,13 +226,13 @@ Eine bekannte Methode um Dateien hochzuladen ist die Drag \& Drop Methode. Man m
 
 In der \textit{UploadComponent} sind beide Upload-Vorgänge mit der Direktiven umgesetzt. In Diesen sind Dekoratoren implementiert, welche die eben erwähnten  Ereignisse über \texttt{@Hostlistener} binden. Für den Upload-Vorgang in diesem Konfigurator wird ein benutzerdefiniertes Ereignis benötigt. Um das zu erstellen verwendet man das \texttt{EventEmiter}-Objekt.
 %
-\begin{lstlisting}
+\begin{lstlisting}[caption={Umsetzung des Event-Emiter-Objekts},label=lst:eventemiter]
 private filesChangeEmiter: EventEmitter<File> = new EventEmitter();
 \end{lstlisting}
 %
 Zusätzlich muss der Typ der Objekte explizit festgelegt werden. In diesem Fall wird ein \texttt{File}(einfache Datei) emittiert, jedes Mal, wenn der Benutzer eine Datei ausgewählt hat. Da der User nur ein Bild hochladen darf, ist dies nicht als Array implementiert. Nun können wir den \textit{EventEmiter} in \textit{@HostListener} verwenden. Es muss aber noch das Ereignis mit der übergeordneten HTML-Komponente gebunden werden. Dazu benötigt man den \textit{@Output} Dekorator für den \textit{EventEmiter}. Auf diese Weise ist es möglich zu überprüfen, ob sich die ausgewählte Datei geändert hat.
 %
-\begin{lstlisting}
+\begin{lstlisting}[caption={Drop-Zone Element mit der EventEmiter-Funktion},label=lst:dropzone]
 <div gcDragDrop (filesChangeEmiter)="onFilesChange($event)">
 \end{lstlisting}
 %
@@ -229,7 +240,7 @@ Wie man im Beispiel sieht, wird jedes Mal, wenn eine Datei in die Drop-Zone gesc
 
 In der \textit{UploadCompontent} und auch an anderen Stellen der Anwendung soll der Dateiname und die Größe der Datei ausgegeben werden. Es ist nun möglich aus der übergebenen Datei beides auszulesen und in dem \textit{DataService} zu speichern. Nun muss noch die \texttt{reloadTexture()}-Funktion ausgeführt werden und die Datei übergeben werden. In Three.js werden Texturen mit dem TextureLoader geladen bzw. gemappt. Anschließend kann man sie zur Szene hinzufügen. Allerdings kann der Loader nur URLs oder Base64-Objekte entgegen nehmen. Auf den Pfad des Bildes können wir aus Sicherheitsgründen nicht zugreifen. Deshalb muss das File-Objekt in ein Base64-Objekt konvertiert werden, bevor man die Textur laden kann. Das konvertierte Objekt wird dann in \texttt{selectedImage} im \textit{DataService} gespeichert.
 %
-\begin{lstlisting}
+\begin{lstlisting}[caption={Base64 Methode},label=lst:base64]
 this.getBase64(file).then(
 	data => this.DataServ.selectedImage = data
 );

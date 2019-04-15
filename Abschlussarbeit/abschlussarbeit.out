@@ -36,20 +36,22 @@
 \BOOKMARK [1][-]{section.4.1}{Funktionale Anforderungen}{chapter.4}% 36
 \BOOKMARK [1][-]{section.4.2}{Nicht Funktionale Anforderungen}{chapter.4}% 37
 \BOOKMARK [1][-]{section.4.3}{Konzeption}{chapter.4}% 38
-\BOOKMARK [0][-]{chapter.5}{Umsetzung \046 Imlementierung}{}% 39
-\BOOKMARK [1][-]{section.5.1}{Entwicklungsumgebung}{chapter.5}% 40
-\BOOKMARK [1][-]{section.5.2}{Anlegen des Angular-Projekts}{chapter.5}% 41
-\BOOKMARK [1][-]{section.5.3}{Module des Konfigurators}{chapter.5}% 42
-\BOOKMARK [1][-]{section.5.4}{Komponenten des Konfigurators}{chapter.5}% 43
-\BOOKMARK [1][-]{section.5.5}{3D Szene mit Model}{chapter.5}% 44
-\BOOKMARK [1][-]{section.5.6}{Design Rendering}{chapter.5}% 45
-\BOOKMARK [1][-]{section.5.7}{Mobile Umsetzung}{chapter.5}% 46
-\BOOKMARK [1][-]{section.5.8}{Daten-Service}{chapter.5}% 47
-\BOOKMARK [1][-]{section.5.9}{Upload-Vorgang}{chapter.5}% 48
-\BOOKMARK [0][-]{chapter.6}{Testphase \046 Ergebnisse}{}% 49
-\BOOKMARK [1][-]{section.6.1}{Testumgebung}{chapter.6}% 50
-\BOOKMARK [1][-]{section.6.2}{Ergebnisse}{chapter.6}% 51
-\BOOKMARK [0][-]{chapter.7}{Zusammenfassung}{}% 52
-\BOOKMARK [0][-]{appendix.A}{Lorem Ipsum}{}% 53
-\BOOKMARK [0][-]{appendix*.79}{Glossar}{}% 54
-\BOOKMARK [0][-]{appendix*.80}{Literaturverzeichnis}{}% 55
+\BOOKMARK [2][-]{subsection.4.3.1}{Ablauf einer Konfiguration}{section.4.3}% 39
+\BOOKMARK [2][-]{subsection.4.3.2}{Benutzeroberfl\344che}{section.4.3}% 40
+\BOOKMARK [0][-]{chapter.5}{Umsetzung \046 Imlementierung}{}% 41
+\BOOKMARK [1][-]{section.5.1}{Entwicklungsumgebung}{chapter.5}% 42
+\BOOKMARK [1][-]{section.5.2}{Anlegen des Angular-Projekts}{chapter.5}% 43
+\BOOKMARK [1][-]{section.5.3}{Module des Konfigurators}{chapter.5}% 44
+\BOOKMARK [1][-]{section.5.4}{Komponenten des Konfigurators}{chapter.5}% 45
+\BOOKMARK [1][-]{section.5.5}{3D Szene mit Model}{chapter.5}% 46
+\BOOKMARK [1][-]{section.5.6}{Design Rendering}{chapter.5}% 47
+\BOOKMARK [1][-]{section.5.7}{Mobile Umsetzung}{chapter.5}% 48
+\BOOKMARK [1][-]{section.5.8}{Daten-Service}{chapter.5}% 49
+\BOOKMARK [1][-]{section.5.9}{Upload-Vorgang}{chapter.5}% 50
+\BOOKMARK [0][-]{chapter.6}{Testphase \046 Ergebnisse}{}% 51
+\BOOKMARK [1][-]{section.6.1}{Testumgebung}{chapter.6}% 52
+\BOOKMARK [1][-]{section.6.2}{Ergebnisse}{chapter.6}% 53
+\BOOKMARK [0][-]{chapter.7}{Zusammenfassung}{}% 54
+\BOOKMARK [0][-]{appendix.A}{Lorem Ipsum}{}% 55
+\BOOKMARK [0][-]{appendix*.79}{Glossar}{}% 56
+\BOOKMARK [0][-]{appendix*.80}{Literaturverzeichnis}{}% 57
