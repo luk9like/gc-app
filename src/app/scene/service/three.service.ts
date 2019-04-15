@@ -27,7 +27,7 @@ export class ThreeService {
   public cylinderHeight = {'small': .885, 'medium': .885, 'normal': 1.05, 'large': 1.33};
   public radialSegments = 21;
   public heightSegments = 22;
-  public thetaLength: Number = 2 * 3.1415926535898;
+  public thetaLength: Number = 2 * Math.PI;
 
   public cylinder: number[][] = [
       [.345, .235, .885, 21, 22],
@@ -59,12 +59,7 @@ export class ThreeService {
 
   private onModelLoadingCompleted(object) {
 
-    const loader = new THREE.TextureLoader();
-    const material = new THREE.MeshBasicMaterial();
-    const texture = 'assets/texture/texture.jpg';
 
-    // material.specular = 1;
-    material.map = loader.load(texture);
 
     /*object.traverse( function ( child ) {
       if ( child instanceof THREE.Mesh ) {
@@ -77,30 +72,7 @@ export class ThreeService {
 
     this.scene.add(object);
     this.prevModel = object;
-
-    var cupSize = '' + this.dataServ.model;
-    const geometry = new THREE.CylinderBufferGeometry(
-        this.radiusTop[cupSize],
-        this.radiusBottom[cupSize],
-        this.cylinderHeight[cupSize],
-        this.radialSegments,
-        this.heightSegments,
-        true,
-        0,
-        this.thetaLength);
-
-    // var texture = THREE.TextureLoader('/assets/textures/large.jpg');
-
-    // var material.transparent = true;
-    const cylinder = new THREE.Mesh( geometry, material );
-    if (material.map) {
-      if ( this.dataServ.model === 'normal' ) {cylinder.position.y = .09; }
-      if ( this.dataServ.model === 'large' ) {cylinder.position.y = .22; }
-      this.scene.add( cylinder );
-    }
-
     this.render();
-    console.log('Texture load complete.');
   }
 
   private createCamera() {
@@ -210,6 +182,41 @@ export class ThreeService {
     const file = 'assets/model/' + model + '.obj';
     loader.load(file, this.onModelLoadingCompleted);
 }
+
+    public reloadTexture(image) {
+      const loader = new THREE.TextureLoader();
+      const material = new THREE.MeshBasicMaterial();
+      const texture = image;
+      console.log('Die hochgeladene DAtei ist: ' + image);
+
+      // material.specular = 1;
+      material.map = loader.load(image);
+      var cupSize = '' + this.dataServ.model;
+
+      const geometry = new THREE.CylinderBufferGeometry(
+        this.radiusTop[cupSize],
+        this.radiusBottom[cupSize],
+        this.cylinderHeight[cupSize],
+        this.radialSegments,
+        this.heightSegments,
+        true,
+        0,
+        this.thetaLength);
+
+      // var texture = THREE.TextureLoader('/assets/textures/large.jpg');
+
+      // var material.transparent = true;
+      const cylinder = new THREE.Mesh( geometry, material );
+      if (material.map) {
+        if ( this.dataServ.model === 'normal' ) {cylinder.position.y = .09; }
+        if ( this.dataServ.model === 'large' ) {cylinder.position.y = .22; }
+        this.scene.add( cylinder );
+      }
+
+      this.render();
+      console.log('Texture load complete.');
+
+    }
 
   /* EVENTS */
 

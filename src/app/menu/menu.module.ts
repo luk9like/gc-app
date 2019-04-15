@@ -8,9 +8,10 @@ import { SharedModule } from '../shared/shared.module';
 import { FileComponent } from './file/file.component';
 import {FileDropDirective, FileSelectDirective} from 'ng2-file-upload';
 import {RouterModule} from '@angular/router';
+import { DragDropDirective } from './file/DragDrop/drag-drop.directive';
 
 @NgModule({
-  declarations: [OverviewComponent, SizeComponent, UploadComponent, SidebarComponent, FileComponent, FileSelectDirective, FileDropDirective],
+  declarations: [OverviewComponent, SizeComponent, UploadComponent, SidebarComponent, FileComponent, FileSelectDirective, FileDropDirective, DragDropDirective],
   imports: [
     CommonModule,
     SharedModule,
