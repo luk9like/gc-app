@@ -10,30 +10,14 @@ const URL = 'https://evening-anchorage-3159.herokuapp.com/api/';
   styleUrls: ['./file.component.scss'],
 })
 export class FileComponent {
-  private allowed_ext: Array<string> = ['image/png'];
-  localUrl: any[];
-  private fileList: Array<File> = [];
 
   constructor(public three: ThreeService, public DataServ: DataService) {}
 
   onFilesChange(fileList: Array<File>) {
     this.DataServ.state = true;
-    this.fileList = fileList;
-    console.log(fileList[0]);
     this.DataServ.designName = fileList[0].name;
     this.DataServ.designSize = '' + fileList[0].size;
-    this.getBase64(fileList[0]).then(
-      data => this.DataServ.selectedImage = data
-    );
+    this.DataServ.selectedImage = window.URL.createObjectURL(fileList[0]);
   }
-
-  getBase64(file) {
-    return new Promise((resolve, reject) => {
-      const reader = new FileReader();
-      reader.readAsDataURL(file);
-      reader.onload = () => resolve(reader.result);
-      reader.onerror = error => reject(error);
-    });
-}
 
 }

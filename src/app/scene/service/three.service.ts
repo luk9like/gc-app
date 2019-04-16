@@ -175,6 +175,7 @@ export class ThreeService {
       this.scene.remove(currentTexture);
 
       const loader = new THREE.TextureLoader();
+      if ( image === undefined ) { console.log( 'Texture is not valid!' ); }
       loader.load(image, (texture) => {
         const material = new THREE.MeshBasicMaterial({
           map: texture,
@@ -203,6 +204,8 @@ export class ThreeService {
             cylinder.position.y = .22;
           }
           this.scene.add(cylinder);
+        } else {
+          console.log( 'Texture can not be mapped!' );
         }
 
         this.render();
