@@ -196,6 +196,7 @@ export class ThreeService {
       const material = new THREE.MeshBasicMaterial();
 
       material.map = loader.load(image);
+      material.flipY = false;
       const cupSize = '' + this.dataServ.model;
 
       const geometry = new THREE.CylinderBufferGeometry(
