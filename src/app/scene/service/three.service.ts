@@ -48,7 +48,7 @@ export class ThreeService {
     // create the scene
     this.scene = new THREE.Scene();
 
-    const loader = new THREE.OBJLoader();
+    const loader = new THREE.OBJLoader( THREE.DefaultLoadingManager );
     loader.load('assets/model/' + this.dataServ.model + '.obj', this.onModelLoadingCompleted);
 
     this.createLight();
@@ -58,14 +58,6 @@ export class ThreeService {
   }
 
   private onModelLoadingCompleted(object) {
-
-
-
-    /*object.traverse( function ( child ) {
-      if ( child instanceof THREE.Mesh ) {
-        child.material = material;
-      }
-    } );*/
 
     object.position.y = -.445;
     object.name = 'currentModel';
@@ -183,7 +175,7 @@ export class ThreeService {
     this.controls.update();
     this.render();
 
-    const loader = new THREE.OBJLoader();
+    const loader = new THREE.OBJLoader( THREE.DefaultLoadingManager );
     const file = 'assets/model/' + model + '.obj';
     loader.load(file, this.onModelLoadingCompleted);
 }
@@ -193,35 +185,41 @@ export class ThreeService {
       this.scene.remove(currentTexture);
 
       const loader = new THREE.TextureLoader();
-      const material = new THREE.MeshBasicMaterial();
+      loader.load(image, (texture) => {
+        const material = new THREE.MeshBasicMaterial({
+          map: texture,
+        });
 
-      material.map = loader.load(image);
-      material.flipY = false;
-      const cupSize = '' + this.dataServ.model;
+        const cupSize = '' + this.dataServ.model;
 
-      const geometry = new THREE.CylinderBufferGeometry(
-        this.radiusTop[cupSize],
-        this.radiusBottom[cupSize],
-        this.cylinderHeight[cupSize],
-        this.radialSegments,
-        this.heightSegments,
-        true,
-        0,
-        this.thetaLength);
+        const geometry = new THREE.CylinderBufferGeometry(
+            this.radiusTop[cupSize],
+            this.radiusBottom[cupSize],
+            this.cylinderHeight[cupSize],
+            this.radialSegments,
+            this.heightSegments,
+            true,
+            0,
+            this.thetaLength);
 
-      // var material.transparent = true;
-      const cylinder = new THREE.Mesh( geometry, material );
-      cylinder.name = 'currentTexture';
-      if (material.map) {
-        if ( this.dataServ.model === 'normal' ) {cylinder.position.y = .09; }
-        if ( this.dataServ.model === 'large' ) {cylinder.position.y = .22; }
-        this.scene.add( cylinder );
-      }
+        // var material.transparent = true;
+        const cylinder = new THREE.Mesh(geometry, material);
+        cylinder.name = 'currentTexture';
+        if (material.map) {
+          if (this.dataServ.model === 'normal') {
+            cylinder.position.y = .09;
+          }
+          if (this.dataServ.model === 'large') {
+            cylinder.position.y = .22;
+          }
+          this.scene.add(cylinder);
+        }
 
-      this.render();
-      console.log('Texture load complete.');
-      this.dataServ.state = false;
+        this.render();
+        console.log('Texture load complete.');
+        this.dataServ.state = false;
 
+      });
     }
 
   /* EVENTS */

@@ -9,9 +9,10 @@ import { FileComponent } from './file/file.component';
 import {FileDropDirective, FileSelectDirective} from 'ng2-file-upload';
 import {RouterModule} from '@angular/router';
 import { DragDropDirective } from './file/DragDrop/drag-drop.directive';
+import { SelectDirective } from './file/Select/select.directive';
 
 @NgModule({
-  declarations: [OverviewComponent, SizeComponent, UploadComponent, SidebarComponent, FileComponent, FileSelectDirective, FileDropDirective, DragDropDirective],
+  declarations: [OverviewComponent, SizeComponent, UploadComponent, SidebarComponent, FileComponent, FileSelectDirective, FileDropDirective, DragDropDirective, SelectDirective],
   imports: [
     CommonModule,
     SharedModule,

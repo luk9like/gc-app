@@ -19,7 +19,12 @@
                         <div class="centered">Drop your file here!</div>
                     </div>
                 </div>
-                <input [accept]="'.png'" id="design" type="file" (change)="onFileSelected($event)"/>
+                <input gcSelect
+                       (filesChangeEmiter)="onFilesChange($event)"
+                       [allowed_ext]="['image/png']"
+                       [accept]="'.png'"
+                       id="design"
+                       type="file"/>
             </div>
 
             <div class="col-sm-12 col-md-6 col-lg-12" style="margin-bottom: 40px">

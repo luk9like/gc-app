@@ -16,34 +16,6 @@ export class FileComponent {
 
   constructor(public three: ThreeService, public DataServ: DataService) {}
 
-  onFileSelected(event: any) {
-    let ext = event.target.files[0].type;
-
-    if ( this.allowed_ext.includes(ext)) {
-      const input: HTMLElement = document.getElementById('design');
-      this.DataServ.designName = event.target.files[0].name;
-      this.DataServ.designSize = event.target.files[0].size;
-      this.DataServ.state = true;
-      if (event.target.files && event.target.files[0]) {
-        var reader = new FileReader();
-        reader.onload = (event: any) => {
-          this.DataServ.selectedImage = event.target.result;
-          console.log(this.DataServ.selectedImage);
-        };
-        reader.readAsDataURL(event.target.files[0]);
-      }
-
-    } else {
-      alert('Falsches Dateiformat! Bitte wähle eine .png-Datei aus.');
-    }
-  }
-
-  public hasBaseDropZoneOver:boolean = false;
-
-  public fileOverBase(e:any):void {
-    this.hasBaseDropZoneOver = e;
-  }
-
   onFilesChange(fileList: Array<File>) {
     this.DataServ.state = true;
     this.fileList = fileList;
