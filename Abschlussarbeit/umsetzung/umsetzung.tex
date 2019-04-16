@@ -19,7 +19,16 @@ Wie in den vergangenen Kapiteln schon erläutert sind die Haupttechnologien das 
 \section{Anlegen des Angular-Projekts}
 \label{sec:umsetzung}
 %
-Bevor die Angular-Anwendung nach und nach aufgebaut werden kann, muss Angular erst einmal installiert werden und anschließend ein Projekt erstellt werden. Mit der Angular CLI ist das sehr einfach und unproblematisch. Deshalb ist der erste Schritt diese über Node.js zu installieren.
+Bevor die Angular-Anwendung nach und nach aufgebaut werden kann, muss Angular erst einmal installiert werden und anschließend ein Projekt erstellt werden. Mit der Angular CLI ist das sehr einfach und unproblematisch. Deshalb ist der erste Schritt diese über Node.js zu installieren. Anschließend kann es auch schon los gehen. Wie schon erwähnt wird PhpStorm verwendet. 
+%
+\begin{figure}[h]
+	\centering
+	{\epsfig{file = umsetzung/images/createproject.png, width=13.0cm}}
+	\caption[Anlegen eines Projekts]{\textit{Anlegen eines Angular-Projekts mit PhpStorm}}
+	\label{fig:createproject}
+\end{figure}
+%
+In diesem Editor ist es möglich ein \textit{Angular CLI Projekt} zu erstellen. Wie in Abbildung \ref{fig:createproject} zu sehen, erkennt das Programm automatisch die \textit{Node.js} Version sowie die \textit{Angular CLI} Version, welche installiert wurden. Nun muss noch ein Pfad angegeben werden, unter dem das Projekt gespeichert wird. Es sind auch einige optionale Parameter angegeben. Mit \texttt{prefix} kann ein eigener Prefix für die Selektoren gewählt werden. Standardmäßig hat jeder Baustein in Angular vor seinem Namen ein \texttt{app} stehen. Das ist hier ersetzt worden durch \texttt{gc}. Das \textit{RoutingModule} ist optional und kann mit dem Parameter \texttt{routing} aktiviert werden. Der letzte Parameter \texttt{style} ist eigentlich nicht unbedingt nötig. Er definiert mit welchen Styles gearbeitet werden soll (\texttt{.css, .scss, .sass}). Wenn dieser Parameter fehlt, fragt die neue Angular CLI Version automatisch beim generieren des Projekts, welcher Typ verwendet werden soll. Ist der Vorgang abgeschlossen, kann man die Anwendung schon starten und sieht den Standard Begrüßungsbildschirm. Erreichbar ist die Anwendung unter \texttt{http://localhost:4200}.
 %
 \section{Module des Konfigurators}
 \label{sec:umsetzung}
@@ -90,7 +99,7 @@ Die \texttt{<ul>}-Liste hat ein paar vordefinierte Bootstrap-Klassen, auf die hi
 Es könnten nun noch beliebig viele \texttt{<gc-tab>}-Elemente hinzugefügt werden und sie würden auch als Tab angezeigt werden. Nun ist bei jedem Tab ein \textit{title} angegben, der als Titel im Tab angezeigt werden soll. Dieser lässt sich in der Tab-Klasse über \texttt{@input} in der Variable \texttt{title} speichern und kann so an der richtigen Stelle ausgegben werden. Damit ist Tabs-Komponente funktionsfähig. Die Tabs werden dargestellt und bei onClick wird der entsprechende Tab-Inhalt angezeigt. In Abbildung \ref{fig:sidebar} ist das Endergebnis zu sehen.\\
 \begin{figure}[h]
 	\centering
-	{\epsfig{file = methodik/images/sidebar.png, width=8.0cm}}
+	{\epsfig{file = umsetzung/images/sidebar.png, width=8.0cm}}
 	\caption[Sidebar des Konfigurators]{\textit{Sidebar der Angular-Anwendung}}
 	\label{fig:sidebar}
 \end{figure}
@@ -121,12 +130,12 @@ const loader = new THREE.OBJLoader();
 loader.load('assets/model/test.obj', this.onModelLoadingCompleted);
 \end{lstlisting}
 %
-In der Funktion \texttt{onModelLoadingCompleted} wird dann der Renderer ausgeführt, die das Model zur Szene hinzufügt und anschließend alles rendert. Jetzt ist die 3D Ansicht schon mal mit Leben gefüllt, der nackte Becher angezeigt wird (siehe Abbildung \ref{fig:3dmodel}).
+In der Funktion \texttt{onModelLoadingCompleted} wird dann der Renderer ausgeführt, die das Model zur Szene hinzufügt und anschließend alles rendert. Jetzt ist die 3D Ansicht schon mal mit Leben gefüllt, der nackte Becher angezeigt wird (siehe Abbildung \ref{fig:model3d}).
 \begin{figure}[h]
 	\centering
-	{\epsfig{file = methodik/images/sidebar.png, width=8.0cm}}
-	\caption[Komponentendiagramm]{\textit{Sidebar der Angular-Anwendung}}
-	\label{fig:3dmodel}
+	{\epsfig{file = umsetzung/images/becher3d.png, width=6.0cm}}
+	\caption[3D Becher Model]{\textit{3D Model mit Three.js geladen}}
+	\label{fig:model3d}
 \end{figure}
 \paragraph{Auswahl der Größe}
 Unter dem Menüpunkt \textit{\glqq Größe\grqq} soll der Benutzer eine der vier Größen wählen. Standardmäßig ist von Beginn an der 0,2 Liter Becher gewählt und ist von Angfang an sichtbar. Wie genau der DataService funktioniert, wird später noch einmal genauer beleuchtet. Zunächst werden in der \texttt{<gc-size>}-Komponente die verschiedenen Auswahlmöglichkeiten dargestellt. Mit der Funktion \texttt{reloadModel()} wird dem \textit{SceneService} mitgeteilt, das der Benutzer eine Bechergröße gewählt hat. Dabei kommt wieder ein \texttt{@HostListener} zum Einsatz. In diesem Fall wird dieser mit dem \texttt{(click)}-Ereignis gebunden und führt dann die Funktion aus.
@@ -179,7 +188,7 @@ Der Hamburger-Button ist ausschließlich auf Smartphones sichtbar. Wenn dieser g
 document.getElementById("mySidenav").style.width = 100%;
 \end{lstlisting}
 %
-Soll die Sidbar angezeigt werden, wird die Höhe auf \texttt{100\%} gesetzt. Soll sich geschlossen werden, wird die Breite auf \texttt{0} gesetzt. Damit ist eine sehr simple Lösung einer mobilen Sidebar implementiert.
+Soll die Sidebar angezeigt werden, wird die Höhe auf \texttt{100\%} gesetzt. Soll sich geschlossen werden, wird die Breite auf \texttt{0} gesetzt. Damit ist eine sehr simple Lösung einer mobilen Sidebar implementiert.
 
 Die 3D Szene ist, wie schon zuvor erwähnt, auch responsive. Die OrbitControls von Three.js liefern auch eine Kompatiblität für Touch-Eingaben mit. So kann auf mobilen Geräten der Becher via Touch rotiert werden.
 %
