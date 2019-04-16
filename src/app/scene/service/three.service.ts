@@ -29,13 +29,6 @@ export class ThreeService {
   public heightSegments = 22;
   public thetaLength: Number = 2 * Math.PI;
 
-  public cylinder: number[][] = [
-      [.345, .235, .885, 21, 22],
-      [.345, .235, .885, 21, 22]
-  ];
-
-
-
   constructor(public dataServ: DataService) {
     this.render = this.render.bind(this);
     this.onModelLoadingCompleted = this.onModelLoadingCompleted.bind(this);
@@ -172,11 +165,8 @@ export class ThreeService {
     this.dataServ.designSize = undefined;
     this.dataServ.state = false;
 
-    this.controls.update();
-    this.render();
-
-    const loader = new THREE.OBJLoader( THREE.DefaultLoadingManager );
     const file = 'assets/model/' + model + '.obj';
+    const loader = new THREE.OBJLoader();
     loader.load(file, this.onModelLoadingCompleted);
 }
 
