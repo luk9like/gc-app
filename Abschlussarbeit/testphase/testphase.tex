@@ -7,8 +7,46 @@
 \chapter{Testphase \& Ergebnisse}
 \label{cha:testphase}
 %
-Das folgende Kapitel befasst sich mit der Testumgebung von Angular. Es werden ein paar e2e-Test und Peformance-Tests durchgeführt. Dabei wird auch auf verschiedenen Geräteklassen getestet. Anschließend werden die Ergebnisse der Test zusammengefasst.
+Das folgende Kapitel befasst sich mit der Testumgebung von Angular. Es werden ein paar Test Unit-Tests und e2e-Tests durchgeführt. Dabei wird auch auf verschiedenen Geräteklassen getestet. Anschließend werden die Ergebnisse der Test zusammengefasst.
 \section{Testumgebung}
+In Angular gibt es grundätzlich zwei Optionen, um die Anwendung zu testen. Als Erstes werden sogenannte \textit{Unit-Tests} durchgeführt. Angular bringt von Haus aus eine vorkonfigurierte Testumgebung und nutzt dazu das Framework \textit{Jasmine} und ausgeführt werden sie mit \textit{Karma}. Theoretisch kann man diese \textit{Unit-Tests} auch schon während der Entwicklung implementieren. Man kann damit sicherstellen, dass einzelne Bausteine der Anwendung auch wirklich das gewünschte Ergebnis erzeugen. In dieser Arbeit werden allerdings keine Tests im großen Umfang ausgeführt. Es wird sich nur auf das wesentliche konzentriert, da Jasmine sehr viele Testfunktionen mit sich bringt. Um den vollen Funktionsumfang auszuschöpfen, bedarf es etwas mehr an Zeit. \\
+Nach den \textit{Unit-Tests} werden die \textit{End-to-End-Tests} durchgeführt. Diese sind noch etwas interessanter für den Konfigurator. Hiermit werden ganze User-Interaktionen ausgeführt und man kann den Konfigurator so auf Usability und Peformance testen. Nebenbei erfährt man natürlicha auch so, ob die Anwendung das tut, was sie soll. Diese \textit{End-to-End-Tests} werden in Angular ebenfalls mit \textit{Jasmine} ausgeführt.
+%
+\subsection{Unit Tests}
+Eine Installation oder Konfiguration ist nicht notwendig\footnote{Es ist durchaus möglich mit anderen Frameworks die Anwendung zu testen. Allerdings ist es für den Konfigurator nicht notwendig und mit den Standardeinstellungen am einfachsten umzusetzten.}, da Angular beim Initialisieren des Projektes bzw. beim Generieren der Angular-Bausteine schon alles bereitgestellt hat. Jeder Baustein der Anwendung hat eine \texttt{.spec.ts}-Datei, welche die Tests beeinhalten. Wenn man mit \texttt{ng test} den Test startet, holt sich Angular aus der \texttt{test.ts}-Datei den \textit{Context} der getestet werden soll, also alle Test-Dateien der verschiedenen Bausteine. Im Folgenden wird anhand der \texttt{SizeComponent} gezeigt, wie die Unittest aufgebaut wurden.
+%
+\begin{lstlisting}[caption={size.component.spec.ts Datei},label=lst:unittest]
+import {async, ComponentFixture, TestBed} from 'angular/core/testing';
+
+import { SizeComponent } from './size.component';
+
+describe('SizeComponent', () => {
+  let component: SizeComponent;
+  let fixture: ComponentFixture<SizeComponent>;
+
+  beforeEach(async(() => {
+	TestBed.configureTestingModule({
+	 declarations: [ SizeComponent ]
+	})
+    .compileComponents();
+  }));
+
+  beforeEach(() => {
+	fixture = TestBed.createComponent(SizeComponent);
+	component = fixture.componentInstance;
+	fixture.detectChanges();
+  });
+
+  it('should create', () => {
+	expect(component).toBeTruthy();
+  });
+});
+\end{lstlisting}
+%
+Zunächst muss aus dem Test-Modul das TestBed (also die Test-Umgebung) aus dem \texttt{angular/core} importiert werden. Genauso braucht man natürlich die zu testende Komponente und muss diese auch importieren. Falls man in einer Komponente noch weitere Kindskomponenten, Direktiven oder ähnliches verwendet, müssen diese auch importiert werden. Anschließend werden mit der \texttt{configureTestingModule()}-Methode alle Bausteine deklariert und danach kompiliert. Die eigentlichen Tests befinden sich in den \texttt{it()}-Funktionen. Der erste Ausdruck ist einfach eine Beschreibung, um später die Tests in den Ergebnissen besser zuordnen zu können. Danach können Werte und Methoden überprüft werden. Der erste Test prüft lediglich mit \texttt{toBeTruthy()}, ob die Komponente erzeugt wurde. Mit der \texttt{expect()}-Funktion wird sozusagen etwas geprüft. Schlägt die Überprüfung fehl, wird in den Ergebnissen ein Error angegeben.
+\subsection{End-to-End Tests}
+%
+Nun kommen die etwas spannenderen Tests an die Reihe. Hierbei wird getestet, ob eine Konfiguration fehlerfrei abläuft. Für die \textit{End-to-End-Tests} ist von Angular selbst ein eigenes \texttt{e2e}-Verzeichnes erzeugt worden. Auch bei diesen Tests kommt wieder das Framework \textit{Jasmine} zu Einsatz.Die Standard-Konfigurationen werden auch unberührt gelassen. Die Tests befinden sich in der Datei \texttt{app.e2e-spec.ts}.
 \section{Ergebnisse}
 \paragraph{3D Darstellung}
 \paragraph{Menüführung inkl. Routing}

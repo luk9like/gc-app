@@ -9,7 +9,7 @@ export class ThreeService {
   private canvas: HTMLCanvasElement;
 
   private renderer: THREE.WebGLRenderer;
-  private camera: THREE.PerspectiveCamera;
+  public camera: THREE.PerspectiveCamera;
   private scene: THREE.Scene;
   private lighting: boolean;
   private ambient;
@@ -171,6 +171,16 @@ export class ThreeService {
 }
 
     public reloadTexture(image) {
+      var img = new Image();
+      img.src = image;
+      img.onload = function () {
+        var width = img.naturalWidth,
+            height = img.naturalHeight;
+        window.URL.revokeObjectURL( img.src );
+        if ( width !== 400 || height !== 300) {
+          alert('Warnung! Das hochgeladene Design ist nicht in der richtigen Auflösung!');
+        }
+      };
       const currentTexture = this.scene.getObjectByName('currentTexture');
       this.scene.remove(currentTexture);
 

@@ -3,7 +3,7 @@
     <div class="row">
         <ng-container *ngFor="let size of sizes; let i = index">
             <div class="col-6 py-3">
-                <a [ngClass]="'size d-flex flex-column align-items-center'" (click)="three.reloadModel(size)">
+                <a id="{{size}}" [ngClass]="'size d-flex flex-column align-items-center'" (click)="three.reloadModel(size)">
                     <img src="https://via.placeholder.com/100">
                     <p>{{size}}</p>
                 </a>

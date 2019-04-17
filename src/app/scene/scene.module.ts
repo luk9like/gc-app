@@ -6,6 +6,7 @@ import { SceneComponent } from './scene/scene.component';
   declarations: [SceneComponent],
   imports: [
     CommonModule
-  ]
+  ],
+  exports: [SceneComponent]
 })
 export class SceneModule { }

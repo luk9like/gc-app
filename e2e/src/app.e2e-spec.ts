@@ -1,5 +1,5 @@
 import { AppPage } from './app.po';
-import { browser, logging } from 'protractor';
+import {browser, by, logging, element} from 'protractor';
 
 describe('workspace-project App', () => {
   let page: AppPage;
@@ -8,9 +8,13 @@ describe('workspace-project App', () => {
     page = new AppPage();
   });
 
-  it('should display welcome message', () => {
+  it('should display normal cup', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('Welcome to gc-app!');
+    element(by.id('normal')).click();
+    element(by.id('design')).click();
+    element(by.id('uploadBtn')).click();
+
+    expect(browser.getCurrentUrl()).toMatch('http://localhost:4200/upload');
   });
 
   afterEach(async () => {

@@ -50,8 +50,10 @@
 \BOOKMARK [1][-]{section.5.9}{Upload-Vorgang}{chapter.5}% 50
 \BOOKMARK [0][-]{chapter.6}{Testphase \046 Ergebnisse}{}% 51
 \BOOKMARK [1][-]{section.6.1}{Testumgebung}{chapter.6}% 52
-\BOOKMARK [1][-]{section.6.2}{Ergebnisse}{chapter.6}% 53
-\BOOKMARK [0][-]{chapter.7}{Zusammenfassung}{}% 54
-\BOOKMARK [0][-]{appendix.A}{Lorem Ipsum}{}% 55
-\BOOKMARK [0][-]{appendix*.81}{Glossar}{}% 56
-\BOOKMARK [0][-]{appendix*.82}{Literaturverzeichnis}{}% 57
+\BOOKMARK [2][-]{subsection.6.1.1}{Unit Tests}{section.6.1}% 53
+\BOOKMARK [2][-]{subsection.6.1.2}{End-to-End Tests}{section.6.1}% 54
+\BOOKMARK [1][-]{section.6.2}{Ergebnisse}{chapter.6}% 55
+\BOOKMARK [0][-]{chapter.7}{Zusammenfassung}{}% 56
+\BOOKMARK [0][-]{appendix.A}{Lorem Ipsum}{}% 57
+\BOOKMARK [0][-]{appendix*.81}{Glossar}{}% 58
+\BOOKMARK [0][-]{appendix*.82}{Literaturverzeichnis}{}% 59

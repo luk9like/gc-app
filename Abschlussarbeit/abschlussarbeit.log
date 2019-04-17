@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6980) (preloaded format=pdflatex 2019.3.13)  16 APR 2019 18:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6980) (preloaded format=pdflatex 2019.3.13)  17 APR 2019 20:47
 entering extended mode
 **./abschlussarbeit.tex
 (abschlussarbeit.tex
@@ -892,7 +892,7 @@ LaTeX Info: Redefining \nameref on input line 166.
 \@outlinefile=\write5
 \openout5 = `abschlussarbeit.out'.
 
-<thm.png, id=231, 493.845pt x 60.225pt>
+<thm.png, id=235, 493.845pt x 60.225pt>
 File: thm.png Graphic file (type png)
 <use thm.png>
 Package pdftex.def Info: thm.png  used on input line 174.
@@ -1057,7 +1057,7 @@ Overfull \hbox (5.05853pt too wide) in paragraph at lines 11--21
  Technologieanalayse im Kontext
  []
 
-<technik/images/flyeralarm.png, id=417, 1509.64pt x 970.62625pt>
+<technik/images/flyeralarm.png, id=422, 1509.64pt x 970.62625pt>
 File: technik/images/flyeralarm.png Graphic file (type png)
 <use technik/images/flyeralarm.png>
 Package pdftex.def Info: technik/images/flyeralarm.png  used on input line 31.
@@ -1069,7 +1069,7 @@ Gr[]unden und aufgrund der konischen Form der Becher
  []
 
 [5 <./technik/images/flyeralarm.png>]
-<technik/images/spread-shirt.png, id=425, 1753.55125pt x 1033.8625pt>
+<technik/images/spread-shirt.png, id=430, 1753.55125pt x 1033.8625pt>
 File: technik/images/spread-shirt.png Graphic file (type png)
 <use technik/images/spread-shirt.png>
 Package pdftex.def Info: technik/images/spread-shirt.png  used on input line 45
@@ -1082,7 +1082,7 @@ arbeitern ein attraktives Arbeitsumfeld
  []
 
 [6 <./technik/images/spread-shirt.png>]
-<technik/images/becher-bedrucken.png, id=434, 1545.775pt x 959.585pt>
+<technik/images/becher-bedrucken.png, id=439, 1545.775pt x 959.585pt>
 File: technik/images/becher-bedrucken.png Graphic file (type png)
 <use technik/images/becher-bedrucken.png>
 Package pdftex.def Info: technik/images/becher-bedrucken.png  used on input lin
@@ -1093,7 +1093,7 @@ e 60.
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 73.
 
-<technik/images/audi.png, id=435, 505.89pt x 798.985pt>
+<technik/images/audi.png, id=440, 505.89pt x 798.985pt>
 File: technik/images/audi.png Graphic file (type png)
 <use technik/images/audi.png>
 Package pdftex.def Info: technik/images/audi.png  used on input line 75.
@@ -1113,7 +1113,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 81--84
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 86.
 
-<technik/images/siemens.png, id=442, 1003.75pt x 627.34375pt>
+<technik/images/siemens.png, id=447, 1003.75pt x 627.34375pt>
 File: technik/images/siemens.png Graphic file (type png)
 <use technik/images/siemens.png>
 Package pdftex.def Info: technik/images/siemens.png  used on input line 88.
@@ -1147,7 +1147,7 @@ Underfull \hbox (badness 6220) in paragraph at lines 103--103
 ypeScript ist eine kompilierte und
  []
 
-<technik/images/google-trends.png, id=453, 1448.41125pt x 759.83875pt>
+<technik/images/google-trends.png, id=458, 1448.41125pt x 759.83875pt>
 File: technik/images/google-trends.png Graphic file (type png)
 <use technik/images/google-trends.png>
 Package pdftex.def Info: technik/images/google-trends.png  used on input line 1
@@ -1248,7 +1248,7 @@ Overfull \hbox (79.59978pt too wide) in paragraph at lines 157--167
  verst[]andliche Struktur und groe Anpassungsm[]oglichkeiten.
  []
 
-<technik/images/3d-framework.png, id=494, 693.792pt x 369.17924pt>
+<technik/images/3d-framework.png, id=499, 693.792pt x 369.17924pt>
 File: technik/images/3d-framework.png Graphic file (type png)
 <use technik/images/3d-framework.png>
 Package pdftex.def Info: technik/images/3d-framework.png  used on input line 17
@@ -1394,7 +1394,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 62--63
 
  []
 
-<grundlagen/images/module.png, id=542, 1164.35pt x 628.3475pt>
+<grundlagen/images/module.png, id=547, 1164.35pt x 628.3475pt>
 File: grundlagen/images/module.png Graphic file (type png)
 <use grundlagen/images/module.png>
 Package pdftex.def Info: grundlagen/images/module.png  used on input line 68.
@@ -1461,7 +1461,7 @@ Overfull \hbox (27.9016pt too wide) in paragraph at lines 106--108
 f verschiedenen Ger[]ate-Klassifikationen.
  []
 
-<grundlagen/images/angularcli.png, id=573, 757.83125pt x 440.64626pt>
+<grundlagen/images/angularcli.png, id=578, 757.83125pt x 440.64626pt>
 File: grundlagen/images/angularcli.png Graphic file (type png)
 <use grundlagen/images/angularcli.png>
 Package pdftex.def Info: grundlagen/images/angularcli.png  used on input line 1
@@ -1675,7 +1675,7 @@ g das der Konfigurator auf verschiedenen Displaygr[]oen
  []
 
 [30]
-<methodik/images/flowchart.png, id=676, 550.6974pt x 611.6451pt>
+<methodik/images/flowchart.png, id=681, 550.6974pt x 611.6451pt>
 File: methodik/images/flowchart.png Graphic file (type png)
 <use methodik/images/flowchart.png>
 Package pdftex.def Info: methodik/images/flowchart.png  used on input line 129.
@@ -1685,7 +1685,7 @@ Package pdftex.def Info: methodik/images/flowchart.png  used on input line 129.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<methodik/images/komponentnendiagramm.png, id=680, 511.76193pt x 423.68288pt>
+<methodik/images/komponentnendiagramm.png, id=685, 511.76193pt x 423.68288pt>
 File: methodik/images/komponentnendiagramm.png Graphic file (type png)
 <use methodik/images/komponentnendiagramm.png>
 Package pdftex.def Info: methodik/images/komponentnendiagramm.png  used on inpu
@@ -1713,7 +1713,7 @@ Overfull \hbox (1.16289pt too wide) in paragraph at lines 137--145
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<methodik/images/mockup.png, id=688, 640.19176pt x 400.49625pt>
+<methodik/images/mockup.png, id=693, 640.19176pt x 400.49625pt>
 File: methodik/images/mockup.png Graphic file (type png)
 <use methodik/images/mockup.png>
 Package pdftex.def Info: methodik/images/mockup.png  used on input line 150.
@@ -1783,14 +1783,14 @@ gen. Auch eine Versionierung
 
 
 ]
-<umsetzung/images/createproject.png, id=713, 801.99625pt x 502.87875pt>
+<umsetzung/images/createproject.png, id=718, 801.99625pt x 502.87875pt>
 File: umsetzung/images/createproject.png Graphic file (type png)
 <use umsetzung/images/createproject.png>
 Package pdftex.def Info: umsetzung/images/createproject.png  used on input line
  26.
 (pdftex.def)             Requested size: 369.88582pt x 231.93321pt.
  [36 <./umsetzung/images/createproject.png>]
-<umsetzung/images/module.png, id=722, 780.516pt x 250.7769pt>
+<umsetzung/images/module.png, id=727, 780.516pt x 250.7769pt>
 File: umsetzung/images/module.png Graphic file (type png)
 <use umsetzung/images/module.png>
 Package pdftex.def Info: umsetzung/images/module.png  used on input line 39.
@@ -1808,7 +1808,7 @@ odule von Angular wie das \OT1/cmss/m/sl/10.95 BrowserModule
  []
 
 [37 <./umsetzung/images/module.png>]
-<umsetzung/images/auswahlcli.png, id=732, 351.3125pt x 301.125pt>
+<umsetzung/images/auswahlcli.png, id=737, 351.3125pt x 301.125pt>
 
 ! Missing number, treated as zero.
 <to be read again> 
@@ -1857,7 +1857,7 @@ File: umsetzung/images/auswahlcli.png Graphic file (type png)
 Package pdftex.def Info: umsetzung/images/auswahlcli.png  used on input line 59
 .
 (pdftex.def)             Requested size: 142.26378pt x 121.94116pt.
-<umsetzung/images/optionscli.png, id=733, 608.2725pt x 357.335pt>
+<umsetzung/images/optionscli.png, id=738, 608.2725pt x 357.335pt>
 ! Missing number, treated as zero.
 <to be read again> 
                    \relax 
@@ -1905,7 +1905,7 @@ File: umsetzung/images/optionscli.png Graphic file (type png)
 Package pdftex.def Info: umsetzung/images/optionscli.png  used on input line 60
 .
 (pdftex.def)             Requested size: 199.16928pt x 116.99944pt.
-<umsetzung/images/generatedfiles.png, id=734, 273.02pt x 134.5025pt>
+<umsetzung/images/generatedfiles.png, id=739, 273.02pt x 134.5025pt>
 ! Missing number, treated as zero.
 <to be read again> 
                    \relax 
@@ -1984,7 +1984,7 @@ ein paar vordefinierte Bootstrap-Klassen, auf die hier nicht weiter eingegangen
 
  []
 
-<umsetzung/images/sidebar.png, id=761, 609.27625pt x 830.10126pt>
+<umsetzung/images/sidebar.png, id=766, 609.27625pt x 830.10126pt>
 File: umsetzung/images/sidebar.png Graphic file (type png)
 <use umsetzung/images/sidebar.png>
 Package pdftex.def Info: umsetzung/images/sidebar.png  used on input line 102.
@@ -2057,7 +2057,7 @@ l.129 const
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-<umsetzung/images/becher3d.png, id=789, 558.085pt x 731.73375pt>
+<umsetzung/images/becher3d.png, id=794, 558.085pt x 731.73375pt>
 File: umsetzung/images/becher3d.png Graphic file (type png)
 <use umsetzung/images/becher3d.png>
 Package pdftex.def Info: umsetzung/images/becher3d.png  used on input line 136.
@@ -2134,7 +2134,7 @@ l.167 const
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-<umsetzung/images/bechermitdesign.PNG, id=825, 937.101pt x 486.618pt>
+<umsetzung/images/bechermitdesign.PNG, id=830, 937.101pt x 486.618pt>
 File: umsetzung/images/bechermitdesign.PNG Graphic file (type png)
 <use umsetzung/images/bechermitdesign.PNG>
 Package pdftex.def Info: umsetzung/images/bechermitdesign.PNG  used on input li
@@ -2173,7 +2173,7 @@ m/n/10.95 , \OT1/cmss/m/sl/10.95 count\OT1/cmss/m/n/10.95 , \OT1/cmss/m/sl/10.9
 /m/sl/10.95 OverviewComponent
  []
 
-<umsetzung/images/uploadcomponent.png, id=844, 607.26875pt x 708.6475pt>
+<umsetzung/images/uploadcomponent.png, id=849, 607.26875pt x 708.6475pt>
 File: umsetzung/images/uploadcomponent.png Graphic file (type png)
 <use umsetzung/images/uploadcomponent.png>
 Package pdftex.def Info: umsetzung/images/uploadcomponent.png  used on input li
@@ -2267,30 +2267,55 @@ Underfull \hbox (badness 10000) in paragraph at lines 269--270
 
 
 ]
-Overfull \hbox (9.71231pt too wide) in paragraph at lines 10--11
-\OT1/cmss/m/n/10.95 e2e-Test und Peformance-Tests durchgef[]uhrt. Dabei wird au
+Overfull \hbox (2.4883pt too wide) in paragraph at lines 10--11
+\OT1/cmss/m/n/10.95 Test Unit-Tests und e2e-Tests durchgef[]uhrt. Dabei wird au
 ch auf verschiedenen Ger[]ateklassen
  []
 
-) [51]
+
+Overfull \hbox (6.01697pt too wide) in paragraph at lines 12--15
+\OT1/cmss/m/n/10.95 werden sogenannte \OT1/cmss/m/sl/10.95 Unit-Tests \OT1/cmss
+/m/n/10.95 durchgef[]uhrt. Angular bringt von Haus aus eine vorkonfigurierte
+ []
+
+
+Overfull \hbox (36.4641pt too wide) in paragraph at lines 12--15
+\OT1/cmss/m/sl/10.95 Karma\OT1/cmss/m/n/10.95 . Theoretisch kann man diese \OT1
+/cmss/m/sl/10.95 Unit-Tests \OT1/cmss/m/n/10.95 auch schon w[]ahrend der Entwic
+klung implementieren.
+ []
+
+[51]
+Overfull \hbox (31.99162pt too wide) in paragraph at lines 46--47
+\OT1/cmss/m/n/10.95 Zun[]achst muss aus dem Test-Modul das TestBed (also die Te
+st-Umgebung) aus dem \OT1/cmtt/m/n/10.95 angular/core
+ []
+
+
+Overfull \hbox (31.99162pt too wide) in paragraph at lines 49--50
+\OT1/cmss/m/n/10.95 Zun[]achst muss aus dem Test-Modul das TestBed (also die Te
+st-Umgebung) aus dem \OT1/cmtt/m/n/10.95 angular/core
+ []
+
+[52]) [53]
 \openout2 = `fazit/fazit.aux'.
 
- (fazit/fazit.tex [52
+ (fazit/fazit.tex [54
 
 
 
-]) [53]
+]) [55]
 \openout2 = `anhang/anhang.aux'.
 
- (anhang/anhang.tex [54
+ (anhang/anhang.tex [56
 
 
 
 ])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [55]
-[56]
+ [57]
+[58]
 \openout2 = `glossar/glossar.aux'.
 
  (glossar/glossar.tex)
@@ -2298,13 +2323,13 @@ Overfull \hbox (34.79132pt too wide) in paragraph at lines 11--257
 [] 
  []
 
-[57
+[59
 
 
 
 
 
-] (abschlussarbeit.bbl [58
+] (abschlussarbeit.bbl [60
 
 
 ]
@@ -2377,7 +2402,7 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-[59]
+[61]
 ! Missing $ inserted.
 <inserted text> 
                 $
@@ -2437,7 +2462,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 110--115
 tps : / / www . stackoverflowbusiness . com / de / talent / ressourcen /
  []
 
-) [60]
+) [62]
 No file abschlussarbeit.ind.
 \tf@toc=\write6
 \openout6 = `abschlussarbeit.toc'.
@@ -2453,9 +2478,15 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 279.
 (fazit/fazit.aux) (anhang/anhang.aux) (glossar/glossar.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 279.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 279.
-Package rerunfilecheck Info: File `abschlussarbeit.out' has not changed.
-(rerunfilecheck)             Checksum: DEA114B1C8307BF878AF93706D9A70E7;3626.
 
+
+Package rerunfilecheck Warning: File `abschlussarbeit.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `abschlussarbeit.out':
+(rerunfilecheck)             Before: 4F068D0351F45CF7CB461109CEF64B8E;3690
+(rerunfilecheck)             After:  C1FD75EFAB544F170620B5ABB4C6166F;3760.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -2468,10 +2499,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 279.
  ) 
 Here is how much of TeX's memory you used:
- 13493 strings out of 494865
- 199168 string characters out of 3178377
- 392670 words of memory out of 3000000
- 16524 multiletter control sequences out of 15000+200000
+ 13566 strings out of 494865
+ 200267 string characters out of 3178377
+ 408670 words of memory out of 3000000
+ 16566 multiletter control sequences out of 15000+200000
  21038 words of font info for 84 fonts, out of 3000000 for 9000
  0 hyphenation exceptions out of 8191
  38i,12n,56p,1499b,1849s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2489,9 +2520,9 @@ x/texmfs/install/fonts/type1/public/amsfonts/cm/cmssi9.pfb></home/luke/.miktex/
 texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></home/luke/.miktex/te
 xmfs/install/fonts/type1/public/amsfonts/cm/cmtt10.pfb></home/luke/.miktex/texm
 fs/install/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on abschlussarbeit.pdf (72 pages, 2899376 bytes).
+Output written on abschlussarbeit.pdf (74 pages, 2911361 bytes).
 PDF statistics:
- 1073 PDF objects out of 1200 (max. 8388607)
- 318 named destinations out of 1000 (max. 500000)
- 567 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1124 PDF objects out of 1200 (max. 8388607)
+ 349 named destinations out of 1000 (max. 500000)
+ 575 words of extra memory for PDF output out of 10000 (max. 10000000)
 
