@@ -10,7 +10,7 @@ export class DragDropDirective {
 
   @HostBinding('style.borderColor') private borderColor = '#999';
 
-  constructor(elr: ElementRef) {
+  constructor() {
   }
   @HostListener('dragover', ['$event']) onDragOver(evt) {
     evt.preventDefault();

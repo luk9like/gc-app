@@ -7,7 +7,7 @@ export class SelectDirective {
   @Output() private filesChangeEmiter: EventEmitter<File[]> = new EventEmitter();
   @Input() private allowed_ext: Array<string> = [];
 
-  constructor(elr: ElementRef) {}
+  constructor() {}
 
   @HostListener('change', ['$event']) public onChange(evt) {
     evt.preventDefault();

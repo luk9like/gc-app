@@ -176,7 +176,7 @@ export class ThreeService {
 
       const loader = new THREE.TextureLoader();
       if ( image === undefined ) { console.log( 'Texture is not valid!' ); }
-      loader.load(image, (texture) => {
+      loader.load(this.dataServ.selectedImage, (texture) => {
         const material = new THREE.MeshBasicMaterial({
           map: texture,
         });
@@ -196,23 +196,30 @@ export class ThreeService {
         // var material.transparent = true;
         const cylinder = new THREE.Mesh(geometry, material);
         cylinder.name = 'currentTexture';
-        if (material.map) {
+        /*if (material.map) {
           if (this.dataServ.model === 'normal') {
             cylinder.position.y = .09;
           }
           if (this.dataServ.model === 'large') {
             cylinder.position.y = .22;
           }
-          this.scene.add(cylinder);
+
         } else {
           console.log( 'Texture can not be mapped!' );
-        }
+        }*/
 
+        console.log('Das nicht angezeigte Design ist: ' + image);
+        this.scene.add(cylinder);
         this.render();
         console.log('Texture load complete.');
         this.dataServ.state = false;
 
-      });
+      },
+      undefined,
+      function (err) {
+        console.log( 'an error happened!');
+      }
+      );
     }
 
   /* EVENTS */

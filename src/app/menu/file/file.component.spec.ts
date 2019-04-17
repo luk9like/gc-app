@@ -1,6 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { FileComponent } from './file.component';
+import {DragDropDirective} from './DragDrop/drag-drop.directive';
+import {SelectDirective} from './Select/select.directive';
 
 describe('FileComponent', () => {
   let component: FileComponent;
@@ -8,7 +10,7 @@ describe('FileComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ FileComponent ]
+      declarations: [ FileComponent, DragDropDirective, SelectDirective ]
     })
     .compileComponents();
   }));

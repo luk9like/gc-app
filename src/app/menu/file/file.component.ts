@@ -1,8 +1,7 @@
-import {Component, Input} from '@angular/core';
+import {Component} from '@angular/core';
 import {ThreeService} from '../../scene/service/three.service';
 import {DataService} from '../../shared/service/data.service';
-// const URL = '/api/';
-const URL = 'https://evening-anchorage-3159.herokuapp.com/api/';
+import * as blobUtils from 'blob-util';
 
 @Component({
   selector: 'gc-file',
@@ -17,7 +16,9 @@ export class FileComponent {
     this.DataServ.state = true;
     this.DataServ.designName = fileList[0].name;
     this.DataServ.designSize = '' + fileList[0].size;
-    this.DataServ.selectedImage = window.URL.createObjectURL(fileList[0]);
+    this.DataServ.selectedImage = window.URL.createObjectURL(fileList[0]) || (<any>window).webkitURL.createObjectURL(fileList[0]);
+    console.log('Create Blob: ' + this.DataServ.selectedImage);
+
   }
 
 }
