@@ -11,7 +11,7 @@ export class SceneComponent implements OnInit {
 
   private canEleId = 'canvas';
 
-   constructor(private three: ThreeService) { }
+   constructor(public three: ThreeService) { }
 
    @ViewChild('canvas')
    private canvasRef: ElementRef;

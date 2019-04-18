@@ -10,9 +10,9 @@ export class DataService {
 
   selectedImage;
   designName: string;
-  designSize: string;
+  designSize: number;
   count: number = 100;
-  size: Number = 0.2;
+  size: number = 0.2;
   state: boolean = false;
   stroke: boolean = false;
   price: number = 99.99;
