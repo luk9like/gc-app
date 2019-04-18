@@ -1,4 +1,4 @@
-<div id="" class="teaser-tile h-100">
+<div id="" class="teaser-tile">
     <div class="container">
         <div class="navbar navbar-default">
             <div class="navbar-header w-100">
@@ -14,7 +14,6 @@
                      gcDragDrop
                      [allowed_ext]="['image/png']"
                      (filesChangeEmiter)="onFilesChange($event)">
-
                     <div class="text-wrapper">
                         <div class="centered">Ziehe das Design hierher!</div>
                     </div>
@@ -26,16 +25,12 @@
                        id="design"
                        type="file"/>
             </div>
-
-            <img src="{{this.data.selectedImage}}" alt="DesignImage">
-
             <div class="col-sm-12 col-md-6 col-lg-12" style="margin-bottom: 40px">
-
                 <table class="table my-3">
                     <thead>
                     <tr>
                         <th width="50%">Name</th>
-                        <th>Size</th>
+                        <th>Größe</th>
                         <th>Status</th>
                     </tr>
                     </thead>
@@ -45,8 +40,6 @@
                         <td>{{ this.data.designSize/1024/1024 | number:'0.2' }} MB</td>
                         <td class="text-center">
                             <span><i class="glyphicon glyphicon-ok"></i></span>
-                            <span><i class="glyphicon glyphicon-ban-circle"></i></span>
-                            <span><i class="glyphicon glyphicon-remove"></i></span>
                         </td>
                     </tr>
                     </tbody>

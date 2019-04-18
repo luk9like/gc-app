@@ -103,12 +103,19 @@
 \contentsline {section}{\numberline {6.1}Testumgebung}{51}{section.6.1}% 
 \contentsline {subsection}{\numberline {6.1.1}Unit Tests}{51}{subsection.6.1.1}% 
 \contentsline {subsection}{\numberline {6.1.2}End-to-End Tests}{52}{subsection.6.1.2}% 
-\contentsline {section}{\numberline {6.2}Ergebnisse}{53}{section.6.2}% 
-\contentsline {paragraph}{3D Darstellung}{53}{section*.77}% 
-\contentsline {paragraph}{Men\IeC {\"u}f\IeC {\"u}hrung inkl. Routing}{53}{section*.78}% 
-\contentsline {paragraph}{Upload und reload texture}{53}{section*.79}% 
-\contentsline {paragraph}{Sonstiges}{53}{section*.80}% 
-\contentsline {chapter}{\chapternumberline {7}Zusammenfassung}{55}{chapter.7}% 
-\contentsline {appendix}{\chapternumberline {A}Lorem Ipsum}{57}{appendix.A}% 
-\contentsline {chapter}{Glossar}{59}{appendix*.81}% 
-\contentsline {chapter}{Literaturverzeichnis}{61}{appendix*.82}% 
+\contentsline {section}{\numberline {6.2}Ergebnisse}{54}{section.6.2}% 
+\contentsline {subsection}{\numberline {6.2.1}Funktionsabgleich}{54}{subsection.6.2.1}% 
+\contentsline {paragraph}{3D Darstellung}{54}{section*.77}% 
+\contentsline {paragraph}{Men\IeC {\"u}f\IeC {\"u}hrung inkl. Routing}{54}{section*.78}% 
+\contentsline {paragraph}{Upload und reload texture}{54}{section*.79}% 
+\contentsline {paragraph}{Speichern und \IeC {\"U}bersicht}{55}{section*.80}% 
+\contentsline {paragraph}{Interaktionen}{55}{section*.81}% 
+\contentsline {subsection}{\numberline {6.2.2}Technologiebewertung}{55}{subsection.6.2.2}% 
+\contentsline {paragraph}{Angular}{55}{section*.82}% 
+\contentsline {paragraph}{Three.js}{55}{section*.83}% 
+\contentsline {chapter}{\chapternumberline {7}Schluss}{57}{chapter.7}% 
+\contentsline {section}{\numberline {7.1}Zusammenfassung}{57}{section.7.1}% 
+\contentsline {section}{\numberline {7.2}Ausblick}{57}{section.7.2}% 
+\contentsline {appendix}{\chapternumberline {A}Lorem Ipsum}{59}{appendix.A}% 
+\contentsline {chapter}{Glossar}{61}{appendix*.84}% 
+\contentsline {chapter}{Literaturverzeichnis}{63}{appendix*.85}% 

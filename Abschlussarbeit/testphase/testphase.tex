@@ -46,12 +46,66 @@ describe('SizeComponent', () => {
 Zunächst muss aus dem Test-Modul das TestBed (also die Test-Umgebung) aus dem \texttt{angular/core} importiert werden. Genauso braucht man natürlich die zu testende Komponente und muss diese auch importieren. Falls man in einer Komponente noch weitere Kindskomponenten, Direktiven oder ähnliches verwendet, müssen diese auch importiert werden. Anschließend werden mit der \texttt{configureTestingModule()}-Methode alle Bausteine deklariert und danach kompiliert. Die eigentlichen Tests befinden sich in den \texttt{it()}-Funktionen. Der erste Ausdruck ist einfach eine Beschreibung, um später die Tests in den Ergebnissen besser zuordnen zu können. Danach können Werte und Methoden überprüft werden. Der erste Test prüft lediglich mit \texttt{toBeTruthy()}, ob die Komponente erzeugt wurde. Mit der \texttt{expect()}-Funktion wird sozusagen etwas geprüft. Schlägt die Überprüfung fehl, wird in den Ergebnissen ein Error angegeben.
 \subsection{End-to-End Tests}
 %
-Nun kommen die etwas spannenderen Tests an die Reihe. Hierbei wird getestet, ob eine Konfiguration fehlerfrei abläuft. Für die \textit{End-to-End-Tests} ist von Angular selbst ein eigenes \texttt{e2e}-Verzeichnes erzeugt worden. Auch bei diesen Tests kommt wieder das Framework \textit{Jasmine} zu Einsatz.Die Standard-Konfigurationen werden auch unberührt gelassen. Die Tests befinden sich in der Datei \texttt{app.e2e-spec.ts}.
+Nun kommen die etwas spannenderen Tests an die Reihe. Hierbei wird getestet, ob eine Konfiguration fehlerfrei abläuft. Für die \textit{End-to-End-Tests} ist von Angular selbst ein eigenes \texttt{e2e}-Verzeichnes erzeugt worden. Auch bei diesen Tests kommt wieder das Framework \textit{Jasmine} zu Einsatz. Ausgeführt werden die Tests von \textit{Pratractor}. Angular liefert es von Haus aus mit. Damit können nun ganze User-Interaktionen definiert werden. So ist es nun möglich, automatisch einen Becher konfigurieren zu lassen. Dabei können Werte überprüft werden und anschließend bekommt man ein Testergebnis. Anders als die Unit-Test laufen die Test mit Protractor nur einmal durch und liefern dann die Ergebnisse. Die Standard-Konfigurationen werden auch unberührt gelassen. Die Tests befinden sich in der Datei \texttt{app.e2e-spec.ts}(siehe \ref{lst:e2etest}).
+%
+\begin{lstlisting}[caption={app.e2e-spec.ts Datei},label=lst:e2etest]
+import { AppPage } from './app.po';
+import {browser, by, logging, element} from 'protractor';
 
+describe('workspace-project App', () => {
+	let page: AppPage;
+
+	beforeEach(() => {
+		page = new AppPage();
+	});
+
+	it('should display normal cup', () => {
+		page.navigateTo();
+		element(by.id('normal')).click();
+		element(by.id('design')).click();
+		element(by.id('uploadBtn')).click();
+
+		expect(browser.getCurrentUrl()).toMatch('http://localhost:4200/upload');
+	});
+
+		afterEach(async () => {
+			const logs = await browser.manage().logs().get(logging.Type.BROWSER);
+			expect(logs).not.toContain(jasmine.objectContaining({
+			level: logging.Level.SEVERE,
+		}));
+	});
+});
+\end{lstlisting}
+%
+Wie man sieht ist diese Testdatei ähnlich aufgebaut, wie die der Unit-Tests. Zunächst werden unter anderem ein paar \texttt{imports} aus der \textit{protractor}-Klasse eingebunden. Die eigentlichen Tests befinden sich wieder in den \textit{it()}-Methoden. Dabei sollen folgende Schritte ausgeführt werden:
+\begin{itemize}
+	\item Größe durch klicken auswählen
+	\item Upload-Menüpunkt durch klicken auswählen
+	\item Button zur UploadComponent drücken
+	\item Bild durch Input-Feld auswählen
+	\item Design rendern durch Button-Klick
+	\item Zurück zum Konfigurationsmenü und durch klicken andere Größe wählen
+	\item Übersicht öffnen
+\end{itemize}
+%
+Zwischen den Schritten sollen die Werte überprüft werden. Beispielsweise sollte die URL der UploadComponent \texttt{/upload} lauten. Bei Auswählen des Bildes sollte der richtige Designname in der Übersicht erscheinen und das Design anschließend angezeigt werden. Danach soll die Größe des Bechers geändert werden, also sollte dann der Wert \texttt{selectedImage = undefined} sein. Wenn alles richtig abläuft sollte am Ende ein positives Testergebnis in der Konsole erscheinen. 
 \section{Ergebnisse}
-Nun werden die Ergebnisse der Tests und grundlegenden Funktionalitäten des Konfigurators analysiert. Anhand der Anforderungen aus Kapitel 4 wird nun gezeigt, was umsetzbar war und ob es den Ansprüchen genügt. Es wird auch auf eventuelle Probleme bei der Realisierung oder beim Testing eingegangen.
+Nun werden die Ergebnisse der Tests und grundlegenden Funktionalitäten des Konfigurators analysiert. Anhand der Anforderungen aus Kapitel 4 wird nun gezeigt, was umsetzbar war und ob es den Ansprüchen genügt. Es wird auch auf eventuelle Probleme bei der Realisierung oder beim Testing eingegangen. Anschließend werden die verwendeten Technologien bewertet.
+\subsection{Funktionsabgleich}
 \paragraph{3D Darstellung}
-Die Darstellung der 3D-Modelle funktioniert problemlos. Alle Bechergrößen können vom Benutzer ausgewählt werden und sind anschließend in der Szene zu sehen. Auch wenn es anfangs Kompatiblitätsprobleme zwischen Angular und Three.js gab, ist nun die 3D Darstellung auf allen Browsern möglich. Auch auf mobilen Geräten funktioniert dies wie gewünscht.
+Die Darstellung der 3D-Modelle funktioniert problemlos. Alle Bechergrößen können vom Benutzer ausgewählt werden und sind anschließend in der Szene zu sehen. Auch wenn es anfangs Kompatiblitätsprobleme zwischen Angular und Three.js gab, ist nun die 3D Darstellung auf allen Browsern möglich. Auch auf mobilen Geräten funktioniert dies wie gewünscht. Etwas problematisch ist die Darstellung, wenn der Benutzer sein mobiles Gerät dreht, da sich in diesem Fall der 3D-Konfigurator nicht richtig anpasst. Hier sind noch weitere Anpassungen nötig, um die Usability zu verbessern. Damit kommen wir zum nächsten Punkt.
 \paragraph{Menüführung inkl. Routing}
+Das Menü wurde wie geplant umgesetzt. Auf mobilen Geräten ist das Menü als Off-Canvas implementiert. Die Bedienung funktioniert sowohl auf Desktop, als auch auf Smartphones. Man hat zwar noch nicht den selben Komfort, wie in einer mobilen Applikation, jedoch sollte die Umsetzung den Ansprüchen der Usability und des responsive Webdesign genügen. Auch das Routing zur \textit{UploadComponent} funktioniert gut, und macht keine Probleme. Nachdem alle Optionen im Menü eingefügt wurden, sollte das erneut geprüft werden.
 \paragraph{Upload und reload texture}
-\paragraph{Sonstiges}
+Das Upload funktioniert wie geplant mit Drap \& Drap sowie mit dem Input-Feld. Teilweise ist die Ladezeit beim Upload ungewöhnlich lange. Bei mobilen Geräten funktioniert der Upload auch ohne Probleme. Es ist ausschließlich der Upload von \texttt{.png}-Dateien möglich. Die jeweilige Fehlermeldung kommt andernfalls. Für eine performante Lösung auf einem Server sollte eventuell eine REST API die Dateien auf einen Server laden. Dadurch wäre auch eine Speicherung der Konfiguration auf dem Server möglich.
+\paragraph{Speichern und Übersicht}
+Eine interessante Funktion, die noch hinzugefügt werden könnte, wäre das Teilen des konfigurierten Bechers über eine URL. Eine Speicherung der Konfiguration ist bislang noch gar nicht implementiert und sollte noch hinzugefügt werden. Über den Tab \textit{Übersicht} kann der Benutzer eine tabellarische Übersicht aller Optionen sehen (beispielsweise der Designname). Eine Druckfunktion ist bisher auch noch nicht implementiert.
+\paragraph{Interaktionen}
+Der Benutzer kann den Becher mit der Maus drehen. Optional kann man auch die Buttons, unterhalb des Bechers, verwenden.
+
+\subsection{Technologiebewertung}
+In diesem Abschnitt wird noch einmal darauf eingegangen, wie die verwendeten Technologien bei der Realisierung des Projekts abgeschnitten haben.
+\paragraph{Angular}
+Der Einstieg in das Framework war etwas mühsam. Angular bietet einen sehr großen Funktionsumfang, was den Einstieg für Neulinge etwas zeitintensiv gestaltet. Durch die klare Strukturierung lässt sich damit aber sehr gut arbeiten. Besonders die Angular CLI war sehr nützlich beim Entwickeln der Anwendung. Bei Problemen hat man recht schnell eine Lösung in der Community gefunden. Toll war auch die hohe Kompatibilität, beispielsweise mit Webpack. Gerade für größere Single Page Anwendungen, die im Team entwickelt werden, ist Angular sehr gut. Ein Nachteil war allerdings die TypeScript Programmiersprache. Das ist anfangs sehr gewöhnungsbedürftig und ist hier und da auch unpraktisch, wenn man JavaScript gewohnt ist. Funktionen aus der JavaScript-Welt müssen erst umgeschrieben werden, was natürlich Zeit kostet. Besonders bei der Verwendung von Three.js Beispielen war das etwas mühsam. Alles in allem schneidet das Framework bei der Umsetzung des Konfigurators gut ab.
+\paragraph{Three.js}
+Wie schon erwähnt, war das Zusammenspiel von Angular und Three.js nicht immer ganz optimal. Manche Zusatzmodule von Three.js konnten in Angular nicht direkt importiert werden. Dazu wurde eine zusätzliche Bibliothek benötigt. Für einen schnellen Einstieg mit Three.js sollte ein Grundverständnis von 3D-Modellierung vorhanden sein. Durch die objektorientierte Umsetzung ist die 3D-Bibliothek allerdings sehr einfach zu verwenden. 3D Modelle aus Rendering-Programmen können schnell in eine Szene geladen werden. Der Funktionsumfang ist auch sehr groß. Zwar gibt es hier und da noch ein paar Bugs, jedoch ist die Community sehr aktiv und man bekommt schnell eine Lösung. Three.js wurde im Rahmen des Projektes nicht gänzlich ausgeschöpft. Zusammenfassend lässt sich sagen, das es eine einfach zu bedienende Bibliothek ist, die trotzdem einen großen Funktionsumfang bietet.
