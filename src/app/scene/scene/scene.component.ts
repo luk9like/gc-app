@@ -11,7 +11,7 @@ export class SceneComponent implements OnInit {
 
   private canEleId = 'canvas';
 
-   constructor(private tServ: ThreeService) { }
+   constructor(private three: ThreeService) { }
 
    @ViewChild('canvas')
    private canvasRef: ElementRef;
@@ -20,8 +20,12 @@ export class SceneComponent implements OnInit {
      return this.canvasRef.nativeElement;
    }
 
+   public zoomObject(direction) {
+    this.three.changeCameraPosition(direction);
+   }
+
    ngOnInit() {
-     this.tServ.createScene(this.canvas);
+     this.three.createScene(this.canvas);
    }
 
 }

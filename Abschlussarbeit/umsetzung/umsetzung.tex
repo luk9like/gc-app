@@ -247,15 +247,13 @@ Zusätzlich muss der Typ der Objekte explizit festgelegt werden. In diesem Fall 
 %
 Wie man im Beispiel sieht, wird jedes Mal, wenn eine Datei in die Drop-Zone geschoben wird, die Funktion \texttt{onFilesChange(\$event)} ausgeführt. Der Parameter \texttt{\$event} ist immer ausgewählte Datei. Die Methode kann jetzt mit diesem File arbeiten.\\
 
-In der \textit{UploadCompontent} und auch an anderen Stellen der Anwendung soll der Dateiname und die Größe der Datei ausgegeben werden. Es ist nun möglich aus der übergebenen Datei beides auszulesen und in dem \textit{DataService} zu speichern. Nun muss noch die \texttt{reloadTexture()}-Funktion ausgeführt werden und die Datei übergeben werden. In Three.js werden Texturen mit dem TextureLoader geladen bzw. gemappt. Anschließend kann man sie zur Szene hinzufügen. Allerdings kann der Loader nur URLs oder Base64-Objekte entgegen nehmen. Auf den Pfad des Bildes können wir aus Sicherheitsgründen nicht zugreifen. Deshalb muss das File-Objekt in ein Base64-Objekt konvertiert werden, bevor man die Textur laden kann. Das konvertierte Objekt wird dann in \texttt{selectedImage} im \textit{DataService} gespeichert.
+In der \textit{UploadCompontent} und auch an anderen Stellen der Anwendung soll der Dateiname und die Größe der Datei ausgegeben werden. Es ist nun möglich aus der übergebenen Datei beides auszulesen und in dem \textit{DataService} zu speichern. Nun muss noch die \texttt{reloadTexture()}-Funktion ausgeführt werden und die Datei übergeben werden. In Three.js werden Texturen mit dem TextureLoader geladen bzw. gemappt. Anschließend kann man sie zur Szene hinzufügen. Allerdings kann der Loader nur eine Referenz auf ein Objekt entgegen nehmen und kann nicht mit dem File-Objekt arbeiten. Auf den Pfad des Bildes können wir aus Sicherheitsgründen nicht zugreifen. Die Lösung ist eine \textit{Object URL}\footnote{Gibt einen DOMString zurück , der eine eindeutige Blob-URL enthält, also eine URL mit \textit{Blob:} als Schema, gefolgt von einer Zeichenfolge, die das Objekt im Browser eindeutig identifiziert.[Add cite]}. Dabei können theoretisch bis zu 800 MB gespeichert werden[https://chrisrng.svbtle.com/using-url-createobjecturl]. Für Chrome und Safari wird auch die \texttt{webkitURL} importiert, um Kompatiplitätsprobleme zu vermeiden. Das URL-Objekt wird dann in \texttt{selectedImage} im \textit{DataService} gespeichert.
 %
-\begin{lstlisting}[caption={Base64 Methode},label=lst:base64]
-this.getBase64(file).then(
-	data => this.DataServ.selectedImage = data
-);
+\begin{lstlisting}[caption={CreateObjectURL() Methode},label=lst:bloburl]
+window.URL.createObjectURL(file) || (<any>window).webkitURL.createObjectURL(file);
 \end{lstlisting}
 %
-Ist nun eine gültige \texttt{.png}-Datei ausgewählt worden, wird wie in Abbildung zu sehen Name und Dateigröße angezeigt. Jetzt ist auch der \textit{Design rendern}Button aktiv und das Design kann mit der \textit{reloadTexture}-Funktion gerendert werden.
+Ist nun eine gültige \texttt{.png}-Datei ausgewählt worden, wird wie in Abbildung zu sehen Name und Dateigröße angezeigt. Jetzt ist auch der \textit{Design rendern}Button aktiv und das Design kann mit der \textit{reloadTexture}-Funktion gerendert werden. Falls das Bild nicht der Auflösung der Druckvorgaben enspricht wird dem Benutzer eine entsprechende Warnung angezeigt. Das Design wird aber trotzdem auf den Becher gerendert.
 
 \paragraph{reloadTexture}
 Im Grunde ist diese Funktion nahezu identisch zu \texttt{reloadModel()}-Funktion. Ein Teil der Funktion ist schon bekannt. Wir haben schon gesehen wie diese Funktion den Zylinder für das Design um den Becher erstellt. Als Erstes löscht die Funktion eine Texture, die eventuell schon zuvor gerendert wurde. Nun bekommt die Funktion das Design des Users als Parameter übergeben und kann es als Texture gemappt werden.

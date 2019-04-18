@@ -20,9 +20,9 @@
 \contentsline {section}{\numberline {2.2}3D Online Konfiguratoren}{7}{section.2.2}% 
 \contentsline {paragraph}{Audi 3D Konfigurator}{8}{section*.13}% 
 \contentsline {paragraph}{Siemens 3D Konfigurator}{8}{section*.14}% 
-\contentsline {paragraph}{Trilux Limba 3D Konfigurator}{9}{section*.16}% 
+\contentsline {paragraph}{Trilux Limba 3D Konfigurator}{8}{section*.16}% 
 \contentsline {section}{\numberline {2.3}Webframeworks}{9}{section.2.3}% 
-\contentsline {paragraph}{Angular}{10}{section*.17}% 
+\contentsline {paragraph}{Angular}{9}{section*.17}% 
 \contentsline {paragraph}{React}{10}{section*.19}% 
 \contentsline {paragraph}{Vue.js}{11}{section*.20}% 
 \contentsline {section}{\numberline {2.4}Flash und WebGL}{11}{section.2.4}% 
@@ -43,11 +43,11 @@
 \contentsline {paragraph}{Pipes}{20}{section*.30}% 
 \contentsline {paragraph}{Services}{20}{section*.31}% 
 \contentsline {subsection}{\numberline {3.2.4}Angular CLI}{20}{subsection.3.2.4}% 
-\contentsline {subsection}{\numberline {3.2.5}Versionen}{20}{subsection.3.2.5}% 
-\contentsline {section}{\numberline {3.3}Three.js}{21}{section.3.3}% 
+\contentsline {subsection}{\numberline {3.2.5}Versionen}{21}{subsection.3.2.5}% 
+\contentsline {section}{\numberline {3.3}Three.js}{22}{section.3.3}% 
 \contentsline {subsection}{\numberline {3.3.1}Die Szene}{22}{subsection.3.3.1}% 
 \contentsline {paragraph}{Kamera}{22}{section*.33}% 
-\contentsline {paragraph}{Renderer}{22}{section*.34}% 
+\contentsline {paragraph}{Renderer}{23}{section*.34}% 
 \contentsline {paragraph}{Lighting}{23}{section*.35}% 
 \contentsline {paragraph}{Geometry}{23}{section*.36}% 
 \contentsline {paragraph}{Materials}{23}{section*.37}% 
@@ -98,7 +98,7 @@
 \contentsline {section}{\numberline {5.9}Upload-Vorgang}{46}{section.5.9}% 
 \contentsline {paragraph}{Route zum Upload}{47}{section*.73}% 
 \contentsline {paragraph}{Drag \& Drop oder Select}{47}{section*.75}% 
-\contentsline {paragraph}{reloadTexture}{48}{section*.76}% 
+\contentsline {paragraph}{reloadTexture}{49}{section*.76}% 
 \contentsline {chapter}{\chapternumberline {6}Testphase \& Ergebnisse}{51}{chapter.6}% 
 \contentsline {section}{\numberline {6.1}Testumgebung}{51}{section.6.1}% 
 \contentsline {subsection}{\numberline {6.1.1}Unit Tests}{51}{subsection.6.1.1}% 

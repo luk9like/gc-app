@@ -1,5 +1,8 @@
-import * as THREE from 'three-full';
+import * as THREE from 'three';
+import {OBJLoader} from 'three-full';
+import {OrbitControls} from 'three-full';
 import { Injectable, HostListener } from '@angular/core';
+import {connectableObservableDescriptor} from 'rxjs/internal/observable/ConnectableObservable';
 
 @Injectable({
   providedIn: 'root'
@@ -17,7 +20,7 @@ export class ThreeService {
   private nearClippingPane = 1;
   private farClippingPane = 2000;
 
-  public controls: THREE.OrbitControls;
+  public controls: OrbitControls;
 
   private prevModel: string;
   private cupSize: string;
@@ -27,7 +30,7 @@ export class ThreeService {
   private cylinderHeight = {'small': .885, 'medium': .885, 'normal': 1.05, 'large': 1.33};
   private radialSegments = 25;
   private heightSegments = 25;
-  private thetaLength: Number = 2 * Math.PI;
+  private thetaLength: number = 2 * Math.PI;
 
   constructor() {
     this.render = this.render.bind(this);
@@ -44,7 +47,7 @@ export class ThreeService {
     // set cupSize
     this.cupSize = 'small';
 
-    const loader = new THREE.OBJLoader( THREE.DefaultLoadingManager );
+    const loader = new OBJLoader( THREE.DefaultLoadingManager );
     loader.load('assets/model/' + this.cupSize + '.obj', this.onModelLoadingCompleted);
 
     this.createLight();
@@ -120,7 +123,7 @@ export class ThreeService {
   }
 
   public addControls() {
-  this.controls = new THREE.OrbitControls(this.camera, this.canvas);
+  this.controls = new OrbitControls(this.camera, this.canvas);
   this.controls.enableDamping = true;
   this.controls.dampingFactor = 0.7;
   this.controls.enableZoom = true;
@@ -139,7 +142,7 @@ export class ThreeService {
     this.scene.remove(prevModel1, prevModel2, currentModel, currentTexture);
 
     const file = 'assets/model/' + model + '.obj';
-    const loader = new THREE.OBJLoader();
+    const loader = new OBJLoader();
     loader.load(file, this.onModelLoadingCompleted);
 }
 
@@ -201,6 +204,7 @@ export class ThreeService {
     }
 
     public fixCylinderPosition(material, cylinder) {
+      cylinder.rotation.y += 3;
       if (material.map !== undefined) {
        if (this.cupSize === 'normal') {
           cylinder.position.y = .09;
@@ -215,6 +219,17 @@ export class ThreeService {
 
     public setCupSize(cupSize) {
     this.cupSize = cupSize;
+    }
+
+    public changeCameraPosition(direction) {
+      const currentModel = this.scene.getObjectByName('currentModel');
+      const cylinder = this.scene.getObjectByName('currentTexture');
+      if (direction === 'left') {
+        cylinder.rotation.y -= 5 / (Math.PI);
+      } else {
+        cylinder.rotation.y += 5 / (Math.PI);
+      }
+      this.render();
     }
 
   /* EVENTS */
