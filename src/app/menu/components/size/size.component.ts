@@ -10,9 +10,7 @@ import {ThreeService} from '../../../scene/service/three.service';
 export class SizeComponent implements OnInit {
   sizes: Array<string> = ['small', 'medium', 'normal', 'large'];
 
-  constructor(public three: ThreeService, private dataServ: DataService) {
-    console.log(dataServ);
-  }
+  constructor(private data: DataService) {}
 
   ngOnInit() {
   }

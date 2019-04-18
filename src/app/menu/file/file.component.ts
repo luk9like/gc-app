@@ -1,7 +1,5 @@
 import {Component} from '@angular/core';
-import {ThreeService} from '../../scene/service/three.service';
 import {DataService} from '../../shared/service/data.service';
-import * as blobUtils from 'blob-util';
 
 @Component({
   selector: 'gc-file',
@@ -10,14 +8,14 @@ import * as blobUtils from 'blob-util';
 })
 export class FileComponent {
 
-  constructor(public three: ThreeService, public DataServ: DataService) {}
+  constructor(public data: DataService) {}
 
   onFilesChange(fileList: Array<File>) {
-    this.DataServ.state = true;
-    this.DataServ.designName = fileList[0].name;
-    this.DataServ.designSize = '' + fileList[0].size;
-    this.DataServ.selectedImage = window.URL.createObjectURL(fileList[0]) || (<any>window).webkitURL.createObjectURL(fileList[0]);
-    console.log('Create Blob: ' + this.DataServ.selectedImage);
+    this.data.state = true;
+    this.data.designName = fileList[0].name;
+    this.data.designSize = '' + fileList[0].size;
+    this.data.selectedImage = window.URL.createObjectURL(fileList[0]) || (<any>window).webkitURL.createObjectURL(fileList[0]);
+    console.log('Create Blob: ' + this.data.selectedImage);
 
   }
 

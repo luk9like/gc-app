@@ -1,6 +1,5 @@
 import * as THREE from 'three-full';
 import { Injectable, HostListener } from '@angular/core';
-import {DataService} from '../../shared/service/data.service';
 
 @Injectable({
   providedIn: 'root'
@@ -9,40 +8,44 @@ export class ThreeService {
   private canvas: HTMLCanvasElement;
 
   private renderer: THREE.WebGLRenderer;
-  public camera: THREE.PerspectiveCamera;
+  private camera: THREE.PerspectiveCamera;
   private scene: THREE.Scene;
   private lighting: boolean;
   private ambient;
 
-  public fieldOfView = 20;
-  public nearClippingPane = 1;
-  public farClippingPane = 2000;
+  private fieldOfView = 20;
+  private nearClippingPane = 1;
+  private farClippingPane = 2000;
 
   public controls: THREE.OrbitControls;
 
-  public prevModel: String = '';
+  private prevModel: string;
+  private cupSize: string;
 
-  public radiusTop = {'small': .345, 'medium': .39, 'normal': .44, 'large': .435};
-  public radiusBottom = {'small': .235, 'medium': .285, 'normal': .31, 'large': .3};
-  public cylinderHeight = {'small': .885, 'medium': .885, 'normal': 1.05, 'large': 1.33};
-  public radialSegments = 21;
-  public heightSegments = 22;
-  public thetaLength: Number = 2 * Math.PI;
+  private radiusTop = {'small': .345, 'medium': .39, 'normal': .44, 'large': .435};
+  private radiusBottom = {'small': .235, 'medium': .285, 'normal': .31, 'large': .3};
+  private cylinderHeight = {'small': .885, 'medium': .885, 'normal': 1.05, 'large': 1.33};
+  private radialSegments = 25;
+  private heightSegments = 25;
+  private thetaLength: Number = 2 * Math.PI;
 
-  constructor(public dataServ: DataService) {
+  constructor() {
     this.render = this.render.bind(this);
     this.onModelLoadingCompleted = this.onModelLoadingCompleted.bind(this);
   }
 
   public createScene(canvas: HTMLCanvasElement): void {
-    // The first step is to get the reference of the canvas element from our HTML document
+    // get the reference of the canvas element from HTML Template
     this.canvas = canvas;
 
     // create the scene
     this.scene = new THREE.Scene();
 
+    // set cupSize
+    this.cupSize = 'small';
+
     const loader = new THREE.OBJLoader( THREE.DefaultLoadingManager );
-    loader.load('assets/model/' + this.dataServ.model + '.obj', this.onModelLoadingCompleted);
+    loader.load('assets/model/' + this.cupSize + '.obj', this.onModelLoadingCompleted);
 
     this.createLight();
     this.createCamera();
@@ -129,41 +132,11 @@ export class ThreeService {
 }
 
   public reloadModel(model) {
-    this.dataServ.model = model;
-    switch(model) {
-      case 'medium': {
-        this.dataServ.size = 0.2;
-        break;
-      }
-      case 'normal': {
-        this.dataServ.size = 0.3;
-        break;
-      }
-      case 'large': {
-        this.dataServ.size = 0.4;
-        break;
-      }
-      default: {
-        this.dataServ.size = .18;
-        break;
-      }
-    }
-
-    // check if uploaded
-    if ( this.dataServ.selectedImage !== ''){
-      console.log('Texture deleted: ' + this.scene.getObjectByName('currentModel'));
-    }
-
     const prevModel1 = this.scene.getObjectByName('180ml_ColdCup_Circle.003_CUSTOM');
     const prevModel2 = this.scene.getObjectByName('180ml_ColdCup_Circle.003_paper');
     const currentModel = this.scene.getObjectByName('currentModel');
     const currentTexture = this.scene.getObjectByName('currentTexture');
-
     this.scene.remove(prevModel1, prevModel2, currentModel, currentTexture);
-    this.dataServ.selectedImage = undefined;
-    this.dataServ.designName = undefined;
-    this.dataServ.designSize = undefined;
-    this.dataServ.state = false;
 
     const file = 'assets/model/' + model + '.obj';
     const loader = new THREE.OBJLoader();
@@ -171,65 +144,77 @@ export class ThreeService {
 }
 
     public reloadTexture(image) {
-      var img = new Image();
-      img.src = image;
-      img.onload = function () {
-        var width = img.naturalWidth,
-            height = img.naturalHeight;
-        window.URL.revokeObjectURL( img.src );
-        if ( width !== 400 || height !== 300) {
-          alert('Warnung! Das hochgeladene Design ist nicht in der richtigen Auflösung!');
-        }
-      };
-      const currentTexture = this.scene.getObjectByName('currentTexture');
-      this.scene.remove(currentTexture);
+      this.checkAspectRatio(image);
+      this.removeTexture();
 
       const loader = new THREE.TextureLoader();
-      if ( image === undefined ) { console.log( 'Texture is not valid!' ); }
-      loader.load(this.dataServ.selectedImage, (texture) => {
+      loader.load(image, (texture) => {
         const material = new THREE.MeshBasicMaterial({
           map: texture,
+          transparent: true
         });
-
-        const cupSize = '' + this.dataServ.model;
-
-        const geometry = new THREE.CylinderBufferGeometry(
-            this.radiusTop[cupSize],
-            this.radiusBottom[cupSize],
-            this.cylinderHeight[cupSize],
-            this.radialSegments,
-            this.heightSegments,
-            true,
-            0,
-            this.thetaLength);
-
-        // var material.transparent = true;
+        const geometry = this.createCylinder();
         const cylinder = new THREE.Mesh(geometry, material);
         cylinder.name = 'currentTexture';
-        /*if (material.map) {
-          if (this.dataServ.model === 'normal') {
-            cylinder.position.y = .09;
-          }
-          if (this.dataServ.model === 'large') {
-            cylinder.position.y = .22;
-          }
+        this.fixCylinderPosition(material, cylinder);
 
-        } else {
-          console.log( 'Texture can not be mapped!' );
-        }*/
-
-        console.log('Das nicht angezeigte Design ist: ' + image);
         this.scene.add(cylinder);
         this.render();
-        console.log('Texture load complete.');
-        this.dataServ.state = false;
-
       },
       undefined,
       function (err) {
         console.log( 'an error happened!');
       }
       );
+    }
+
+    public checkAspectRatio(image) {
+      var img = new Image();
+      img.src = image;
+      img.onload = function () {
+        var width = img.naturalWidth,
+          height = img.naturalHeight;
+        window.URL.revokeObjectURL( img.src );
+        if ( width !== 1183 || height !== 580) {
+          alert('Warnung! Das hochgeladene Design ist nicht in der richtigen Auflösung!');
+        }
+      };
+    }
+
+    public removeTexture() {
+      const currentTexture = this.scene.getObjectByName('currentTexture');
+      if (currentTexture !== undefined) {
+        this.scene.remove(currentTexture);
+      }
+    }
+
+    public createCylinder(): THREE.CylinderBufferGeometry {
+      return new THREE.CylinderBufferGeometry(
+        this.radiusTop[this.cupSize],
+        this.radiusBottom[this.cupSize],
+        this.cylinderHeight[this.cupSize],
+        this.radialSegments,
+        this.heightSegments,
+        true,
+        0,
+        this.thetaLength);
+    }
+
+    public fixCylinderPosition(material, cylinder) {
+      if (material.map !== undefined) {
+       if (this.cupSize === 'normal') {
+          cylinder.position.y = .09;
+       }
+       if (this.cupSize === 'large') {
+          cylinder.position.y = .22;
+       }
+       } else {
+       console.log( 'Texture can not be mapped!' );
+       }
+    }
+
+    public setCupSize(cupSize) {
+    this.cupSize = cupSize;
     }
 
   /* EVENTS */

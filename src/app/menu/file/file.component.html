@@ -16,7 +16,7 @@
                      (filesChangeEmiter)="onFilesChange($event)">
 
                     <div class="text-wrapper">
-                        <div class="centered">Drop your file here!</div>
+                        <div class="centered">Ziehe das Design hierher!</div>
                     </div>
                 </div>
                 <input gcSelect
@@ -27,7 +27,7 @@
                        type="file"/>
             </div>
 
-            <img src="{{this.DataServ.selectedImage}}" alt="DesignImage">
+            <img src="{{this.data.selectedImage}}" alt="DesignImage">
 
             <div class="col-sm-12 col-md-6 col-lg-12" style="margin-bottom: 40px">
 
@@ -41,8 +41,8 @@
                     </thead>
                     <tbody>
                     <tr>
-                        <td><strong>{{ this.DataServ.designName }}</strong></td>
-                        <td>{{ this.DataServ.designSize/1024/1024 | number:'.2' }} MB</td>
+                        <td><strong>{{ this.data.designName }}</strong></td>
+                        <td>{{ this.data.designSize/1024/1024 | number:'.2' }} MB</td>
                         <td class="text-center">
                             <span><i class="glyphicon glyphicon-ok"></i></span>
                             <span><i class="glyphicon glyphicon-ban-circle"></i></span>
@@ -54,7 +54,7 @@
 
                 <div>
                     <button type="button" class="btn btn-success btn-s"
-                            (click)="three.reloadTexture(this.DataServ.selectedImage)" [disabled]="!this.DataServ.state">
+                            (click)="this.data.loadDesign()" [disabled]="!this.data.state">
                         <span class="glyphicon glyphicon-upload"></span> Design rendern
                     </button>
                 </div>

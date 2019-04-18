@@ -1,9 +1,12 @@
 import { Injectable } from '@angular/core';
+import {ThreeService} from '../../scene/service/three.service';
 
 @Injectable({
   providedIn: 'root'
 })
 export class DataService {
+
+  constructor(private three: ThreeService) {}
 
   selectedImage;
   designName: string;
@@ -13,19 +16,50 @@ export class DataService {
   state: boolean = false;
   stroke: boolean = false;
   price: number = 99.99;
-  model: String = 'small';
+  model = 'small';
 
-  test = "Lukas";
-  startTime = Date.now();
-  constructor() { }
-
-  public addImage(file): void {
-    this.selectedImage = file;
-    console.log(this.selectedImage);
+  public loadDesign() {
+    this.three.reloadTexture(this.selectedImage);
+    this.state = false;
   }
 
-  public setImage(image) {
-    this.selectedImage = image;
+  public setModel(model) {
+    // check if uploaded
+    if (this.selectedImage !== undefined) {
+      console.log('Texture will be deleted... ' + this.selectedImage);
+    }
+    this.selectedImage = undefined;
+    this.designName = undefined;
+    this.designSize = undefined;
+
+    this.model = model;
+    this.setSize(model);
+    this.three.setCupSize(model);
+
+    if (model !== undefined) {
+      this.state = true;
+    }
+    this.three.reloadModel(model);
   }
 
+  public setSize(model) {
+    switch (model) {
+      case 'medium': {
+        this.size = .3;
+        break;
+      }
+      case 'normal': {
+        this.size = .4;
+        break;
+      }
+      case 'large': {
+        this.size = .5;
+        break;
+      }
+      default: {
+        this.size = .2;
+        break;
+      }
+    }
+  }
 }
