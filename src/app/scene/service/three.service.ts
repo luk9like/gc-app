@@ -73,9 +73,9 @@ export class ThreeService {
     );
 
     // Set position and look at
-    this.camera.position.y = 1.5;
-    this.camera.position.x = 0.1;
-    this.camera.position.z = 4.2;
+    this.camera.position.y = 2.2;
+    this.camera.position.x = 0.15;
+    this.camera.position.z = 6.1;
   }
 
   private createLight() {
@@ -120,7 +120,7 @@ export class ThreeService {
   }
 
   public addControls() {
-  this.controls = new THREE.OrbitControls(this.camera);
+  this.controls = new THREE.OrbitControls(this.camera, this.canvas);
   this.controls.enableDamping = true;
   this.controls.dampingFactor = 0.7;
   this.controls.enableZoom = true;
