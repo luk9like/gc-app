@@ -1,14 +1,8 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="Content-Security-Policy"
-        content="img-src 'self' blob: http://www.visitsingapore.com
-  https://ssl.gstatic.com 'unsafe-eval';
-  style-src 'self' 'unsafe-inline';
-  media-src 'self' blob:;
-  default-src * blob:;
-  script-src: 'sha256-KpHv3zgivMSB4dPnfYfqMt2lBibsYvM36EdoBBAsfbM='
-">  <title>GcApp</title>
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src Blob:*; child-src 'none';">
+  <title>GcApp</title>
   <base href="/">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
