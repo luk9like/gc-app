@@ -2,10 +2,11 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="Content-Security-Policy"
-        content="default-src 'self' data:gap: http://www.visitsingapore.com
+        content="object-src 'self' blob: http://www.visitsingapore.com
   https://ssl.gstatic.com 'unsafe-eval';
   style-src 'self' 'unsafe-inline';
-  media-src *;
+  media-src 'self' blob:;
+  default-src * blob:;
   script-src: 'sha256-KpHv3zgivMSB4dPnfYfqMt2lBibsYvM36EdoBBAsfbM='
 ">  <title>GcApp</title>
   <base href="/">
