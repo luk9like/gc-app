@@ -1,9 +1,22 @@
 <div id="" class="teaser-tile bg-light">
   <gc-tabs>
     <gc-tab id="accordion" [tabTitle]="'Konfigurator'">
-      <ul class="nav flex-column">
+      <gc-accordion>
+        <gc-item id="testitem" [itemTitle]="'Größe'" [itemId]="'collapse1'" [iconClass]="'mdi-cup'">
+          <gc-size></gc-size>
+        </gc-item>
+        <gc-item [itemTitle]="'Upload Design'" [itemId]="'collapse2'" [iconClass]="'mdi-upload'">
+          <gc-upload></gc-upload>
+        </gc-item>
+        <gc-item [itemTitle]="'Optionen'" [itemId]="'collapse3'" [iconClass]="'mdi-settings'">
+          <p>Für diesen Becher sind zur Zeit noch keine weiteren Optionen verfügbar.</p>
+        </gc-item>
+      </gc-accordion>
+
+
+      <!--<ul class="nav flex-column">
         <li class="nav-item">
-          <a class="nav-link d-flex align-items-center collapsed" data-toggle="collapse" href="#collapseSize" aria-expanded="true" aria-controls="collapseSize"><span class="mr-5 mdi mdi-cup"></span>Größe</a>
+          <a class="nav-link d-flex align-items-center collapsed" data-toggle="collapse" href="#collapseSize" aria-expanded="true" aria-controls="collapseSize"></span>Größe</a>
           <div class="collapse show" id="collapseSize" data-parent="#accordion">
             <gc-size></gc-size>
           </div>
@@ -17,10 +30,10 @@
         <li class="nav-item">
           <a class="nav-link d-flex align-items-center collapsed" data-toggle="collapse" href="#collapseOptions" aria-expanded="false" aria-controls="collapseDesign"><span class="mr-5 mdi mdi-settings"></span>Optionen</a>
           <div class="collapse" id="collapseOptions" data-parent="#accordion">
-            <p>Für diesen Becher sind zur Zeit noch keine weiteren Optionen verfügbar.</p>
+
           </div>
         </li>
-      </ul>
+      </ul>-->
     </gc-tab>
     <gc-tab [tabTitle]="'Übersicht'">
       <div class="container">

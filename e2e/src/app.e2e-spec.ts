@@ -1,5 +1,7 @@
 import { AppPage } from './app.po';
 import {browser, by, logging, element} from 'protractor';
+import * as path from 'path';
+
 
 describe('workspace-project App', () => {
   let page: AppPage;
@@ -8,13 +10,16 @@ describe('workspace-project App', () => {
     page = new AppPage();
   });
 
-  it('should display normal cup', () => {
-    page.navigateTo();
-    element(by.id('normal')).click();
-    element(by.id('design')).click();
-    element(by.id('uploadBtn')).click();
+  it('should upload a design', () => {
+    page.navigateTo('/upload');
+    var file = 'large.png',
+        absolutePath = path.resolve(__dirname, file);
 
-    expect(browser.getCurrentUrl()).toMatch('http://localhost:4200/upload');
+    element(by.id('design')).sendKeys(absolutePath);
+    element(by.id('uploadButton')).click();
+
+    var designName = element(by.id('designLabel')).getText();
+    expect(designName).toMatch('large.png');
   });
 
   afterEach(async () => {

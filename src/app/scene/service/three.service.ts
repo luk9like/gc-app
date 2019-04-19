@@ -131,6 +131,11 @@ export class ThreeService {
   this.controls.autoRotateSpeed = 0.3;
   this.controls.rotateSpeed = 1.0;
   this.controls.zoomSpeed = 1.2;
+  this.controls.maxDistance = 8;
+  this.controls.minDistance = 3;
+  this.controls.enablePan = false;
+  this.controls.minPolarAngle = .55; // radians
+  this.controls.maxPolarAngle = Math.PI / 1.25; // radians
   this.controls.addEventListener('change', this.render);
 }
 
@@ -156,6 +161,7 @@ export class ThreeService {
           map: texture,
           transparent: true
         });
+        material.map.minFilter = THREE.LinearFilter;
         const geometry = this.createCylinder();
         const cylinder = new THREE.Mesh(geometry, material);
         cylinder.name = 'currentTexture';
@@ -245,6 +251,9 @@ export class ThreeService {
     mouse.y = - (event.clientY / this.renderer.domElement.clientHeight) * 2 + 1;
     raycaster.setFromCamera(mouse, this.camera);
 
+    console.log('ControlDistance: ' + this.controls.distance);
+
+
     const obj: THREE.Object3D[] = [];
     this.findAllObjects(obj, this.scene);
     const intersects = raycaster.intersectObjects(obj);
@@ -269,24 +278,6 @@ export class ThreeService {
 
   public onMouseUp(event: MouseEvent) {
     console.log('onMouseUp');
-  }
-
-
-  @HostListener('window:resize', ['$event'])
-  public onResize(event: Event) {
-    this.canvas.style.width = '100%';
-    this.canvas.style.height = '100%';
-    console.log('onResize: ' + this.canvas.clientWidth + ', ' + this.canvas.clientHeight);
-
-    this.camera.aspect = this.getAspectRatio();
-    this.camera.updateProjectionMatrix();
-    this.renderer.setSize(this.canvas.clientWidth, this.canvas.clientHeight);
-    this.render();
-  }
-
-  @HostListener('document:keypress', ['$event'])
-  public onKeyPress(event: KeyboardEvent) {
-    console.log('onKeyPress: ' + event.key);
   }
 
 }
