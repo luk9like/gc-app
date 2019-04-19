@@ -53,3 +53,14 @@ body{
 .teaser-tile{
   min-height: 100%;
 }
+
+button {
+  border-radius: 50%;
+  border-color: transparent;
+  width: 3.5rem;
+  height: 3.5rem;
+
+  span{
+    font-size: 1.75rem;
+  }
+}

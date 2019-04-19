@@ -17,3 +17,21 @@
 :host > div{
   background-color: #eee;
 }
+
+.btn-success {
+  width: max-content;
+}
+
+.custom-file-label,
+.custom-file-label::after {
+  height: auto;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.custom-file-label,
+.custom-file-label::after {
+  height: auto;
+  padding-top: 0;
+  padding-bottom: 0;
+}

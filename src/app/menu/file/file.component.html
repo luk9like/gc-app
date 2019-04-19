@@ -3,13 +3,13 @@
         <div class="navbar navbar-default">
             <div class="navbar-header w-100">
                 <a class="navbar-brand" >Design hochladen</a>
-                <a class="navbar-brand float-right" routerLink='/' routerLinkActive="active"><i class="mdi mdi-backspace text-dark">
-
-                </i></a>
+                <a class="navbar-brand float-right" routerLink='/' routerLinkActive="active">
+                    <i class="mdi mdi-backspace text-dark"></i>
+                </a>
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-12 col-md-6 col-lg-12">
+            <div class="col-sm-12 col-md-6 col-lg-12 ">
                 <div class="dropzone well my-drop-zone mb-4"
                      gcDragDrop
                      [allowed_ext]="['image/png']"
@@ -18,12 +18,18 @@
                         <div class="centered">Ziehe das Design hierher!</div>
                     </div>
                 </div>
-                <input gcSelect
-                       (filesChangeEmiter)="onFilesChange($event)"
-                       [allowed_ext]="['image/png']"
-                       [accept]="'.png'"
-                       id="design"
-                       type="file"/>
+                <div class="custom-file p-0">
+                    <input gcSelect
+                           (filesChangeEmiter)="onFilesChange($event)"
+                           [allowed_ext]="['image/png']"
+                           [accept]="'.png'"
+                           id="design"
+                           class="custom-file-input form-control-sm  p-0"
+                           type="file"/>
+                    <label id="designLabel" class="custom-file-label py-0" for="design">
+                        {{showInputLabel()}}
+                    </label>
+                </div>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-12" style="margin-bottom: 40px">
                 <table class="table my-3">
@@ -46,10 +52,10 @@
                 </table>
 
                 <div>
-                    <button type="button" class="btn btn-success btn-s"
-                            (click)="this.data.loadDesign()" [disabled]="!this.data.state">
+                    <a type="button" class="btn btn-success btn-s text-white" [ngClass]="isDisabled()"
+                            (click)="this.data.loadDesign()">
                         <span class="glyphicon glyphicon-upload"></span> Design rendern
-                    </button>
+                    </a>
                 </div>
 
             </div>

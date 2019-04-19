@@ -1,8 +1,8 @@
 <div id="container" class="h-100">
   <div class="row h-100">
     <div class="col-xl-8 col-lg-6 col-sm-12 h-100" style="overflow: hidden;">
-      <div id="main" class="h-100">
-        <span class="d-sm-none d-block text-right" style="font-size: 3rem; position: absolute; top: 0; right: 20px;" (click)="openNav()">+</span>
+      <div id="main" class="h-100 p-sm-0">
+        <button (click)="openNav()" class="d-sm-none d-block bg-dark" style="position: absolute; top: 20px; right: 20px;"><span class="mdi mdi-menu"></span></button>
         <gc-scene></gc-scene>
       </div>
     </div>

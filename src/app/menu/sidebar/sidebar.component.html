@@ -3,19 +3,19 @@
     <gc-tab id="accordion" [tabTitle]="'Konfigurator'">
       <ul class="nav flex-column">
         <li class="nav-item">
-          <a class="nav-link collapsed" data-toggle="collapse" href="#collapseSize" aria-expanded="true" aria-controls="collapseSize"><span class="mr-5 mdi mdi-cup"></span>Größe</a>
+          <a class="nav-link d-flex align-items-center collapsed" data-toggle="collapse" href="#collapseSize" aria-expanded="true" aria-controls="collapseSize"><span class="mr-5 mdi mdi-cup"></span>Größe</a>
           <div class="collapse show" id="collapseSize" data-parent="#accordion">
             <gc-size></gc-size>
           </div>
         </li>
         <li class="nav-item">
-          <a id="design" class="nav-link collapsed" data-toggle="collapse" href="#collapseDesign" aria-expanded="false" aria-controls="collapseOptions"><span class="mr-5 mdi mdi-upload"></span>Design</a>
+          <a id="design" class="nav-link d-flex align-items-center collapsed" data-toggle="collapse" href="#collapseDesign" aria-expanded="false" aria-controls="collapseOptions"><span class="mr-5 mdi mdi-upload"></span>Design</a>
           <div class="collapse" id="collapseDesign" data-parent="#accordion">
             <gc-upload></gc-upload>
           </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link collapsed" data-toggle="collapse" href="#collapseOptions" aria-expanded="false" aria-controls="collapseDesign"><span class="mr-5 mdi mdi-settings"></span>Optionen</a>
+          <a class="nav-link d-flex align-items-center collapsed" data-toggle="collapse" href="#collapseOptions" aria-expanded="false" aria-controls="collapseDesign"><span class="mr-5 mdi mdi-settings"></span>Optionen</a>
           <div class="collapse" id="collapseOptions" data-parent="#accordion">
             <p>Für diesen Becher sind zur Zeit noch keine weiteren Optionen verfügbar.</p>
           </div>

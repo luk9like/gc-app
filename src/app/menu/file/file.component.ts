@@ -19,4 +19,20 @@ export class FileComponent {
 
   }
 
+  public isDisabled() {
+    if (this.data.state) {
+      return;
+    } else {
+      return 'disabled';
+    }
+  }
+
+  public showInputLabel() {
+    if (this.data.designName === undefined ) {
+      return 'Design auswählen';
+    } else {
+      return this.data.designName;
+    }
+  }
+
 }
