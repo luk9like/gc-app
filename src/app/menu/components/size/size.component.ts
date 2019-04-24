@@ -1,18 +1,24 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import {DataService} from '../../../shared/service/data.service';
-import {ThreeService} from '../../../scene/service/three.service';
 
+/**
+ * Size Component
+ */
 @Component({
   selector: 'gc-size',
   templateUrl: './size.component.html',
   styleUrls: ['./size.component.scss']
 })
-export class SizeComponent implements OnInit {
+export class SizeComponent {
+  /**
+   * All available Sizes of Cups
+   */
   sizes: Array<string> = ['small', 'medium', 'normal', 'large'];
 
+  /**
+   * Constructor for the Data Service
+   * @param data   Instance of the DataService
+   */
   constructor(private data: DataService) {}
-
-  ngOnInit() {
-  }
 
 }

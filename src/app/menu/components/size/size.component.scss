@@ -5,5 +5,22 @@
   &:hover, &:focus, &:active{
     border: 3px solid darkred;
     transition: border ease-in-out .2s;
+    + p{
+      color: darkred;
+      font-weight: 500;
+    }
   }
+}
+
+.active img{
+  border: 3px solid darkred;
+  transition: border ease-in-out .2s;
+  + p{
+    color: darkred;
+    font-weight: 500;
+  }
+}
+
+a{
+  text-decoration: none;
 }

@@ -1,5 +1,8 @@
 import {Component, ContentChild, Input, TemplateRef} from '@angular/core';
 
+/**
+ * Accordion-Item Component
+ */
 @Component({
   selector: 'gc-item',
   styles: [],
@@ -20,11 +23,29 @@ import {Component, ContentChild, Input, TemplateRef} from '@angular/core';
     </li>
   `
 })
+/**
+ * @ignore
+ */
 export class ItemComponent {
+  /**
+   * Title of Item
+   */
   @Input('itemTitle') title: string;
+  /**
+   * ID of the Item
+   */
   @Input('itemId') id: string;
+  /**
+   * If Collapsed then true
+   */
   @Input() collapsed = false;
+  /**
+   * Icon before the title
+   */
   @Input('iconClass') iconClass: string;
+  /**
+   * Template Reference
+   */
   @ContentChild(TemplateRef) template: TemplateRef<any>;
 
 }

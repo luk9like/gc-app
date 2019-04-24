@@ -1,15 +1,12 @@
-import { browser, by, element } from 'protractor';
+import { browser } from 'protractor';
 
 export class AppPage {
-  navigateTo(dest) {
+  /**
+   * Navigate to an path
+   * @param dest      The path to navigate to
+   * @return Promise<any>  The browser navigates to the selected destination
+   */
+  static navigateTo(dest) {
     return browser.get(dest) as Promise<any>;
-  }
-
-  getTitleText() {
-    return element(by.css('gc-root h1')).getText() as Promise<string>;
-  }
-
-  getCurrentModel() {
-    return element(by.css('gc-size p')).getText() as Promise<string>;
   }
 }

@@ -1,6 +1,9 @@
 import { Component, ContentChildren, QueryList, AfterContentInit } from '@angular/core';
 import { TabComponent } from './tab.component';
 
+/**
+ * Tabs Component
+ */
 @Component({
   selector: 'gc-tabs',
   template: `
@@ -13,12 +16,21 @@ import { TabComponent } from './tab.component';
   `,
   styles: []
 })
+
 export class TabsComponent implements AfterContentInit {
 
+  /**
+   * A List of all tabs used in the template
+   */
   @ContentChildren(TabComponent) tabs: QueryList<TabComponent>;
 
+  /**
+   * Check active Tab afterContentInit
+   */
   ngAfterContentInit() {
-    // get all active tabs
+    /**
+     * all active Tabs
+     */
     const activeTabs = this.tabs.filter((tab) => tab.active);
 
     // if there is no active tab set, activate the first
@@ -27,6 +39,11 @@ export class TabsComponent implements AfterContentInit {
     }
   }
 
+  /**
+   *
+   * @param tab   The clicked Tab
+   * set selected Tab to active
+   */
   selectTab(tab: TabComponent) {
     // deactivate all tabs
     this.tabs.toArray().forEach( tab => tab.active = false);

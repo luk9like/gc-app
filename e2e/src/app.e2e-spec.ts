@@ -2,7 +2,6 @@ import { AppPage } from './app.po';
 import {browser, by, logging, element} from 'protractor';
 import * as path from 'path';
 
-
 describe('workspace-project App', () => {
   let page: AppPage;
 
@@ -12,13 +11,13 @@ describe('workspace-project App', () => {
 
   it('should upload a design', () => {
     page.navigateTo('/upload');
-    var file = 'large.png',
+    const file = 'large.png',
         absolutePath = path.resolve(__dirname, file);
 
     element(by.id('design')).sendKeys(absolutePath);
     element(by.id('uploadButton')).click();
 
-    var designName = element(by.id('designLabel')).getText();
+    const designName = element(by.id('designLabel')).getText();
     expect(designName).toMatch('large.png');
   });
 

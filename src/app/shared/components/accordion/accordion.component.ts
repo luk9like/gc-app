@@ -1,7 +1,9 @@
-import {Component, ContentChildren, QueryList, AfterContentInit, TemplateRef, ContentChild} from '@angular/core';
+import {Component, ContentChildren, QueryList, AfterContentInit} from '@angular/core';
 import { ItemComponent } from './item.component';
-import {NgForOfContext} from '@angular/common';
 
+/**
+ * Accordion Component
+ */
 @Component({
   selector: 'gc-accordion',
   template: `
@@ -15,10 +17,19 @@ import {NgForOfContext} from '@angular/common';
 })
 export class AccordionComponent implements AfterContentInit {
 
+  /**
+   * List of all Accordion-Items in the template
+   */
   @ContentChildren(ItemComponent) items: QueryList<ItemComponent>;
 
+  /**
+   * @ignore
+   */
   ngAfterContentInit() {
     // get all active tabs
+    /**
+     * collapsed items
+     */
     const collapsedItem = this.items.filter((item) => item.collapsed);
 
     // if there is no active tab set, activate the first
@@ -27,6 +38,10 @@ export class AccordionComponent implements AfterContentInit {
     }
   }
 
+  /**
+   * @param item    The selected Accordion-Item
+   * Collapse the selected Item
+   */
   selectItem(item: ItemComponent) {
     // deactivate all tabs
     this.items.toArray().forEach( item => item.collapsed = false);

@@ -6,6 +6,8 @@ import {TabComponent} from '../../shared/components/tabs/tab.component';
 import {SizeComponent} from '../components/size/size.component';
 import {UploadComponent} from '../components/upload/upload.component';
 import {OverviewComponent} from '../components/overview/overview.component';
+import {AccordionComponent} from '../../shared/components/accordion/accordion.component';
+import {ItemComponent} from '../../shared/components/accordion/item.component';
 
 describe('SiderbarComponent', () => {
   let component: SidebarComponent;
@@ -13,7 +15,15 @@ describe('SiderbarComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SidebarComponent, TabsComponent, TabComponent, SizeComponent, UploadComponent, OverviewComponent ]
+      declarations: [
+        SidebarComponent,
+        TabsComponent, TabComponent,
+        SizeComponent,
+        UploadComponent,
+        OverviewComponent,
+        AccordionComponent,
+        ItemComponent
+      ]
     })
     .compileComponents();
   }));

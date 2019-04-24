@@ -3,8 +3,8 @@
     <div class="row">
         <ng-container *ngFor="let size of sizes; let i = index">
             <div class="col-6 py-3">
-                <a id="{{size}}" [ngClass]="'size d-flex flex-column align-items-center'" (click)="this.data.setModel(size)">
-                    <img src="https://via.placeholder.com/100">
+                <a href="#" id="{{size}}" class="size d-flex flex-column align-items-center" [class.active]="size == this.data.model" (click)="this.data.setModel(size)">
+                    <img [src]="'assets/images/' + (i+1)*100 + '.png'">
                     <p>{{size}}</p>
                 </a>
             </div>
